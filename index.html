@@ -575,7 +575,7 @@ body::after {
 
   <div class="search-section">
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="搜索要闻、项目、标签..." autocomplete="off">
+      <input type="text" id="searchInput" placeholder="模糊搜索：输入关键词，如 支付 Agent 开源..." autocomplete="off">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     </div>
     <div class="filter-row" id="filterRow">
@@ -709,15 +709,30 @@ body::after {
     renderReports(activeFilter);
   });
 
-  // Search
-  function highlightText(text, query) {
-    if (!query) return text;
-    const regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
-    return text.replace(regex, '<mark>$1</mark>');
+  // Fuzzy search: split query into keywords, all must match (OR within each field)
+  function fuzzyMatch(text, keywords) {
+    const lower = text.toLowerCase();
+    return keywords.some(kw => lower.includes(kw));
   }
 
-  function doSearch(query) {
-    query = query.trim().toLowerCase();
+  function fuzzyMatchAll(text, keywords) {
+    const lower = text.toLowerCase();
+    return keywords.every(kw => lower.includes(kw));
+  }
+
+  function highlightText(text, keywords) {
+    if (!keywords || keywords.length === 0) return text;
+    // Highlight all keywords
+    let result = text;
+    keywords.forEach(kw => {
+      const regex = new RegExp('(' + kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      result = result.replace(regex, '<mark>$1</mark>');
+    });
+    return result;
+  }
+
+  function doSearch(rawQuery) {
+    const query = rawQuery.trim();
     if (!query) {
       searchResults.classList.remove('active');
       searchResults.innerHTML = '';
@@ -727,6 +742,9 @@ body::after {
       renderReports(activeFilter);
       return;
     }
+
+    // Split into multiple keywords (space-separated)
+    const keywords = query.toLowerCase().split(/\s+/).filter(k => k.length > 0);
 
     reportList.classList.add('hidden');
     emptyState.classList.remove('active');
@@ -743,17 +761,16 @@ body::after {
 
     filteredReports.forEach(r => {
       r.news.forEach(n => {
-        const titleMatch = n.title.toLowerCase().includes(query);
-        const tagMatch = n.tags.some(t => t.toLowerCase().includes(query));
-        if (titleMatch || tagMatch) {
+        // Build a combined text field for fuzzy matching
+        const combined = [n.title, n.summary || '', ...n.tags].join(' ').toLowerCase();
+        // Match if ANY keyword is found (fuzzy OR)
+        if (fuzzyMatch(combined, keywords)) {
           newsResults.push({ ...n, date: r.date, weekday: r.weekday, file: r.file });
         }
       });
       r.github.forEach(g => {
-        const nameMatch = g.name.toLowerCase().includes(query);
-        const descMatch = g.desc.toLowerCase().includes(query);
-        const langMatch = g.lang.toLowerCase().includes(query);
-        if (nameMatch || descMatch || langMatch) {
+        const combined = [g.name, g.desc, g.lang].join(' ').toLowerCase();
+        if (fuzzyMatch(combined, keywords)) {
           ghResults.push({ ...g, date: r.date, weekday: r.weekday, file: r.file });
         }
       });
@@ -785,8 +802,10 @@ body::after {
         delay++;
 
         const tagsHtml = n.tags.map(t => '<span class="result-tag">' + t + '</span>').join('');
+        const summaryHtml = n.summary ? '<div class="result-desc">' + highlightText(n.summary, keywords) + '</div>' : '';
         card.innerHTML = `
-          <div class="result-title">${highlightText(n.title, query)}</div>
+          <div class="result-title">${highlightText(n.title, keywords)}</div>
+          ${summaryHtml}
           <div class="result-meta">
             <span class="result-date">${n.date}</span>
             <div class="result-tags">${tagsHtml}</div>
@@ -813,8 +832,8 @@ body::after {
         delay++;
 
         card.innerHTML = `
-          <div class="result-title">${highlightText(g.name, query)}</div>
-          <div class="result-desc">${highlightText(g.desc, query)}</div>
+          <div class="result-title">${highlightText(g.name, keywords)}</div>
+          <div class="result-desc">${highlightText(g.desc, keywords)}</div>
           <div class="result-meta">
             <span class="result-date">${g.date}</span>
             <span class="result-stars">&#9733; ${g.stars}</span>

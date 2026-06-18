@@ -5,16 +5,16 @@
       "weekday": "星期三",
       "file": "./ai_news_日报_20260618.html",
       "news": [
-        {"title": "证监会：科创板第五套标准扩围至AI大模型企业", "tags": ["政策","资本"], "url": "http://m.toutiao.com/group/7652501304790483498/"},
-        {"title": "Z.ai开源GLM-5.2：多项基准超越GPT-5.5，成本仅1/6", "tags": ["开源","大模型"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Anthropic发布Claude Design重大升级：修复Token燃烧问题", "tags": ["产品","AI设计"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "AI重写6·18法则：全面渗透直播、物流、售后全环节", "tags": ["电商","AI应用"], "url": "http://m.toutiao.com/group/7652417936803578368/"},
-        {"title": "AI支付闪电战开启：微信支付宝双巨头一周内先后亮底牌", "tags": ["支付","智能体"], "url": "http://m.toutiao.com/group/7652553779719586356/"},
-        {"title": "新浪微博VibeThinker-3B：3B参数挑战千亿参数旗舰模型", "tags": ["研究","小模型"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Sakana AI推出超深度研究Agent：8小时自动生成100+页报告", "tags": ["智能体","研究"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Google 25年来首次重新设计搜索框", "tags": ["搜索","产品"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "斯坦福DeLM：去中心化多Agent协作，成本降低50%", "tags": ["研究","Agent架构"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "中国AI进入硬核验证期：数据局发布高质量数据集建设方案", "tags": ["政策","数据"], "url": "https://m.sohu.com/a/1037722803_122440928/"}
+        {"title": "证监会：科创板第五套标准扩围至AI大模型企业", "summary": "证监会主席吴清宣布扩大科创板第五套上市标准适用范围至人工智能领域，积极支持优质AI大模型企业上市。智谱、MiniMax等筹备回A企业获制度确定性。", "tags": ["政策","资本"], "url": "http://m.toutiao.com/group/7652501304790483498/"},
+        {"title": "Z.ai开源GLM-5.2：多项基准超越GPT-5.5，成本仅1/6", "summary": "Z.ai发布开放权重模型GLM-5.2，在多个长时编码基准测试中击败GPT-5.5，推理成本仅为后者六分之一。企业级AI部署有了更具成本效益的选择。", "tags": ["开源","大模型"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "Anthropic发布Claude Design重大升级：修复Token燃烧问题", "summary": "Claude Design新增设计系统导入Figma/Design Token、代码往返编辑功能，并显著降低Token消耗。此前评测者25分钟内烧掉80%周配额的问题得到解决。", "tags": ["产品","AI设计"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "AI重写6·18法则：全面渗透直播、物流、售后全环节", "summary": "2026年618首次全场景融入AI，从智能推荐、AI主播到物流调度和售后客服，AI成为电商基建核心。京东、淘宝等平台AI参与度创历史新高。", "tags": ["电商","AI应用"], "url": "http://m.toutiao.com/group/7652417936803578368/"},
+        {"title": "AI支付闪电战开启：微信支付宝双巨头一周内先后亮底牌", "summary": "微信支付发布AI专属卡，支付宝上线AI原生版阿宝。用户一句话即可完成比价、推荐和支付，AI支付从概念验证正式进入产品对垒深水区。", "tags": ["支付","智能体"], "url": "http://m.toutiao.com/group/7652553779719586356/"},
+        {"title": "新浪微博VibeThinker-3B：3B参数挑战千亿参数旗舰模型", "summary": "新浪微博团队发布3B参数VibeThinker模型，声称在推理任务上可媲美DeepSeek、GPT-5.5等百倍大模型。14页技术报告在AI社区引发激烈讨论。", "tags": ["研究","小模型"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "Sakana AI推出超深度研究Agent：8小时自动生成100+页报告", "summary": "Sakana AI发布Ultra Deep Research智能体，可在8小时内自动生成超过100页深度研究报告，适用于咨询、投研等知识密集型商业场景。", "tags": ["智能体","研究"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "Google 25年来首次重新设计搜索框", "summary": "Google将正式推出搜索框25年来首次重大界面更新，从经典白色矩形闪烁光标转向AI原生搜索体验，标志着AI搜索进入大众化新阶段。", "tags": ["搜索","产品"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "斯坦福DeLM：去中心化多Agent协作，成本降低50%", "summary": "斯坦福团队推出DeLM框架，让多Agent协作无需中央协调器，Agent间共享失败经验和验证结果，运行成本降低50%。", "tags": ["研究","Agent架构"], "url": "https://venturebeat.com/category/ai/"},
+        {"title": "中国AI进入硬核验证期：数据局发布高质量数据集建设方案", "summary": "国家数据局发布关于推进行业高质量数据集建设行动的实施方案，首次从国家层面对数据赋能AI发展作出系统性部署。DeepSeek首轮融资逼近4000亿估值。", "tags": ["政策","数据"], "url": "https://m.sohu.com/a/1037722803_122440928/"}
       ],
       "github": [
         {"name": "Panniantong/Agent-Reach", "desc": "全网搜索零API费，支持B站小红书推特", "stars": "33.1K", "lang": "Python", "url": "https://github.com/Panniantong/Agent-Reach"},
@@ -34,16 +34,16 @@
       "weekday": "星期二",
       "file": "./ai_news_日报_20260617.html",
       "news": [
-        {"title": "DeepSeek或已敲定500亿元首轮融资", "tags": ["融资","大模型"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
-        {"title": "SpaceX以600亿美元全股票收购Cursor母公司Anysphere", "tags": ["收购","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
-        {"title": "阿里发布首个具身大模型Qwen-Robot系列", "tags": ["具身智能","大模型"], "url": "http://m.toutiao.com/group/7652132389291934214/"},
-        {"title": "OpenCode登顶AI开发工具实力榜榜首", "tags": ["开源","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
-        {"title": "硅基流动完成超20亿元B轮融资", "tags": ["融资","AI Infra"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
-        {"title": "支付宝AI原生版阿宝开启邀测", "tags": ["智能体","支付"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "美团觅游Agent社区全量公测", "tags": ["智能体","社交"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "AIIA召开智能体时代AI安全治理专题研讨会", "tags": ["治理","智能体"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "G7峰会敲定AI治理框架，筹建G7人工智能协同网络", "tags": ["政策","国际治理"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "微软计划引入开源模型降本，Copilot智能体切换计费模式", "tags": ["企业AI","开源"], "url": "http://m.toutiao.com/group/7652174624692486666/"}
+        {"title": "DeepSeek或已敲定500亿元首轮融资", "summary": "创始人梁文锋个人出资约200亿元，腾讯出资约100亿元，宁德时代体系出资约50亿元，网易、京东等分别出资约30亿元。DeepSeek用500亿元买到的不仅是一张军备竞赛的入场券，更是中国AI产业的一次集体定价重置。", "tags": ["融资","大模型"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
+        {"title": "SpaceX以600亿美元全股票收购Cursor母公司Anysphere", "summary": "SpaceX上市仅4天即宣布收购AI编程工具Cursor的母公司Anysphere，预计Q3完成。Cursor从0到10亿美元ARR仅用18个月，是当前全球最受欢迎的AI编程IDE之一。AI编程工具赛道迄今最大并购案。", "tags": ["收购","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
+        {"title": "阿里发布首个具身大模型Qwen-Robot系列", "summary": "阿里巴巴发布千问具身智能大模型Qwen-Robot系列，包含VLA操作模型Qwen-RobotManip、VLN移动模型Qwen-RobotNav和世界模型Qwen-RobotWorld三大模型，构成边走边看边思考的完整具身智能通用底座。", "tags": ["具身智能","大模型"], "url": "http://m.toutiao.com/group/7652132389291934214/"},
+        {"title": "OpenCode登顶AI开发工具实力榜榜首", "summary": "在LogRocket 2026年6月版AI Dev Tool Power Rankings中，开源编程Agent OpenCode首次超越Cursor、Claude Code等商业工具登顶第一。拥有172K GitHub Stars、750万MAU、支持75+模型自由切换。", "tags": ["开源","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
+        {"title": "硅基流动完成超20亿元B轮融资", "summary": "本轮融资由携程战投、晶科能源控股、金蝶股份、壁仞战投、蔚来资本、商汤战投等产业资本联合投资。过去一年营收同比增长超10倍，日均Token调用量达数万亿，服务超1000万用户和1万家企业客户。", "tags": ["融资","AI Infra"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
+        {"title": "支付宝AI原生版阿宝开启邀测", "summary": "支付宝上线内置专属智能体阿宝，右滑一键唤起对话式操作，一句话自动完成缴费、公积金查询、车票预订、生活缴费等全流程事务，无需跳转多个小程序。内测邀请码上线瞬间抢空。", "tags": ["智能体","支付"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
+        {"title": "美团觅游Agent社区全量公测", "summary": "美团自研AI智能体社区觅游正式面向全部用户开放，支持接入Claude、Codex、OpenClaw等各类第三方智能体，平台入驻超3000个细分Agent、4万余项实用技能。", "tags": ["智能体","社交"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
+        {"title": "AIIA召开智能体时代AI安全治理专题研讨会", "summary": "中国人工智能产业发展联盟AIIA安全治理委员会于北京举办专题研讨会，聚焦智能体自主决策、Token安全风险、多Agent协同管控三大核心议题，产学研多方共同制定可信智能体落地规范。", "tags": ["治理","智能体"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
+        {"title": "G7峰会敲定AI治理框架，筹建G7人工智能协同网络", "summary": "七国集团峰会闭幕达成AI共识，正式落地G7人工智能网络，统一公共领域智能体应用准入规则，针对高风险自主型智能体建立跨境协同审查机制。", "tags": ["政策","国际治理"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
+        {"title": "微软计划引入开源模型降本，Copilot智能体切换计费模式", "summary": "微软官宣调整Copilot Cowork企业智能体定价策略，转向按量计费模式；为对冲高额闭源模型成本，内部推进用DeepSeek V4等开源模型替代方案，测算可将智能体运行成本降低九成。", "tags": ["企业AI","开源"], "url": "http://m.toutiao.com/group/7652174624692486666/"}
       ],
       "github": [
         {"name": "mvanhorn/last30days-skill", "desc": "AI智能体全网调研技能，跨Reddit、X、YouTube等平台搜索", "stars": "41.3K", "lang": "Python", "url": "https://github.com/mvanhorn/last30days-skill"},
