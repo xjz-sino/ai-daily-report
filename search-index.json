@@ -1,32 +1,341 @@
 {
   "reports": [
     {
+      "date": "2026-06-19",
+      "weekday": "星期五",
+      "file": "./ai_news_日报_20260619.html",
+      "news": [
+        {
+          "title": "苹果 WWDC 2026：Siri 全面换血 Google Gemini",
+          "summary": "库克谢幕之战，Siri 基于 1.2 万亿参数 Gemini 重构，用户可在 Gemini、ChatGPT、Claude 三选一。iOS 27 首次实现系统级 AI 模型选择。",
+          "tags": [
+            "产品发布",
+            "大厂动态"
+          ],
+          "url": "https://www.theverge.com/tech/945693/apple-wwdc-2026-biggest-announcements-ios-27"
+        },
+        {
+          "title": "DeepSeek 首轮融资 510 亿元落地",
+          "summary": "中国 AI 史最大单轮，梁文锋个人出资 200 亿，腾讯跟投 100 亿，估值破 500 亿美元。",
+          "tags": [
+            "融资并购",
+            "独角兽"
+          ],
+          "url": "http://m.toutiao.com/group/7652563097252528674/"
+        },
+        {
+          "title": "2026 金融智能体元年",
+          "summary": "阿里云发布点金平台，蚂蚁推出 Agentar 专家团，金融 AI 迈入全流程闭环作业阶段。",
+          "tags": [
+            "行业应用",
+            "金融科技"
+          ],
+          "url": "http://m.toutiao.com/group/7652772086452142655/"
+        },
+        {
+          "title": "618 AI 要革电商的命",
+          "summary": "淘宝×千问、京东 JoyStreamer、豆包购物、微信支付 AI 专属卡全面入局 AI 购物。",
+          "tags": [
+            "电商应用",
+            "大厂动态"
+          ],
+          "url": "http://m.toutiao.com/group/7652869390219723307/"
+        },
+        {
+          "title": "互联网巨头涌入 AI 制药",
+          "summary": "字节拆分 AI 制药融资、阿里氢离子、百度百图生科递表、腾讯 GLP-1 专利。",
+          "tags": [
+            "AI 制药",
+            "互联网巨头"
+          ],
+          "url": "https://36kr.com/p/3849400360424707"
+        },
+        {
+          "title": "Noam Shazeer 跳槽 OpenAI",
+          "summary": "Transformer 之父从谷歌 DeepMind 离职加入 OpenAI，大模型架构战再升级。",
+          "tags": [
+            "人才动态",
+            "大模型"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162101475"
+        },
+        {
+          "title": "工信部发布 AI 终端产品通用规范",
+          "summary": "6 月 18 日起征求意见，AI 手机/眼镜/耳机将分级标注算力等级。",
+          "tags": [
+            "监管政策",
+            "行业标准"
+          ],
+          "url": "https://m.weibo.cn/detail/5311432469515284"
+        },
+        {
+          "title": "腾讯云 AI 算力全线降价 30%",
+          "summary": "覆盖 GPU 云服务器、容器服务，618 算力价格战升级。",
+          "tags": [
+            "算力降价",
+            "云厂商"
+          ],
+          "url": "https://m.weibo.cn/detail/5311432469515284"
+        },
+        {
+          "title": "AI 高考志愿填报大战",
+          "summary": "阿里、腾讯、百度、字节四家大厂 Agent 同台，9200 万人次使用 AI 志愿工具。",
+          "tags": [
+            "AI 应用",
+            "教育"
+          ],
+          "url": "http://m.toutiao.com/group/7652546861563232802/"
+        },
+        {
+          "title": "首例 AI 外资并购禁止案",
+          "summary": "Meta 收购 Manus 被依法叫停，标志 AI 跨境并购进入穿透式从严监管。",
+          "tags": [
+            "监管政策",
+            "跨境并购"
+          ],
+          "url": "http://paper.people.com.cn/zgcsb/pc/attachement/202605/11/e9fb1c5d-647c-4d00-b71c-456fc0e10270.pdf"
+        }
+      ],
+      "github": [
+        {
+          "name": "pewdiepie-archdaemon/odysseus",
+          "desc": "本周最火新项目，登顶 GitHub Trending",
+          "stars": "持续增长",
+          "lang": "Rust",
+          "url": "https://github.com/pewdiepie-archdaemon/odysseus"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "desc": "微软文档转 Markdown 工具，跃升至第 2",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "desc": "Nous Research AI Agent 框架，186K+ Stars",
+          "stars": "186.4K",
+          "lang": "Python",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "name": "chopratejas/headroom",
+          "desc": "开发者生产力工具，新晋热门",
+          "stars": "持续增长",
+          "lang": "TypeScript",
+          "url": "https://github.com/chopratejas/headroom"
+        },
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "desc": "AI 短视频生成，73.9K Stars",
+          "stars": "73.9K",
+          "lang": "Python",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "name": "colbymchenry/codegraph",
+          "desc": "Claude Code 代码知识图谱，100% 本地",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/colbymchenry/codegraph"
+        },
+        {
+          "name": "affaan-m/ECC",
+          "desc": "本周新晋热门项目",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/affaan-m/ECC"
+        },
+        {
+          "name": "Lum1104/Understand-Anything",
+          "desc": "多模态内容理解工具",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/Lum1104/Understand-Anything"
+        },
+        {
+          "name": "farion1231/cc-switch",
+          "desc": "AI 编程辅助工具",
+          "stars": "持续增长",
+          "lang": "TypeScript",
+          "url": "https://github.com/farion1231/cc-switch"
+        },
+        {
+          "name": "Leonxlnx/taste-skill",
+          "desc": "AI Agent Skills 框架",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/Leonxlnx/taste-skill"
+        }
+      ]
+    },
+    {
       "date": "2026-06-18",
       "weekday": "星期三",
       "file": "./ai_news_日报_20260618.html",
       "news": [
-        {"title": "证监会：科创板第五套标准扩围至AI大模型企业", "summary": "证监会主席吴清宣布扩大科创板第五套上市标准适用范围至人工智能领域，积极支持优质AI大模型企业上市。智谱、MiniMax等筹备回A企业获制度确定性。", "tags": ["政策","资本"], "url": "http://m.toutiao.com/group/7652501304790483498/"},
-        {"title": "Z.ai开源GLM-5.2：多项基准超越GPT-5.5，成本仅1/6", "summary": "Z.ai发布开放权重模型GLM-5.2，在多个长时编码基准测试中击败GPT-5.5，推理成本仅为后者六分之一。企业级AI部署有了更具成本效益的选择。", "tags": ["开源","大模型"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Anthropic发布Claude Design重大升级：修复Token燃烧问题", "summary": "Claude Design新增设计系统导入Figma/Design Token、代码往返编辑功能，并显著降低Token消耗。此前评测者25分钟内烧掉80%周配额的问题得到解决。", "tags": ["产品","AI设计"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "AI重写6·18法则：全面渗透直播、物流、售后全环节", "summary": "2026年618首次全场景融入AI，从智能推荐、AI主播到物流调度和售后客服，AI成为电商基建核心。京东、淘宝等平台AI参与度创历史新高。", "tags": ["电商","AI应用"], "url": "http://m.toutiao.com/group/7652417936803578368/"},
-        {"title": "AI支付闪电战开启：微信支付宝双巨头一周内先后亮底牌", "summary": "微信支付发布AI专属卡，支付宝上线AI原生版阿宝。用户一句话即可完成比价、推荐和支付，AI支付从概念验证正式进入产品对垒深水区。", "tags": ["支付","智能体"], "url": "http://m.toutiao.com/group/7652553779719586356/"},
-        {"title": "新浪微博VibeThinker-3B：3B参数挑战千亿参数旗舰模型", "summary": "新浪微博团队发布3B参数VibeThinker模型，声称在推理任务上可媲美DeepSeek、GPT-5.5等百倍大模型。14页技术报告在AI社区引发激烈讨论。", "tags": ["研究","小模型"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Sakana AI推出超深度研究Agent：8小时自动生成100+页报告", "summary": "Sakana AI发布Ultra Deep Research智能体，可在8小时内自动生成超过100页深度研究报告，适用于咨询、投研等知识密集型商业场景。", "tags": ["智能体","研究"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "Google 25年来首次重新设计搜索框", "summary": "Google将正式推出搜索框25年来首次重大界面更新，从经典白色矩形闪烁光标转向AI原生搜索体验，标志着AI搜索进入大众化新阶段。", "tags": ["搜索","产品"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "斯坦福DeLM：去中心化多Agent协作，成本降低50%", "summary": "斯坦福团队推出DeLM框架，让多Agent协作无需中央协调器，Agent间共享失败经验和验证结果，运行成本降低50%。", "tags": ["研究","Agent架构"], "url": "https://venturebeat.com/category/ai/"},
-        {"title": "中国AI进入硬核验证期：数据局发布高质量数据集建设方案", "summary": "国家数据局发布关于推进行业高质量数据集建设行动的实施方案，首次从国家层面对数据赋能AI发展作出系统性部署。DeepSeek首轮融资逼近4000亿估值。", "tags": ["政策","数据"], "url": "https://m.sohu.com/a/1037722803_122440928/"}
+        {
+          "title": "证监会：科创板第五套标准扩围至AI大模型企业",
+          "summary": "证监会主席吴清宣布扩大科创板第五套上市标准适用范围至人工智能领域，积极支持优质AI大模型企业上市。智谱、MiniMax等筹备回A企业获制度确定性。",
+          "tags": [
+            "政策",
+            "资本"
+          ],
+          "url": "http://m.toutiao.com/group/7652501304790483498/"
+        },
+        {
+          "title": "Z.ai开源GLM-5.2：多项基准超越GPT-5.5，成本仅1/6",
+          "summary": "Z.ai发布开放权重模型GLM-5.2，在多个长时编码基准测试中击败GPT-5.5，推理成本仅为后者六分之一。企业级AI部署有了更具成本效益的选择。",
+          "tags": [
+            "开源",
+            "大模型"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "Anthropic发布Claude Design重大升级：修复Token燃烧问题",
+          "summary": "Claude Design新增设计系统导入Figma/Design Token、代码往返编辑功能，并显著降低Token消耗。此前评测者25分钟内烧掉80%周配额的问题得到解决。",
+          "tags": [
+            "产品",
+            "AI设计"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "AI重写6·18法则：全面渗透直播、物流、售后全环节",
+          "summary": "2026年618首次全场景融入AI，从智能推荐、AI主播到物流调度和售后客服，AI成为电商基建核心。京东、淘宝等平台AI参与度创历史新高。",
+          "tags": [
+            "电商",
+            "AI应用"
+          ],
+          "url": "http://m.toutiao.com/group/7652417936803578368/"
+        },
+        {
+          "title": "AI支付闪电战开启：微信支付宝双巨头一周内先后亮底牌",
+          "summary": "微信支付发布AI专属卡，支付宝上线AI原生版阿宝。用户一句话即可完成比价、推荐和支付，AI支付从概念验证正式进入产品对垒深水区。",
+          "tags": [
+            "支付",
+            "智能体"
+          ],
+          "url": "http://m.toutiao.com/group/7652553779719586356/"
+        },
+        {
+          "title": "新浪微博VibeThinker-3B：3B参数挑战千亿参数旗舰模型",
+          "summary": "新浪微博团队发布3B参数VibeThinker模型，声称在推理任务上可媲美DeepSeek、GPT-5.5等百倍大模型。14页技术报告在AI社区引发激烈讨论。",
+          "tags": [
+            "研究",
+            "小模型"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "Sakana AI推出超深度研究Agent：8小时自动生成100+页报告",
+          "summary": "Sakana AI发布Ultra Deep Research智能体，可在8小时内自动生成超过100页深度研究报告，适用于咨询、投研等知识密集型商业场景。",
+          "tags": [
+            "智能体",
+            "研究"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "Google 25年来首次重新设计搜索框",
+          "summary": "Google将正式推出搜索框25年来首次重大界面更新，从经典白色矩形闪烁光标转向AI原生搜索体验，标志着AI搜索进入大众化新阶段。",
+          "tags": [
+            "搜索",
+            "产品"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "斯坦福DeLM：去中心化多Agent协作，成本降低50%",
+          "summary": "斯坦福团队推出DeLM框架，让多Agent协作无需中央协调器，Agent间共享失败经验和验证结果，运行成本降低50%。",
+          "tags": [
+            "研究",
+            "Agent架构"
+          ],
+          "url": "https://venturebeat.com/category/ai/"
+        },
+        {
+          "title": "中国AI进入硬核验证期：数据局发布高质量数据集建设方案",
+          "summary": "国家数据局发布关于推进行业高质量数据集建设行动的实施方案，首次从国家层面对数据赋能AI发展作出系统性部署。DeepSeek首轮融资逼近4000亿估值。",
+          "tags": [
+            "政策",
+            "数据"
+          ],
+          "url": "https://m.sohu.com/a/1037722803_122440928/"
+        }
       ],
       "github": [
-        {"name": "Panniantong/Agent-Reach", "desc": "全网搜索零API费，支持B站小红书推特", "stars": "33.1K", "lang": "Python", "url": "https://github.com/Panniantong/Agent-Reach"},
-        {"name": "DeusData/codebase-memory-mcp", "desc": "高性能代码智能MCP服务器，Token减少99%", "stars": "5.2K", "lang": "C", "url": "https://github.com/DeusData/codebase-memory-mcp"},
-        {"name": "google-research/timesfm", "desc": "Google时间序列基础模型", "stars": "21.8K", "lang": "Python", "url": "https://github.com/google-research/timesfm"},
-        {"name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation", "desc": "跨平台GUI去浮Android设备", "stars": "7.6K", "lang": "Rust", "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"},
-        {"name": "n0-computer/iroh", "desc": "Rust模块化网络堆栈", "stars": "9.6K", "lang": "Rust", "url": "https://github.com/n0-computer/iroh"},
-        {"name": "bytedance/UI-TARS-desktop", "desc": "字节开源多模态AI代理堆栈", "stars": "36.7K", "lang": "TypeScript", "url": "https://github.com/bytedance/UI-TARS-desktop"},
-        {"name": "krahets/hello-algo", "desc": "动画图解数据结构与算法教程", "stars": "127.4K", "lang": "Java", "url": "https://github.com/krahets/hello-algo"},
-        {"name": "meshery/meshery", "desc": "云原生管理器", "stars": "11.0K", "lang": "TypeScript", "url": "https://github.com/meshery/meshery"},
-        {"name": "calesthio/OpenMontage", "desc": "世界首个开源Agent视频制作系统", "stars": "5.3K", "lang": "Python", "url": "https://github.com/calesthio/OpenMontage"},
-        {"name": "makeplane/plane", "desc": "开源Jira/Linear替代方案", "stars": "51.2K", "lang": "TypeScript", "url": "https://github.com/makeplane/plane"}
+        {
+          "name": "Panniantong/Agent-Reach",
+          "desc": "全网搜索零API费，支持B站小红书推特",
+          "stars": "33.1K",
+          "lang": "Python",
+          "url": "https://github.com/Panniantong/Agent-Reach"
+        },
+        {
+          "name": "DeusData/codebase-memory-mcp",
+          "desc": "高性能代码智能MCP服务器，Token减少99%",
+          "stars": "5.2K",
+          "lang": "C",
+          "url": "https://github.com/DeusData/codebase-memory-mcp"
+        },
+        {
+          "name": "google-research/timesfm",
+          "desc": "Google时间序列基础模型",
+          "stars": "21.8K",
+          "lang": "Python",
+          "url": "https://github.com/google-research/timesfm"
+        },
+        {
+          "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+          "desc": "跨平台GUI去浮Android设备",
+          "stars": "7.6K",
+          "lang": "Rust",
+          "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
+        },
+        {
+          "name": "n0-computer/iroh",
+          "desc": "Rust模块化网络堆栈",
+          "stars": "9.6K",
+          "lang": "Rust",
+          "url": "https://github.com/n0-computer/iroh"
+        },
+        {
+          "name": "bytedance/UI-TARS-desktop",
+          "desc": "字节开源多模态AI代理堆栈",
+          "stars": "36.7K",
+          "lang": "TypeScript",
+          "url": "https://github.com/bytedance/UI-TARS-desktop"
+        },
+        {
+          "name": "krahets/hello-algo",
+          "desc": "动画图解数据结构与算法教程",
+          "stars": "127.4K",
+          "lang": "Java",
+          "url": "https://github.com/krahets/hello-algo"
+        },
+        {
+          "name": "meshery/meshery",
+          "desc": "云原生管理器",
+          "stars": "11.0K",
+          "lang": "TypeScript",
+          "url": "https://github.com/meshery/meshery"
+        },
+        {
+          "name": "calesthio/OpenMontage",
+          "desc": "世界首个开源Agent视频制作系统",
+          "stars": "5.3K",
+          "lang": "Python",
+          "url": "https://github.com/calesthio/OpenMontage"
+        },
+        {
+          "name": "makeplane/plane",
+          "desc": "开源Jira/Linear替代方案",
+          "stars": "51.2K",
+          "lang": "TypeScript",
+          "url": "https://github.com/makeplane/plane"
+        }
       ]
     },
     {
@@ -34,28 +343,168 @@
       "weekday": "星期二",
       "file": "./ai_news_日报_20260617.html",
       "news": [
-        {"title": "DeepSeek或已敲定500亿元首轮融资", "summary": "创始人梁文锋个人出资约200亿元，腾讯出资约100亿元，宁德时代体系出资约50亿元，网易、京东等分别出资约30亿元。DeepSeek用500亿元买到的不仅是一张军备竞赛的入场券，更是中国AI产业的一次集体定价重置。", "tags": ["融资","大模型"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
-        {"title": "SpaceX以600亿美元全股票收购Cursor母公司Anysphere", "summary": "SpaceX上市仅4天即宣布收购AI编程工具Cursor的母公司Anysphere，预计Q3完成。Cursor从0到10亿美元ARR仅用18个月，是当前全球最受欢迎的AI编程IDE之一。AI编程工具赛道迄今最大并购案。", "tags": ["收购","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
-        {"title": "阿里发布首个具身大模型Qwen-Robot系列", "summary": "阿里巴巴发布千问具身智能大模型Qwen-Robot系列，包含VLA操作模型Qwen-RobotManip、VLN移动模型Qwen-RobotNav和世界模型Qwen-RobotWorld三大模型，构成边走边看边思考的完整具身智能通用底座。", "tags": ["具身智能","大模型"], "url": "http://m.toutiao.com/group/7652132389291934214/"},
-        {"title": "OpenCode登顶AI开发工具实力榜榜首", "summary": "在LogRocket 2026年6月版AI Dev Tool Power Rankings中，开源编程Agent OpenCode首次超越Cursor、Claude Code等商业工具登顶第一。拥有172K GitHub Stars、750万MAU、支持75+模型自由切换。", "tags": ["开源","AI编程"], "url": "http://m.toutiao.com/group/7652177663599100456/"},
-        {"title": "硅基流动完成超20亿元B轮融资", "summary": "本轮融资由携程战投、晶科能源控股、金蝶股份、壁仞战投、蔚来资本、商汤战投等产业资本联合投资。过去一年营收同比增长超10倍，日均Token调用量达数万亿，服务超1000万用户和1万家企业客户。", "tags": ["融资","AI Infra"], "url": "http://m.toutiao.com/group/7652132401287709224/"},
-        {"title": "支付宝AI原生版阿宝开启邀测", "summary": "支付宝上线内置专属智能体阿宝，右滑一键唤起对话式操作，一句话自动完成缴费、公积金查询、车票预订、生活缴费等全流程事务，无需跳转多个小程序。内测邀请码上线瞬间抢空。", "tags": ["智能体","支付"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "美团觅游Agent社区全量公测", "summary": "美团自研AI智能体社区觅游正式面向全部用户开放，支持接入Claude、Codex、OpenClaw等各类第三方智能体，平台入驻超3000个细分Agent、4万余项实用技能。", "tags": ["智能体","社交"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "AIIA召开智能体时代AI安全治理专题研讨会", "summary": "中国人工智能产业发展联盟AIIA安全治理委员会于北京举办专题研讨会，聚焦智能体自主决策、Token安全风险、多Agent协同管控三大核心议题，产学研多方共同制定可信智能体落地规范。", "tags": ["治理","智能体"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "G7峰会敲定AI治理框架，筹建G7人工智能协同网络", "summary": "七国集团峰会闭幕达成AI共识，正式落地G7人工智能网络，统一公共领域智能体应用准入规则，针对高风险自主型智能体建立跨境协同审查机制。", "tags": ["政策","国际治理"], "url": "http://m.toutiao.com/group/7652174624692486666/"},
-        {"title": "微软计划引入开源模型降本，Copilot智能体切换计费模式", "summary": "微软官宣调整Copilot Cowork企业智能体定价策略，转向按量计费模式；为对冲高额闭源模型成本，内部推进用DeepSeek V4等开源模型替代方案，测算可将智能体运行成本降低九成。", "tags": ["企业AI","开源"], "url": "http://m.toutiao.com/group/7652174624692486666/"}
+        {
+          "title": "DeepSeek或已敲定500亿元首轮融资",
+          "summary": "创始人梁文锋个人出资约200亿元，腾讯出资约100亿元，宁德时代体系出资约50亿元，网易、京东等分别出资约30亿元。",
+          "tags": [
+            "融资",
+            "大模型"
+          ],
+          "url": "http://m.toutiao.com/group/7652132401287709224/"
+        },
+        {
+          "title": "SpaceX以600亿美元全股票收购Cursor母公司Anysphere",
+          "summary": "SpaceX上市仅4天即宣布收购AI编程工具Cursor的母公司Anysphere，预计Q3完成。",
+          "tags": [
+            "收购",
+            "AI编程"
+          ],
+          "url": "http://m.toutiao.com/group/7652177663599100456/"
+        },
+        {
+          "title": "阿里发布首个具身大模型Qwen-Robot系列",
+          "summary": "阿里巴巴发布千问具身智能大模型Qwen-Robot系列，包含VLA操作模型、VLN移动模型和世界模型三大模型。",
+          "tags": [
+            "具身智能",
+            "大模型"
+          ],
+          "url": "http://m.toutiao.com/group/7652132389291934214/"
+        },
+        {
+          "title": "OpenCode登顶AI开发工具实力榜榜首",
+          "summary": "开源编程Agent OpenCode首次超越Cursor、Claude Code等商业工具登顶第一。拥有172K GitHub Stars、750万MAU。",
+          "tags": [
+            "开源",
+            "AI编程"
+          ],
+          "url": "http://m.toutiao.com/group/7652177663599100456/"
+        },
+        {
+          "title": "硅基流动完成超20亿元B轮融资",
+          "summary": "本轮融资由携程战投、晶科能源控股、金蝶股份、壁仞战投、蔚来资本、商汤战投等产业资本联合投资。",
+          "tags": [
+            "融资",
+            "AI Infra"
+          ],
+          "url": "http://m.toutiao.com/group/7652132401287709224/"
+        },
+        {
+          "title": "支付宝AI原生版阿宝开启邀测",
+          "summary": "支付宝上线内置专属智能体阿宝，右滑一键唤起对话式操作，一句话自动完成缴费、公积金查询等全流程事务。",
+          "tags": [
+            "智能体",
+            "支付"
+          ],
+          "url": "http://m.toutiao.com/group/7652174624692486666/"
+        },
+        {
+          "title": "美团觅游Agent社区全量公测",
+          "summary": "美团自研AI智能体社区觅游正式面向全部用户开放，平台入驻超3000个细分Agent、4万余项实用技能。",
+          "tags": [
+            "智能体",
+            "社交"
+          ],
+          "url": "http://m.toutiao.com/group/7652174624692486666/"
+        },
+        {
+          "title": "AIIA召开智能体时代AI安全治理专题研讨会",
+          "summary": "中国人工智能产业发展联盟AIIA安全治理委员会于北京举办专题研讨会，聚焦智能体自主决策、Token安全风险等议题。",
+          "tags": [
+            "治理",
+            "智能体"
+          ],
+          "url": "http://m.toutiao.com/group/7652174624692486666/"
+        },
+        {
+          "title": "G7峰会敲定AI治理框架，筹建G7人工智能协同网络",
+          "summary": "七国集团峰会闭幕达成AI共识，正式落地G7人工智能网络，统一公共领域智能体应用准入规则。",
+          "tags": [
+            "政策",
+            "国际治理"
+          ],
+          "url": "http://m.toutiao.com/group/7652174624692486666/"
+        },
+        {
+          "title": "微软计划引入开源模型降本，Copilot智能体切换计费模式",
+          "summary": "微软官宣调整Copilot Cowork企业智能体定价策略，转向按量计费模式；内部推进用DeepSeek V4等开源模型替代方案。",
+          "tags": [
+            "企业AI",
+            "开源"
+          ],
+          "url": "http://m.toutiao.com/group/7652174624692486666/"
+        }
       ],
       "github": [
-        {"name": "mvanhorn/last30days-skill", "desc": "AI智能体全网调研技能，跨Reddit、X、YouTube等平台搜索", "stars": "41.3K", "lang": "Python", "url": "https://github.com/mvanhorn/last30days-skill"},
-        {"name": "chopratejas/headroom", "desc": "Token压缩神器，最高削减95%消耗且答案质量不变", "stars": "27.5K", "lang": "Python", "url": "https://github.com/chopratejas/headroom"},
-        {"name": "addyosmani/agent-skills", "desc": "AI编程Agent生产级工程技能库", "stars": "59.8K", "lang": "LLM", "url": "https://github.com/addyosmani/agent-skills"},
-        {"name": "apple/container", "desc": "苹果开源Mac原生轻量Linux容器工具", "stars": "37.5K", "lang": "Swift", "url": "https://github.com/apple/container"},
-        {"name": "Leonxlnx/taste-skill", "desc": "赋予AI绝佳品味，让生成内容更具个性与深度", "stars": "44.2K", "lang": "LLM", "url": "https://github.com/Leonxlnx/taste-skill"},
-        {"name": "microsoft/markitdown", "desc": "微软开源Office文档一键转Markdown工具", "stars": "153.5K", "lang": "Python", "url": "https://github.com/microsoft/markitdown"},
-        {"name": "phuryn/pm-skills", "desc": "100+产品经理AI技能市场", "stars": "18.3K", "lang": "LLM", "url": "https://github.com/phuryn/pm-skills"},
-        {"name": "Panniantong/Agent-Reach", "desc": "全网搜索零API费，一条命令打通中外热门平台数据", "stars": "28.1K", "lang": "Python", "url": "https://github.com/Panniantong/Agent-Reach"},
-        {"name": "roboflow/supervision", "desc": "可复用计算机视觉工具集", "stars": "44.8K", "lang": "Python", "url": "https://github.com/roboflow/supervision"},
-        {"name": "NVIDIA/SkillSpector", "desc": "英伟达AI Agent技能安全扫描器", "stars": "5.1K", "lang": "Python", "url": "https://github.com/NVIDIA/SkillSpector"}
+        {
+          "name": "mvanhorn/last30days-skill",
+          "desc": "AI智能体全网调研技能，跨Reddit、X、YouTube等平台搜索",
+          "stars": "41.3K",
+          "lang": "Python",
+          "url": "https://github.com/mvanhorn/last30days-skill"
+        },
+        {
+          "name": "chopratejas/headroom",
+          "desc": "Token压缩神器，最高削减95%消耗且答案质量不变",
+          "stars": "27.5K",
+          "lang": "Python",
+          "url": "https://github.com/chopratejas/headroom"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "desc": "AI编程Agent生产级工程技能库",
+          "stars": "59.8K",
+          "lang": "LLM",
+          "url": "https://github.com/addyosmani/agent-skills"
+        },
+        {
+          "name": "apple/container",
+          "desc": "苹果开源Mac原生轻量Linux容器工具",
+          "stars": "37.5K",
+          "lang": "Swift",
+          "url": "https://github.com/apple/container"
+        },
+        {
+          "name": "Leonxlnx/taste-skill",
+          "desc": "赋予AI绝佳品味，让生成内容更具个性与深度",
+          "stars": "44.2K",
+          "lang": "LLM",
+          "url": "https://github.com/Leonxlnx/taste-skill"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "desc": "微软开源Office文档一键转Markdown工具",
+          "stars": "153.5K",
+          "lang": "Python",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "name": "phuryn/pm-skills",
+          "desc": "100+产品经理AI技能市场",
+          "stars": "18.3K",
+          "lang": "LLM",
+          "url": "https://github.com/phuryn/pm-skills"
+        },
+        {
+          "name": "Panniantong/Agent-Reach",
+          "desc": "全网搜索零API费，一条命令打通中外热门平台数据",
+          "stars": "28.1K",
+          "lang": "Python",
+          "url": "https://github.com/Panniantong/Agent-Reach"
+        },
+        {
+          "name": "roboflow/supervision",
+          "desc": "可复用计算机视觉工具集",
+          "stars": "44.8K",
+          "lang": "Python",
+          "url": "https://github.com/roboflow/supervision"
+        },
+        {
+          "name": "NVIDIA/SkillSpector",
+          "desc": "英伟达AI Agent技能安全扫描器",
+          "stars": "5.1K",
+          "lang": "Python",
+          "url": "https://github.com/NVIDIA/SkillSpector"
+        }
       ]
     }
   ]
