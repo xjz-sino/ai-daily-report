@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI应用新闻日报 - 2026年06月20日</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #06090f;
+            --bg-secondary: #080c14;
+            --bg-card: rgba(15, 23, 42, 0.7);
+            --bg-card-hover: rgba(20, 30, 55, 0.85);
+            --blue: #38bdf8;
+            --purple: #8b5cf6;
+            --cyan: #06b6d4;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(56, 189, 248, 0.15);
+            --gradient-blue-purple: linear-gradient(135deg, #38bdf8, #8b5cf6);
+            --gradient-purple-cyan: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            --nav-height: 64px;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'Space Grotesk', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.7;
+            overflow-x: hidden;
+            padding-top: var(--nav-height);
+        }
+
+        /* Background effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 50% at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse 40% 30% at 70% 10%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 30%, transparent 70%);
+        }
+
+        /* ========== Navigation Bar ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(6, 9, 15, 0.75);
+            backdrop-filter: blur(20px) saturate(1.5);
+            -webkit-backdrop-filter: blur(20px) saturate(1.5);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+            transition: box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            background: rgba(6, 9, 15, 0.9);
+        }
+
+        .navbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .nav-logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .nav-logo-text {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        /* Date Navigation */
+        .nav-date-control {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .nav-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-current-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            white-space: nowrap;
+        }
+
+        /* Mobile date selector */
+        .nav-date-select {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px 12px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Home button */
+        .nav-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 10px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .nav-home-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .nav-home-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ========== Main Content ========== */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header / Hero */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeSlideUp 0.8s ease-out;
+        }
+
+        .header-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 20px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .header h1 {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .header .date-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .header .date-line .dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--blue);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 32px;
+            animation: fadeSlideUp 0.8s ease-out 0.2s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            background: var(--gradient-blue-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+            margin: 0 auto 56px;
+            max-width: 800px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title .icon {
+            width: 36px; height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .section-title .icon.blue { background: rgba(56, 189, 248, 0.15); color: var(--blue); }
+        .section-title .icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--purple); }
+        .section-title .icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+
+        /* News Cards */
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px 24px 24px 28px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .news-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .news-card .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .news-card .card-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .news-card .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .news-card .card-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 14px;
+            padding-left: 42px;
+        }
+
+        .news-card .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 42px;
+        }
+
+        .news-card .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .news-card .tag {
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--blue);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+        }
+
+        .news-card .read-btn {
+            padding: 6px 18px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .news-card .read-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        /* 10 colors for left border */
+        .news-card:nth-child(1)::before { background: #38bdf8; }
+        .news-card:nth-child(2)::before { background: #8b5cf6; }
+        .news-card:nth-child(3)::before { background: #06b6d4; }
+        .news-card:nth-child(4)::before { background: #10b981; }
+        .news-card:nth-child(5)::before { background: #f59e0b; }
+        .news-card:nth-child(6)::before { background: #ef4444; }
+        .news-card:nth-child(7)::before { background: #ec4899; }
+        .news-card:nth-child(8)::before { background: #14b8a6; }
+        .news-card:nth-child(9)::before { background: #f97316; }
+        .news-card:nth-child(10)::before { background: #6366f1; }
+
+        .news-card:nth-child(1) { animation-delay: 0.05s; }
+        .news-card:nth-child(2) { animation-delay: 0.1s; }
+        .news-card:nth-child(3) { animation-delay: 0.15s; }
+        .news-card:nth-child(4) { animation-delay: 0.2s; }
+        .news-card:nth-child(5) { animation-delay: 0.25s; }
+        .news-card:nth-child(6) { animation-delay: 0.3s; }
+        .news-card:nth-child(7) { animation-delay: 0.35s; }
+        .news-card:nth-child(8) { animation-delay: 0.4s; }
+        .news-card:nth-child(9) { animation-delay: 0.45s; }
+        .news-card:nth-child(10) { animation-delay: 0.5s; }
+
+        /* GitHub Cards */
+        .github-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .github-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .github-card .gh-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .github-card .gh-rank {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--purple);
+            flex-shrink: 0;
+        }
+
+        .github-card .gh-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .github-card .gh-name:hover {
+            color: var(--purple);
+        }
+
+        .github-card .gh-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .github-card .gh-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .github-card .gh-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .github-card .gh-meta-item .star-icon { color: #f59e0b; }
+        .github-card .gh-meta-item .lang-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .github-card .gh-view-btn {
+            margin-left: auto;
+            padding: 5px 14px;
+            border-radius: 6px;
+            background: rgba(139, 92, 246, 0.12);
+            color: var(--purple);
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .github-card .gh-view-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .github-card:nth-child(1) { animation-delay: 0.1s; }
+        .github-card:nth-child(2) { animation-delay: 0.15s; }
+        .github-card:nth-child(3) { animation-delay: 0.2s; }
+        .github-card:nth-child(4) { animation-delay: 0.25s; }
+        .github-card:nth-child(5) { animation-delay: 0.3s; }
+        .github-card:nth-child(6) { animation-delay: 0.35s; }
+        .github-card:nth-child(7) { animation-delay: 0.4s; }
+        .github-card:nth-child(8) { animation-delay: 0.45s; }
+        .github-card:nth-child(9) { animation-delay: 0.5s; }
+        .github-card:nth-child(10) { animation-delay: 0.55s; }
+
+        /* Trend Cards */
+        .trend-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .trend-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .trend-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+
+        .trend-card::after {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            opacity: 0.15;
+            filter: blur(30px);
+        }
+
+        .trend-card:nth-child(1)::after { background: #38bdf8; }
+        .trend-card:nth-child(2)::after { background: #8b5cf6; }
+        .trend-card:nth-child(3)::after { background: #10b981; }
+        .trend-card:nth-child(4)::after { background: #f97316; }
+
+        .trend-card:nth-child(1) { animation-delay: 0.1s; }
+        .trend-card:nth-child(2) { animation-delay: 0.2s; }
+        .trend-card:nth-child(3) { animation-delay: 0.3s; }
+        .trend-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .trend-card .trend-icon {
+            width: 36px; height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+
+        .trend-card:nth-child(1) .trend-icon { background: rgba(56, 189, 248, 0.15); }
+        .trend-card:nth-child(2) .trend-icon { background: rgba(139, 92, 246, 0.15); }
+        .trend-card:nth-child(3) .trend-icon { background: rgba(16, 185, 129, 0.15); }
+        .trend-card:nth-child(4) .trend-icon { background: rgba(249, 115, 22, 0.15); }
+
+        .trend-card .trend-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .trend-card:nth-child(1) .trend-title { color: #60a5fa; }
+        .trend-card:nth-child(2) .trend-title { color: #a78bfa; }
+        .trend-card:nth-child(3) .trend-title { color: #34d399; }
+        .trend-card:nth-child(4) .trend-title { color: #fb923c; }
+
+        .trend-card .trend-content {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ========== Bottom Navigation ========== */
+        .bottom-nav {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(56, 189, 248, 0.1);
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .bottom-nav-main {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .bottom-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 12px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-nav-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+        }
+
+        .bottom-nav-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .recent-reports {
+            margin-bottom: 32px;
+        }
+
+        .recent-reports-title {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .recent-reports-list {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .recent-report-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .recent-report-link:hover {
+            background: rgba(56, 189, 248, 0.08);
+            border-color: rgba(56, 189, 248, 0.2);
+            color: var(--blue);
+            transform: translateY(-1px);
+        }
+
+        .recent-report-link.current {
+            background: rgba(56, 189, 248, 0.1);
+            border-color: rgba(56, 189, 248, 0.25);
+            color: var(--blue);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 0;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            :root { --nav-height: 56px; }
+
+            .navbar-inner {
+                padding: 0 16px;
+            }
+
+            .nav-logo-text {
+                font-size: 15px;
+            }
+
+            .nav-date-control {
+                gap: 8px;
+            }
+
+            .nav-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .nav-btn-text {
+                display: none;
+            }
+
+            .nav-current-date {
+                display: none;
+            }
+
+            .nav-date-select {
+                display: block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+
+            .nav-home-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .header h1 { font-size: 28px; }
+            .container { padding: 24px 16px 60px; }
+            .trend-grid { grid-template-columns: 1fr; }
+            .news-card .card-footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .github-card .gh-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .hero-stats { gap: 24px; }
+            .stat-number { font-size: 24px; }
+            .recent-reports-list { gap: 8px; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo-icon { width: 28px; height: 28px; font-size: 14px; }
+            .nav-logo-text { display: none; }
+            .header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <!-- Logo -->
+            <a href="./index.html" class="nav-logo">
+                <div class="nav-logo-icon">&#9889;</div>
+                <span class="nav-logo-text">AI Daily Report</span>
+            </a>
+
+            <!-- Date Navigation -->
+            <div class="nav-date-control">
+                <a href="./ai_news_日报_20260619.html" class="nav-btn " id="prevBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    <span class="nav-btn-text">上一期</span>
+                </a>
+
+                <span class="nav-current-date">6月20日</span>
+
+                <select class="nav-date-select" id="dateSelect" onchange="location.href=this.value">
+                </select>
+
+                <a href="#" class="nav-btn disabled" id="nextBtn">
+                    <span class="nav-btn-text">下一期</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+
+            <!-- Home Button -->
+            <a href="./index.html" class="nav-home-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========== Main Content ========== -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-badge">AI Daily Report</div>
+            <h1>AI应用新闻日报</h1>
+            <div class="subtitle">每日精选 AI 行业动态、开源项目与趋势洞察</div>
+            <div class="date-line">
+                <span>2026-06-20</span>
+                <span class="dot"></span>
+                <span>星期六</span>
+                <span class="dot"></span>
+                <span>第 171 天</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">AI 要闻</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">GitHub 热榜</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">趋势洞察</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- News Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon blue">&#128240;</div>
+                <span>今日 AI 应用要闻</span>
+            </div>
+
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">01</span>
+    <div class="card-title">八部门联合印发'AI+消费'实施意见：AI手机、机器人纳入以旧换新补贴</div>
+  </div>
+  <div class="card-summary">商务部等8部门联合发布5方面17条举措，明确扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。AI产品正式进入国家级消费普及阶段。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">政策</span>
+      <span class="tag">AI消费</span>
+    </div>
+    <a href="https://m.weibo.cn/detail/5311797246561064" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">02</span>
+    <div class="card-title">AlphaFold负责人John Jumper跳槽Anthropic，AI for Science人才地震</div>
+  </div>
+  <div class="card-summary">AlphaFold团队负责人John Jumper宣布离开Google DeepMind加入Anthropic。DeepMind CEO发文致谢，Jumper是AI for Science旗帜性人物。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">人才动态</span>
+      <span class="tag">AI科研</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">03</span>
+    <div class="card-title">Figure机器人数量首次超过员工，通用人形机器人迎来'摩尔时刻'</div>
+  </div>
+  <div class="card-summary">Figure创始人Brett Adcock宣布公司机器人数量首次超过员工人数。目标是部署10亿台通用机器人。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">机器人</span>
+      <span class="tag">具身智能</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">04</span>
+    <div class="card-title">Adobe创意智能体全面公测：一句话完成视频剪辑、设计批量生成</div>
+  </div>
+  <div class="card-summary">Adobe将创意智能体扩展到Photoshop、Premiere、Illustrator、InDesign、Frame.io五款应用并开启公测。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">产品发布</span>
+      <span class="tag">AI设计</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">05</span>
+    <div class="card-title">燧原科技科创板IPO提交注册，AI芯片企业上市通道打开</div>
+  </div>
+  <div class="card-summary">燧原科技科创板IPO审核状态变更为提交注册。上交所同步发布AI大模型企业上市标准指引。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">融资上市</span>
+      <span class="tag">AI芯片</span>
+    </div>
+    <a href="https://www.163.com/dy/article/KVQ6IC1U0550B1DU.html" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">06</span>
+    <div class="card-title">618 AI智能硬件爆发式增长：京东AI趋势产品成交额同比增100%</div>
+  </div>
+  <div class="card-summary">AI智能硬件迎来爆发式增长，智能眼镜电商平台总销售额同比增长5倍。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">电商</span>
+      <span class="tag">AI硬件</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653276292007117366/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">07</span>
+    <div class="card-title">皮尤民调：63%美国人认为AI发展太快，44%已使用ChatGPT</div>
+  </div>
+  <div class="card-summary">ChatGPT使用率较2023年翻倍达44%，但63%美国人认为AI发展过快。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">社会观察</span>
+      <span class="tag">AI民意</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">08</span>
+    <div class="card-title">Manus收购案重大转机：传腾讯出手竞购</div>
+  </div>
+  <div class="card-summary">此前被叫停的Meta收购Manus案出现重大转机，知情人士透露腾讯可能出手竞购。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">收购并购</span>
+      <span class="tag">跨境AI</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653282760705966655/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">09</span>
+    <div class="card-title">智元远征A3成为世界人形机器人赛事标准硬件</div>
+  </div>
+  <div class="card-summary">HOPE AI自主决策乒乓挑战赛纳入世界人形机器人运动会，统一采用智元远征A3。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">机器人</span>
+      <span class="tag">赛事</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653294825097232915/" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header">
+    <span class="card-number">10</span>
+    <div class="card-title">Claude Fable 5遭美国政府出口管制，外国国民访问被暂停</div>
+  </div>
+  <div class="card-summary">Anthropic最强模型上线三天后被美国以国家安全为由发出出口管制指令。</div>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">监管政策</span>
+      <span class="tag">大模型</span>
+    </div>
+    <a href="https://36kr.com/p/3852759269980800" class="read-btn" target="_blank" rel="noopener">阅读原文 →</a>
+  </div>
+</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- GitHub Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon purple">&#11088;</div>
+                <span>本周 GitHub 热门开源项目</span>
+            </div>
+
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#01</span>
+    <a href="https://github.com/pewdiepie-archdaemon/odysseus" class="gh-name" target="_blank" rel="noopener">pewdiepie-archdaemon/odysseus</a>
+  </div>
+  <div class="gh-desc">PewDiePie开源的离线AI工作空间</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 44K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +15K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#dea584;"></span> Rust</div>
+    <a href="https://github.com/pewdiepie-archdaemon/odysseus" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#02</span>
+    <a href="https://github.com/iptv-org/iptv" class="gh-name" target="_blank" rel="noopener">iptv-org/iptv</a>
+  </div>
+  <div class="gh-desc">世界杯让7年老项目翻红，全球电视频道直播地址m3u列表</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 120K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +20K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#64748b;"></span> Unknown</div>
+    <a href="https://github.com/iptv-org/iptv" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#03</span>
+    <a href="https://github.com/microsoft/markitdown" class="gh-name" target="_blank" rel="noopener">microsoft/markitdown</a>
+  </div>
+  <div class="gh-desc">微软开源文档转Markdown工具，本周跃升至第2</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 153.5K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +5.9K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</div>
+    <a href="https://github.com/microsoft/markitdown" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#04</span>
+    <a href="https://github.com/NousResearch/hermes-agent" class="gh-name" target="_blank" rel="noopener">NousResearch/hermes-agent</a>
+  </div>
+  <div class="gh-desc">Nous Research AI Agent框架，MIT协议</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 186K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +521</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</div>
+    <a href="https://github.com/NousResearch/hermes-agent" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#05</span>
+    <a href="https://github.com/chopratejas/headroom" class="gh-name" target="_blank" rel="noopener">chopratejas/headroom</a>
+  </div>
+  <div class="gh-desc">Token压缩神器，最高削减95%消耗</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 27.5K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +473</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3178c6;"></span> TypeScript</div>
+    <a href="https://github.com/chopratejas/headroom" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#06</span>
+    <a href="https://github.com/harry0703/MoneyPrinterTurbo" class="gh-name" target="_blank" rel="noopener">harry0703/MoneyPrinterTurbo</a>
+  </div>
+  <div class="gh-desc">AI短视频全自动生成工具</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 73.9K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +460</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</div>
+    <a href="https://github.com/harry0703/MoneyPrinterTurbo" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#07</span>
+    <a href="https://github.com/colbymchenry/codegraph" class="gh-name" target="_blank" rel="noopener">colbymchenry/codegraph</a>
+  </div>
+  <div class="gh-desc">Claude Code代码知识图谱，100%本地运行</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 持续增长</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +433</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</div>
+    <a href="https://github.com/colbymchenry/codegraph" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#08</span>
+    <a href="https://github.com/roboflow/supervision" class="gh-name" target="_blank" rel="noopener">roboflow/supervision</a>
+  </div>
+  <div class="gh-desc">可复用计算机视觉工具集</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 44.8K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +2.4K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</div>
+    <a href="https://github.com/roboflow/supervision" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#09</span>
+    <a href="https://github.com/addyosmani/agent-skills" class="gh-name" target="_blank" rel="noopener">addyosmani/agent-skills</a>
+  </div>
+  <div class="gh-desc">AI编程Agent生产级工程技能库</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 59.8K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +1.8K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#64748b;"></span> LLM</div>
+    <a href="https://github.com/addyosmani/agent-skills" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+<div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#10</span>
+    <a href="https://github.com/bytedance/UI-TARS-desktop" class="gh-name" target="_blank" rel="noopener">bytedance/UI-TARS-desktop</a>
+  </div>
+  <div class="gh-desc">字节跳动开源多模态AI代理桌面堆栈</div>
+  <div class="gh-meta">
+    <div class="gh-meta-item"><span class="star-icon">&#9733;</span> 36.7K+</div>
+    <div class="gh-meta-item"><span style="color:#34d399;">&#9650;</span> +1.5K</div>
+    <div class="gh-meta-item"><span class="lang-dot" style="background:#3178c6;"></span> TypeScript</div>
+    <a href="https://github.com/bytedance/UI-TARS-desktop" class="gh-view-btn" target="_blank" rel="noopener">查看项目 →</a>
+  </div>
+</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Trend Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon cyan">&#128161;</div>
+                <span>本周趋势洞察</span>
+            </div>
+
+            <div class="trend-grid">
+                <div class="trend-card">
+  <div class="trend-icon">&#9889;</div>
+  <div class="trend-title">AI消费政策红利释放</div>
+  <div class="trend-content">八部门联合推动AI+消费，AI手机、机器人纳入以旧换新补贴，标志着AI产品从概念尝鲜转向刚需升级的关键转折。</div>
+</div>
+<div class="trend-card">
+  <div class="trend-icon">&#9889;</div>
+  <div class="trend-title">人形机器人进入量产竞速</div>
+  <div class="trend-content">Figure机器人数量首超员工、智元远征A3成为国际赛事标准硬件——人形机器人正从实验室走向规模化部署。</div>
+</div>
+<div class="trend-card">
+  <div class="trend-icon">&#9889;</div>
+  <div class="trend-title">开源AI工具爆发式增长</div>
+  <div class="trend-content">Odysseus 24小时破万Star、iptv世界杯翻红、MarkItDown周增近6000——开源AI工具正以前所未有的速度渗透开发者生态。</div>
+</div>
+<div class="trend-card">
+  <div class="trend-icon">&#9889;</div>
+  <div class="trend-title">AI监管全球化加速</div>
+  <div class="trend-content">美国出口管制Claude模型、中国禁止Meta收购Manus、科创板AI上市标准落地——全球AI监管从框架讨论进入实质执行阶段。</div>
+</div>
+            </div>
+        </div>
+
+        <!-- ========== Bottom Navigation ========== -->
+        <div class="bottom-nav">
+            <div class="bottom-nav-main">
+                <a href="./index.html" class="bottom-nav-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    查看更多日报
+                </a>
+            </div>
+
+            <div class="recent-reports">
+                <div class="recent-reports-title">最近 5 期日报</div>
+                <div class="recent-reports-list">
+                    <a href="./ai_news_日报_20260620.html" class="recent-report-link current">6月20日</a>
+<a href="./ai_news_日报_20260619.html" class="recent-report-link">6月19日</a>
+<a href="./ai_news_日报_20260618.html" class="recent-report-link">6月18日</a>
+<a href="./ai_news_日报_20260617.html" class="recent-report-link">6月17日</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>AI应用新闻日报 &middot; 2026年06月20日 &middot; 由 AI 自动生成</p>
+            <p style="margin-top:8px;">数据来源：The Verge、TechCrunch、36氪、GitHub Trending 等</p>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile date selector - populate with recent dates
+        const dateSelect = document.getElementById('dateSelect');
+        if (dateSelect && dateSelect.options.length <= 1) {
+            const dates = [];
+            dates.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d.file;
+                opt.textContent = d.label;
+                if (d.current) opt.selected = true;
+                dateSelect.appendChild(opt);
+            });
+        }
+    </script>
+</body>
+</html>
