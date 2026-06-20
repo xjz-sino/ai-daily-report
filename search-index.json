@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-06-20",
+      "date_str": "20260620",
+      "filename": "ai_news_日报_20260620.html",
+      "encoded_filename": "ai_news_%E6%97%A5%E6%8A%A5_20260620.html",
+      "title": "AI应用新闻日报 - 2026年06月20日",
+      "summary": "商务部等8部门印发AI+消费实施意见；AlphaFold负责人跳槽Anthropic；DeepSeek融资510亿元；SpaceX收购Cursor；美国管制Anthropic模型；谷歌微软发布ARD标准；支付宝推出AI原生版本"
+    },
+    {
       "date": "2026-06-19",
       "weekday": "星期五",
       "file": "./ai_news_日报_20260619.html",
