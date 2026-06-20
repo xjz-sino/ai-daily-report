@@ -1,782 +1,846 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI应用新闻日报 - 2026年06月20日</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg-primary: #080c14;
-  --bg-secondary: #0d1320;
-  --bg-card: #111827;
-  --accent-blue: #3b82f6;
-  --accent-purple: #8b5cf6;
-  --accent-cyan: #06b6d4;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --border-color: #1e293b;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI应用新闻日报 - 2026年06月20日</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #080c14;
+            --bg-card: rgba(15, 23, 42, 0.7);
+            --bg-card-hover: rgba(20, 30, 55, 0.85);
+            --blue: #3b82f6;
+            --purple: #8b5cf6;
+            --cyan: #06b6d4;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(59, 130, 246, 0.15);
+            --gradient-blue-purple: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            --gradient-purple-cyan: linear-gradient(135deg, #8b5cf6, #06b6d4);
+        }
 
-body {
-  font-family: 'Noto Sans SC', sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-/* 背景氛围 */
-.bg-atmosphere {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-.bg-atmosphere::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -10%;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(ellipse, rgba(59,130,246,0.08) 0%, transparent 70%);
-}
-.bg-atmosphere::after {
-  content: '';
-  position: absolute;
-  bottom: -10%;
-  right: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(ellipse, rgba(139,92,246,0.06) 0%, transparent 70%);
-}
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 50% at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse 40% 30% at 70% 10%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
 
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            position: relative;
+            z-index: 1;
+        }
 
-/* 入场动画 */
-@keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeSlideUp 0.8s ease-out;
+        }
 
-.animate-in {
-  animation: fadeSlideUp 0.7s ease-out forwards;
-  opacity: 0;
-}
+        .header-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 20px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.4s; }
-.delay-5 { animation-delay: 0.5s; }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: var(--gradient-blue-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
 
-/* 顶部封面 */
-.hero {
-  padding: 80px 0 60px;
-  text-align: center;
-  position: relative;
-}
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 15px;
+            font-weight: 300;
+        }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(59,130,246,0.1);
-  border: 1px solid rgba(59,130,246,0.2);
-  color: var(--accent-blue);
-  padding: 8px 20px;
-  border-radius: 100px;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 24px;
-}
+        .header .date-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-family: 'JetBrains Mono', monospace;
+        }
 
-.hero-badge .dot {
-  width: 8px;
-  height: 8px;
-  background: var(--accent-blue);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
+        .header .date-line .dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--blue);
+        }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
+        /* Section */
+        .section {
+            margin-bottom: 56px;
+        }
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 900;
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 50%, var(--accent-purple) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 16px;
-  letter-spacing: -1px;
-}
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-.hero .date {
-  font-size: 20px;
-  color: var(--text-secondary);
-  font-weight: 300;
-  margin-bottom: 40px;
-}
+        .section-title .icon {
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
 
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
-}
+        .section-title .icon.blue { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
+        .section-title .icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--purple); }
+        .section-title .icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
 
-.stat-item {
-  text-align: center;
-}
+        /* News Cards */
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 24px 24px 28px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
 
-.stat-number {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--accent-cyan);
-}
+        .news-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            border-radius: 3px 0 0 3px;
+        }
 
-.stat-label {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin-top: 4px;
-}
+        .news-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+        }
 
-/* 板块标题 */
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 60px 0 32px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-color);
-}
+        .news-card .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
 
-.section-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
+        .news-card .card-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
 
-.section-icon.blue { background: rgba(59,130,246,0.15); }
-.section-icon.purple { background: rgba(139,92,246,0.15); }
-.section-icon.cyan { background: rgba(6,182,212,0.15); }
+        .news-card .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
 
-.section-header h2 {
-  font-size: 28px;
-  font-weight: 700;
-}
+        .news-card .card-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 14px;
+            padding-left: 42px;
+        }
 
-.section-header .subtitle {
-  margin-left: auto;
-  font-size: 14px;
-  color: var(--text-muted);
-}
+        .news-card .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 42px;
+        }
 
-/* 卡片网格 */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 20px;
-}
+        .news-card .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
 
-.card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 24px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
+        .news-card .tag {
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--blue);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+        }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+        .news-card .read-btn {
+            padding: 6px 18px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+        }
 
-.card:hover {
-  border-color: rgba(59,130,246,0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
+        .news-card .read-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
 
-.card:hover::before { opacity: 1; }
+        /* 10 colors for left border */
+        .news-card:nth-child(1)::before { background: #3b82f6; }
+        .news-card:nth-child(2)::before { background: #8b5cf6; }
+        .news-card:nth-child(3)::before { background: #06b6d4; }
+        .news-card:nth-child(4)::before { background: #10b981; }
+        .news-card:nth-child(5)::before { background: #f59e0b; }
+        .news-card:nth-child(6)::before { background: #ef4444; }
+        .news-card:nth-child(7)::before { background: #ec4899; }
+        .news-card:nth-child(8)::before { background: #14b8a6; }
+        .news-card:nth-child(9)::before { background: #f97316; }
+        .news-card:nth-child(10)::before { background: #6366f1; }
 
-.card-number {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  color: var(--accent-blue);
-  font-weight: 700;
-  margin-bottom: 12px;
-}
+        .news-card:nth-child(1) { animation-delay: 0.05s; }
+        .news-card:nth-child(2) { animation-delay: 0.1s; }
+        .news-card:nth-child(3) { animation-delay: 0.15s; }
+        .news-card:nth-child(4) { animation-delay: 0.2s; }
+        .news-card:nth-child(5) { animation-delay: 0.25s; }
+        .news-card:nth-child(6) { animation-delay: 0.3s; }
+        .news-card:nth-child(7) { animation-delay: 0.35s; }
+        .news-card:nth-child(8) { animation-delay: 0.4s; }
+        .news-card:nth-child(9) { animation-delay: 0.45s; }
+        .news-card:nth-child(10) { animation-delay: 0.5s; }
 
-.card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 12px;
-  color: var(--text-primary);
-}
+        /* GitHub Cards */
+        .github-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
 
-.card p {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
+        .github-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+        }
 
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
+        .github-card .gh-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
 
-.tag {
-  font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 100px;
-  font-weight: 500;
-}
+        .github-card .gh-rank {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--purple);
+            flex-shrink: 0;
+        }
 
-.tag-blue { background: rgba(59,130,246,0.1); color: var(--accent-blue); }
-.tag-purple { background: rgba(139,92,246,0.1); color: var(--accent-purple); }
-.tag-cyan { background: rgba(6,182,212,0.1); color: var(--accent-cyan); }
-.tag-green { background: rgba(34,197,94,0.1); color: #22c55e; }
-.tag-orange { background: rgba(249,115,22,0.1); color: #f97316; }
+        .github-card .gh-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
 
-.card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 0.2s;
-}
+        .github-card .gh-name:hover {
+            color: var(--purple);
+        }
 
-.card-link.blue {
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-  color: white;
-}
+        .github-card .gh-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
 
-.card-link.purple {
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
-  color: white;
-}
+        .github-card .gh-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
 
-.card-link:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
+        .github-card .gh-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
 
-/* GitHub项目卡片 */
-.gh-card .gh-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
+        .github-card .gh-meta-item .star-icon { color: #f59e0b; }
+        .github-card .gh-meta-item .lang-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
 
-.gh-card .gh-icon {
-  width: 36px;
-  height: 36px;
-  background: rgba(139,92,246,0.15);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-}
+        .github-card .gh-view-btn {
+            margin-left: auto;
+            padding: 5px 14px;
+            border-radius: 6px;
+            background: rgba(139, 92, 246, 0.12);
+            color: var(--purple);
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s ease;
+        }
 
-.gh-card .gh-name {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--accent-purple);
-}
+        .github-card .gh-view-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
 
-.gh-stats {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
+        .github-card:nth-child(1) { animation-delay: 0.1s; }
+        .github-card:nth-child(2) { animation-delay: 0.15s; }
+        .github-card:nth-child(3) { animation-delay: 0.2s; }
+        .github-card:nth-child(4) { animation-delay: 0.25s; }
+        .github-card:nth-child(5) { animation-delay: 0.3s; }
+        .github-card:nth-child(6) { animation-delay: 0.35s; }
+        .github-card:nth-child(7) { animation-delay: 0.4s; }
+        .github-card:nth-child(8) { animation-delay: 0.45s; }
+        .github-card:nth-child(9) { animation-delay: 0.5s; }
+        .github-card:nth-child(10) { animation-delay: 0.55s; }
 
-.gh-stat {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-  color: var(--text-muted);
-}
+        /* Trend Cards */
+        .trend-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
 
-.gh-stat .value {
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  color: var(--accent-cyan);
-}
+        .trend-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
 
-/* 趋势洞察 */
-.insight-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
+        .trend-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
 
-.insight-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 28px;
-  transition: all 0.3s ease;
-}
+        .trend-card::after {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            opacity: 0.15;
+            filter: blur(30px);
+        }
 
-.insight-card:hover {
-  border-color: rgba(6,182,212,0.3);
-  transform: translateY(-2px);
-}
+        .trend-card:nth-child(1)::after { background: #3b82f6; }
+        .trend-card:nth-child(2)::after { background: #8b5cf6; }
+        .trend-card:nth-child(3)::after { background: #10b981; }
+        .trend-card:nth-child(4)::after { background: #f97316; }
 
-.insight-card h4 {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+        .trend-card:nth-child(1) { animation-delay: 0.1s; }
+        .trend-card:nth-child(2) { animation-delay: 0.2s; }
+        .trend-card:nth-child(3) { animation-delay: 0.3s; }
+        .trend-card:nth-child(4) { animation-delay: 0.4s; }
 
-.insight-card p {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.8;
-}
+        .trend-card .trend-icon {
+            width: 36px; height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
 
-/* 页脚 */
-.footer {
-  text-align: center;
-  padding: 60px 0 40px;
-  color: var(--text-muted);
-  font-size: 13px;
-}
+        .trend-card:nth-child(1) .trend-icon { background: rgba(59, 130, 246, 0.15); }
+        .trend-card:nth-child(2) .trend-icon { background: rgba(139, 92, 246, 0.15); }
+        .trend-card:nth-child(3) .trend-icon { background: rgba(16, 185, 129, 0.15); }
+        .trend-card:nth-child(4) .trend-icon { background: rgba(249, 115, 22, 0.15); }
 
-.footer .brand {
-  font-weight: 700;
-  color: var(--accent-blue);
-  margin-bottom: 8px;
-}
+        .trend-card .trend-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
 
-/* 响应式 */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 32px; }
-  .card-grid { grid-template-columns: 1fr; }
-  .insight-grid { grid-template-columns: 1fr; }
-  .hero-stats { gap: 24px; }
-  .section-header { flex-wrap: wrap; }
-  .section-header .subtitle { margin-left: 0; width: 100%; margin-top: 8px; }
-}
-</style>
+        .trend-card:nth-child(1) .trend-title { color: #60a5fa; }
+        .trend-card:nth-child(2) .trend-title { color: #a78bfa; }
+        .trend-card:nth-child(3) .trend-title { color: #34d399; }
+        .trend-card:nth-child(4) .trend-title { color: #fb923c; }
+
+        .trend-card .trend-content {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(59, 130, 246, 0.1);
+            color: var(--text-muted);
+            font-size: 13px;
+            animation: fadeSlideUp 0.6s ease-out 0.6s both;
+        }
+
+        .footer a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header h1 { font-size: 26px; }
+            .container { padding: 24px 16px 60px; }
+            .trend-grid { grid-template-columns: 1fr; }
+            .news-card .card-footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .github-card .gh-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+        }
+    </style>
 </head>
 <body>
-<div class="bg-atmosphere"></div>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-badge">AI Daily Report</div>
+            <h1>AI应用新闻日报</h1>
+            <div class="subtitle">每日精选 AI 行业动态、开源项目与趋势洞察</div>
+            <div class="date-line">
+                <span>2026-06-20</span>
+                <span class="dot"></span>
+                <span>星期六</span>
+                <span class="dot"></span>
+                <span>第 171 天</span>
+            </div>
+        </div>
 
-<div class="container">
-  <!-- 封面 -->
-  <section class="hero animate-in">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      每日更新
+        <!-- News Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon blue">&#9889;</div>
+                <span>今日 AI 应用要闻</span>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">01</span>
+                    <div class="card-title">八部门联合印发'AI+消费'实施意见：AI手机、机器人纳入以旧换新补贴</div>
+                </div>
+                <div class="card-summary">商务部等8部门联合发布5方面17条举措，明确扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。AI产品正式进入国家级消费普及阶段。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">政策</span>
+                        <span class="tag">AI消费</span>
+                    </div>
+                    <a class="read-btn" href="https://m.weibo.cn/detail/5311797246561064" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">02</span>
+                    <div class="card-title">AlphaFold负责人John Jumper跳槽Anthropic，AI for Science人才地震</div>
+                </div>
+                <div class="card-summary">AlphaFold团队负责人John Jumper宣布离开Google DeepMind加入Anthropic。DeepMind CEO发文致谢，Jumper是AI for Science旗帜性人物，此番离任标志AI人才流动加速。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">人才动态</span>
+                        <span class="tag">AI科研</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">03</span>
+                    <div class="card-title">Figure机器人数量首次超过员工，通用人形机器人迎来'摩尔时刻'</div>
+                </div>
+                <div class="card-summary">Figure创始人Brett Adcock宣布公司机器人数量首次超过员工人数。Figure是全球最被看好的通用人形机器人公司之一，目标是部署10亿台通用机器人。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">机器人</span>
+                        <span class="tag">具身智能</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">04</span>
+                    <div class="card-title">Adobe创意智能体全面公测：一句话完成视频剪辑、设计批量生成</div>
+                </div>
+                <div class="card-summary">Adobe将创意智能体扩展到Photoshop、Premiere、Illustrator、InDesign、Frame.io五款应用并开启公测。Premiere可自动分镜粗剪，Illustrator可按Excel批量生成50个版本。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">产品发布</span>
+                        <span class="tag">AI设计</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">05</span>
+                    <div class="card-title">燧原科技科创板IPO提交注册，AI芯片企业上市通道打开</div>
+                </div>
+                <div class="card-summary">上海燧原科技股份有限公司科创板IPO审核状态变更为提交注册。同日上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">融资上市</span>
+                        <span class="tag">AI芯片</span>
+                    </div>
+                    <a class="read-btn" href="https://www.163.com/dy/article/KVQ6IC1U0550B1DU.html" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">06</span>
+                    <div class="card-title">618 AI智能硬件爆发式增长：京东AI趋势产品成交额同比增100%</div>
+                </div>
+                <div class="card-summary">今年618期间AI智能硬件迎来爆发式增长，AIPC、AI眼镜、大屏AI手机、智能学习机等消费级AI产品热度最高。智能眼镜电商平台总销售额同比增长5倍。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">电商</span>
+                        <span class="tag">AI硬件</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653276292007117366/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">07</span>
+                    <div class="card-title">皮尤民调：63%美国人认为AI发展太快，44%已使用ChatGPT</div>
+                </div>
+                <div class="card-summary">皮尤研究中心最新民调显示63%美国人认为AI发展速度过快，ChatGPT使用率较2023年翻倍达44%。年轻人用得多但态度更悲观，18-29岁群体66%用过聊天机器人。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">社会观察</span>
+                        <span class="tag">AI民意</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">08</span>
+                    <div class="card-title">Manus收购案重大转机：传腾讯出手竞购，红杉中国真格基金或参与</div>
+                </div>
+                <div class="card-summary">此前被中国政府依法叫停的Meta收购Manus案出现重大转机。知情人士透露，腾讯可能出手竞购Manus，红杉中国、真格基金等早期中国支持者或参与交易。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">收购并购</span>
+                        <span class="tag">跨境AI</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653282760705966655/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">09</span>
+                    <div class="card-title">智元远征A3成为世界人形机器人运动会乒乓球赛标准硬件</div>
+                </div>
+                <div class="card-summary">HOPE AI自主决策乒乓挑战赛纳入第二届世界人形机器人运动会正式赛事，统一采用智元远征A3作为标准硬件本体。这是全球首款无需遥控、无预编程即可自主打乒乓球的机器人。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">机器人</span>
+                        <span class="tag">赛事</span>
+                    </div>
+                    <a class="read-btn" href="http://m.toutiao.com/group/7653294825097232915/" target="_blank">阅读原文</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="card-number">10</span>
+                    <div class="card-title">Claude Fable 5遭美国政府出口管制，外国国民访问被暂停</div>
+                </div>
+                <div class="card-summary">Anthropic最强模型上线三天后被美国政府以国家安全为由发出出口管制指令，暂停任何外国国民访问Claude Fable 5和Claude Mythos 5，包括Anthropic内部外籍员工。</div>
+                <div class="card-footer">
+                    <div class="tags">
+                        <span class="tag">监管政策</span>
+                        <span class="tag">大模型</span>
+                    </div>
+                    <a class="read-btn" href="https://36kr.com/p/3852759269980800" target="_blank">阅读原文</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon purple">&#128025;</div>
+                <span>本周 GitHub 热门开源项目</span>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#1</span>
+                    <a class="gh-name" href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank">pewdiepie-archdaemon/odysseus</a>
+                </div>
+                <div class="gh-desc">PewDiePie开源的离线AI工作空间，24小时内突破15000 Stars，成为2026年增长最快的开源AI项目之一。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44K+</span>
+                    <span class="gh-meta-item">&#9650; +15K+ this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#dea584;"></span> Rust</span>
+                    <a class="gh-view-btn" href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#2</span>
+                    <a class="gh-name" href="https://github.com/iptv-org/iptv" target="_blank">iptv-org/iptv</a>
+                </div>
+                <div class="gh-desc">世界杯让7年老项目一夜翻红，全球电视频道直播地址m3u播放列表，一周新增2万Stars。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 120K+</span>
+                    <span class="gh-meta-item">&#9650; +20K+ this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#999;"></span> Unknown</span>
+                    <a class="gh-view-btn" href="https://github.com/iptv-org/iptv" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#3</span>
+                    <a class="gh-name" href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a>
+                </div>
+                <div class="gh-desc">微软开源文档转Markdown工具，从上周第9跃升至第2，本周新增5913 Stars。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 153.5K+</span>
+                    <span class="gh-meta-item">&#9650; +5.9K this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    <a class="gh-view-btn" href="https://github.com/microsoft/markitdown" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#4</span>
+                    <a class="gh-name" href="https://github.com/NousResearch/hermes-agent" target="_blank">NousResearch/hermes-agent</a>
+                </div>
+                <div class="gh-desc">Nous Research AI Agent框架，MIT协议，模型无关，已超越15万Stars。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 186K+</span>
+                    <span class="gh-meta-item">&#9650; +521 this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    <a class="gh-view-btn" href="https://github.com/NousResearch/hermes-agent" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#5</span>
+                    <a class="gh-name" href="https://github.com/chopratejas/headroom" target="_blank">chopratejas/headroom</a>
+                </div>
+                <div class="gh-desc">Token压缩神器，最高削减95%消耗且答案质量不变。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 27.5K+</span>
+                    <span class="gh-meta-item">&#9650; +473 this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#2b7489;"></span> TypeScript</span>
+                    <a class="gh-view-btn" href="https://github.com/chopratejas/headroom" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#6</span>
+                    <a class="gh-name" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703/MoneyPrinterTurbo</a>
+                </div>
+                <div class="gh-desc">AI短视频全自动生成工具，输入标题即可生成完整视频。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 73.9K+</span>
+                    <span class="gh-meta-item">&#9650; +460 this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    <a class="gh-view-btn" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#7</span>
+                    <a class="gh-name" href="https://github.com/colbymchenry/codegraph" target="_blank">colbymchenry/codegraph</a>
+                </div>
+                <div class="gh-desc">为Claude Code预索引的代码知识图谱，100%本地运行。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 持续增长</span>
+                    <span class="gh-meta-item">&#9650; +433 this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    <a class="gh-view-btn" href="https://github.com/colbymchenry/codegraph" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#8</span>
+                    <a class="gh-name" href="https://github.com/roboflow/supervision" target="_blank">roboflow/supervision</a>
+                </div>
+                <div class="gh-desc">可复用计算机视觉工具集，本周新增2360 Stars。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44.8K+</span>
+                    <span class="gh-meta-item">&#9650; +2.4K this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    <a class="gh-view-btn" href="https://github.com/roboflow/supervision" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#9</span>
+                    <a class="gh-name" href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a>
+                </div>
+                <div class="gh-desc">AI编程Agent生产级工程技能库，Google工程师出品。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 59.8K+</span>
+                    <span class="gh-meta-item">&#9650; +1.8K this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#999;"></span> LLM</span>
+                    <a class="gh-view-btn" href="https://github.com/addyosmani/agent-skills" target="_blank">查看项目</a>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="gh-header">
+                    <span class="gh-rank">#10</span>
+                    <a class="gh-name" href="https://github.com/bytedance/UI-TARS-desktop" target="_blank">bytedance/UI-TARS-desktop</a>
+                </div>
+                <div class="gh-desc">字节跳动开源多模态AI代理桌面堆栈。</div>
+                <div class="gh-meta">
+                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 36.7K+</span>
+                    <span class="gh-meta-item">&#9650; +1.5K this week</span>
+                    <span class="gh-meta-item"><span class="lang-dot" style="background:#2b7489;"></span> TypeScript</span>
+                    <a class="gh-view-btn" href="https://github.com/bytedance/UI-TARS-desktop" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trend Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon cyan">&#128200;</div>
+                <span>本周趋势洞察</span>
+            </div>
+
+            <div class="trend-grid">
+                <div class="trend-card">
+                    <div class="trend-icon">&#128176;</div>
+                    <div class="trend-title">AI消费政策红利释放</div>
+                    <div class="trend-content">八部门联合推动AI+消费，AI手机、机器人纳入以旧换新补贴，标志着AI产品从概念尝鲜转向刚需升级的关键转折。</div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-icon">&#129302;</div>
+                    <div class="trend-title">人形机器人进入量产竞速</div>
+                    <div class="trend-content">Figure机器人数量首超员工、智元远征A3成为国际赛事标准硬件——人形机器人正从实验室走向规模化部署。</div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-icon">&#128025;</div>
+                    <div class="trend-title">开源AI工具爆发式增长</div>
+                    <div class="trend-content">Odysseus 24小时破万Star、iptv世界杯翻红、MarkItDown周增近6000——开源AI工具正以前所未有的速度渗透开发者生态。</div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-icon">&#128737;</div>
+                    <div class="trend-title">AI监管全球化加速</div>
+                    <div class="trend-content">美国出口管制Claude模型、中国禁止Meta收购Manus、科创板AI上市标准落地——全球AI监管从框架讨论进入实质执行阶段。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>AI应用新闻日报 &middot; 2026年06月20日 &middot; 由 AI 自动生成</p>
+        </div>
     </div>
-    <h1>AI 应用新闻日报</h1>
-    <div class="date">2026年06月20日 星期六</div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-number">10</div>
-        <div class="stat-label">AI 要闻</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">10</div>
-        <div class="stat-label">开源项目</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">4</div>
-        <div class="stat-label">趋势洞察</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI新闻 -->
-  <div class="section-header animate-in delay-1">
-    <div class="section-icon blue">📰</div>
-    <h2>今日 AI 应用要闻</h2>
-    <div class="subtitle">覆盖产品、政策、资本与行业动态</div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card animate-in delay-1">
-      <div class="card-number">#01</div>
-      <h3>商务部等8部门联合印发"AI+消费"发展实施意见</h3>
-      <p>5方面17条举措，重点扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。AI产品正式进入国家级消费普及阶段，从"国家鼓励"变成"国家推动"。</p>
-      <div class="card-tags">
-        <span class="tag tag-blue">政策监管</span>
-        <span class="tag tag-green">AI消费</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653262856942535203/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-2">
-      <div class="card-number">#02</div>
-      <h3>AlphaFold负责人John Jumper跳槽Anthropic</h3>
-      <p>2024年诺贝尔化学奖得主、AlphaFold创始人John Jumper宣布离开Google DeepMind加入Anthropic。这是AI人才在大厂之间加速流动的最新信号，AI for Science领域将加速发展。</p>
-      <div class="card-tags">
-        <span class="tag tag-purple">人才流动</span>
-        <span class="tag tag-blue">AI科研</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653243261250847282/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-2">
-      <div class="card-number">#03</div>
-      <h3>Adobe五款应用全面接入"创意智能体"公测</h3>
-      <p>Photoshop、Premiere、Illustrator、InDesign、Frame.io全部开启AI智能体公测。Premiere自动分镜+粗剪，Photoshop自动换背景，用户只需说一句话即可完成专业内容生产。</p>
-      <div class="card-tags">
-        <span class="tag tag-orange">产品发布</span>
-        <span class="tag tag-cyan">创意AI</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653262856942535203/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-3">
-      <div class="card-number">#04</div>
-      <h3>DeepSeek首轮融资约510亿元，创中国AI史最大单轮</h3>
-      <p>投后估值突破500亿美元，创始人梁文锋个人出资约200亿元保持控制权，腾讯、宁德时代、网易、京东等跟投。资金用于算力集群扩建、多模态模型V4.1研发及海外拓展。</p>
-      <div class="card-tags">
-        <span class="tag tag-green">融资并购</span>
-        <span class="tag tag-blue">国产AI</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7652563097252528674/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-3">
-      <div class="card-number">#05</div>
-      <h3>SpaceX 600亿美元收购Cursor母公司Anysphere</h3>
-      <p>全股票交易，全球AI编程赛道迄今最大并购。Cursor（ARR约40亿美元）将并入xAI生态，补齐马斯克开发工具板块。Windsurf成唯一独立主流AI编程IDE。</p>
-      <div class="card-tags">
-        <span class="tag tag-green">并购</span>
-        <span class="tag tag-purple">AI编程</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7652563097252528674/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-3">
-      <div class="card-number">#06</div>
-      <h3>美国商务部对Anthropic最强模型实施出口管制</h3>
-      <p>Fable 5和Mythos 5模型被紧急下线，暂停所有外国国民访问权限，包括Anthropic自己的外籍员工。这是美国首次对商业AI模型下达如此广泛的出口管制令。</p>
-      <div class="card-tags">
-        <span class="tag tag-blue">政策监管</span>
-        <span class="tag tag-orange">国际动态</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653270452890059310/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-4">
-      <div class="card-number">#07</div>
-      <h3>谷歌微软联合发布ARD智能体行业标准</h3>
-      <p>谷歌、微软牵头联合Salesforce、Snowflake等数十家企业软件服务商发布ARD（Agentic Resource Discovery）标准，OpenAI、Anthropic未参与，传统巨头开启行业标准壁垒之战。</p>
-      <div class="card-tags">
-        <span class="tag tag-cyan">行业标准</span>
-        <span class="tag tag-purple">企业AI</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653113730565177866/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-4">
-      <div class="card-number">#08</div>
-      <h3>Gemini进驻Google Sheets，对标Microsoft 365 Copilot</h3>
-      <p>Google将Gemini AI功能大规模开放给Google Sheets用户，支持公式生成、数据分析和自动化处理。Gemini App月活已达9亿，每日请求量增长超7倍。</p>
-      <div class="card-tags">
-        <span class="tag tag-orange">产品更新</span>
-        <span class="tag tag-cyan">办公AI</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653243261250847282/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-4">
-      <div class="card-number">#09</div>
-      <h3>Figure机器人数量首次超过员工</h3>
-      <p>Figure创始人Brett Adcock宣布："对于Figure来说，机器人首次超过员工。"这是通用机器人规模化部署的关键里程碑，通用机器人的"摩尔时刻"正在到来。</p>
-      <div class="card-tags">
-        <span class="tag tag-green">机器人</span>
-        <span class="tag tag-orange">行业动态</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653262856942535203/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-
-    <div class="card animate-in delay-5">
-      <div class="card-number">#10</div>
-      <h3>支付宝推出AI原生版本"阿宝"</h3>
-      <p>支付宝正式推出AI原生版本"阿宝"，加上此前京东发布的A2P2智能体自主支付协议，AI智能体"替人花钱"从概念变成现实，智能体支付自主化进入落地阶段。</p>
-      <div class="card-tags">
-        <span class="tag tag-orange">产品发布</span>
-        <span class="tag tag-cyan">AI支付</span>
-      </div>
-      <a href="http://m.toutiao.com/group/7653251346149212724/" class="card-link blue" target="_blank">阅读原文 →</a>
-    </div>
-  </div>
-
-  <!-- GitHub热门 -->
-  <div class="section-header animate-in delay-1">
-    <div class="section-icon purple">⭐</div>
-    <h2>本周 GitHub 热门开源项目</h2>
-    <div class="subtitle">数据来源：GitHub Trending 周榜</div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card gh-card animate-in delay-1">
-      <div class="gh-header">
-        <div class="gh-icon">🚀</div>
-        <div class="gh-name">mvanhorn/last30days-skill</div>
-      </div>
-      <p>AI agent skill，跨Reddit、X、YouTube、HN、Polymarket和全网深度调研任意话题，并提炼出有据可依的综合总结。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">41,279</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+12,602</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-purple">AI Skill</span>
-        <span class="tag tag-blue">跨平台研究</span>
-      </div>
-      <a href="https://github.com/mvanhorn/last30days-skill" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-1">
-      <div class="gh-header">
-        <div class="gh-icon">🍎</div>
-        <div class="gh-name">apple/container</div>
-      </div>
-      <p>苹果官方开源容器工具，采用Swift编写并专为Apple芯片深度优化，借助轻量级虚拟机在Mac上高效创建和运行Linux容器。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">36,337</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+9,173</span></div>
-        <div class="gh-stat">🍎 Swift</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-cyan">DevOps</span>
-        <span class="tag tag-orange">容器</span>
-      </div>
-      <a href="https://github.com/apple/container" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-2">
-      <div class="gh-header">
-        <div class="gh-icon">🧠</div>
-        <div class="gh-name">addyosmani/agent-skills</div>
-      </div>
-      <p>生产级工程技能集合，专为AI编码代理注入工业级工程能力，让AI写出的代码从"能跑"跃升为"工业级可用"。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">58,442</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+9,348</span></div>
-        <div class="gh-stat">📜 TypeScript</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-purple">AI Agent</span>
-        <span class="tag tag-blue">代码质量</span>
-      </div>
-      <a href="https://github.com/addyosmani/agent-skills" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-2">
-      <div class="gh-header">
-        <div class="gh-icon">🗜️</div>
-        <div class="gh-name">chopratejas/headroom</div>
-      </div>
-      <p>LLM Token压缩利器，在日志、文件及RAG片段送达大模型前进行智能压缩，最高削减95%的Token消耗且答案质量不打折。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">26,274</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+10,406</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-cyan">LLM优化</span>
-        <span class="tag tag-green">降本增效</span>
-      </div>
-      <a href="https://github.com/chopratejas/headroom" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-2">
-      <div class="gh-header">
-        <div class="gh-icon">🌐</div>
-        <div class="gh-name">Panniantong/Agent-Reach</div>
-      </div>
-      <p>赋予AI Agent全网"眼睛"，通过单一CLI工具零API费用读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书等平台内容。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">33,108</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+5,468</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-purple">AI Agent</span>
-        <span class="tag tag-blue">全网搜索</span>
-      </div>
-      <a href="https://github.com/Panniantong/Agent-Reach" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-3">
-      <div class="gh-header">
-        <div class="gh-icon">📄</div>
-        <div class="gh-name">microsoft/markitdown</div>
-      </div>
-      <p>微软开源文档转Markdown工具，将PDF、Word、PPT等异构文件统一转为结构化Markdown，极大降低RAG向量检索的噪声。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">51,797+</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+6,280</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-blue">文档处理</span>
-        <span class="tag tag-cyan">RAG</span>
-      </div>
-      <a href="https://github.com/microsoft/markitdown" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-3">
-      <div class="gh-header">
-        <div class="gh-icon">🔍</div>
-        <div class="gh-name">NVIDIA/SkillSpector</div>
-      </div>
-      <p>英伟达官方出品的AI智能体技能安全扫描器，精准检测漏洞、恶意模式和安全风险，让智能体部署更安全可靠。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">4,486</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+2,799</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-orange">安全</span>
-        <span class="tag tag-purple">AI Agent</span>
-      </div>
-      <a href="https://github.com/NVIDIA/SkillSpector" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-3">
-      <div class="gh-header">
-        <div class="gh-icon">🎥</div>
-        <div class="gh-name">harry0703/MoneyPrinterTurbo</div>
-      </div>
-      <p>AI全自动视频生成工具，输入文字文案自动完成脚本优化、素材匹配、字幕生成、配音配乐、画面剪辑，本地部署无水印。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">28,000+</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+6,938</span></div>
-        <div class="gh-stat">🐍 Python</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-orange">AI视频</span>
-        <span class="tag tag-green">自媒体</span>
-      </div>
-      <a href="https://github.com/harry0703/MoneyPrinterTurbo" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-4">
-      <div class="gh-header">
-        <div class="gh-icon">🧩</div>
-        <div class="gh-name">DeusData/codebase-memory-mcp</div>
-      </div>
-      <p>高性能代码智能MCP服务器，将代码库编入持久知识图谱，毫秒级查询，Token消耗减少99%，支持158种编程语言，零依赖。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">6,943</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+2,308</span></div>
-        <div class="gh-stat">🔧 C</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-blue">代码智能</span>
-        <span class="tag tag-cyan">知识图谱</span>
-      </div>
-      <a href="https://github.com/DeusData/codebase-memory-mcp" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-
-    <div class="card gh-card animate-in delay-4">
-      <div class="gh-header">
-        <div class="gh-icon">⚽</div>
-        <div class="gh-name">iptv-org/iptv</div>
-      </div>
-      <p>全球电视频道直播地址集合，2026世界杯期间一周暴涨2万+Star。每天自动验证链接可用性，1300+开发者贡献维护。</p>
-      <div class="gh-stats">
-        <div class="gh-stat">⭐ 总Star <span class="value">120,000+</span></div>
-        <div class="gh-stat">📈 本周 <span class="value">+20,000+</span></div>
-        <div class="gh-stat">📜 JavaScript</div>
-      </div>
-      <div class="card-tags">
-        <span class="tag tag-green">流媒体</span>
-        <span class="tag tag-orange">世界杯</span>
-      </div>
-      <a href="https://github.com/iptv-org/iptv" class="card-link purple" target="_blank">访问项目 →</a>
-    </div>
-  </div>
-
-  <!-- 趋势洞察 -->
-  <div class="section-header animate-in delay-1">
-    <div class="section-icon cyan">💡</div>
-    <h2>本周趋势洞察</h2>
-    <div class="subtitle">从数据中捕捉AI行业脉搏</div>
-  </div>
-
-  <div class="insight-grid">
-    <div class="insight-card animate-in delay-2">
-      <h4>📊 AI Skill 生态爆发</h4>
-      <p>Claude Skills模块化生态成为GitHub最大爆点，6月至少有8个.claude/skills相关项目登上Trending。开发者正从"提示工程"转向"可复用工作流"，AI Agent的插件化、技能化成为主流范式。</p>
-    </div>
-
-    <div class="insight-card animate-in delay-2">
-      <h4>🌍 监管地缘化加剧</h4>
-      <p>美国首次对商业AI模型实施出口管制，中国叫停Meta收购Manus案。AI已成为国家战略资源，跨境监管从"建议性规范"升级为"法律强制要求"，企业出海必须合规前置。</p>
-    </div>
-
-    <div class="insight-card animate-in delay-3">
-      <h4>💰 资本狂潮与整合</h4>
-      <p>OpenAI、Anthropic、SpaceX三家合计估值超3.6万亿美元冲刺IPO。SpaceX 600亿美元收购Cursor、DeepSeek 510亿元融资，AI行业进入重资本、强整合的新阶段。</p>
-    </div>
-
-    <div class="insight-card animate-in delay-3">
-      <h4>🏠 本地部署回潮</h4>
-      <p>开发者对数据主权和隐私的关注度显著攀升，本地AI工作台、自托管工具、端侧推理项目增速最快（+31%）。"数据不出本地"正从边缘需求走向企业核心选型。</p>
-    </div>
-  </div>
-
-  <!-- 页脚 -->
-  <div class="footer animate-in">
-    <div class="brand">AI应用新闻日报</div>
-    <div>每日精选AI应用新闻与开源动态 · 2026年06月20日</div>
-    <div style="margin-top:8px;">数据来源：公开网络报道、GitHub Trending、36氪、CSDN等</div>
-  </div>
-</div>
 </body>
 </html>
