@@ -6,47 +6,222 @@
     <title>AI应用新闻日报 - 2026年06月20日</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --bg-primary: #080c14;
+            --bg-primary: #06090f;
+            --bg-secondary: #080c14;
             --bg-card: rgba(15, 23, 42, 0.7);
             --bg-card-hover: rgba(20, 30, 55, 0.85);
-            --blue: #3b82f6;
+            --blue: #38bdf8;
             --purple: #8b5cf6;
             --cyan: #06b6d4;
             --text-primary: #e2e8f0;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
-            --border-color: rgba(59, 130, 246, 0.15);
-            --gradient-blue-purple: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            --border-color: rgba(56, 189, 248, 0.15);
+            --gradient-blue-purple: linear-gradient(135deg, #38bdf8, #8b5cf6);
             --gradient-purple-cyan: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            --nav-height: 64px;
         }
 
         body {
-            font-family: 'Noto Sans SC', sans-serif;
+            font-family: 'Noto Sans SC', 'Space Grotesk', sans-serif;
             background-color: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.7;
             overflow-x: hidden;
+            padding-top: var(--nav-height);
         }
 
+        /* Background effects */
         body::before {
             content: '';
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
             background:
-                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
                 radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
                 radial-gradient(ellipse 50% 50% at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
-                radial-gradient(ellipse 40% 30% at 70% 10%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
+                radial-gradient(ellipse 40% 30% at 70% 10%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
             pointer-events: none;
             z-index: 0;
         }
 
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 30%, transparent 70%);
+        }
+
+        /* ========== Navigation Bar ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(6, 9, 15, 0.75);
+            backdrop-filter: blur(20px) saturate(1.5);
+            -webkit-backdrop-filter: blur(20px) saturate(1.5);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+            transition: box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            background: rgba(6, 9, 15, 0.9);
+        }
+
+        .navbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .nav-logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .nav-logo-text {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        /* Date Navigation */
+        .nav-date-control {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .nav-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-current-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            white-space: nowrap;
+        }
+
+        /* Mobile date selector */
+        .nav-date-select {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px 12px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Home button */
+        .nav-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 10px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .nav-home-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .nav-home-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ========== Main Content ========== */
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -55,7 +230,7 @@
             z-index: 1;
         }
 
-        /* Header */
+        /* Header / Hero */
         .header {
             text-align: center;
             margin-bottom: 60px;
@@ -66,8 +241,8 @@
             display: inline-block;
             padding: 6px 20px;
             border-radius: 20px;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.25);
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
             color: var(--blue);
             font-size: 13px;
             font-weight: 500;
@@ -78,19 +253,20 @@
         }
 
         .header h1 {
-            font-size: 36px;
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 42px;
             font-weight: 700;
-            background: var(--gradient-blue-purple);
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 12px;
-            letter-spacing: -0.5px;
+            letter-spacing: -1px;
         }
 
         .header .subtitle {
             color: var(--text-secondary);
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 300;
         }
 
@@ -99,9 +275,9 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            margin-top: 16px;
+            margin-top: 20px;
             color: var(--text-muted);
-            font-size: 13px;
+            font-size: 14px;
             font-family: 'JetBrains Mono', monospace;
         }
 
@@ -109,6 +285,42 @@
             width: 4px; height: 4px;
             border-radius: 50%;
             background: var(--blue);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 32px;
+            animation: fadeSlideUp 0.8s ease-out 0.2s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            background: var(--gradient-blue-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+            margin: 0 auto 56px;
+            max-width: 800px;
         }
 
         /* Section */
@@ -126,16 +338,16 @@
         }
 
         .section-title .icon {
-            width: 32px; height: 32px;
-            border-radius: 8px;
+            width: 36px; height: 36px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16px;
+            font-size: 18px;
             flex-shrink: 0;
         }
 
-        .section-title .icon.blue { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
+        .section-title .icon.blue { background: rgba(56, 189, 248, 0.15); color: var(--blue); }
         .section-title .icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--purple); }
         .section-title .icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
 
@@ -143,7 +355,7 @@
         .news-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 24px 24px 24px 28px;
             margin-bottom: 16px;
             position: relative;
@@ -162,8 +374,9 @@
 
         .news-card:hover {
             background: var(--bg-card-hover);
-            border-color: rgba(59, 130, 246, 0.3);
+            border-color: rgba(56, 189, 248, 0.3);
             transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
         .news-card .card-header {
@@ -215,9 +428,9 @@
             border-radius: 6px;
             font-size: 12px;
             font-weight: 500;
-            background: rgba(59, 130, 246, 0.1);
+            background: rgba(56, 189, 248, 0.1);
             color: var(--blue);
-            border: 1px solid rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.15);
         }
 
         .news-card .read-btn {
@@ -237,11 +450,11 @@
         .news-card .read-btn:hover {
             opacity: 0.85;
             transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
         }
 
         /* 10 colors for left border */
-        .news-card:nth-child(1)::before { background: #3b82f6; }
+        .news-card:nth-child(1)::before { background: #38bdf8; }
         .news-card:nth-child(2)::before { background: #8b5cf6; }
         .news-card:nth-child(3)::before { background: #06b6d4; }
         .news-card:nth-child(4)::before { background: #10b981; }
@@ -267,7 +480,7 @@
         .github-card {
             background: var(--bg-card);
             border: 1px solid rgba(139, 92, 246, 0.15);
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 20px 24px;
             margin-bottom: 12px;
             transition: all 0.3s ease;
@@ -278,6 +491,7 @@
             background: var(--bg-card-hover);
             border-color: rgba(139, 92, 246, 0.3);
             transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
         .github-card .gh-header {
@@ -377,7 +591,7 @@
         .trend-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 24px;
             position: relative;
             overflow: hidden;
@@ -400,7 +614,7 @@
             filter: blur(30px);
         }
 
-        .trend-card:nth-child(1)::after { background: #3b82f6; }
+        .trend-card:nth-child(1)::after { background: #38bdf8; }
         .trend-card:nth-child(2)::after { background: #8b5cf6; }
         .trend-card:nth-child(3)::after { background: #10b981; }
         .trend-card:nth-child(4)::after { background: #f97316; }
@@ -420,7 +634,7 @@
             margin-bottom: 14px;
         }
 
-        .trend-card:nth-child(1) .trend-icon { background: rgba(59, 130, 246, 0.15); }
+        .trend-card:nth-child(1) .trend-icon { background: rgba(56, 189, 248, 0.15); }
         .trend-card:nth-child(2) .trend-icon { background: rgba(139, 92, 246, 0.15); }
         .trend-card:nth-child(3) .trend-icon { background: rgba(16, 185, 129, 0.15); }
         .trend-card:nth-child(4) .trend-icon { background: rgba(249, 115, 22, 0.15); }
@@ -443,15 +657,96 @@
             line-height: 1.7;
         }
 
+        /* ========== Bottom Navigation ========== */
+        .bottom-nav {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(56, 189, 248, 0.1);
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .bottom-nav-main {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .bottom-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 12px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-nav-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+        }
+
+        .bottom-nav-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .recent-reports {
+            margin-bottom: 32px;
+        }
+
+        .recent-reports-title {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .recent-reports-list {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .recent-report-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .recent-report-link:hover {
+            background: rgba(56, 189, 248, 0.08);
+            border-color: rgba(56, 189, 248, 0.2);
+            color: var(--blue);
+            transform: translateY(-1px);
+        }
+
+        .recent-report-link.current {
+            background: rgba(56, 189, 248, 0.1);
+            border-color: rgba(56, 189, 248, 0.25);
+            color: var(--blue);
+            font-weight: 500;
+        }
+
         /* Footer */
         .footer {
             text-align: center;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(59, 130, 246, 0.1);
+            padding: 24px 0;
             color: var(--text-muted);
             font-size: 13px;
-            animation: fadeSlideUp 0.6s ease-out 0.6s both;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .footer a {
@@ -471,17 +766,103 @@
             }
         }
 
-        /* Responsive */
-        @media (max-width: 640px) {
-            .header h1 { font-size: 26px; }
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            :root { --nav-height: 56px; }
+
+            .navbar-inner {
+                padding: 0 16px;
+            }
+
+            .nav-logo-text {
+                font-size: 15px;
+            }
+
+            .nav-date-control {
+                gap: 8px;
+            }
+
+            .nav-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .nav-btn-text {
+                display: none;
+            }
+
+            .nav-current-date {
+                display: none;
+            }
+
+            .nav-date-select {
+                display: block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+
+            .nav-home-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .header h1 { font-size: 28px; }
             .container { padding: 24px 16px 60px; }
             .trend-grid { grid-template-columns: 1fr; }
             .news-card .card-footer { flex-direction: column; align-items: flex-start; gap: 12px; }
             .github-card .gh-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .hero-stats { gap: 24px; }
+            .stat-number { font-size: 24px; }
+            .recent-reports-list { gap: 8px; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo-icon { width: 28px; height: 28px; font-size: 14px; }
+            .nav-logo-text { display: none; }
+            .header h1 { font-size: 24px; }
         }
     </style>
 </head>
 <body>
+    <div class="bg-grid"></div>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <!-- Logo -->
+            <a href="./index.html" class="nav-logo">
+                <div class="nav-logo-icon">&#9889;</div>
+                <span class="nav-logo-text">AI Daily Report</span>
+            </a>
+
+            <!-- Date Navigation -->
+            <div class="nav-date-control">
+                <a href="#" class="nav-btn disabled" id="prevBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    <span class="nav-btn-text">上一期</span>
+                </a>
+
+                <span class="nav-current-date">06-20</span>
+
+                <select class="nav-date-select" id="dateSelect" onchange="location.href=this.value">
+                    
+                </select>
+
+                <a href="./ai_news_日报_20260619.html" class="nav-btn " id="nextBtn">
+                    <span class="nav-btn-text">下一期</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+
+            <!-- Home Button -->
+            <a href="./index.html" class="nav-home-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========== Main Content ========== -->
     <div class="container">
         <!-- Header -->
         <div class="header">
@@ -495,344 +876,343 @@
                 <span class="dot"></span>
                 <span>第 171 天</span>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">AI 要闻</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">GitHub 热榜</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">趋势洞察</div>
+                </div>
+            </div>
         </div>
+
+        <div class="divider"></div>
 
         <!-- News Section -->
         <div class="section">
             <div class="section-title">
-                <div class="icon blue">&#9889;</div>
+                <div class="icon blue">&#128240;</div>
                 <span>今日 AI 应用要闻</span>
             </div>
 
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">01</span>
-                    <div class="card-title">八部门联合印发'AI+消费'实施意见：AI手机、机器人纳入以旧换新补贴</div>
-                </div>
-                <div class="card-summary">商务部等8部门联合发布5方面17条举措，明确扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。AI产品正式进入国家级消费普及阶段。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">政策</span>
-                        <span class="tag">AI消费</span>
-                    </div>
-                    <a class="read-btn" href="https://m.weibo.cn/detail/5311797246561064" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">01</span>
+    <span class="card-title">八部门联合印发'AI+消费'实施意见</span>
+  </div>
+  <p class="card-summary">商务部等8部门联合发布5方面17条举措，扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">政策</span><span class="tag">AI消费</span>
+    </div>
+    <a href="https://m.weibo.cn/detail/5311797246561064" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">02</span>
-                    <div class="card-title">AlphaFold负责人John Jumper跳槽Anthropic，AI for Science人才地震</div>
-                </div>
-                <div class="card-summary">AlphaFold团队负责人John Jumper宣布离开Google DeepMind加入Anthropic。DeepMind CEO发文致谢，Jumper是AI for Science旗帜性人物，此番离任标志AI人才流动加速。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">人才动态</span>
-                        <span class="tag">AI科研</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">02</span>
+    <span class="card-title">AlphaFold负责人John Jumper跳槽Anthropic</span>
+  </div>
+  <p class="card-summary">AlphaFold团队负责人宣布离开Google DeepMind加入Anthropic，AI for Science人才流动加速。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">人才动态</span><span class="tag">AI科研</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">03</span>
-                    <div class="card-title">Figure机器人数量首次超过员工，通用人形机器人迎来'摩尔时刻'</div>
-                </div>
-                <div class="card-summary">Figure创始人Brett Adcock宣布公司机器人数量首次超过员工人数。Figure是全球最被看好的通用人形机器人公司之一，目标是部署10亿台通用机器人。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">机器人</span>
-                        <span class="tag">具身智能</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">03</span>
+    <span class="card-title">Figure机器人数量首次超过员工</span>
+  </div>
+  <p class="card-summary">Figure创始人宣布机器人数量首次超过员工，通用人形机器人迎来规模化部署关键里程碑。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">机器人</span><span class="tag">具身智能</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">04</span>
-                    <div class="card-title">Adobe创意智能体全面公测：一句话完成视频剪辑、设计批量生成</div>
-                </div>
-                <div class="card-summary">Adobe将创意智能体扩展到Photoshop、Premiere、Illustrator、InDesign、Frame.io五款应用并开启公测。Premiere可自动分镜粗剪，Illustrator可按Excel批量生成50个版本。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">产品发布</span>
-                        <span class="tag">AI设计</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">04</span>
+    <span class="card-title">Adobe创意智能体全面公测</span>
+  </div>
+  <p class="card-summary">Adobe将创意智能体扩展到Photoshop、Premiere等五款应用，一句话即可完成视频剪辑和批量设计。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">产品发布</span><span class="tag">AI设计</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">05</span>
-                    <div class="card-title">燧原科技科创板IPO提交注册，AI芯片企业上市通道打开</div>
-                </div>
-                <div class="card-summary">上海燧原科技股份有限公司科创板IPO审核状态变更为提交注册。同日上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">融资上市</span>
-                        <span class="tag">AI芯片</span>
-                    </div>
-                    <a class="read-btn" href="https://www.163.com/dy/article/KVQ6IC1U0550B1DU.html" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">05</span>
+    <span class="card-title">燧原科技科创板IPO提交注册</span>
+  </div>
+  <p class="card-summary">燧原科技科创板IPO审核状态变更为提交注册，上交所同步发布AI大模型企业上市标准指引。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">融资上市</span><span class="tag">AI芯片</span>
+    </div>
+    <a href="https://www.163.com/dy/article/KVQ6IC1U0550B1DU.html" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">06</span>
-                    <div class="card-title">618 AI智能硬件爆发式增长：京东AI趋势产品成交额同比增100%</div>
-                </div>
-                <div class="card-summary">今年618期间AI智能硬件迎来爆发式增长，AIPC、AI眼镜、大屏AI手机、智能学习机等消费级AI产品热度最高。智能眼镜电商平台总销售额同比增长5倍。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">电商</span>
-                        <span class="tag">AI硬件</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653276292007117366/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">06</span>
+    <span class="card-title">618 AI智能硬件爆发式增长</span>
+  </div>
+  <p class="card-summary">京东AI趋势产品成交额同比增100%，智能眼镜销售额同比增长5倍，AI硬件从概念尝鲜转向刚需升级。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">电商</span><span class="tag">AI硬件</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653276292007117366/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">07</span>
-                    <div class="card-title">皮尤民调：63%美国人认为AI发展太快，44%已使用ChatGPT</div>
-                </div>
-                <div class="card-summary">皮尤研究中心最新民调显示63%美国人认为AI发展速度过快，ChatGPT使用率较2023年翻倍达44%。年轻人用得多但态度更悲观，18-29岁群体66%用过聊天机器人。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">社会观察</span>
-                        <span class="tag">AI民意</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653262856942535203/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">07</span>
+    <span class="card-title">皮尤民调：63%美国人认为AI发展太快</span>
+  </div>
+  <p class="card-summary">ChatGPT使用率较2023年翻倍达44%，但63%美国人认为AI发展过快，年轻人用得多态度却更悲观。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">社会观察</span><span class="tag">AI民意</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653262856942535203/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">08</span>
-                    <div class="card-title">Manus收购案重大转机：传腾讯出手竞购，红杉中国真格基金或参与</div>
-                </div>
-                <div class="card-summary">此前被中国政府依法叫停的Meta收购Manus案出现重大转机。知情人士透露，腾讯可能出手竞购Manus，红杉中国、真格基金等早期中国支持者或参与交易。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">收购并购</span>
-                        <span class="tag">跨境AI</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653282760705966655/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">08</span>
+    <span class="card-title">Manus收购案重大转机：传腾讯出手</span>
+  </div>
+  <p class="card-summary">此前被叫停的Meta收购Manus案出现转机，知情人士透露腾讯可能出手竞购。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">收购并购</span><span class="tag">跨境AI</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653282760705966655/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">09</span>
-                    <div class="card-title">智元远征A3成为世界人形机器人运动会乒乓球赛标准硬件</div>
-                </div>
-                <div class="card-summary">HOPE AI自主决策乒乓挑战赛纳入第二届世界人形机器人运动会正式赛事，统一采用智元远征A3作为标准硬件本体。这是全球首款无需遥控、无预编程即可自主打乒乓球的机器人。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">机器人</span>
-                        <span class="tag">赛事</span>
-                    </div>
-                    <a class="read-btn" href="http://m.toutiao.com/group/7653294825097232915/" target="_blank">阅读原文</a>
-                </div>
-            </div>
-
+  <div class="card-header">
+    <span class="card-number">09</span>
+    <span class="card-title">智元远征A3成为世界人形机器人赛事标准硬件</span>
+  </div>
+  <p class="card-summary">HOPE AI自主决策乒乓挑战赛纳入世界人形机器人运动会，统一采用智元远征A3作为标准硬件。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">机器人</span><span class="tag">赛事</span>
+    </div>
+    <a href="http://m.toutiao.com/group/7653294825097232915/" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
             <div class="news-card">
-                <div class="card-header">
-                    <span class="card-number">10</span>
-                    <div class="card-title">Claude Fable 5遭美国政府出口管制，外国国民访问被暂停</div>
-                </div>
-                <div class="card-summary">Anthropic最强模型上线三天后被美国政府以国家安全为由发出出口管制指令，暂停任何外国国民访问Claude Fable 5和Claude Mythos 5，包括Anthropic内部外籍员工。</div>
-                <div class="card-footer">
-                    <div class="tags">
-                        <span class="tag">监管政策</span>
-                        <span class="tag">大模型</span>
-                    </div>
-                    <a class="read-btn" href="https://36kr.com/p/3852759269980800" target="_blank">阅读原文</a>
-                </div>
-            </div>
+  <div class="card-header">
+    <span class="card-number">10</span>
+    <span class="card-title">Claude Fable 5遭美国政府出口管制</span>
+  </div>
+  <p class="card-summary">Anthropic最强模型上线三天后被美国以国家安全为由发出出口管制指令，暂停外国国民访问。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">监管政策</span><span class="tag">大模型</span>
+    </div>
+    <a href="https://36kr.com/p/3852759269980800" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
         </div>
+
+        <div class="divider"></div>
 
         <!-- GitHub Section -->
         <div class="section">
             <div class="section-title">
-                <div class="icon purple">&#128025;</div>
+                <div class="icon purple">&#11088;</div>
                 <span>本周 GitHub 热门开源项目</span>
             </div>
 
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#1</span>
-                    <a class="gh-name" href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank">pewdiepie-archdaemon/odysseus</a>
-                </div>
-                <div class="gh-desc">PewDiePie开源的离线AI工作空间，24小时内突破15000 Stars，成为2026年增长最快的开源AI项目之一。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44K+</span>
-                    <span class="gh-meta-item">&#9650; +15K+ this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#dea584;"></span> Rust</span>
-                    <a class="gh-view-btn" href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#01</span>
+    <a href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank" class="gh-name">pewdiepie-archdaemon/odysseus</a>
+  </div>
+  <p class="gh-desc">PewDiePie开源离线AI工作空间，24小时破万Star</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#dea584"></span> Rust</span>
+    <a href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#2</span>
-                    <a class="gh-name" href="https://github.com/iptv-org/iptv" target="_blank">iptv-org/iptv</a>
-                </div>
-                <div class="gh-desc">世界杯让7年老项目一夜翻红，全球电视频道直播地址m3u播放列表，一周新增2万Stars。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 120K+</span>
-                    <span class="gh-meta-item">&#9650; +20K+ this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#999;"></span> Unknown</span>
-                    <a class="gh-view-btn" href="https://github.com/iptv-org/iptv" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#02</span>
+    <a href="https://github.com/iptv-org/iptv" target="_blank" class="gh-name">iptv-org/iptv</a>
+  </div>
+  <p class="gh-desc">世界杯让7年老项目翻红，全球电视频道m3u列表</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 120K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#999"></span> Unknown</span>
+    <a href="https://github.com/iptv-org/iptv" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#3</span>
-                    <a class="gh-name" href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a>
-                </div>
-                <div class="gh-desc">微软开源文档转Markdown工具，从上周第9跃升至第2，本周新增5913 Stars。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 153.5K+</span>
-                    <span class="gh-meta-item">&#9650; +5.9K this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
-                    <a class="gh-view-btn" href="https://github.com/microsoft/markitdown" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#03</span>
+    <a href="https://github.com/microsoft/markitdown" target="_blank" class="gh-name">microsoft/markitdown</a>
+  </div>
+  <p class="gh-desc">微软文档转Markdown工具，周增5913 Stars</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 153.5K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/microsoft/markitdown" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#4</span>
-                    <a class="gh-name" href="https://github.com/NousResearch/hermes-agent" target="_blank">NousResearch/hermes-agent</a>
-                </div>
-                <div class="gh-desc">Nous Research AI Agent框架，MIT协议，模型无关，已超越15万Stars。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 186K+</span>
-                    <span class="gh-meta-item">&#9650; +521 this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
-                    <a class="gh-view-btn" href="https://github.com/NousResearch/hermes-agent" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#04</span>
+    <a href="https://github.com/NousResearch/hermes-agent" target="_blank" class="gh-name">NousResearch/hermes-agent</a>
+  </div>
+  <p class="gh-desc">Nous Research AI Agent框架，186K+ Stars</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 186K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/NousResearch/hermes-agent" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#5</span>
-                    <a class="gh-name" href="https://github.com/chopratejas/headroom" target="_blank">chopratejas/headroom</a>
-                </div>
-                <div class="gh-desc">Token压缩神器，最高削减95%消耗且答案质量不变。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 27.5K+</span>
-                    <span class="gh-meta-item">&#9650; +473 this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#2b7489;"></span> TypeScript</span>
-                    <a class="gh-view-btn" href="https://github.com/chopratejas/headroom" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#05</span>
+    <a href="https://github.com/chopratejas/headroom" target="_blank" class="gh-name">chopratejas/headroom</a>
+  </div>
+  <p class="gh-desc">Token压缩神器，削减95%消耗</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 27.5K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+    <a href="https://github.com/chopratejas/headroom" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#6</span>
-                    <a class="gh-name" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703/MoneyPrinterTurbo</a>
-                </div>
-                <div class="gh-desc">AI短视频全自动生成工具，输入标题即可生成完整视频。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 73.9K+</span>
-                    <span class="gh-meta-item">&#9650; +460 this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
-                    <a class="gh-view-btn" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#06</span>
+    <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" class="gh-name">harry0703/MoneyPrinterTurbo</a>
+  </div>
+  <p class="gh-desc">AI短视频全自动生成工具</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 73.9K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#7</span>
-                    <a class="gh-name" href="https://github.com/colbymchenry/codegraph" target="_blank">colbymchenry/codegraph</a>
-                </div>
-                <div class="gh-desc">为Claude Code预索引的代码知识图谱，100%本地运行。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 持续增长</span>
-                    <span class="gh-meta-item">&#9650; +433 this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
-                    <a class="gh-view-btn" href="https://github.com/colbymchenry/codegraph" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#07</span>
+    <a href="https://github.com/colbymchenry/codegraph" target="_blank" class="gh-name">colbymchenry/codegraph</a>
+  </div>
+  <p class="gh-desc">Claude Code代码知识图谱，100%本地</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 持续增长</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/colbymchenry/codegraph" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#8</span>
-                    <a class="gh-name" href="https://github.com/roboflow/supervision" target="_blank">roboflow/supervision</a>
-                </div>
-                <div class="gh-desc">可复用计算机视觉工具集，本周新增2360 Stars。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44.8K+</span>
-                    <span class="gh-meta-item">&#9650; +2.4K this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
-                    <a class="gh-view-btn" href="https://github.com/roboflow/supervision" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#08</span>
+    <a href="https://github.com/roboflow/supervision" target="_blank" class="gh-name">roboflow/supervision</a>
+  </div>
+  <p class="gh-desc">可复用计算机视觉工具集</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 44.8K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/roboflow/supervision" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#9</span>
-                    <a class="gh-name" href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a>
-                </div>
-                <div class="gh-desc">AI编程Agent生产级工程技能库，Google工程师出品。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 59.8K+</span>
-                    <span class="gh-meta-item">&#9650; +1.8K this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#999;"></span> LLM</span>
-                    <a class="gh-view-btn" href="https://github.com/addyosmani/agent-skills" target="_blank">查看项目</a>
-                </div>
-            </div>
-
+  <div class="gh-header">
+    <span class="gh-rank">#09</span>
+    <a href="https://github.com/addyosmani/agent-skills" target="_blank" class="gh-name">addyosmani/agent-skills</a>
+  </div>
+  <p class="gh-desc">AI编程Agent生产级工程技能库</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 59.8K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#8b5cf6"></span> LLM</span>
+    <a href="https://github.com/addyosmani/agent-skills" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
             <div class="github-card">
-                <div class="gh-header">
-                    <span class="gh-rank">#10</span>
-                    <a class="gh-name" href="https://github.com/bytedance/UI-TARS-desktop" target="_blank">bytedance/UI-TARS-desktop</a>
-                </div>
-                <div class="gh-desc">字节跳动开源多模态AI代理桌面堆栈。</div>
-                <div class="gh-meta">
-                    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 36.7K+</span>
-                    <span class="gh-meta-item">&#9650; +1.5K this week</span>
-                    <span class="gh-meta-item"><span class="lang-dot" style="background:#2b7489;"></span> TypeScript</span>
-                    <a class="gh-view-btn" href="https://github.com/bytedance/UI-TARS-desktop" target="_blank">查看项目</a>
-                </div>
-            </div>
+  <div class="gh-header">
+    <span class="gh-rank">#10</span>
+    <a href="https://github.com/bytedance/UI-TARS-desktop" target="_blank" class="gh-name">bytedance/UI-TARS-desktop</a>
+  </div>
+  <p class="gh-desc">字节开源多模态AI代理桌面堆栈</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 36.7K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+    <a href="https://github.com/bytedance/UI-TARS-desktop" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
         </div>
+
+        <div class="divider"></div>
 
         <!-- Trend Section -->
         <div class="section">
             <div class="section-title">
-                <div class="icon cyan">&#128200;</div>
+                <div class="icon cyan">&#128161;</div>
                 <span>本周趋势洞察</span>
             </div>
 
             <div class="trend-grid">
                 <div class="trend-card">
-                    <div class="trend-icon">&#128176;</div>
-                    <div class="trend-title">AI消费政策红利释放</div>
-                    <div class="trend-content">八部门联合推动AI+消费，AI手机、机器人纳入以旧换新补贴，标志着AI产品从概念尝鲜转向刚需升级的关键转折。</div>
-                </div>
-
+  <div class="trend-icon">&#128200;</div>
+  <div class="trend-title">政策监管加速</div>
+  <div class="trend-content">多项AI相关政策密集出台，从消费刺激到出口管制，监管框架正在快速成型</div>
+</div>
                 <div class="trend-card">
-                    <div class="trend-icon">&#129302;</div>
-                    <div class="trend-title">人形机器人进入量产竞速</div>
-                    <div class="trend-content">Figure机器人数量首超员工、智元远征A3成为国际赛事标准硬件——人形机器人正从实验室走向规模化部署。</div>
-                </div>
-
+  <div class="trend-icon">&#128202;</div>
+  <div class="trend-title">资本持续涌入</div>
+  <div class="trend-content">AI领域融资并购活跃，从大模型独角兽到AI制药、具身智能，资本布局全面展开</div>
+</div>
                 <div class="trend-card">
-                    <div class="trend-icon">&#128025;</div>
-                    <div class="trend-title">开源AI工具爆发式增长</div>
-                    <div class="trend-content">Odysseus 24小时破万Star、iptv世界杯翻红、MarkItDown周增近6000——开源AI工具正以前所未有的速度渗透开发者生态。</div>
-                </div>
-
+  <div class="trend-icon">&#128640;</div>
+  <div class="trend-title">产品应用爆发</div>
+  <div class="trend-content">AI从概念验证走向产品落地，智能体、AI支付、创意工具等应用场景全面开花</div>
+</div>
                 <div class="trend-card">
-                    <div class="trend-icon">&#128737;</div>
-                    <div class="trend-title">AI监管全球化加速</div>
-                    <div class="trend-content">美国出口管制Claude模型、中国禁止Meta收购Manus、科创板AI上市标准落地——全球AI监管从框架讨论进入实质执行阶段。</div>
+  <div class="trend-icon">&#128171;</div>
+  <div class="trend-title">人才与技术竞争</div>
+  <div class="trend-content">顶级AI人才流动频繁，开源模型快速迭代，技术路线竞争白热化</div>
+</div>
+            </div>
+        </div>
+
+        <!-- ========== Bottom Navigation ========== -->
+        <div class="bottom-nav">
+            <div class="bottom-nav-main">
+                <a href="./index.html" class="bottom-nav-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    查看更多日报
+                </a>
+            </div>
+
+            <div class="recent-reports">
+                <div class="recent-reports-title">最近 5 期日报</div>
+                <div class="recent-reports-list">
+                    <a href="./ai_news_日报_20260620.html" class="recent-report-link current">06-20</a>
+                    <a href="./ai_news_日报_20260619.html" class="recent-report-link">06-19</a>
+                    <a href="./ai_news_日报_20260618.html" class="recent-report-link">06-18</a>
+                    <a href="./ai_news_日报_20260617.html" class="recent-report-link">06-17</a>
                 </div>
             </div>
         </div>
@@ -840,7 +1220,33 @@
         <!-- Footer -->
         <div class="footer">
             <p>AI应用新闻日报 &middot; 2026年06月20日 &middot; 由 AI 自动生成</p>
+            <p style="margin-top:8px;">数据来源：The Verge、TechCrunch、36氪、GitHub Trending 等</p>
         </div>
     </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile date selector - populate with recent dates
+        const dateSelect = document.getElementById('dateSelect');
+        if (dateSelect && dateSelect.options.length <= 1) {
+            const dates = [{"file": "./ai_news_日报_20260620.html", "label": "06-20 星期六", "current": true}, {"file": "./ai_news_日报_20260619.html", "label": "06-19 星期五", "current": false}, {"file": "./ai_news_日报_20260618.html", "label": "06-18 星期三", "current": false}, {"file": "./ai_news_日报_20260617.html", "label": "06-17 星期二", "current": false}];
+            dates.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d.file;
+                opt.textContent = d.label;
+                if (d.current) opt.selected = true;
+                dateSelect.appendChild(opt);
+            });
+        }
+    </script>
 </body>
 </html>
