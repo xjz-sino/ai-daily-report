@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI应用新闻日报 - 2026年06月21日</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #06090f;
+            --bg-secondary: #080c14;
+            --bg-card: rgba(15, 23, 42, 0.7);
+            --bg-card-hover: rgba(20, 30, 55, 0.85);
+            --blue: #38bdf8;
+            --purple: #8b5cf6;
+            --cyan: #06b6d4;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(56, 189, 248, 0.15);
+            --gradient-blue-purple: linear-gradient(135deg, #38bdf8, #8b5cf6);
+            --gradient-purple-cyan: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            --nav-height: 64px;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'Space Grotesk', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.7;
+            overflow-x: hidden;
+            padding-top: var(--nav-height);
+        }
+
+        /* Background effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 50% at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse 40% 30% at 70% 10%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 30%, transparent 70%);
+        }
+
+        /* ========== Navigation Bar ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(6, 9, 15, 0.75);
+            backdrop-filter: blur(20px) saturate(1.5);
+            -webkit-backdrop-filter: blur(20px) saturate(1.5);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+            transition: box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            background: rgba(6, 9, 15, 0.9);
+        }
+
+        .navbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .nav-logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .nav-logo-text {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        /* Date Navigation */
+        .nav-date-control {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .nav-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-current-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            white-space: nowrap;
+        }
+
+        /* Mobile date selector */
+        .nav-date-select {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px 12px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Home button */
+        .nav-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 10px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .nav-home-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .nav-home-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ========== Main Content ========== */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header / Hero */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeSlideUp 0.8s ease-out;
+        }
+
+        .header-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 20px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .header h1 {
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .header .date-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .header .date-line .dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--blue);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 32px;
+            animation: fadeSlideUp 0.8s ease-out 0.2s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            background: var(--gradient-blue-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+            margin: 0 auto 56px;
+            max-width: 800px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title .icon {
+            width: 36px; height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .section-title .icon.blue { background: rgba(56, 189, 248, 0.15); color: var(--blue); }
+        .section-title .icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--purple); }
+        .section-title .icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+
+        /* News Cards */
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px 24px 24px 28px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .news-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .news-card .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .news-card .card-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .news-card .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .news-card .card-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 14px;
+            padding-left: 42px;
+        }
+
+        .news-card .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 42px;
+        }
+
+        .news-card .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .news-card .tag {
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--blue);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+        }
+
+        .news-card .read-btn {
+            padding: 6px 18px;
+            border-radius: 8px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .news-card .read-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        /* 10 colors for left border */
+        .news-card:nth-child(1)::before { background: #38bdf8; }
+        .news-card:nth-child(2)::before { background: #8b5cf6; }
+        .news-card:nth-child(3)::before { background: #06b6d4; }
+        .news-card:nth-child(4)::before { background: #10b981; }
+        .news-card:nth-child(5)::before { background: #f59e0b; }
+        .news-card:nth-child(6)::before { background: #ef4444; }
+        .news-card:nth-child(7)::before { background: #ec4899; }
+        .news-card:nth-child(8)::before { background: #14b8a6; }
+        .news-card:nth-child(9)::before { background: #f97316; }
+        .news-card:nth-child(10)::before { background: #6366f1; }
+
+        .news-card:nth-child(1) { animation-delay: 0.05s; }
+        .news-card:nth-child(2) { animation-delay: 0.1s; }
+        .news-card:nth-child(3) { animation-delay: 0.15s; }
+        .news-card:nth-child(4) { animation-delay: 0.2s; }
+        .news-card:nth-child(5) { animation-delay: 0.25s; }
+        .news-card:nth-child(6) { animation-delay: 0.3s; }
+        .news-card:nth-child(7) { animation-delay: 0.35s; }
+        .news-card:nth-child(8) { animation-delay: 0.4s; }
+        .news-card:nth-child(9) { animation-delay: 0.45s; }
+        .news-card:nth-child(10) { animation-delay: 0.5s; }
+
+        /* GitHub Cards */
+        .github-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .github-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .github-card .gh-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .github-card .gh-rank {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--purple);
+            flex-shrink: 0;
+        }
+
+        .github-card .gh-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .github-card .gh-name:hover {
+            color: var(--purple);
+        }
+
+        .github-card .gh-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .github-card .gh-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .github-card .gh-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .github-card .gh-meta-item .star-icon { color: #f59e0b; }
+        .github-card .gh-meta-item .lang-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .github-card .gh-view-btn {
+            margin-left: auto;
+            padding: 5px 14px;
+            border-radius: 6px;
+            background: rgba(139, 92, 246, 0.12);
+            color: var(--purple);
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .github-card .gh-view-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .github-card:nth-child(1) { animation-delay: 0.1s; }
+        .github-card:nth-child(2) { animation-delay: 0.15s; }
+        .github-card:nth-child(3) { animation-delay: 0.2s; }
+        .github-card:nth-child(4) { animation-delay: 0.25s; }
+        .github-card:nth-child(5) { animation-delay: 0.3s; }
+        .github-card:nth-child(6) { animation-delay: 0.35s; }
+        .github-card:nth-child(7) { animation-delay: 0.4s; }
+        .github-card:nth-child(8) { animation-delay: 0.45s; }
+        .github-card:nth-child(9) { animation-delay: 0.5s; }
+        .github-card:nth-child(10) { animation-delay: 0.55s; }
+
+        /* Trend Cards */
+        .trend-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .trend-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .trend-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+
+        .trend-card::after {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            opacity: 0.15;
+            filter: blur(30px);
+        }
+
+        .trend-card:nth-child(1)::after { background: #38bdf8; }
+        .trend-card:nth-child(2)::after { background: #8b5cf6; }
+        .trend-card:nth-child(3)::after { background: #10b981; }
+        .trend-card:nth-child(4)::after { background: #f97316; }
+
+        .trend-card:nth-child(1) { animation-delay: 0.1s; }
+        .trend-card:nth-child(2) { animation-delay: 0.2s; }
+        .trend-card:nth-child(3) { animation-delay: 0.3s; }
+        .trend-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .trend-card .trend-icon {
+            width: 36px; height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+
+        .trend-card:nth-child(1) .trend-icon { background: rgba(56, 189, 248, 0.15); }
+        .trend-card:nth-child(2) .trend-icon { background: rgba(139, 92, 246, 0.15); }
+        .trend-card:nth-child(3) .trend-icon { background: rgba(16, 185, 129, 0.15); }
+        .trend-card:nth-child(4) .trend-icon { background: rgba(249, 115, 22, 0.15); }
+
+        .trend-card .trend-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .trend-card:nth-child(1) .trend-title { color: #60a5fa; }
+        .trend-card:nth-child(2) .trend-title { color: #a78bfa; }
+        .trend-card:nth-child(3) .trend-title { color: #34d399; }
+        .trend-card:nth-child(4) .trend-title { color: #fb923c; }
+
+        .trend-card .trend-content {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ========== Bottom Navigation ========== */
+        .bottom-nav {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(56, 189, 248, 0.1);
+            animation: fadeSlideUp 0.6s ease-out both;
+        }
+
+        .bottom-nav-main {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .bottom-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 12px;
+            background: var(--gradient-blue-purple);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-nav-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+        }
+
+        .bottom-nav-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .recent-reports {
+            margin-bottom: 32px;
+        }
+
+        .recent-reports-title {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .recent-reports-list {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .recent-report-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .recent-report-link:hover {
+            background: rgba(56, 189, 248, 0.08);
+            border-color: rgba(56, 189, 248, 0.2);
+            color: var(--blue);
+            transform: translateY(-1px);
+        }
+
+        .recent-report-link.current {
+            background: rgba(56, 189, 248, 0.1);
+            border-color: rgba(56, 189, 248, 0.25);
+            color: var(--blue);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 0;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            :root { --nav-height: 56px; }
+
+            .navbar-inner {
+                padding: 0 16px;
+            }
+
+            .nav-logo-text {
+                font-size: 15px;
+            }
+
+            .nav-date-control {
+                gap: 8px;
+            }
+
+            .nav-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .nav-btn-text {
+                display: none;
+            }
+
+            .nav-current-date {
+                display: none;
+            }
+
+            .nav-date-select {
+                display: block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+
+            .nav-home-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .header h1 { font-size: 28px; }
+            .container { padding: 24px 16px 60px; }
+            .trend-grid { grid-template-columns: 1fr; }
+            .news-card .card-footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .github-card .gh-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .hero-stats { gap: 24px; }
+            .stat-number { font-size: 24px; }
+            .recent-reports-list { gap: 8px; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo-icon { width: 28px; height: 28px; font-size: 14px; }
+            .nav-logo-text { display: none; }
+            .header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <!-- Logo -->
+            <a href="./index.html" class="nav-logo">
+                <div class="nav-logo-icon">&#9889;</div>
+                <span class="nav-logo-text">AI Daily Report</span>
+            </a>
+
+            <!-- Date Navigation -->
+            <div class="nav-date-control">
+                <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260620.html" class="nav-btn" id="prevBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    <span class="nav-btn-text">上一期</span>
+                </a>
+
+                <span class="nav-current-date">06-21</span>
+
+                <select class="nav-date-select" id="dateSelect" onchange="location.href=this.value">
+
+                </select>
+
+                <a href="#" class="nav-btn disabled" id="nextBtn">
+                    <span class="nav-btn-text">下一期</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+
+            <!-- Home Button -->
+            <a href="./index.html" class="nav-home-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========== Main Content ========== -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-badge">AI Daily Report</div>
+            <h1>AI应用新闻日报</h1>
+            <div class="subtitle">每日精选 AI 行业动态、开源项目与趋势洞察</div>
+            <div class="date-line">
+                <span>2026-06-21</span>
+                <span class="dot"></span>
+                <span>星期日</span>
+                <span class="dot"></span>
+                <span>第 172 天</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">AI 要闻</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">GitHub 热榜</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">趋势洞察</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- News Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon blue">&#128240;</div>
+                <span>今日 AI 应用要闻</span>
+            </div>
+
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">01</span>
+    <span class="card-title">Anthropic发布Fable 5与Mythos 5，3天后被美商务部列入出口管制</span>
+  </div>
+  <p class="card-summary">6月9日Anthropic发布旗舰模型Fable 5与移除安全过滤的Mythos 5，被称为史上最强公开模型。发布仅3天后，美国商务部以国家安全为由将两款模型列入出口管制，禁止境外主体访问，Anthropic被迫对全球关闭访问。这是美国首次将AI模型对标高端芯片纳入出口管制体系。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">监管政策</span><span class="tag">大模型</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">02</span>
+    <span class="card-title">智谱GLM-5.2全量开放：744B参数MoE架构，支持100万token长上下文</span>
+  </div>
+  <p class="card-summary">6月13日智谱GLM-5.2全量开放，采用MoE稀疏混合专家架构，总参数744B、激活参数约40B，支持100万token真实可用长上下文。遵循MIT协议全面开源，支持免费商用与私有化部署。同步推出官方编程工具ZCode 3.0.0，全面切换自研Agent内核。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">大模型</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">03</span>
+    <span class="card-title">MiniMax-M3开源：4280亿参数原生多模态大模型，百万上下文9倍加速</span>
+  </div>
+  <p class="card-summary">MiniMax发布原生多模态大模型M3，总参数约4280亿、激活参数230亿，支持100万token上下文。搭载自研稀疏注意力机制，百万上下文场景下较前代M2实现9倍预填充、15倍解码加速。模型权重已开源，可在NVIDIA算力平台部署。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">多模态</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">04</span>
+    <span class="card-title">月之暗面发布Kimi K2.7 Code：1万亿参数编程向开源模型</span>
+  </div>
+  <p class="card-summary">Kimi K2.7 Code采用混合专家架构，总参数1万亿、激活参数320亿，支持256K上下文，集成4亿参数MoonViT视觉编码器。优化长上下文指令遵循与长程工程任务执行能力，平均token消耗减少30%。同步推出5-6倍速高速版API。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">编程模型</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">05</span>
+    <span class="card-title">OpenAI发布GPT-5 Preview：上下文扩展至100万token</span>
+  </div>
+  <p class="card-summary">6月6日OpenAI正式发布GPT-5 Preview，核心升级包括多步推理能力大幅跃升，复杂数学和逻辑推理任务准确率显著提高；上下文窗口扩展至100万token；原生多模态架构从底层打通文本、图像、音频的理解与生成。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">产品发布</span><span class="tag">多模态</span>
+    </div>
+    <a href="https://cloud.tencent.com/developer/article/2686026" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">06</span>
+    <span class="card-title">谷歌发布DiffusionGemma：260亿参数扩散式并行生成模型</span>
+  </div>
+  <p class="card-summary">谷歌基于Gemma 4架构发布DiffusionGemma，260亿参数，扩散式并行生成256个token，代码任务推理速度超1000token/s。模型权重开放，有望大幅降低AI推理成本。同时Gemini 3.5 Live Translate支持70+语言端到端流式音频实时同传。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">产品发布</span><span class="tag">扩散模型</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">07</span>
+    <span class="card-title">科大讯飞星火系列升级：医疗大模型V3.5已落地7.7万家基层医疗机构</span>
+  </div>
+  <p class="card-summary">星火X2-VL多模态大模型采用MoE架构，高考数学场景表现突出。星火医疗大模型V3.5病历生成医生采纳率91%、影像辅诊采纳率75%，已在全国806个区县、7.7万家基层医疗机构落地。星火教育大模型覆盖全国3000余所学校，日均批改作业超600万页。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">产品发布</span><span class="tag">医疗AI</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">08</span>
+    <span class="card-title">阿里Qwen3-TTS开源：通过自然语言描述控制语音合成属性</span>
+  </div>
+  <p class="card-summary">阿里发布Qwen3-TTS语音合成模型，支持通过自然语言描述控制声线的年龄、口音、情感等属性。项目已开源，为语音交互领域带来新的可能性。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">语音合成</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">09</span>
+    <span class="card-title">Agnes AI宣布无限期免费开放全模态API</span>
+  </div>
+  <p class="card-summary">全球排名前十的AI模型Agnes宣布无限期免费开放全模态API，其Agnes-2.0-Flash在部分任务上表现超越大厂模型。开放首周文本调用量超1万亿次，引发业界对开源商业模式的广泛讨论。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">API</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+            <div class="news-card">
+  <div class="card-header">
+    <span class="card-number">10</span>
+    <span class="card-title">巴西Rio 3.5模型被证实为套壳模型，引发开源社区署名规则讨论</span>
+  </div>
+  <p class="card-summary">里约热内卢市政府旗下IT公司发布的Rio 3.5模型，标称4030亿参数，曾进入全球开源模型第一梯队。后被证实为套壳模型，由60% Nex N2 Pro与40%阿里Qwen 3.5拼接而成。事发后模型下架，团队致歉，引发开源社区对署名规则的深入讨论。</p>
+  <div class="card-footer">
+    <div class="tags">
+      <span class="tag">开源</span><span class="tag">社区规则</span>
+    </div>
+    <a href="https://happyprince.blog.csdn.net/article/details/162016059" target="_blank" class="read-btn">阅读原文</a>
+  </div>
+</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- GitHub Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon purple">&#11088;</div>
+                <span>本周 GitHub 热门开源项目</span>
+            </div>
+
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#01</span>
+    <a href="https://github.com/openclaw/openclaw" target="_blank" class="gh-name">openclaw/openclaw</a>
+  </div>
+  <p class="gh-desc">Your own personal AI assistant. Any OS. Any Platform. The lobster way.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 379.5K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+    <a href="https://github.com/openclaw/openclaw" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#02</span>
+    <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" class="gh-name">codecrafters-io/build-your-own-x</a>
+  </div>
+  <p class="gh-desc">Master programming by recreating your favorite technologies from scratch.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 517.5K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#999"></span> Markdown</span>
+    <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#03</span>
+    <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" class="gh-name">freeCodeCamp/freeCodeCamp</a>
+  </div>
+  <p class="gh-desc">freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 449.8K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+    <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#04</span>
+    <a href="https://github.com/public-apis/public-apis" target="_blank" class="gh-name">public-apis/public-apis</a>
+  </div>
+  <p class="gh-desc">A collective list of free APIs. 免费API集合，涵盖各类实用接口。</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 442.9K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/public-apis/public-apis" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#05</span>
+    <a href="https://github.com/donnemartin/system-design-primer" target="_blank" class="gh-name">donnemartin/system-design-primer</a>
+  </div>
+  <p class="gh-desc">Learn how to design large-scale systems. Prep for the system design interview.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 354K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/donnemartin/system-design-primer" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#06</span>
+    <a href="https://github.com/ultraworkers/claw-code" target="_blank" class="gh-name">ultraworkers/claw-code</a>
+  </div>
+  <p class="gh-desc">An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 194K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#dea584"></span> Rust</span>
+    <a href="https://github.com/ultraworkers/claw-code" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#07</span>
+    <a href="https://github.com/OpenHands/OpenHands" target="_blank" class="gh-name">OpenHands/OpenHands</a>
+  </div>
+  <p class="gh-desc">AI Coding Agent platform. 开源AI编程助手平台，支持多种编程语言和框架。</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 42K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/OpenHands/OpenHands" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#08</span>
+    <a href="https://github.com/coollabsio/coolify" target="_blank" class="gh-name">coollabsio/coolify</a>
+  </div>
+  <p class="gh-desc">An open-source & self-hostable Heroku / Netlify / Vercel alternative.</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 35K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#4F5D95"></span> PHP</span>
+    <a href="https://github.com/coollabsio/coolify" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#09</span>
+    <a href="https://github.com/Aider-AI/aider" target="_blank" class="gh-name">Aider-AI/aider</a>
+  </div>
+  <p class="gh-desc">AI pair programming in your terminal. 终端中的AI结对编程工具，支持多种大模型。</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 25K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+    <a href="https://github.com/Aider-AI/aider" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+            <div class="github-card">
+  <div class="gh-header">
+    <span class="gh-rank">#10</span>
+    <a href="https://github.com/TabbyML/tabby" target="_blank" class="gh-name">TabbyML/tabby</a>
+  </div>
+  <p class="gh-desc">Self-hosted AI coding assistant. 自托管AI编程助手，替代GitHub Copilot。</p>
+  <div class="gh-meta">
+    <span class="gh-meta-item"><span class="star-icon">&#9733;</span> 22K+</span>
+    <span class="gh-meta-item"><span class="lang-dot" style="background:#dea584"></span> Rust</span>
+    <a href="https://github.com/TabbyML/tabby" target="_blank" class="gh-view-btn">查看项目</a>
+  </div>
+</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Trend Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="icon cyan">&#128161;</div>
+                <span>本周趋势洞察</span>
+            </div>
+
+            <div class="trend-grid">
+                <div class="trend-card">
+  <div class="trend-icon">&#128200;</div>
+  <div class="trend-title">开源大模型爆发</div>
+  <div class="trend-content">智谱GLM-5.2、MiniMax-M3、Kimi K2.7 Code等国产开源大模型密集发布，MoE架构和长上下文成为标配</div>
+</div>
+                <div class="trend-card">
+  <div class="trend-icon">&#128202;</div>
+  <div class="trend-title">监管框架加速成型</div>
+  <div class="trend-content">美国首次将AI模型纳入出口管制体系，技术地缘属性显著提升，全球AI治理博弈加剧</div>
+</div>
+                <div class="trend-card">
+  <div class="trend-icon">&#128640;</div>
+  <div class="trend-title">多模态与端侧落地</div>
+  <div class="trend-content">原生多模态架构成为趋势，语音合成、实时翻译等能力快速迭代，AI应用向物理实体渗透</div>
+</div>
+                <div class="trend-card">
+  <div class="trend-icon">&#128171;</div>
+  <div class="trend-title">开源生态规范化</div>
+  <div class="trend-content">套壳模型事件引发社区对署名规则的讨论，开源大模型商业模式和合规边界持续探索</div>
+</div>
+            </div>
+        </div>
+
+        <!-- ========== Bottom Navigation ========== -->
+        <div class="bottom-nav">
+            <div class="bottom-nav-main">
+                <a href="./index.html" class="bottom-nav-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    查看更多日报
+                </a>
+            </div>
+
+            <div class="recent-reports">
+                <div class="recent-reports-title">最近 5 期日报</div>
+                <div class="recent-reports-list">
+                    <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260620.html" class="recent-report-link current">06-21</a>
+                    <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260620.html" class="recent-report-link">06-20</a>
+                    <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260619.html" class="recent-report-link">06-19</a>
+                    <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260618.html" class="recent-report-link">06-18</a>
+                    <a href="./ai_news_%E6%97%A5%E6%8A%A5_20260617.html" class="recent-report-link">06-17</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>AI应用新闻日报 &middot; 2026年06月21日 &middot; 由 AI 自动生成</p>
+            <p style="margin-top:8px;">数据来源：The Verge、TechCrunch、36氪、GitHub Trending 等</p>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile date selector - populate with recent dates
+        const dateSelect = document.getElementById('dateSelect');
+        if (dateSelect && dateSelect.options.length <= 1) {
+            const dates = [{"file": "./ai_news_%E6%97%A5%E6%8A%A5_20260620.html", "label": "06-21 星期日", "current": true}, {"file": "./ai_news_%E6%97%A5%E6%8A%A5_20260620.html", "label": "06-20 星期六", "current": false}, {"file": "./ai_news_%E6%97%A5%E6%8A%A5_20260619.html", "label": "06-19 星期五", "current": false}, {"file": "./ai_news_%E6%97%A5%E6%8A%A5_20260618.html", "label": "06-18 星期四", "current": false}, {"file": "./ai_news_%E6%97%A5%E6%8A%A5_20260617.html", "label": "06-17 星期三", "current": false}];
+            dates.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d.file;
+                opt.textContent = d.label;
+                if (d.current) opt.selected = true;
+                dateSelect.appendChild(opt);
+            });
+        }
+    </script>
+</body>
+</html>
