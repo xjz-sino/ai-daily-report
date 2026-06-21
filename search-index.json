@@ -2,8 +2,8 @@
   "reports": [
     {
       "date": "2026-06-21",
-      "weekday": "星期日",
-      "file": "daily_2026-06-21.html",
+      "weekday": "星期六",
+      "file": "ai_news_日报_20260621.html",
       "news": [
         {
           "title": "Anthropic发布Fable 5与Mythos 5，3天后被美商务部列入出口管制",
@@ -195,6 +195,175 @@
       "date": "2026-06-20",
       "weekday": "星期五",
       "file": "ai_news_%E6%97%A5%E6%8A%A5_20260620.html",
+      "news": [
+        {
+          "title": "八部门联合印发'AI+消费'实施意见",
+          "summary": "商务部等8部门联合发布5方面17条举措，扩大AI手机电脑、智能网联汽车、智能穿戴、AI机器人消费。",
+          "tags": [
+            "政策",
+            "AI消费"
+          ],
+          "url": "https://m.weibo.cn/detail/5311797246561064"
+        },
+        {
+          "title": "AlphaFold负责人John Jumper跳槽Anthropic",
+          "summary": "AlphaFold团队负责人宣布离开Google DeepMind加入Anthropic，AI for Science人才流动加速。",
+          "tags": [
+            "人才动态",
+            "AI科研"
+          ],
+          "url": "http://m.toutiao.com/group/7653262856942535203/"
+        },
+        {
+          "title": "Figure机器人数量首次超过员工",
+          "summary": "Figure创始人宣布机器人数量首次超过员工，通用人形机器人迎来规模化部署关键里程碑。",
+          "tags": [
+            "机器人",
+            "具身智能"
+          ],
+          "url": "http://m.toutiao.com/group/7653262856942535203/"
+        },
+        {
+          "title": "Adobe创意智能体全面公测",
+          "summary": "Adobe将创意智能体扩展到Photoshop、Premiere等五款应用，一句话即可完成视频剪辑和批量设计。",
+          "tags": [
+            "产品发布",
+            "AI设计"
+          ],
+          "url": "http://m.toutiao.com/group/7653262856942535203/"
+        },
+        {
+          "title": "燧原科技科创板IPO提交注册",
+          "summary": "燧原科技科创板IPO审核状态变更为提交注册，上交所同步发布AI大模型企业上市标准指引。",
+          "tags": [
+            "融资上市",
+            "AI芯片"
+          ],
+          "url": "https://www.163.com/dy/article/KVQ6IC1U0550B1DU.html"
+        },
+        {
+          "title": "618 AI智能硬件爆发式增长",
+          "summary": "京东AI趋势产品成交额同比增100%，智能眼镜销售额同比增长5倍，AI硬件从概念尝鲜转向刚需升级。",
+          "tags": [
+            "电商",
+            "AI硬件"
+          ],
+          "url": "http://m.toutiao.com/group/7653276292007117366/"
+        },
+        {
+          "title": "皮尤民调：63%美国人认为AI发展太快",
+          "summary": "ChatGPT使用率较2023年翻倍达44%，但63%美国人认为AI发展过快，年轻人用得多态度却更悲观。",
+          "tags": [
+            "社会观察",
+            "AI民意"
+          ],
+          "url": "http://m.toutiao.com/group/7653262856942535203/"
+        },
+        {
+          "title": "Manus收购案重大转机：传腾讯出手",
+          "summary": "此前被叫停的Meta收购Manus案出现转机，知情人士透露腾讯可能出手竞购。",
+          "tags": [
+            "收购并购",
+            "跨境AI"
+          ],
+          "url": "http://m.toutiao.com/group/7653282760705966655/"
+        },
+        {
+          "title": "智元远征A3成为世界人形机器人赛事标准硬件",
+          "summary": "HOPE AI自主决策乒乓挑战赛纳入世界人形机器人运动会，统一采用智元远征A3作为标准硬件。",
+          "tags": [
+            "机器人",
+            "赛事"
+          ],
+          "url": "http://m.toutiao.com/group/7653294825097232915/"
+        },
+        {
+          "title": "Claude Fable 5遭美国政府出口管制",
+          "summary": "Anthropic最强模型上线三天后被美国以国家安全为由发出出口管制指令，暂停外国国民访问。",
+          "tags": [
+            "监管政策",
+            "大模型"
+          ],
+          "url": "https://36kr.com/p/3852759269980800"
+        }
+      ],
+      "github": [
+        {
+          "name": "pewdiepie-archdaemon/odysseus",
+          "desc": "PewDiePie开源离线AI工作空间，24小时破万Star",
+          "stars": "44K+",
+          "lang": "Rust",
+          "url": "https://github.com/pewdiepie-archdaemon/odysseus"
+        },
+        {
+          "name": "iptv-org/iptv",
+          "desc": "世界杯让7年老项目翻红，全球电视频道m3u列表",
+          "stars": "120K+",
+          "lang": "Unknown",
+          "url": "https://github.com/iptv-org/iptv"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "desc": "微软文档转Markdown工具，周增5913 Stars",
+          "stars": "153.5K+",
+          "lang": "Python",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "desc": "Nous Research AI Agent框架，186K+ Stars",
+          "stars": "186K+",
+          "lang": "Python",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "name": "chopratejas/headroom",
+          "desc": "Token压缩神器，削减95%消耗",
+          "stars": "27.5K+",
+          "lang": "TypeScript",
+          "url": "https://github.com/chopratejas/headroom"
+        },
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "desc": "AI短视频全自动生成工具",
+          "stars": "73.9K+",
+          "lang": "Python",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "name": "colbymchenry/codegraph",
+          "desc": "Claude Code代码知识图谱，100%本地",
+          "stars": "持续增长",
+          "lang": "Python",
+          "url": "https://github.com/colbymchenry/codegraph"
+        },
+        {
+          "name": "roboflow/supervision",
+          "desc": "可复用计算机视觉工具集",
+          "stars": "44.8K+",
+          "lang": "Python",
+          "url": "https://github.com/roboflow/supervision"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "desc": "AI编程Agent生产级工程技能库",
+          "stars": "59.8K+",
+          "lang": "LLM",
+          "url": "https://github.com/addyosmani/agent-skills"
+        },
+        {
+          "name": "bytedance/UI-TARS-desktop",
+          "desc": "字节开源多模态AI代理桌面堆栈",
+          "stars": "36.7K+",
+          "lang": "TypeScript",
+          "url": "https://github.com/bytedance/UI-TARS-desktop"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "weekday": "星期五",
+      "file": "ai_news_日报_20260620.html",
       "news": [
         {
           "title": "八部门联合印发'AI+消费'实施意见",
