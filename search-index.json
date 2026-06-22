@@ -1,6 +1,185 @@
 {
   "reports": [
     {
+      "date": "2026-06-22",
+      "weekday": "星期一",
+      "file": "ai_news_日报_20260622.html",
+      "news": [
+        {
+          "title": "DeepSeek完成74亿美元首轮融资，创中国AI最大单轮纪录",
+          "summary": "6月21日DeepSeek完成成立以来首轮外部融资，总金额超74亿美元，投后估值520-590亿美元。创始人梁文锋个人出资28亿美元跟投，外部投资者仅获经济权益无投票权，保持创始人全权控制。资金预计主要用于算力基础设施建设和人才招募。",
+          "tags": [
+            "DeepSeek",
+            "融资",
+            "大模型"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "ChatGPT全球市场份额首次跌破50%，多强竞争格局成型",
+          "summary": "Sensor Tower《2026年AI现状报告》显示ChatGPT月活市场份额降至46.4%，为2023年1月上线以来首次跌破50%。谷歌Gemini升至27.7%，Anthropic Claude占10.3%，AI聊天市场从一家独大正式转向多强竞争。",
+          "tags": [
+            "ChatGPT",
+            "市场份额",
+            "竞争格局"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "英伟达20亿美元光芯片工厂德州动工，黄仁勋亲临奠基",
+          "summary": "6月16日黄仁勋赴德克萨斯州为Coherent扩建厂房破土，这是英伟达20亿美元光芯片投资的首个落地项目。工厂将建成全球首条6英寸磷化铟量产线，破解万卡级AI集群铜缆互联的物理瓶颈。",
+          "tags": [
+            "英伟达",
+            "光芯片",
+            "算力"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "OpenAI发布诚实AI对齐方案，系统性破解幻觉难题",
+          "summary": "6月20日OpenAI官方博客发布强化学习对齐研究成果，通过分层奖惩机制将诚实作答权重置于完美回答之上，主动承认知识盲区可获保底分，编造信息施以重罚，仅用5%训练数据即可显著降低幻觉发生率。",
+          "tags": [
+            "OpenAI",
+            "AI对齐",
+            "幻觉"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "OpenAI GPT-5.6低调上线Pro端，3D生成与代码推理大幅跃升",
+          "summary": "多位ChatGPT Pro用户发现后台悄然上线GPT-5.6，推理速度显著提升，3D生成与代码推理能力大幅超越前代，可在1小时内完成完整浏览器游戏开发，思考延迟降低80%以上。OpenAI选择低调上线或为规避出口管制审查。",
+          "tags": [
+            "OpenAI",
+            "GPT-5.6",
+            "3D生成"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "《人工智能生成合成内容标识办法》全网正式落地执行",
+          "summary": "6月14日四部门联合发布的《人工智能生成合成内容标识办法》正式全网实施，要求AI生成短视频需在开头3秒标注'AI生成'，图文、音频等AI内容也需按规范显著标识，未合规内容不得进行公众传播。",
+          "tags": [
+            "AI监管",
+            "内容标识",
+            "政策"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "八部门联合发布17项举措，推进'人工智能+消费'发展",
+          "summary": "6月18日商务部等八部门联合印发《关于加快'人工智能+消费'发展的实施意见》，围绕五大方向提出17项举措，明确扩大智能终端供给，布局人形机器人消费赛道，推动'人、车、家'全场景AI生态建设。",
+          "tags": [
+            "消费AI",
+            "政策",
+            "人形机器人"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "上交所明确大模型企业适用科创板第五套上市标准",
+          "summary": "6月18日上交所发布业务指引，明确AI大模型企业可适用科创板第五套上市标准，放宽盈利要求，支持硬科技AI企业登陆资本市场。A股AI板块当日集体上涨，多只行业ETF涨幅超2%。",
+          "tags": [
+            "科创板",
+            "上市",
+            "资本"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "2026世界人工智能大会定档7月，增设全球治理高级别会议",
+          "summary": "国新办宣布2026世界人工智能大会暨人工智能全球治理高级别会议将于7月17日至20日在上海举办，主题为'智能伙伴，共创未来'，预计超300款AI产品全球首发，首次创办WAIC Academic学术分会。",
+          "tags": [
+            "WAIC",
+            "AI治理",
+            "上海"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        },
+        {
+          "title": "OpenAI一季度营收57亿美元亏损93亿，算力采购承诺高达6650亿",
+          "summary": "OpenAI 2026年Q1营收57亿美元，经营亏损93亿美元，研发支出86亿美元，三项数据均同比增长约三倍。截至2025年底对云服务商算力采购承诺高达6650亿美元，大部分未纳入资产负债表，巨额表外算力负债成IPO前核心风险点。",
+          "tags": [
+            "OpenAI",
+            "财报",
+            "IPO"
+          ],
+          "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+        }
+      ],
+      "github": [
+        {
+          "name": "DeusData/codebase-memory-mcp",
+          "desc": "高性能代码智能MCP服务器，将代码库编入持久知识图谱，支持158种语言，毫秒级查询，token减少99%",
+          "stars": "6,943",
+          "lang": "C",
+          "url": "https://github.com/DeusData/codebase-memory-mcp"
+        },
+        {
+          "name": "Kilo-Org/kilocode",
+          "desc": "一体化Agent工程平台，使用最受欢迎的开源编码代理，更快地构建、交付和迭代",
+          "stars": "22,047",
+          "lang": "TypeScript",
+          "url": "https://github.com/Kilo-Org/kilocode"
+        },
+        {
+          "name": "google-research/timesfm",
+          "desc": "Google Research开发的时间序列基础模型，用于时间序列预测的预训练模型",
+          "stars": "23,050",
+          "lang": "Python",
+          "url": "https://github.com/google-research/timesfm"
+        },
+        {
+          "name": "makeplane/plane",
+          "desc": "开源JIRA/Linear/Monday/ClickUp替代方案，现代化项目管理平台",
+          "stars": "51,797",
+          "lang": "TypeScript",
+          "url": "https://github.com/makeplane/plane"
+        },
+        {
+          "name": "alibaba/zvec",
+          "desc": "轻量级、快如闪电的进程内向量数据库，为现代AI应用提供高效数据存储与检索",
+          "stars": "11,192",
+          "lang": "C++",
+          "url": "https://github.com/alibaba/zvec"
+        },
+        {
+          "name": "n0-computer/iroh",
+          "desc": "模块化网络堆栈，基于Rust构建的高性能网络库",
+          "stars": "9,989",
+          "lang": "Rust",
+          "url": "https://github.com/n0-computer/iroh"
+        },
+        {
+          "name": "zai-org/GLM-5",
+          "desc": "GLM-5：从Vibe编码到Agent工程，智谱AI前沿开源项目",
+          "stars": "4,085",
+          "lang": "Python",
+          "url": "https://github.com/zai-org/GLM-5"
+        },
+        {
+          "name": "Kong/insomnia",
+          "desc": "GraphQL/REST/WebSockets/SSE/gRPC开源跨平台API客户端",
+          "stars": "38,650",
+          "lang": "TypeScript",
+          "url": "https://github.com/Kong/insomnia"
+        },
+        {
+          "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+          "desc": "Rust编写的跨平台GUI工具，使用ADB去浮动非Root Android设备",
+          "stars": "7,901",
+          "lang": "Rust",
+          "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
+        },
+        {
+          "name": "yifanfeng97/Hyper-Extract",
+          "desc": "使用LLM将非结构化文本转化为结构化知识，支持图谱、超图和时空提取",
+          "stars": "1,727",
+          "lang": "Python",
+          "url": "https://github.com/yifanfeng97/Hyper-Extract"
+        }
+      ]
+    },
+    {
       "date": "2026-06-21",
       "weekday": "星期六",
       "file": "ai_news_日报_20260621.html",
