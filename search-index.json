@@ -4,7 +4,7 @@
       "date": "2026-06-23",
       "weekday": "星期二",
       "file": "reports/2026-06-23.html",
-    "news": [
+      "news": [
       {
         "title": "OpenAI GPT-5.6系列确认下周发布，Pro版已开启灰度测试",
         "summary": "OpenAI GPT-5.6系列确认将于下周正式发布，Pro版本已面向部分订阅用户开启灰度测试。新模型在推理速度、3D生成与代码推理能力上大幅超越前代，思考延迟降低80%以上。",
@@ -177,6 +177,7 @@
         "lang": "Rust",
         "url": "https://github.com/n0-computer/iroh"
       }
-    }
+    ]
+  }
   ]
 }
