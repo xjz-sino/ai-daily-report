@@ -1,8 +1,9 @@
-[
-  {
-    "date": "2026-06-23",
-    "weekday": "星期二",
-    "file": "2026-06-23.html",
+{
+  "reports": [
+    {
+      "date": "2026-06-23",
+      "weekday": "星期二",
+      "file": "reports/2026-06-23.html",
     "news": [
       {
         "title": "OpenAI GPT-5.6系列确认下周发布，Pro版已开启灰度测试",
@@ -176,6 +177,6 @@
         "lang": "Rust",
         "url": "https://github.com/n0-computer/iroh"
       }
-    ]
-  }
-]
+    }
+  ]
+}
