@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 日报 - 2026年6月24日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans CJK SC', sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        /* 导航栏 */
+        .navbar { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-bottom: 1px solid #334155; padding: 16px 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .navbar-brand { font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .navbar-nav { display: flex; gap: 16px; align-items: center; }
+        .navbar-nav a { color: #94a3b8; text-decoration: none; padding: 8px 16px; border-radius: 8px; transition: all 0.3s; font-size: 0.9rem; }
+        .navbar-nav a:hover { color: #e2e8f0; background: rgba(96, 165, 250, 0.1); }
+        .navbar-nav a.active { color: #60a5fa; background: rgba(96, 165, 250, 0.15); }
+        .navbar-nav .nav-arrow { color: #64748b; font-size: 0.8rem; }
+        
+        /* 头部 */
+        .header { text-align: center; padding: 48px 0 32px; }
+        .header h1 { font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+        .header .date { font-size: 1.1rem; color: #94a3b8; }
+        .header .date span { color: #60a5fa; font-weight: 600; }
+        
+        /* 摘要卡片 */
+        .summary-card { background: linear-gradient(135deg, #1e293b, #1a2332); border: 1px solid #334155; border-radius: 16px; padding: 24px; margin-bottom: 40px; }
+        .summary-card h2 { font-size: 1.2rem; color: #60a5fa; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .summary-card p { color: #cbd5e1; font-size: 0.95rem; }
+        
+        /* 板块标题 */
+        .section-title { font-size: 1.5rem; font-weight: 700; margin: 40px 0 20px; display: flex; align-items: center; gap: 12px; }
+        .section-title .icon { font-size: 1.3rem; }
+        .section-title.news-title { color: #f59e0b; }
+        .section-title.github-title { color: #22c55e; }
+        
+        /* 新闻列表 */
+        .news-grid { display: grid; gap: 16px; }
+        .news-item { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; transition: all 0.3s; }
+        .news-item:hover { border-color: #60a5fa; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(96, 165, 250, 0.1); }
+        .news-item h3 { font-size: 1.05rem; color: #f1f5f9; margin-bottom: 8px; line-height: 1.5; }
+        .news-item h3 a { color: #f1f5f9; text-decoration: none; }
+        .news-item h3 a:hover { color: #60a5fa; }
+        .news-item .summary { color: #94a3b8; font-size: 0.9rem; margin-bottom: 12px; line-height: 1.7; }
+        .news-item .tags { display: flex; gap: 8px; flex-wrap: wrap; }
+        .news-item .tag { background: rgba(96, 165, 250, 0.1); color: #60a5fa; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; border: 1px solid rgba(96, 165, 250, 0.2); }
+        .news-item .source { color: #64748b; font-size: 0.8rem; margin-top: 8px; }
+        
+        /* GitHub 项目 */
+        .github-grid { display: grid; gap: 16px; }
+        .github-item { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; transition: all 0.3s; display: flex; gap: 16px; align-items: flex-start; }
+        .github-item:hover { border-color: #22c55e; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(34, 197, 94, 0.1); }
+        .github-item .rank { font-size: 1.5rem; font-weight: 800; color: #334155; min-width: 36px; text-align: center; line-height: 1; padding-top: 4px; }
+        .github-item .info { flex: 1; }
+        .github-item .name { font-size: 1rem; font-weight: 600; color: #22c55e; margin-bottom: 4px; }
+        .github-item .name a { color: #22c55e; text-decoration: none; }
+        .github-item .name a:hover { text-decoration: underline; }
+        .github-item .desc { color: #94a3b8; font-size: 0.88rem; margin-bottom: 8px; line-height: 1.6; }
+        .github-item .meta { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+        .github-item .meta span { font-size: 0.8rem; color: #64748b; display: flex; align-items: center; gap: 4px; }
+        .github-item .lang-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+        
+        /* 底部 */
+        .footer { text-align: center; padding: 40px 0; color: #475569; font-size: 0.85rem; border-top: 1px solid #1e293b; margin-top: 60px; }
+        .footer a { color: #60a5fa; text-decoration: none; }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8rem; }
+            .navbar .container { flex-direction: column; gap: 12px; }
+            .navbar-nav { flex-wrap: wrap; justify-content: center; }
+            .github-item { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">AI 日报</a>
+            <div class="navbar-nav">
+                <a href="2026-06-23.html" class="nav-arrow">&#9664; 上一期</a>
+                <a href="#" class="active">2026-06-24</a>
+                <a href="#" class="nav-arrow" style="opacity:0.4;pointer-events:none;">下一期 &#9654;</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>AI 日报</h1>
+            <div class="date"><span>2026年6月24日</span> 星期三</div>
+        </div>
+
+        <!-- 今日摘要 -->
+        <div class="summary-card">
+            <h2>&#128240; 今日摘要</h2>
+            <p>6月24日，AI产业持续在政策落地与技术创新双轨并行。国内方面，8部门联合发布AI消费政策、金融AI安全指导意见落地、平台经济三年行动方案出台；国际方面，OpenAI GPT-5.6系列确认下周发布，Anthropic计划推出Claude Sonnet 4.8，Google将发布Gemini 3.5 Pro，6月成为AI头部模型密集发布月。GitHub Trending方面，Claude Skills生态持续爆发，OpenMontage开源视频生产系统以3592颗日增星领跑榜单，字节跳动deer-flow超级Agent框架持续火热。</p>
+        </div>
+
+        <!-- AI 新闻 -->
+        <h2 class="section-title news-title"><span class="icon">&#128240;</span> AI 新闻 TOP 10</h2>
+        <div class="news-grid">
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">1. 八部门联合发布AI消费政策，推动人工智能与消费场景深度融合</a></h3>
+                <div class="summary">商务部等8部门联合印发《关于加快"人工智能+消费"发展的实施意见》，首次系统性推动AI终端、人形机器人、智能家电的消费级渗透，支持AI在医疗、教育、文娱、出行等场景的规模化应用。</div>
+                <div class="tags"><span class="tag">政策</span><span class="tag">AI消费</span><span class="tag">人形机器人</span></div>
+                <div class="source">来源：新华网科技 / Reuters</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">2. 首份银行业保险业AI安全开发应用指导意见落地</a></h3>
+                <div class="summary">国家金融监督管理总局发布《关于银行业保险业人工智能安全开发应用的指导意见》，从治理架构、数据治理、算力建设、风险管理等7方面提出32项细则，严禁滥用AI技术生成虚假信息。</div>
+                <div class="tags"><span class="tag">金融AI</span><span class="tag">监管</span><span class="tag">安全</span></div>
+                <div class="source">来源：新华网科技 / MIT Technology Review</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">3. 平台经济三年行动方案发布，2028年前落地100个AI开放场景试点</a></h3>
+                <div class="summary">工信部等7部门印发《促进平台经济大中小企业协同发展行动方案(2026-2028年)》，明确2028年前遴选不少于100个平台资源开放场景试点，AI作为关键赋能技术被多次点名。</div>
+                <div class="tags"><span class="tag">平台经济</span><span class="tag">政策</span><span class="tag">AI开放</span></div>
+                <div class="source">来源：财联社 / The Verge</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">4. 第四届链博会开幕，首设人工智能与低空经济专区</a></h3>
+                <div class="summary">第四届中国国际供应链促进博览会在北京开幕，数智科技链首次设立人工智能专区，NVIDIA、Intel、Qualcomm、阿里、Apple等中外AI领军企业同台亮相，展示通用大模型、机器人志愿者等前沿技术。</div>
+                <div class="tags"><span class="tag">链博会</span><span class="tag">AI专区</span><span class="tag">低空经济</span></div>
+                <div class="source">来源：央视新闻 / IEEE Spectrum</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">5. 字节跳动洽谈采购天数智芯至少5万颗AI芯片，国产算力替代加速</a></h3>
+                <div class="summary">字节跳动正与国产AI芯片厂商天数智芯洽谈采购至少5万颗AI推理芯片，用于旗下AI助手"豆包"等应用。若交易达成，天数智芯将成为字节跳动第三家GPU供应商。</div>
+                <div class="tags"><span class="tag">芯片</span><span class="tag">国产算力</span><span class="tag">字节跳动</span></div>
+                <div class="source">来源：国金证券 / Reuters</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162199968" target="_blank">6. OpenAI GPT-5.6系列确认下周发布，覆盖三个层级</a></h3>
+                <div class="summary">陆家嘴金融早餐援引科技媒体testingcatalog最新报告确认，OpenAI计划下周正式发布GPT-5.6系列。与此同时，Anthropic计划推出Claude Sonnet 4.8，Google将发布Gemini 3.5 Pro，xAI将推出Grok 5。</div>
+                <div class="tags"><span class="tag">GPT-5.6</span><span class="tag">大模型</span><span class="tag">OpenAI</span></div>
+                <div class="source">来源：testingcatalog / TechCrunch</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/yuntongliangda/article/details/162174056" target="_blank">7. OpenAI GPT-5.6低调上线Pro端，3D能力大幅跃升</a></h3>
+                <div class="summary">多位ChatGPT Pro用户发现后台悄然上线未命名新模型，经证实为GPT-5.6。其推理速度显著提升，3D生成与代码能力大幅增强，标志着大模型竞争进入多模态深度整合阶段。</div>
+                <div class="tags"><span class="tag">GPT-5.6</span><span class="tag">3D生成</span><span class="tag">多模态</span></div>
+                <div class="source">来源：CSDN / The Verge</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162101475" target="_blank">8. Transformer之父Noam Shazeer跳槽OpenAI，大模型人才争夺白热化</a></h3>
+                <div class="summary">Transformer架构共同发明者Noam Shazeer确认加入OpenAI，这是继多位顶级AI研究员之后又一重量级人才流动，反映出头部AI公司在核心技术研发上的激烈竞争。</div>
+                <div class="tags"><span class="tag">人才</span><span class="tag">OpenAI</span><span class="tag">Transformer</span></div>
+                <div class="source">来源：CSDN / Wired</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162172524" target="_blank">9. 成都新增5个大模型备案，城市AI生态加速完善</a></h3>
+                <div class="summary">四川省网信办发布备案公告，成都新增5个生成式AI大模型进入国家备案名单，全市备案模型总数达23个，较2025年增长53%，覆盖工业制造、新闻媒体、金融教育等差异化垂直赛道。</div>
+                <div class="tags"><span class="tag">大模型备案</span><span class="tag">成都</span><span class="tag">垂直AI</span></div>
+                <div class="source">来源：四川省网信办 / 36氪</div>
+            </div>
+            <div class="news-item">
+                <h3><a href="https://blog.csdn.net/yanceyxin/article/details/162208780" target="_blank">10. Claude Skills生态爆发，AI开发重心从"调模型"转向"建系统"</a></h3>
+                <div class="summary">2026年6月GitHub Trending呈现清晰信号：AI开发重心从"调模型"转向"建系统"。Claude Skills成为新一代爆款品类，ECC项目总星突破21万，last30days-skill周增超1.2万星，Agent安全治理成为新热点。</div>
+                <div class="tags"><span class="tag">Claude Skills</span><span class="tag">Agent</span><span class="tag">开源生态</span></div>
+                <div class="source">来源：CSDN / GitHub Trending</div>
+            </div>
+        </div>
+
+        <!-- GitHub Trending -->
+        <h2 class="section-title github-title"><span class="icon">&#128025;</span> GitHub Trending TOP 10</h2>
+        <div class="github-grid">
+            <div class="github-item">
+                <div class="rank">1</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a></div>
+                    <div class="desc">全球首个开源Agentic视频生产系统。12条流水线、52个工具、500+ Agent Skills，将AI编程助手改造成完整视频制作工作室。</div>
+                    <div class="meta">
+                        <span>&#11088; 15,721</span>
+                        <span>&#128200; +3,592 today</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">2</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank">ZhuLinsen/daily_stock_analysis</a></div>
+                    <div class="desc">LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。</div>
+                    <div class="meta">
+                        <span>&#11088; 47,067</span>
+                        <span>&#128200; +1,119 today</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">3</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank">mukul975/Anthropic-Cybersecurity-Skills</a></div>
+                    <div class="desc">817个结构化网络安全技能，映射到6大安全框架（MITRE ATT&CK、NIST CSF 2.0等），支持Claude Code、Copilot、Codex等20+平台。</div>
+                    <div class="meta">
+                        <span>&#11088; 19,717</span>
+                        <span>&#128200; +1,041 today</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">4</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/garrytan/gstack" target="_blank">garrytan/gstack</a></div>
+                    <div class="desc">Garry Tan的Claude Code完整配置：23个工具，扮演CEO、设计师、工程经理、发布经理、文档工程师和QA角色。</div>
+                    <div class="meta">
+                        <span>&#11088; 114,092</span>
+                        <span>&#128200; +1,011 today</span>
+                        <span><span class="lang-dot" style="background:#3178c6;"></span> TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">5</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/bytedance/deer-flow" target="_blank">bytedance/deer-flow</a></div>
+                    <div class="desc">字节跳动开源的长周期超级Agent框架，集成沙箱、记忆、工具、技能、子Agent和消息网关，可处理分钟到小时级别的复杂任务。</div>
+                    <div class="meta">
+                        <span>&#11088; 73,929</span>
+                        <span>&#128200; +739 today</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">6</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/palmier-io/palmier-pro" target="_blank">palmier-io/palmier-pro</a></div>
+                    <div class="desc">专为AI打造的macOS视频编辑器，原生集成AI辅助剪辑功能，支持智能素材匹配和自动配乐。</div>
+                    <div class="meta">
+                        <span>&#11088; 8,428</span>
+                        <span>&#128200; +1,630 today</span>
+                        <span><span class="lang-dot" style="background:#F05138;"></span> Swift</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">7</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/anthropics/claude-plugins-official" target="_blank">anthropics/claude-plugins-official</a></div>
+                    <div class="desc">Anthropic官方维护的Claude Code高质量插件目录，提供经过审核的官方插件集合。</div>
+                    <div class="meta">
+                        <span>&#11088; 30,847</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">8</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/chopratejas/headroom" target="_blank">chopratejas/headroom</a></div>
+                    <div class="desc">LLM输入压缩工具，对工具输出、日志、RAG检索块等文本压缩60-95%，压缩后回答质量几乎不受影响。本月最大黑马，周增超1.4万星。</div>
+                    <div class="meta">
+                        <span>&#11088; 17,434</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">9</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/koala73/worldmonitor" target="_blank">koala73/worldmonitor</a></div>
+                    <div class="desc">实时全球情报仪表盘，AI驱动的新闻聚合、地缘政治监控和基础设施追踪，统一态势感知界面。</div>
+                    <div class="meta">
+                        <span>&#11088; 59,112</span>
+                        <span>&#128200; +294 today</span>
+                        <span><span class="lang-dot" style="background:#3178c6;"></span> TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="github-item">
+                <div class="rank">10</div>
+                <div class="info">
+                    <div class="name"><a href="https://github.com/NVIDIA/SkillSpector" target="_blank">NVIDIA/SkillSpector</a></div>
+                    <div class="desc">NVIDIA官方维护的AI Agent Skill安全扫描器，检查权限声明、数据泄露模式、命令注入风险等供应链安全问题。</div>
+                    <div class="meta">
+                        <span>&#11088; 3,669+</span>
+                        <span><span class="lang-dot" style="background:#3572A5;"></span> Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>AI 日报 &copy; 2026 | 数据来源：<a href="https://github.com/trending" target="_blank">GitHub Trending</a> / <a href="https://news.cn/tech/" target="_blank">新华网科技</a> / <a href="https://www.csdn.net/" target="_blank">CSDN</a></p>
+            <p style="margin-top:8px;">由 AI 自动生成，每日早上9点更新</p>
+        </div>
+    </div>
+</body>
+</html>

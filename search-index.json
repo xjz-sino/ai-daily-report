@@ -1,183 +1,139 @@
 {
-  "reports": [
+  "date": "2026-06-24",
+  "weekday": "星期三",
+  "file": "2026-06-24.html",
+  "news": [
     {
-      "date": "2026-06-23",
-      "weekday": "星期二",
-      "file": "reports/2026-06-23.html",
-      "news": [
-      {
-        "title": "OpenAI GPT-5.6系列确认下周发布，Pro版已开启灰度测试",
-        "summary": "OpenAI GPT-5.6系列确认将于下周正式发布，Pro版本已面向部分订阅用户开启灰度测试。新模型在推理速度、3D生成与代码推理能力上大幅超越前代，思考延迟降低80%以上。",
-        "tags": [
-          "OpenAI",
-          "GPT-5.6",
-          "大模型"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
-      },
-      {
-        "title": "微信AI助手「小微」开启灰度内测，超级App嵌入AI能力",
-        "summary": "微信AI助手「小微」正式开启灰度内测，标志着超级App首次将AI能力深度嵌入社交核心场景，用户可在聊天界面直接调用AI进行内容生成与信息查询。",
-        "tags": [
-          "微信",
-          "AI助手",
-          "应用落地"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
-      },
-      {
-        "title": "字节跳动Seed SpatialTree入选CVPR 2026，多模态空间能力获国际认可",
-        "summary": "字节跳动Seed团队提出的SpatialTree框架被CVPR 2026收录，该框架显著提升了多模态大模型的空间推理能力，获得国际学术顶会认可。",
-        "tags": [
-          "字节跳动",
-          "CVPR",
-          "多模态"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
-      },
-      {
-        "title": "ChatGPT全球市场份额首次跌破50%，多强格局成型",
-        "summary": "第三方数据显示ChatGPT全球用户市场份额降至46.4%，为2023年1月上线以来首次跌破50%。谷歌Gemini升至27.7%，Anthropic Claude占10.3%，行业从一家独大转向多强竞争。",
-        "tags": [
-          "ChatGPT",
-          "市场份额",
-          "竞争格局"
-        ],
-        "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
-      },
-      {
-        "title": "英伟达20亿美元光芯片工厂德州动工，黄仁勋亲临奠基",
-        "summary": "黄仁勋赴美国德克萨斯州为Coherent扩建厂房破土，这是英伟达20亿美元光芯片投资的首个落地项目。工厂将建成全球首条6英寸磷化铟量产线，破解万卡级AI集群铜缆互联的物理瓶颈。",
-        "tags": [
-          "英伟达",
-          "光芯片",
-          "算力"
-        ],
-        "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
-      },
-      {
-        "title": "成都市新增5款生成式AI大模型完成国家备案，总量升至23款",
-        "summary": "成都市新增5款生成式AI大模型通过国家备案，备案总量升至23款，区域AI产业集聚效应持续放大，成为国内AI大模型备案数量领先城市之一。",
-        "tags": [
-          "成都",
-          "大模型备案",
-          "政策"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
-      },
-      {
-        "title": "摩尔线程MTT AICUBE家庭AI中枢开启预售",
-        "summary": "摩尔线程发布MTT AICUBE家庭AI中枢并开启预售，搭载自研智能SoC芯片'长江'，集成全大核CPU、全功能GPU与双核NPU，面向家庭AI场景提供本地化算力支持。",
-        "tags": [
-          "摩尔线程",
-          "AI芯片",
-          "端侧AI"
-        ],
-        "url": "https://www.dramx.com/News/AI/20260618-40641.html"
-      },
-      {
-        "title": "OpenAI和谷歌员工联名公开信，警告前沿AI公司鲁莽文化",
-        "summary": "13名OpenAI和谷歌DeepMind现任及前任员工签署联名公开信，警告前沿AI公司的鲁莽和保密文化，呼吁建立更高透明度并为举报人提供更多保护。",
-        "tags": [
-          "OpenAI",
-          "谷歌",
-          "AI安全"
-        ],
-        "url": "https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/139485054"
-      },
-      {
-        "title": "英特尔推出Lunar Lake笔记本芯片，CPU速度提升14%",
-        "summary": "英特尔正式发布Lunar Lake笔记本电脑芯片，CPU速度提升14%，集成GPU速度提升50%，同时公布Gaudi 2/3 AI芯片套件售价分别为6.5万和12.5万美元。",
-        "tags": [
-          "英特尔",
-          "Lunar Lake",
-          "AI芯片"
-        ],
-        "url": "https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/139485054"
-      },
-      {
-        "title": "思科推出Nexus HyperFabric AI集群，成立10亿美元AI投资基金",
-        "summary": "思科推出与英伟达合作开发的Nexus HyperFabric AI集群产品，并宣布成立10亿美元AI投资基金，加速企业AI基础设施部署。",
-        "tags": [
-          "思科",
-          "英伟达",
-          "AI投资"
-        ],
-        "url": "https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/139485054"
-      }
-    ],
-    "github": [
-      {
-        "name": "DeusData/codebase-memory-mcp",
-        "desc": "高性能代码智能MCP服务器，将代码库索引为持久化知识图谱，支持158种语言，亚毫秒级查询，减少99%的token消耗。",
-        "stars": 10205,
-        "lang": "C",
-        "url": "https://github.com/DeusData/codebase-memory-mcp"
-      },
-      {
-        "name": "chopratejas/headroom",
-        "desc": "在内容到达LLM之前压缩工具输出、日志、文件和RAG块，减少60-95%的token，保持相同答案质量。",
-        "stars": 44197,
-        "lang": "Python",
-        "url": "https://github.com/chopratejas/headroom"
-      },
-      {
-        "name": "Panniantong/Agent-Reach",
-        "desc": "赋予AI Agent浏览整个互联网的能力，支持Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台的读取和搜索。",
-        "stars": 36803,
-        "lang": "Python",
-        "url": "https://github.com/Panniantong/Agent-Reach"
-      },
-      {
-        "name": "google-research/timesfm",
-        "desc": "Google Research开发的预训练时间序列基础模型，用于时间序列预测任务。",
-        "stars": 24870,
-        "lang": "Python",
-        "url": "https://github.com/google-research/timesfm"
-      },
-      {
-        "name": "NVIDIA/SkillSpector",
-        "desc": "AI Agent技能安全扫描器，检测漏洞、恶意模式和安全风险。",
-        "stars": 9006,
-        "lang": "Python",
-        "url": "https://github.com/NVIDIA/SkillSpector"
-      },
-      {
-        "name": "calesthio/OpenMontage",
-        "desc": "全球首个开源Agentic视频制作系统，包含12条流水线、52个工具、500+Agent技能，将AI编程助手变成完整视频制作工作室。",
-        "stars": 8570,
-        "lang": "Python",
-        "url": "https://github.com/calesthio/OpenMontage"
-      },
-      {
-        "name": "addyosmani/agent-skills",
-        "desc": "面向AI编程Agent的生产级工程技能集合，帮助开发者提升AI辅助编码效率。",
-        "stars": 64726,
-        "lang": "Shell",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "makeplane/plane",
-        "desc": "开源的Jira、Linear、Monday和ClickUp替代品，现代项目管理平台，支持任务、冲刺、文档和分类管理。",
-        "stars": 52333,
-        "lang": "TypeScript",
-        "url": "https://github.com/makeplane/plane"
-      },
-      {
-        "name": "LMCache/LMCache",
-        "desc": "通过最快的KV缓存层为LLM加速，提升大语言模型推理性能。",
-        "stars": 9538,
-        "lang": "Python",
-        "url": "https://github.com/LMCache/LMCache"
-      },
-      {
-        "name": "n0-computer/iroh",
-        "desc": "IP地址会变化，用密钥代替拨号。Rust编写的模块化网络协议栈。",
-        "stars": 10442,
-        "lang": "Rust",
-        "url": "https://github.com/n0-computer/iroh"
-      }
-    ]
-  }
+      "title": "八部门联合发布AI消费政策，推动人工智能与消费场景深度融合",
+      "summary": "商务部等8部门联合印发《关于加快"人工智能+消费"发展的实施意见》，首次系统性推动AI终端、人形机器人、智能家电的消费级渗透。",
+      "tags": ["政策", "AI消费", "人形机器人"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "首份银行业保险业AI安全开发应用指导意见落地",
+      "summary": "国家金融监督管理总局发布金融AI安全指导意见，从治理架构、数据治理、算力建设、风险管理等7方面提出32项细则。",
+      "tags": ["金融AI", "监管", "安全"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "平台经济三年行动方案发布，2028年前落地100个AI开放场景试点",
+      "summary": "工信部等7部门印发平台经济协同发展行动方案，明确2028年前遴选不少于100个平台资源开放场景试点。",
+      "tags": ["平台经济", "政策", "AI开放"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "第四届链博会开幕，首设人工智能与低空经济专区",
+      "summary": "第四届链博会在北京开幕，首次设立AI专区，NVIDIA、Intel、Qualcomm、阿里、Apple等企业同台亮相。",
+      "tags": ["链博会", "AI专区", "低空经济"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "字节跳动洽谈采购天数智芯至少5万颗AI芯片",
+      "summary": "字节跳动正与天数智芯洽谈采购至少5万颗AI推理芯片，用于豆包等应用，国产算力替代加速。",
+      "tags": ["芯片", "国产算力", "字节跳动"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "OpenAI GPT-5.6系列确认下周发布，覆盖三个层级",
+      "summary": "OpenAI计划下周正式发布GPT-5.6系列。Anthropic计划推出Claude Sonnet 4.8，Google将发布Gemini 3.5 Pro。",
+      "tags": ["GPT-5.6", "大模型", "OpenAI"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
+    },
+    {
+      "title": "OpenAI GPT-5.6低调上线Pro端，3D能力大幅跃升",
+      "summary": "GPT-5.6推理速度显著提升，3D生成与代码能力大幅增强，大模型竞争进入多模态深度整合阶段。",
+      "tags": ["GPT-5.6", "3D生成", "多模态"],
+      "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
+    },
+    {
+      "title": "Transformer之父Noam Shazeer跳槽OpenAI",
+      "summary": "Transformer架构共同发明者Noam Shazeer确认加入OpenAI，反映头部AI公司在核心技术研发上的激烈人才竞争。",
+      "tags": ["人才", "OpenAI", "Transformer"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162101475"
+    },
+    {
+      "title": "成都新增5个大模型备案，城市AI生态加速完善",
+      "summary": "成都新增5个生成式AI大模型进入国家备案名单，全市备案模型总数达23个，较2025年增长53%。",
+      "tags": ["大模型备案", "成都", "垂直AI"],
+      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
+    },
+    {
+      "title": "Claude Skills生态爆发，AI开发重心转向建系统",
+      "summary": "6月GitHub Trending显示AI开发重心从调模型转向建系统，Claude Skills成为新一代爆款品类，ECC总星突破21万。",
+      "tags": ["Claude Skills", "Agent", "开源生态"],
+      "url": "https://blog.csdn.net/yanceyxin/article/details/162208780"
+    }
+  ],
+  "github": [
+    {
+      "name": "calesthio/OpenMontage",
+      "desc": "全球首个开源Agentic视频生产系统，12条流水线、52个工具、500+ Agent Skills",
+      "stars": "15,721",
+      "lang": "Python",
+      "url": "https://github.com/calesthio/OpenMontage"
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "desc": "LLM驱动的多市场股票智能分析系统，支持零成本定时运行",
+      "stars": "47,067",
+      "lang": "Python",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    {
+      "name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "desc": "817个结构化网络安全技能，映射6大安全框架，支持20+平台",
+      "stars": "19,717",
+      "lang": "Python",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    },
+    {
+      "name": "garrytan/gstack",
+      "desc": "Garry Tan的Claude Code完整配置，23个工具扮演多角色",
+      "stars": "114,092",
+      "lang": "TypeScript",
+      "url": "https://github.com/garrytan/gstack"
+    },
+    {
+      "name": "bytedance/deer-flow",
+      "desc": "字节跳动开源长周期超级Agent框架，集成沙箱、记忆、工具、子Agent",
+      "stars": "73,929",
+      "lang": "Python",
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    {
+      "name": "palmier-io/palmier-pro",
+      "desc": "专为AI打造的macOS视频编辑器，原生AI辅助剪辑",
+      "stars": "8,428",
+      "lang": "Swift",
+      "url": "https://github.com/palmier-io/palmier-pro"
+    },
+    {
+      "name": "anthropics/claude-plugins-official",
+      "desc": "Anthropic官方维护的Claude Code高质量插件目录",
+      "stars": "30,847",
+      "lang": "Python",
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+      "name": "chopratejas/headroom",
+      "desc": "LLM输入压缩工具，压缩60-95%且质量几乎不受影响",
+      "stars": "17,434",
+      "lang": "Python",
+      "url": "https://github.com/chopratejas/headroom"
+    },
+    {
+      "name": "koala73/worldmonitor",
+      "desc": "实时全球情报仪表盘，AI驱动新闻聚合与地缘政治监控",
+      "stars": "59,112",
+      "lang": "TypeScript",
+      "url": "https://github.com/koala73/worldmonitor"
+    },
+    {
+      "name": "NVIDIA/SkillSpector",
+      "desc": "NVIDIA官方Skill安全扫描器，检查权限声明与数据泄露风险",
+      "stars": "3,669",
+      "lang": "Python",
+      "url": "https://github.com/NVIDIA/SkillSpector"
+    }
   ]
 }
