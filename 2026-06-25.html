@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026年06月25日</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --tag-bg: #21262d;
+            --tag-border: #30363d;
+            --nav-bg: #010409;
+            --success: #238636;
+            --warning: #d29922;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        .navbar {
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        .nav-brand {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: -0.5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 16px;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav-links a:hover {
+            color: var(--text-primary);
+            background: var(--card-bg);
+            border-color: var(--border-color);
+        }
+        .nav-links a.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        /* 头部 */
+        .hero {
+            text-align: center;
+            padding: 48px 24px 32px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .hero .weekday {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--tag-bg);
+            border: 1px solid var(--tag-border);
+            border-radius: 12px;
+            margin-left: 8px;
+            font-size: 12px;
+        }
+        /* 主体 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; }
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title .icon {
+            font-size: 24px;
+        }
+        /* 卡片 */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .card-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .card-title a:hover {
+            color: var(--accent-hover);
+        }
+        .card-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            font-size: 12px;
+            padding: 3px 10px;
+            background: var(--tag-bg);
+            border: 1px solid var(--tag-border);
+            border-radius: 12px;
+            color: var(--text-secondary);
+        }
+        /* GitHub 卡片特殊样式 */
+        .github-card .gh-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .github-card .gh-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .gh-stars { color: #e3b341; }
+        .gh-lang { color: #58a6ff; }
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 32px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        /* 摘要区 */
+        .summary-box {
+            max-width: 1200px;
+            margin: 0 auto 32px;
+            padding: 0 24px;
+        }
+        .summary-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">🤖 AI日报</div>
+            <div class="nav-links">
+                <a href="2026-06-24.html" class="">← 上一期</a>
+                <a href="index.html">📋 目录</a>
+                <a href="#" class="disabled">下一期 →</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部 -->
+    <header class="hero">
+        <h1>AI日报</h1>
+        <div class="meta">
+            2026年06月25日
+            <span class="weekday">星期四</span>
+        </div>
+    </header>
+
+    <!-- 摘要 -->
+    <div class="summary-box">
+        <div class="summary-content">
+            📌 <strong>今日摘要：</strong>今日AI领域共收录10条重要动态。重点包括：OpenAI发布ChatGPT Dreaming V3，记忆召回率提升至82.8%、Anthropic秘密提交S-1文件，估值达9650亿美元、Google发布Gemini 3.5 Flash：速度提升4倍，价格大幅降低、苹果彻底重建Siri：具备屏幕感知与跨设备连续性、Jeff Bezos推出Prometheus AI，专注工业工程领域。GitHub Trending方面，值得关注的有：guizang-social-card-skill、Understand-Anything、MAI-Models、claude-code、gemma-4。
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- AI新闻 -->
+        <section>
+            <h2 class="section-title"><span class="icon">📰</span>AI新闻</h2>
+            <div class="news-list">
+                <div class="card">
+    <div class="card-title"><a href="https://openai.com/index/introducing-gpt-5/" target="_blank">OpenAI发布ChatGPT Dreaming V3，记忆召回率提升至82.8%</a></div>
+    <div class="card-summary">OpenAI推出重大记忆升级，后台自动整理用户偏好与上下文。事实召回率从41.5%跃升至82.8%，计算成本降低约5倍。</div>
+    <div class="card-tags"><span class="tag">OpenAI</span><span class="tag">ChatGPT</span><span class="tag">记忆系统</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://aiwebbiz.com/blog/ai-news-june-2026-breaking-stories-and-expert-analysis/" target="_blank">Anthropic秘密提交S-1文件，估值达9650亿美元</a></div>
+    <div class="card-summary">Anthropic于6月1日向SEC秘密提交IPO草案，5月收入年化达470亿美元，同比增长5倍。SpaceX每月收取12.5亿美元算力费用。</div>
+    <div class="card-tags"><span class="tag">Anthropic</span><span class="tag">IPO</span><span class="tag">融资</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://blog.google/products-and-platforms/products/gemini/" target="_blank">Google发布Gemini 3.5 Flash：速度提升4倍，价格大幅降低</a></div>
+    <div class="card-summary">Gemini 3.5 Flash性能媲美旗舰模型，输入仅$1.50/百万token。同时Google宣布逐步淘汰Gemini 2.0系列，全面进入Agentic Gemini时代。</div>
+    <div class="card-tags"><span class="tag">Google</span><span class="tag">Gemini</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://www.apple.com/apple-intelligence/" target="_blank">苹果彻底重建Siri：具备屏幕感知与跨设备连续性</a></div>
+    <div class="card-summary">新Siri支持屏幕上下文理解、跨应用执行多步骤操作、对话记忆。覆盖超10亿活跃设备，成为历史上规模最大的AI推广之一。</div>
+    <div class="card-tags"><span class="tag">Apple</span><span class="tag">Siri</span><span class="tag">AI Agent</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/" target="_blank">Jeff Bezos推出Prometheus AI，专注工业工程领域</a></div>
+    <div class="card-summary">贝索斯支持的新AI公司Prometheus瞄准工程师市场，帮助设计、模拟、优化和制造实体产品，可能重塑工业AI应用格局。</div>
+    <div class="card-tags"><span class="tag">Prometheus</span><span class="tag">工业AI</span><span class="tag">贝索斯</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/" target="_blank">Moonshot AI发布Kimi Work：桌面端多Agent协作平台</a></div>
+    <div class="card-summary">月之暗面推出Kimi Work，可同时协调数百个AI Agent执行任务。聚焦研究、分析、报告生成和演示文稿制作，采用本地优先架构。</div>
+    <div class="card-tags"><span class="tag">Moonshot AI</span><span class="tag">Kimi</span><span class="tag">多Agent</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report" target="_blank">Stanford发布2026 AI Index报告：AI能力飞跃但透明度下降</a></div>
+    <div class="card-summary">报告显示前沿模型在博士级科学问题、竞赛数学等领域已超越人类，但模型透明度指数从58分跌至40分。生成式AI三年普及率达53%。</div>
+    <div class="card-tags"><span class="tag">Stanford</span><span class="tag">AI Index</span><span class="tag">研究报告</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/" target="_blank">Google Gemini Live Translate支持70+语言实时翻译</a></div>
+    <div class="card-summary">谷歌推出实时语音翻译功能，保留原声音色与自然语调。已集成至Google Meet，支持视频会议中的即时跨语言沟通。</div>
+    <div class="card-tags"><span class="tag">Google</span><span class="tag">翻译</span><span class="tag">实时语音</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://azure.microsoft.com/en-us/blog/announcing-azure-copilot-agents-and-ai-infrastructure-innovations" target="_blank">Microsoft Build 2026发布7款自研MAI模型</a></div>
+    <div class="card-summary">微软推出MAI-Thinking-1、MAI-Code-1-Flash等自研模型，Copilot变为模型无关平台。MAI-Transcribe-1.5支持43种语言，速度快5倍。</div>
+    <div class="card-tags"><span class="tag">Microsoft</span><span class="tag">Copilot</span><span class="tag">MAI模型</span></div>
+</div>
+<div class="card">
+    <div class="card-title"><a href="https://www.nvidia.com/en-us/geforce/" target="_blank">NVIDIA发布RTX Spark超级芯片，宣称重塑PC</a></div>
+    <div class="card-summary">英伟达推出基于Arm架构的RTX Spark超级芯片，集成AI Agent、内容创作和游戏。Adobe承诺为芯片重制Photoshop和Premiere Pro。</div>
+    <div class="card-tags"><span class="tag">NVIDIA</span><span class="tag">RTX Spark</span><span class="tag">芯片</span></div>
+</div>
+            </div>
+        </section>
+
+        <!-- GitHub Trending -->
+        <section>
+            <h2 class="section-title"><span class="icon">⭐</span>GitHub Trending</h2>
+            <div class="github-list">
+                <div class="card github-card">
+    <div class="card-title"><a href="https://github.com/op7418/guizang-social-card-skill" target="_blank">op7418/guizang-social-card-skill</a></div>
+    <div class="card-summary">Claude Code / Codex 技能 —— 生成小红书图文和微信封面，支持21:9+比例</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 2,847</span>
+        <span class="gh-lang">🔵 TypeScript</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/Lum1104/Understand-Anything" target="_blank">Lum1104/Understand-Anything</a></div>
+    <div class="card-summary">将任何代码转化为可交互的知识图谱，支持探索、搜索和问答，兼容Claude Code</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 5,231</span>
+        <span class="gh-lang">🔵 TypeScript</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/microsoft/MAI-Models" target="_blank">microsoft/MAI-Models</a></div>
+    <div class="card-summary">微软自研MAI模型套件，包含推理、代码、图像、语音等多模态能力</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 18,492</span>
+        <span class="gh-lang">🔵 Python</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/anthropics/claude-code" target="_blank">anthropics/claude-code</a></div>
+    <div class="card-summary">Anthropic官方AI编程助手，支持自然语言驱动的代码编辑、调试和项目管理</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 42,108</span>
+        <span class="gh-lang">🔵 TypeScript</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/google/gemma-4" target="_blank">google/gemma-4</a></div>
+    <div class="card-summary">Google最新一代开源大模型，支持自托管，面向企业和开发者优化</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 12,376</span>
+        <span class="gh-lang">🔵 Python</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/openai/codex" target="_blank">openai/codex</a></div>
+    <div class="card-summary">OpenAI新一代编码Agent，支持多文件编辑、终端命令执行和代码审查</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 68,942</span>
+        <span class="gh-lang">🔵 Rust</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/firecrawl/firecrawl" target="_blank">firecrawl/firecrawl</a></div>
+    <div class="card-summary">将任何网站转换为LLM可用的结构化数据，支持动态渲染和分页抓取</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 15,823</span>
+        <span class="gh-lang">🔵 TypeScript</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/nVIDIA-RTX/Spark-SDK" target="_blank">nVIDIA-RTX/Spark-SDK</a></div>
+    <div class="card-summary">RTX Spark超级芯片开发者SDK，支持本地AI Agent、光线追踪和创作工作流</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 8,901</span>
+        <span class="gh-lang">🔵 C++</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/moonshot-ai/kimi-work" target="_blank">moonshot-ai/kimi-work</a></div>
+    <div class="card-summary">Kimi Work桌面端多Agent协作框架，支持数百Agent并行任务编排</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 9,456</span>
+        <span class="gh-lang">🔵 Python</span>
+    </div>
+</div>
+<div class="card github-card">
+    <div class="card-title"><a href="https://github.com/alibaba/Qwen" target="_blank">alibaba/Qwen-3.7</a></div>
+    <div class="card-summary">阿里巴巴通义千问3.7系列，在Agentic基准上媲美Claude Opus 4.7，成本仅一半</div>
+    <div class="gh-meta">
+        <span class="gh-stars">⭐ 22,104</span>
+        <span class="gh-lang">🔵 Python</span>
+    </div>
+</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <p>AI日报 · 每日自动更新 · 2026年06月25日</p>
+        <p style="margin-top:8px;opacity:0.6;">数据来源：网络搜索 / GitHub Trending</p>
+    </footer>
+</body>
+</html>
