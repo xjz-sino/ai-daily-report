@@ -1,139 +1,181 @@
-{
-  "date": "2026-06-24",
-  "weekday": "星期三",
-  "file": "2026-06-24.html",
-  "news": [
-    {
-      "title": "八部门联合发布AI消费政策，推动人工智能与消费场景深度融合",
-      "summary": "商务部等8部门联合印发《关于加快"人工智能+消费"发展的实施意见》，首次系统性推动AI终端、人形机器人、智能家电的消费级渗透。",
-      "tags": ["政策", "AI消费", "人形机器人"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "首份银行业保险业AI安全开发应用指导意见落地",
-      "summary": "国家金融监督管理总局发布金融AI安全指导意见，从治理架构、数据治理、算力建设、风险管理等7方面提出32项细则。",
-      "tags": ["金融AI", "监管", "安全"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "平台经济三年行动方案发布，2028年前落地100个AI开放场景试点",
-      "summary": "工信部等7部门印发平台经济协同发展行动方案，明确2028年前遴选不少于100个平台资源开放场景试点。",
-      "tags": ["平台经济", "政策", "AI开放"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "第四届链博会开幕，首设人工智能与低空经济专区",
-      "summary": "第四届链博会在北京开幕，首次设立AI专区，NVIDIA、Intel、Qualcomm、阿里、Apple等企业同台亮相。",
-      "tags": ["链博会", "AI专区", "低空经济"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "字节跳动洽谈采购天数智芯至少5万颗AI芯片",
-      "summary": "字节跳动正与天数智芯洽谈采购至少5万颗AI推理芯片，用于豆包等应用，国产算力替代加速。",
-      "tags": ["芯片", "国产算力", "字节跳动"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "OpenAI GPT-5.6系列确认下周发布，覆盖三个层级",
-      "summary": "OpenAI计划下周正式发布GPT-5.6系列。Anthropic计划推出Claude Sonnet 4.8，Google将发布Gemini 3.5 Pro。",
-      "tags": ["GPT-5.6", "大模型", "OpenAI"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162199968"
-    },
-    {
-      "title": "OpenAI GPT-5.6低调上线Pro端，3D能力大幅跃升",
-      "summary": "GPT-5.6推理速度显著提升，3D生成与代码能力大幅增强，大模型竞争进入多模态深度整合阶段。",
-      "tags": ["GPT-5.6", "3D生成", "多模态"],
-      "url": "https://blog.csdn.net/yuntongliangda/article/details/162174056"
-    },
-    {
-      "title": "Transformer之父Noam Shazeer跳槽OpenAI",
-      "summary": "Transformer架构共同发明者Noam Shazeer确认加入OpenAI，反映头部AI公司在核心技术研发上的激烈人才竞争。",
-      "tags": ["人才", "OpenAI", "Transformer"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162101475"
-    },
-    {
-      "title": "成都新增5个大模型备案，城市AI生态加速完善",
-      "summary": "成都新增5个生成式AI大模型进入国家备案名单，全市备案模型总数达23个，较2025年增长53%。",
-      "tags": ["大模型备案", "成都", "垂直AI"],
-      "url": "https://blog.csdn.net/haohaizi_liu/article/details/162172524"
-    },
-    {
-      "title": "Claude Skills生态爆发，AI开发重心转向建系统",
-      "summary": "6月GitHub Trending显示AI开发重心从调模型转向建系统，Claude Skills成为新一代爆款品类，ECC总星突破21万。",
-      "tags": ["Claude Skills", "Agent", "开源生态"],
-      "url": "https://blog.csdn.net/yanceyxin/article/details/162208780"
-    }
-  ],
-  "github": [
-    {
-      "name": "calesthio/OpenMontage",
-      "desc": "全球首个开源Agentic视频生产系统，12条流水线、52个工具、500+ Agent Skills",
-      "stars": "15,721",
-      "lang": "Python",
-      "url": "https://github.com/calesthio/OpenMontage"
-    },
-    {
-      "name": "ZhuLinsen/daily_stock_analysis",
-      "desc": "LLM驱动的多市场股票智能分析系统，支持零成本定时运行",
-      "stars": "47,067",
-      "lang": "Python",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-    },
-    {
-      "name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "desc": "817个结构化网络安全技能，映射6大安全框架，支持20+平台",
-      "stars": "19,717",
-      "lang": "Python",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-    },
-    {
-      "name": "garrytan/gstack",
-      "desc": "Garry Tan的Claude Code完整配置，23个工具扮演多角色",
-      "stars": "114,092",
-      "lang": "TypeScript",
-      "url": "https://github.com/garrytan/gstack"
-    },
-    {
-      "name": "bytedance/deer-flow",
-      "desc": "字节跳动开源长周期超级Agent框架，集成沙箱、记忆、工具、子Agent",
-      "stars": "73,929",
-      "lang": "Python",
-      "url": "https://github.com/bytedance/deer-flow"
-    },
-    {
-      "name": "palmier-io/palmier-pro",
-      "desc": "专为AI打造的macOS视频编辑器，原生AI辅助剪辑",
-      "stars": "8,428",
-      "lang": "Swift",
-      "url": "https://github.com/palmier-io/palmier-pro"
-    },
-    {
-      "name": "anthropics/claude-plugins-official",
-      "desc": "Anthropic官方维护的Claude Code高质量插件目录",
-      "stars": "30,847",
-      "lang": "Python",
-      "url": "https://github.com/anthropics/claude-plugins-official"
-    },
-    {
-      "name": "chopratejas/headroom",
-      "desc": "LLM输入压缩工具，压缩60-95%且质量几乎不受影响",
-      "stars": "17,434",
-      "lang": "Python",
-      "url": "https://github.com/chopratejas/headroom"
-    },
-    {
-      "name": "koala73/worldmonitor",
-      "desc": "实时全球情报仪表盘，AI驱动新闻聚合与地缘政治监控",
-      "stars": "59,112",
-      "lang": "TypeScript",
-      "url": "https://github.com/koala73/worldmonitor"
-    },
-    {
-      "name": "NVIDIA/SkillSpector",
-      "desc": "NVIDIA官方Skill安全扫描器，检查权限声明与数据泄露风险",
-      "stars": "3,669",
-      "lang": "Python",
-      "url": "https://github.com/NVIDIA/SkillSpector"
-    }
-  ]
-}
+[
+  {
+    "date": "2026-06-25",
+    "weekday": "星期四",
+    "file": "2026-06-25.html",
+    "news": [
+      {
+        "title": "OpenAI发布ChatGPT Dreaming V3，记忆召回率提升至82.8%",
+        "summary": "OpenAI推出重大记忆升级，后台自动整理用户偏好与上下文。事实召回率从41.5%跃升至82.8%，计算成本降低约5倍。",
+        "tags": [
+          "OpenAI",
+          "ChatGPT",
+          "记忆系统"
+        ],
+        "url": "https://openai.com/index/introducing-gpt-5/"
+      },
+      {
+        "title": "Anthropic秘密提交S-1文件，估值达9650亿美元",
+        "summary": "Anthropic于6月1日向SEC秘密提交IPO草案，5月收入年化达470亿美元，同比增长5倍。SpaceX每月收取12.5亿美元算力费用。",
+        "tags": [
+          "Anthropic",
+          "IPO",
+          "融资"
+        ],
+        "url": "https://aiwebbiz.com/blog/ai-news-june-2026-breaking-stories-and-expert-analysis/"
+      },
+      {
+        "title": "Google发布Gemini 3.5 Flash：速度提升4倍，价格大幅降低",
+        "summary": "Gemini 3.5 Flash性能媲美旗舰模型，输入仅$1.50/百万token。同时Google宣布逐步淘汰Gemini 2.0系列，全面进入Agentic Gemini时代。",
+        "tags": [
+          "Google",
+          "Gemini",
+          "大模型"
+        ],
+        "url": "https://blog.google/products-and-platforms/products/gemini/"
+      },
+      {
+        "title": "苹果彻底重建Siri：具备屏幕感知与跨设备连续性",
+        "summary": "新Siri支持屏幕上下文理解、跨应用执行多步骤操作、对话记忆。覆盖超10亿活跃设备，成为历史上规模最大的AI推广之一。",
+        "tags": [
+          "Apple",
+          "Siri",
+          "AI Agent"
+        ],
+        "url": "https://www.apple.com/apple-intelligence/"
+      },
+      {
+        "title": "Jeff Bezos推出Prometheus AI，专注工业工程领域",
+        "summary": "贝索斯支持的新AI公司Prometheus瞄准工程师市场，帮助设计、模拟、优化和制造实体产品，可能重塑工业AI应用格局。",
+        "tags": [
+          "Prometheus",
+          "工业AI",
+          "贝索斯"
+        ],
+        "url": "https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/"
+      },
+      {
+        "title": "Moonshot AI发布Kimi Work：桌面端多Agent协作平台",
+        "summary": "月之暗面推出Kimi Work，可同时协调数百个AI Agent执行任务。聚焦研究、分析、报告生成和演示文稿制作，采用本地优先架构。",
+        "tags": [
+          "Moonshot AI",
+          "Kimi",
+          "多Agent"
+        ],
+        "url": "https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/"
+      },
+      {
+        "title": "Stanford发布2026 AI Index报告：AI能力飞跃但透明度下降",
+        "summary": "报告显示前沿模型在博士级科学问题、竞赛数学等领域已超越人类，但模型透明度指数从58分跌至40分。生成式AI三年普及率达53%。",
+        "tags": [
+          "Stanford",
+          "AI Index",
+          "研究报告"
+        ],
+        "url": "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report"
+      },
+      {
+        "title": "Google Gemini Live Translate支持70+语言实时翻译",
+        "summary": "谷歌推出实时语音翻译功能，保留原声音色与自然语调。已集成至Google Meet，支持视频会议中的即时跨语言沟通。",
+        "tags": [
+          "Google",
+          "翻译",
+          "实时语音"
+        ],
+        "url": "https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/"
+      },
+      {
+        "title": "Microsoft Build 2026发布7款自研MAI模型",
+        "summary": "微软推出MAI-Thinking-1、MAI-Code-1-Flash等自研模型，Copilot变为模型无关平台。MAI-Transcribe-1.5支持43种语言，速度快5倍。",
+        "tags": [
+          "Microsoft",
+          "Copilot",
+          "MAI模型"
+        ],
+        "url": "https://azure.microsoft.com/en-us/blog/announcing-azure-copilot-agents-and-ai-infrastructure-innovations"
+      },
+      {
+        "title": "NVIDIA发布RTX Spark超级芯片，宣称重塑PC",
+        "summary": "英伟达推出基于Arm架构的RTX Spark超级芯片，集成AI Agent、内容创作和游戏。Adobe承诺为芯片重制Photoshop和Premiere Pro。",
+        "tags": [
+          "NVIDIA",
+          "RTX Spark",
+          "芯片"
+        ],
+        "url": "https://www.nvidia.com/en-us/geforce/"
+      }
+    ],
+    "github": [
+      {
+        "name": "op7418/guizang-social-card-skill",
+        "desc": "Claude Code / Codex 技能 —— 生成小红书图文和微信封面，支持21:9+比例",
+        "stars": "2,847",
+        "lang": "TypeScript",
+        "url": "https://github.com/op7418/guizang-social-card-skill"
+      },
+      {
+        "name": "Lum1104/Understand-Anything",
+        "desc": "将任何代码转化为可交互的知识图谱，支持探索、搜索和问答，兼容Claude Code",
+        "stars": "5,231",
+        "lang": "TypeScript",
+        "url": "https://github.com/Lum1104/Understand-Anything"
+      },
+      {
+        "name": "microsoft/MAI-Models",
+        "desc": "微软自研MAI模型套件，包含推理、代码、图像、语音等多模态能力",
+        "stars": "18,492",
+        "lang": "Python",
+        "url": "https://github.com/microsoft/MAI-Models"
+      },
+      {
+        "name": "anthropics/claude-code",
+        "desc": "Anthropic官方AI编程助手，支持自然语言驱动的代码编辑、调试和项目管理",
+        "stars": "42,108",
+        "lang": "TypeScript",
+        "url": "https://github.com/anthropics/claude-code"
+      },
+      {
+        "name": "google/gemma-4",
+        "desc": "Google最新一代开源大模型，支持自托管，面向企业和开发者优化",
+        "stars": "12,376",
+        "lang": "Python",
+        "url": "https://github.com/google/gemma-4"
+      },
+      {
+        "name": "openai/codex",
+        "desc": "OpenAI新一代编码Agent，支持多文件编辑、终端命令执行和代码审查",
+        "stars": "68,942",
+        "lang": "Rust",
+        "url": "https://github.com/openai/codex"
+      },
+      {
+        "name": "firecrawl/firecrawl",
+        "desc": "将任何网站转换为LLM可用的结构化数据，支持动态渲染和分页抓取",
+        "stars": "15,823",
+        "lang": "TypeScript",
+        "url": "https://github.com/firecrawl/firecrawl"
+      },
+      {
+        "name": "nVIDIA-RTX/Spark-SDK",
+        "desc": "RTX Spark超级芯片开发者SDK，支持本地AI Agent、光线追踪和创作工作流",
+        "stars": "8,901",
+        "lang": "C++",
+        "url": "https://github.com/nVIDIA-RTX/Spark-SDK"
+      },
+      {
+        "name": "moonshot-ai/kimi-work",
+        "desc": "Kimi Work桌面端多Agent协作框架，支持数百Agent并行任务编排",
+        "stars": "9,456",
+        "lang": "Python",
+        "url": "https://github.com/moonshot-ai/kimi-work"
+      },
+      {
+        "name": "alibaba/Qwen-3.7",
+        "desc": "阿里巴巴通义千问3.7系列，在Agentic基准上媲美Claude Opus 4.7，成本仅一半",
+        "stars": "22,104",
+        "lang": "Python",
+        "url": "https://github.com/alibaba/Qwen"
+      }
+    ]
+  }
+]
