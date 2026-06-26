@@ -177,5 +177,184 @@
         "url": "https://github.com/alibaba/Qwen"
       }
     ]
+  },
+  {
+    "date": "2026-06-26",
+    "weekday": "星期五",
+    "file": "2026-06-26.html",
+    "news": [
+      {
+        "title": "英伟达CEO黄仁勋：AI投资回报率已有答案，Vera Rubin平台正式量产",
+        "summary": "在英伟达2026年度股东大会上，黄仁勋宣布专为AI智能体时代打造的Vera Rubin架构平台已全面量产。英伟达FY2026营收同比增长65%至2160亿美元，数据中心业务收入增长68%至1940亿美元。黄仁勋强调有用的AI已能赚钱，并提出AI智能体与物理AI两大长期增长方向。",
+        "tags": [
+          "芯片",
+          "英伟达",
+          "AI算力"
+        ],
+        "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_8546a3c6f2c57152"
+      },
+      {
+        "title": "谷歌再失AI核心人才：Gemini骨干转投Anthropic，诺贝尔奖得主亦加盟",
+        "summary": "据彭博社报道，谷歌Gemini核心研究员Jonas Adler与Alexander Pritzel即将离职加入Anthropic。此前DeepMind诺贝尔奖得主John Jumper也已跳槽Anthropic。OpenAI与Anthropic均在筹备上市，顶尖AI人才外流趋势加剧。",
+        "tags": [
+          "巨头博弈",
+          "人才流动",
+          "Anthropic"
+        ],
+        "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_1056a3c670675752"
+      },
+      {
+        "title": "软银孙正义驳斥AI泡沫论：机器人已启动量产，计划收购ABB机器人业务",
+        "summary": "软银集团年度股东大会上，孙正义称任何AI泡沫论都是亵渎，AI产业才刚刚起步。软银机器人生产线已正式启动量产，目标成为全球压倒性第一的机器人公司，并计划2026年内完成收购瑞士ABB旗下机器人业务。",
+        "tags": [
+          "软银",
+          "机器人",
+          "产业落地"
+        ],
+        "url": "https://new.qq.com/rain/a/20260625A02R0700"
+      },
+      {
+        "title": "MWC上海2026：工信部明确适度超前建设算力基础设施",
+        "summary": "MWC上海2026以众智启新为主题，聚焦6G、移动AI、具身智能等前沿领域。工信部总工程师钟志红明确表示要保持适度超前，加强新一代通信网和算力网规划建设，推进双千兆向双万兆演进，加快构建多层次算力设施体系。",
+        "tags": [
+          "MWC",
+          "算力基建",
+          "6G"
+        ],
+        "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2056a3baca869852"
+      },
+      {
+        "title": "宇树科技Unitree R1人形机器人官降1万元至2.99万元起现货发售",
+        "summary": "宇树科技宣布Unitree R1人形机器人全系降价1万元，起售价降至2.99万元，并开启现货发售。此举标志着人形机器人正在加速走向消费级市场，价格门槛持续下探。",
+        "tags": [
+          "人形机器人",
+          "宇树科技",
+          "消费级"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162306454"
+      },
+      {
+        "title": "曹操出行成立AI创新中心，2030年Robotaxi与Robovan各投放10万辆",
+        "summary": "曹操出行与上海人工智能研究院联合成立AI创新中心，加速RoboX战略落地。计划到2030年，Robotaxi与Robovan各投放10万辆，全面推进自动驾驶出行服务的规模化商业运营。",
+        "tags": [
+          "自动驾驶",
+          "Robotaxi",
+          "产业落地"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162306454"
+      },
+      {
+        "title": "OpenAI提交机密S-1文件，目标2026年Q4以1万亿美元估值IPO",
+        "summary": "OpenAI已向SEC提交机密S-1注册文件，计划2026年第四季度进行首次公开募股，目标估值达1万亿美元。这与Anthropic此前9650亿美元的IPO申请形成直接竞争，AI模型商上市 race 正式开启。",
+        "tags": [
+          "OpenAI",
+          "IPO",
+          "融资"
+        ],
+        "url": "https://www.techfastforward.com/topics/foundation-models"
+      },
+      {
+        "title": "Anthropic推出递归式AI自我改进系统，加速模型能力提升",
+        "summary": "Anthropic unveiled recursive AI self-improvement技术，使模型能够自主发现并修复自身缺陷，实现能力递归增长。该系统在内部测试中展现出超越传统RLHF训练的效率，或将成为下一代模型 scaling 的关键路径。",
+        "tags": [
+          "Anthropic",
+          "模型训练",
+          "自我改进"
+        ],
+        "url": "https://jls42.org/en/news/ia-actualites-04-jun-2026"
+      },
+      {
+        "title": "Google I/O 2026：Gemini AI模式月活突破10亿，AI概览覆盖25亿用户",
+        "summary": "Google I/O 2026宣布Gemini AI Mode月活跃用户突破10亿，AI Overviews覆盖25亿月活用户。Token月用量达3.2 quadrillion，较去年480 trillion大幅增长。Google将Gemini定位为 proactive agent，不再等待用户查询而是在后台主动工作。",
+        "tags": [
+          "Google",
+          "Gemini",
+          "AI搜索"
+        ],
+        "url": "https://news.creeta.com/en/google-ai-mode-query-patterns-information-agents-2026/"
+      },
+      {
+        "title": "苹果WWDC 2026：Siri AI全面重构，库克发表最后一次CEO演讲",
+        "summary": "苹果WWDC 2026推出全面重构的Siri AI，深度集成Apple Intelligence。库克在大会上发表其作为苹果CEO的最后一次演讲，标志着苹果AI战略进入全新阶段，个人智能助手成为生态核心入口。",
+        "tags": [
+          "苹果",
+          "Siri",
+          "WWDC"
+        ],
+        "url": "https://juejin.cn/post/7649312912218718259"
+      }
+    ],
+    "github": [
+      {
+        "name": "calesthio/OpenMontage",
+        "desc": "全球首个开源智能视频制作系统，包含12条流水线、52个工具、500+智能体技能。将你的AI编程助手变成完整视频制作工作室。",
+        "stars": 19195,
+        "lang": "Python",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "ZhuLinsen/daily_stock_analysis",
+        "desc": "LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。",
+        "stars": 48421,
+        "lang": "Python",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      },
+      {
+        "name": "apple/container",
+        "desc": "使用轻量级虚拟机在Mac上创建和运行Linux容器的工具。使用Swift编写，针对Apple芯片优化。",
+        "stars": 42147,
+        "lang": "Swift",
+        "url": "https://github.com/apple/container"
+      },
+      {
+        "name": "JCodesMore/ai-website-cloner-template",
+        "desc": "使用AI编码助手一条命令克隆任意网站，支持自动化页面还原与组件生成。",
+        "stars": 19257,
+        "lang": "TypeScript",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      },
+      {
+        "name": "google-labs-code/design.md",
+        "desc": "向编码Agent描述视觉识别系统的格式规范。DESIGN.md让Agent对设计系统拥有持久、结构化的理解。",
+        "stars": 17262,
+        "lang": "TypeScript",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "desc": "与你共同成长的智能体框架，支持多模态交互、工具调用和长期记忆管理。",
+        "stars": 202008,
+        "lang": "Python",
+        "url": "https://github.com/NousResearch/hermes-agent"
+      },
+      {
+        "name": "stablyai/orca",
+        "desc": "面向并行智能体舰队的ADE（Agent Development Environment）。使用你自己的订阅运行任何编码智能体，支持桌面和移动端。",
+        "stars": 6735,
+        "lang": "TypeScript",
+        "url": "https://github.com/stablyai/orca"
+      },
+      {
+        "name": "flutter/flutter",
+        "desc": "Google开源UI框架，一套代码构建移动、Web和桌面端的精美应用。持续保持极高社区活跃度。",
+        "stars": 177292,
+        "lang": "Dart",
+        "url": "https://github.com/flutter/flutter"
+      },
+      {
+        "name": "revfactory/harness",
+        "desc": "元技能框架，用于设计领域特定智能体团队、定义专业Agent并生成它们使用的技能集。",
+        "stars": 7709,
+        "lang": "HTML",
+        "url": "https://github.com/revfactory/harness"
+      },
+      {
+        "name": "interviewstreet/hiring-agent",
+        "desc": "AI智能体自动评估和评分简历，支持多维度候选人筛选与匹配分析。",
+        "stars": 2111,
+        "lang": "Python",
+        "url": "https://github.com/interviewstreet/hiring-agent"
+      }
+    ]
   }
 ]
