@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-06-26</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg2: #1e293b;
+            --ink: #f1f5f9;
+            --muted: #94a3b8;
+            --rule: #334155;
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        .navbar {
+            background: var(--bg2);
+            border-bottom: 1px solid var(--rule);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav-links a:hover {
+            color: var(--accent);
+            border-color: var(--rule);
+            background: rgba(56,189,248,0.08);
+        }
+        .nav-links a.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        .header {
+            text-align: center;
+            margin: 2rem 0 3rem;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .news-list, .github-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .news-card, .github-card {
+            background: var(--bg2);
+            border: 1px solid var(--rule);
+            border-radius: 10px;
+            padding: 1.2rem 1.4rem;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .news-card:hover, .github-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .news-card h3, .github-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: var(--ink);
+        }
+        .news-card h3 a, .github-card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .news-card h3 a:hover, .github-card h3 a:hover {
+            color: var(--accent);
+        }
+        .news-card .summary {
+            color: var(--muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+        .news-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .tag {
+            font-size: 0.72rem;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(56,189,248,0.12);
+            color: var(--accent);
+            border: 1px solid rgba(56,189,248,0.25);
+        }
+        .github-card .gh-meta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 0.5rem;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+        .gh-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .gh-lang {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--rule);
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .navbar { padding: 1rem; flex-direction: column; gap: 0.8rem; }
+            .header h1 { font-size: 1.5rem; }
+            .container { padding: 1rem 1rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🤖 AI日报</div>
+        <div class="nav-links">
+            <a href="2026-06-25.html" class="">← 上一期（更早）</a>
+            <a href="#" class="disabled">下一期（更新） →</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>AI日报</h1>
+            <div class="meta">2026-06-26 · 星期五 · 第 177 期</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔥 AI新闻（10条）</div>
+            <div class="news-list">
+                <div class="news-card">
+    <h3><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8546a3c6f2c57152" target="_blank" rel="noopener">英伟达CEO黄仁勋：AI投资回报率已有答案，Vera Rubin平台正式量产</a></h3>
+    <div class="summary">在英伟达2026年度股东大会上，黄仁勋宣布专为AI智能体时代打造的Vera Rubin架构平台已全面量产。英伟达FY2026营收同比增长65%至2160亿美元，数据中心业务收入增长68%至1940亿美元。黄仁勋强调有用的AI已能赚钱，并提出AI智能体与物理AI两大长期增长方向。</div>
+    <div class="tags"><span class="tag">芯片</span><span class="tag">英伟达</span><span class="tag">AI算力</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1056a3c670675752" target="_blank" rel="noopener">谷歌再失AI核心人才：Gemini骨干转投Anthropic，诺贝尔奖得主亦加盟</a></h3>
+    <div class="summary">据彭博社报道，谷歌Gemini核心研究员Jonas Adler与Alexander Pritzel即将离职加入Anthropic。此前DeepMind诺贝尔奖得主John Jumper也已跳槽Anthropic。OpenAI与Anthropic均在筹备上市，顶尖AI人才外流趋势加剧。</div>
+    <div class="tags"><span class="tag">巨头博弈</span><span class="tag">人才流动</span><span class="tag">Anthropic</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://new.qq.com/rain/a/20260625A02R0700" target="_blank" rel="noopener">软银孙正义驳斥AI泡沫论：机器人已启动量产，计划收购ABB机器人业务</a></h3>
+    <div class="summary">软银集团年度股东大会上，孙正义称任何AI泡沫论都是亵渎，AI产业才刚刚起步。软银机器人生产线已正式启动量产，目标成为全球压倒性第一的机器人公司，并计划2026年内完成收购瑞士ABB旗下机器人业务。</div>
+    <div class="tags"><span class="tag">软银</span><span class="tag">机器人</span><span class="tag">产业落地</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_2056a3baca869852" target="_blank" rel="noopener">MWC上海2026：工信部明确适度超前建设算力基础设施</a></h3>
+    <div class="summary">MWC上海2026以众智启新为主题，聚焦6G、移动AI、具身智能等前沿领域。工信部总工程师钟志红明确表示要保持适度超前，加强新一代通信网和算力网规划建设，推进双千兆向双万兆演进，加快构建多层次算力设施体系。</div>
+    <div class="tags"><span class="tag">MWC</span><span class="tag">算力基建</span><span class="tag">6G</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162306454" target="_blank" rel="noopener">宇树科技Unitree R1人形机器人官降1万元至2.99万元起现货发售</a></h3>
+    <div class="summary">宇树科技宣布Unitree R1人形机器人全系降价1万元，起售价降至2.99万元，并开启现货发售。此举标志着人形机器人正在加速走向消费级市场，价格门槛持续下探。</div>
+    <div class="tags"><span class="tag">人形机器人</span><span class="tag">宇树科技</span><span class="tag">消费级</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162306454" target="_blank" rel="noopener">曹操出行成立AI创新中心，2030年Robotaxi与Robovan各投放10万辆</a></h3>
+    <div class="summary">曹操出行与上海人工智能研究院联合成立AI创新中心，加速RoboX战略落地。计划到2030年，Robotaxi与Robovan各投放10万辆，全面推进自动驾驶出行服务的规模化商业运营。</div>
+    <div class="tags"><span class="tag">自动驾驶</span><span class="tag">Robotaxi</span><span class="tag">产业落地</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://www.techfastforward.com/topics/foundation-models" target="_blank" rel="noopener">OpenAI提交机密S-1文件，目标2026年Q4以1万亿美元估值IPO</a></h3>
+    <div class="summary">OpenAI已向SEC提交机密S-1注册文件，计划2026年第四季度进行首次公开募股，目标估值达1万亿美元。这与Anthropic此前9650亿美元的IPO申请形成直接竞争，AI模型商上市 race 正式开启。</div>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">IPO</span><span class="tag">融资</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://jls42.org/en/news/ia-actualites-04-jun-2026" target="_blank" rel="noopener">Anthropic推出递归式AI自我改进系统，加速模型能力提升</a></h3>
+    <div class="summary">Anthropic unveiled recursive AI self-improvement技术，使模型能够自主发现并修复自身缺陷，实现能力递归增长。该系统在内部测试中展现出超越传统RLHF训练的效率，或将成为下一代模型 scaling 的关键路径。</div>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">模型训练</span><span class="tag">自我改进</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://news.creeta.com/en/google-ai-mode-query-patterns-information-agents-2026/" target="_blank" rel="noopener">Google I/O 2026：Gemini AI模式月活突破10亿，AI概览覆盖25亿用户</a></h3>
+    <div class="summary">Google I/O 2026宣布Gemini AI Mode月活跃用户突破10亿，AI Overviews覆盖25亿月活用户。Token月用量达3.2 quadrillion，较去年480 trillion大幅增长。Google将Gemini定位为 proactive agent，不再等待用户查询而是在后台主动工作。</div>
+    <div class="tags"><span class="tag">Google</span><span class="tag">Gemini</span><span class="tag">AI搜索</span></div>
+</div>
+<div class="news-card">
+    <h3><a href="https://juejin.cn/post/7649312912218718259" target="_blank" rel="noopener">苹果WWDC 2026：Siri AI全面重构，库克发表最后一次CEO演讲</a></h3>
+    <div class="summary">苹果WWDC 2026推出全面重构的Siri AI，深度集成Apple Intelligence。库克在大会上发表其作为苹果CEO的最后一次演讲，标志着苹果AI战略进入全新阶段，个人智能助手成为生态核心入口。</div>
+    <div class="tags"><span class="tag">苹果</span><span class="tag">Siri</span><span class="tag">WWDC</span></div>
+</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⭐ GitHub Trending（10个）</div>
+            <div class="github-list">
+                <div class="github-card">
+    <h3><a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener">calesthio/OpenMontage</a></h3>
+    <div class="summary">全球首个开源智能视频制作系统，包含12条流水线、52个工具、500+智能体技能。将你的AI编程助手变成完整视频制作工作室。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3572A5"></span> Python</span>
+        <span>⭐ 19,195</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener">ZhuLinsen/daily_stock_analysis</a></h3>
+    <div class="summary">LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3572A5"></span> Python</span>
+        <span>⭐ 48,421</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/apple/container" target="_blank" rel="noopener">apple/container</a></h3>
+    <div class="summary">使用轻量级虚拟机在Mac上创建和运行Linux容器的工具。使用Swift编写，针对Apple芯片优化。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#F05138"></span> Swift</span>
+        <span>⭐ 42,147</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank" rel="noopener">JCodesMore/ai-website-cloner-template</a></h3>
+    <div class="summary">使用AI编码助手一条命令克隆任意网站，支持自动化页面还原与组件生成。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3178c6"></span> TypeScript</span>
+        <span>⭐ 19,257</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener">google-labs-code/design.md</a></h3>
+    <div class="summary">向编码Agent描述视觉识别系统的格式规范。DESIGN.md让Agent对设计系统拥有持久、结构化的理解。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3178c6"></span> TypeScript</span>
+        <span>⭐ 17,262</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">NousResearch/hermes-agent</a></h3>
+    <div class="summary">与你共同成长的智能体框架，支持多模态交互、工具调用和长期记忆管理。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3572A5"></span> Python</span>
+        <span>⭐ 202,008</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/stablyai/orca" target="_blank" rel="noopener">stablyai/orca</a></h3>
+    <div class="summary">面向并行智能体舰队的ADE（Agent Development Environment）。使用你自己的订阅运行任何编码智能体，支持桌面和移动端。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3178c6"></span> TypeScript</span>
+        <span>⭐ 6,735</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/flutter/flutter" target="_blank" rel="noopener">flutter/flutter</a></h3>
+    <div class="summary">Google开源UI框架，一套代码构建移动、Web和桌面端的精美应用。持续保持极高社区活跃度。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#00B4AB"></span> Dart</span>
+        <span>⭐ 177,292</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/revfactory/harness" target="_blank" rel="noopener">revfactory/harness</a></h3>
+    <div class="summary">元技能框架，用于设计领域特定智能体团队、定义专业Agent并生成它们使用的技能集。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#e34c26"></span> HTML</span>
+        <span>⭐ 7,709</span>
+    </div>
+</div>
+<div class="github-card">
+    <h3><a href="https://github.com/interviewstreet/hiring-agent" target="_blank" rel="noopener">interviewstreet/hiring-agent</a></h3>
+    <div class="summary">AI智能体自动评估和评分简历，支持多维度候选人筛选与匹配分析。</div>
+    <div class="gh-meta">
+        <span><span class="gh-lang" style="background:#3572A5"></span> Python</span>
+        <span>⭐ 2,111</span>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        AI日报 · 每日自动更新 · 数据来源：公开网络与GitHub API
+    </div>
+</body>
+</html>
