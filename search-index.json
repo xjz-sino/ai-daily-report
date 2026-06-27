@@ -356,5 +356,168 @@
         "url": "https://github.com/interviewstreet/hiring-agent"
       }
     ]
+  },
+  {
+    "date": "2026-06-27",
+    "weekday": "星期六",
+    "file": "2026-06-27.html",
+    "news": [
+      {
+        "title": "fbrk.kz/zh-hans/news/afm-provelo-v-almaty-ai-hackathon-2026-po...",
+        "summary": "在两天内，参赛者展示了人工智能、网络安全和数据分析领域的项目。 谁参与了. 据哈萨克斯坦共和国金融监测署（AFM）数据，2026年6月24日至25日，与阿尔法拉比哈萨克国立大学（KazNU）共同举办了共和级竞赛AFM AI Hackathon 2026。",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://fbrk.kz/zh-hans/news/afm-provelo-v-almaty-ai-hackathon-2026-po-borbe-s-finansovymi-prestupleniyami"
+      },
+      {
+        "title": "印度担心：加入美国主导“硅和平”搞中国，不会先被美国搞吧",
+        "summary": "然而，6月12日，美国AI初创公司Anthropic宣布，为遵守美国政府援引“国家安全权力”发布的出口管制指令，该公司已禁止外国公民对AI模型Fable 5和Mythos 5的访问权. 限。2026-06-25 22:27 不列颠.",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.guancha.cn/internation/2026_06_26_821662.shtml"
+      },
+      {
+        "title": "DeepSeek | 深度求索",
+        "summary": "© 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有.",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.deepseek.com/"
+      },
+      {
+        "title": "ChatGPT 搜尋結果加入 Getty Images 授權圖片 用家再毋須擔心版權問題",
+        "summary": "Getty Images 於 2025 年 8 月主動撤回美國特拉華州訴訟，改在加州重新提告，加州法院於 2026 年 4 月拒絕 Stability AI 撤案申請，案件繼續進行。人工智能.",
+        "tags": [
+          "AI",
+          "OpenAI"
+        ],
+        "url": "https://unwire.hk/2026/06/23/getty-images-openai-chatgpt-licensed-photos-users-benefit/ai/"
+      },
+      {
+        "title": "Heidrick & Struggles 委任人工智能與人才領域翹楚 Aseem Datar...",
+        "summary": "Heidrick & Struggles 委任人工智能與人才領域翹楚 Aseem Datar 和 Leanne Wood，強化董事會陣容. 本文共2064字.Microsoft 2026年度工作趨勢指數報告揭示 香港 AI 應用速度領先企業轉型步伐.",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://money.udn.com/money/story/123828/9584499"
+      },
+      {
+        "title": "Qwen3.6 27B - API Pricing & Benchmarks | OpenRouter",
+        "summary": "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. $0.289 per million input tokens, $2.40 per million output tokens. 262,144 token contex...",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://openrouter.ai/qwen/qwen3.6-27b"
+      },
+      {
+        "title": "人工智能：苹果发布AI新功能 将把ChatGPT... - BBC News 中文",
+        "summary": "这个新的个性化人工智能平台称为“苹果智能”（Apple Intelligence），它旨在为用户提供一种更轻松地浏览苹果设备的方式。什么是人工智能（AI）？ 它是如何工作的？ 人工智能I让计算机几乎可以像人一样学习和解决问题。",
+        "tags": [
+          "AI",
+          "OpenAI"
+        ],
+        "url": "https://www.bbc.com/zhongwen/simp/science-69108432"
+      },
+      {
+        "title": "把握人工智能行业脉搏！ 全球最值得关注的7大AI...",
+        "summary": "无论您是技术专家、AI初学者，还是数据科学（人工智能数据工程师）从业者，选择权威而高效的资讯来源至关重要。",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.cnblogs.com/jellyai/p/18526046"
+      },
+      {
+        "title": "Kimi AI with K2.6 | Better Coding, Smarter Agents",
+        "summary": "Visit Moonshot AI. Kimi Platform. Features.",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.kimi.com/"
+      },
+      {
+        "title": "OpenAI 大模型進化 催化算力需求帶旺鴻海、廣達等 ODM... | 經濟日報",
+        "summary": "微軟預計2026年將斥資1,900億美元資本支出，其中三分之二投入AI伺服器相關建設。2026-06-22 13:11. 十五五開局半年 2／大陸 AI 業扮新支柱有隱憂 需求若接不住供給擴張 恐難逃泡沫化.",
+        "tags": [
+          "AI",
+          "OpenAI",
+          "大模型"
+        ],
+        "url": "https://money.udn.com/money/story/11162/9581883"
+      }
+    ],
+    "github": [
+      {
+        "name": "simplex-chat/simplex-chat",
+        "desc": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+        "stars": 12480,
+        "lang": "Haskell",
+        "url": "https://github.com/simplex-chat/simplex-chat"
+      },
+      {
+        "name": "google-labs-code/design.md",
+        "desc": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+        "stars": 21166,
+        "lang": "TypeScript",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "commaai/openpilot",
+        "desc": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+        "stars": 61768,
+        "lang": "Python",
+        "url": "https://github.com/commaai/openpilot"
+      },
+      {
+        "name": "kunchenguid/no-mistakes",
+        "desc": "git push no-mistakes",
+        "stars": 3399,
+        "lang": "Go",
+        "url": "https://github.com/kunchenguid/no-mistakes"
+      },
+      {
+        "name": "grafana/grafana",
+        "desc": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
+        "stars": 74879,
+        "lang": "TypeScript",
+        "url": "https://github.com/grafana/grafana"
+      },
+      {
+        "name": "ripienaar/free-for-dev",
+        "desc": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "stars": 123708,
+        "lang": "HTML",
+        "url": "https://github.com/ripienaar/free-for-dev"
+      },
+      {
+        "name": "opendatalab/MinerU",
+        "desc": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+        "stars": 70373,
+        "lang": "Python",
+        "url": "https://github.com/opendatalab/MinerU"
+      },
+      {
+        "name": "alchaincyf/zhangxuefeng-skill",
+        "desc": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+        "stars": 9241,
+        "lang": "Unknown",
+        "url": "https://github.com/alchaincyf/zhangxuefeng-skill"
+      },
+      {
+        "name": "mauriceboe/TREK",
+        "desc": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+        "stars": 7618,
+        "lang": "TypeScript",
+        "url": "https://github.com/mauriceboe/TREK"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "desc": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+        "stars": 3082,
+        "lang": "Python",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      }
+    ]
   }
 ]
