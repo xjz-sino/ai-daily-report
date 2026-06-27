@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-06-27</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --tag-bg: #21262d;
+            --success: #238636;
+            --warning: #d29922;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13,17,23,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+        .nav-brand {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav-links a:hover {
+            color: var(--text);
+            background: var(--tag-bg);
+            border-color: var(--border);
+        }
+        .nav-links a.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .nav-links a.primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+        .nav-links a.primary:hover {
+            background: var(--accent-hover);
+        }
+        /* 主体 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 32px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, var(--accent), #a371f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header .meta {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        .header .weekday {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 10px;
+            background: var(--tag-bg);
+            border-radius: 12px;
+            font-size: 14px;
+            border: 1px solid var(--border);
+        }
+        /* 板块 */
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-count {
+            font-size: 13px;
+            color: var(--text-secondary);
+            background: var(--tag-bg);
+            padding: 2px 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        /* 卡片网格 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 16px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 12px;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .card-title:hover {
+            text-decoration: underline;
+        }
+        .card-index {
+            font-size: 12px;
+            color: var(--text-secondary);
+            background: var(--tag-bg);
+            padding: 2px 8px;
+            border-radius: 6px;
+            white-space: nowrap;
+            border: 1px solid var(--border);
+        }
+        .card-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-footer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+        .tag {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            background: var(--tag-bg);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .tag.lang {
+            background: rgba(88,166,255,0.1);
+            color: var(--accent);
+        }
+        .tag.stars {
+            background: rgba(35,134,54,0.15);
+            color: #3fb950;
+        }
+        /* GitHub卡片额外样式 */
+        .gh-meta {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 24px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .nav-links { gap: 8px; }
+            .nav-links a { font-size: 13px; padding: 4px 8px; }
+            .header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a class="nav-brand" href="index.html">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                AI日报
+            </a>
+            <div class="nav-links">
+                <a href="2026-06-26.html" class="" title="上一期（更早日期）">← 上一期</a>
+                <a href="index.html" class="primary">首页</a>
+                <a href="#" class="disabled" title="下一期（更新日期）">下一期 →</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>AI日报</h1>
+            <div class="meta">
+                <span>2026-06-27</span>
+                <span class="weekday">星期六</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                今日AI新闻
+                <span class="section-count">10条</span>
+            </h2>
+            <div class="grid">
+                <div class="card">
+    <div class="card-header">
+        <a href="https://fbrk.kz/zh-hans/news/afm-provelo-v-almaty-ai-hackathon-2026-po-borbe-s-finansovymi-prestupleniyami" class="card-title" target="_blank">fbrk.kz/zh-hans/news/afm-provelo-v-almaty-ai-hackathon-2026-po...</a>
+        <span class="card-index">#01</span>
+    </div>
+    <div class="card-desc">在两天内，参赛者展示了人工智能、网络安全和数据分析领域的项目。 谁参与了. 据哈萨克斯坦共和国金融监测署（AFM）数据，2026年6月24日至25日，与阿尔法拉比哈萨克国立大学（KazNU）共同举办了共和级竞赛AFM AI Hackathon 2026。</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://www.guancha.cn/internation/2026_06_26_821662.shtml" class="card-title" target="_blank">印度担心：加入美国主导“硅和平”搞中国，不会先被美国搞吧</a>
+        <span class="card-index">#02</span>
+    </div>
+    <div class="card-desc">然而，6月12日，美国AI初创公司Anthropic宣布，为遵守美国政府援引“国家安全权力”发布的出口管制指令，该公司已禁止外国公民对AI模型Fable 5和Mythos 5的访问权. 限。2026-06-25 22:27 不列颠.</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://www.deepseek.com/" class="card-title" target="_blank">DeepSeek | 深度求索</a>
+        <span class="card-index">#03</span>
+    </div>
+    <div class="card-desc">© 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有.</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://unwire.hk/2026/06/23/getty-images-openai-chatgpt-licensed-photos-users-benefit/ai/" class="card-title" target="_blank">ChatGPT 搜尋結果加入 Getty Images 授權圖片 用家再毋須擔心版權問題</a>
+        <span class="card-index">#04</span>
+    </div>
+    <div class="card-desc">Getty Images 於 2025 年 8 月主動撤回美國特拉華州訴訟，改在加州重新提告，加州法院於 2026 年 4 月拒絕 Stability AI 撤案申請，案件繼續進行。人工智能.</div>
+    <div class="card-footer"><span class="tag">AI</span><span class="tag">OpenAI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://money.udn.com/money/story/123828/9584499" class="card-title" target="_blank">Heidrick & Struggles 委任人工智能與人才領域翹楚 Aseem Datar...</a>
+        <span class="card-index">#05</span>
+    </div>
+    <div class="card-desc">Heidrick & Struggles 委任人工智能與人才領域翹楚 Aseem Datar 和 Leanne Wood，強化董事會陣容. 本文共2064字.Microsoft 2026年度工作趨勢指數報告揭示 香港 AI 應用速度領先企業轉型步伐.</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://openrouter.ai/qwen/qwen3.6-27b" class="card-title" target="_blank">Qwen3.6 27B - API Pricing & Benchmarks | OpenRouter</a>
+        <span class="card-index">#06</span>
+    </div>
+    <div class="card-desc">Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. $0.289 per million input tokens, $2.40 per million output tokens. 262,144 token contex...</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://www.bbc.com/zhongwen/simp/science-69108432" class="card-title" target="_blank">人工智能：苹果发布AI新功能 将把ChatGPT... - BBC News 中文</a>
+        <span class="card-index">#07</span>
+    </div>
+    <div class="card-desc">这个新的个性化人工智能平台称为“苹果智能”（Apple Intelligence），它旨在为用户提供一种更轻松地浏览苹果设备的方式。什么是人工智能（AI）？ 它是如何工作的？ 人工智能I让计算机几乎可以像人一样学习和解决问题。</div>
+    <div class="card-footer"><span class="tag">AI</span><span class="tag">OpenAI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://www.cnblogs.com/jellyai/p/18526046" class="card-title" target="_blank">把握人工智能行业脉搏！ 全球最值得关注的7大AI...</a>
+        <span class="card-index">#08</span>
+    </div>
+    <div class="card-desc">无论您是技术专家、AI初学者，还是数据科学（人工智能数据工程师）从业者，选择权威而高效的资讯来源至关重要。</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://www.kimi.com/" class="card-title" target="_blank">Kimi AI with K2.6 | Better Coding, Smarter Agents</a>
+        <span class="card-index">#09</span>
+    </div>
+    <div class="card-desc">Visit Moonshot AI. Kimi Platform. Features.</div>
+    <div class="card-footer"><span class="tag">AI</span></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://money.udn.com/money/story/11162/9581883" class="card-title" target="_blank">OpenAI 大模型進化 催化算力需求帶旺鴻海、廣達等 ODM... | 經濟日報</a>
+        <span class="card-index">#10</span>
+    </div>
+    <div class="card-desc">微軟預計2026年將斥資1,900億美元資本支出，其中三分之二投入AI伺服器相關建設。2026-06-22 13:11. 十五五開局半年 2／大陸 AI 業扮新支柱有隱憂 需求若接不住供給擴張 恐難逃泡沫化.</div>
+    <div class="card-footer"><span class="tag">AI</span><span class="tag">OpenAI</span><span class="tag">大模型</span></div>
+</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub Trending
+                <span class="section-count">10个</span>
+            </h2>
+            <div class="grid">
+                <div class="card">
+    <div class="card-header">
+        <a href="https://github.com/simplex-chat/simplex-chat" class="card-title" target="_blank">simplex-chat/simplex-chat</a>
+        <span class="card-index">#01</span>
+    </div>
+    <div class="card-desc">SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Haskell</span>
+        <span class="tag stars">⭐ 12,480</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/google-labs-code/design.md" class="card-title" target="_blank">google-labs-code/design.md</a>
+        <span class="card-index">#02</span>
+    </div>
+    <div class="card-desc">A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">TypeScript</span>
+        <span class="tag stars">⭐ 21,166</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/commaai/openpilot" class="card-title" target="_blank">commaai/openpilot</a>
+        <span class="card-index">#03</span>
+    </div>
+    <div class="card-desc">openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Python</span>
+        <span class="tag stars">⭐ 61,768</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/kunchenguid/no-mistakes" class="card-title" target="_blank">kunchenguid/no-mistakes</a>
+        <span class="card-index">#04</span>
+    </div>
+    <div class="card-desc">git push no-mistakes</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Go</span>
+        <span class="tag stars">⭐ 3,399</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/grafana/grafana" class="card-title" target="_blank">grafana/grafana</a>
+        <span class="card-index">#05</span>
+    </div>
+    <div class="card-desc">The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">TypeScript</span>
+        <span class="tag stars">⭐ 74,879</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/ripienaar/free-for-dev" class="card-title" target="_blank">ripienaar/free-for-dev</a>
+        <span class="card-index">#06</span>
+    </div>
+    <div class="card-desc">A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">HTML</span>
+        <span class="tag stars">⭐ 123,708</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/opendatalab/MinerU" class="card-title" target="_blank">opendatalab/MinerU</a>
+        <span class="card-index">#07</span>
+    </div>
+    <div class="card-desc">Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Python</span>
+        <span class="tag stars">⭐ 70,373</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/alchaincyf/zhangxuefeng-skill" class="card-title" target="_blank">alchaincyf/zhangxuefeng-skill</a>
+        <span class="card-index">#08</span>
+    </div>
+    <div class="card-desc">张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Unknown</span>
+        <span class="tag stars">⭐ 9,241</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/mauriceboe/TREK" class="card-title" target="_blank">mauriceboe/TREK</a>
+        <span class="card-index">#09</span>
+    </div>
+    <div class="card-desc">A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">TypeScript</span>
+        <span class="tag stars">⭐ 7,618</span>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="https://github.com/xbtlin/ai-berkshire" class="card-title" target="_blank">xbtlin/ai-berkshire</a>
+        <span class="card-index">#10</span>
+    </div>
+    <div class="card-desc">AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.</div>
+    <div class="card-footer gh-meta">
+        <span class="tag lang">Python</span>
+        <span class="tag stars">⭐ 3,082</span>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        AI日报 · 每日自动更新 · 2026-06-27 · 共 20 条内容
+    </div>
+</body>
+</html>
