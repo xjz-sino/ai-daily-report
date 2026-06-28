@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI日报 - 2026年06月28日</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #818cf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+    header {
+      text-align: center;
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    header h1 { font-size: 2.2rem; background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    header .meta { color: var(--muted); margin-top: 8px; font-size: 0.95rem; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin-bottom: 28px;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: background .2s;
+    }
+    nav a:hover { background: rgba(56,189,248,.12); }
+    nav .nav-center { color: var(--muted); font-size: .9rem; }
+    h2 { font-size: 1.3rem; margin: 28px 0 16px; display: flex; align-items: center; gap: 8px; }
+    h2 .icon { font-size: 1.1rem; }
+    .news-list, .github-list { display: grid; gap: 14px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      transition: transform .15s, border-color .15s;
+    }
+    .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .card h3 { font-size: 1.05rem; margin-bottom: 6px; color: var(--text); }
+    .card p { color: var(--muted); font-size: .92rem; line-height: 1.55; }
+    .card .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: rgba(56,189,248,.12);
+      color: var(--accent);
+      font-size: .75rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(56,189,248,.25);
+    }
+    .github-card .gh-meta {
+      display: flex;
+      gap: 14px;
+      margin-top: 10px;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+    .github-card .gh-meta span { display: flex; align-items: center; gap: 4px; }
+    .github-card a { color: var(--accent); text-decoration: none; }
+    .github-card a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .85rem;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI日报</h1>
+      <div class="meta">2026年06月28日 · 星期日 · 第001期</div>
+    </header>
+
+    <nav>
+      <a href="./2026-06-27.html">← 上一期</a>
+      <span class="nav-center">2026-06-28</span>
+      <a href="./2026-06-29.html">下一期 →</a>
+    </nav>
+
+    <h2><span class="icon">📰</span> AI新闻 TOP 10</h2>
+    <div class="news-list">
+      <div class="card">
+        <h3>1. DeepSeek完成500亿元融资，创AI领域史上最大单笔</h3>
+        <p>6月17日，DeepSeek完成500亿元人民币融资，资金将用于算力基础设施、技术研发和生态建设。DeepSeek V4系列与Qwen3、Llama 4、Gemma 4形成开源大模型"神仙打架"局面。</p>
+        <div class="tags"><span class="tag">融资</span><span class="tag">大模型</span><span class="tag">开源</span></div>
+      </div>
+      <div class="card">
+        <h3>2. NVIDIA发布ENPIRE框架，AI Agent自主做机器人研究</h3>
+        <p>英伟达GEAR实验室联合CMU与UC Berkeley推出ENPIRE框架，让AI Coding Agent能够自主设计实验、编写代码、部署到机器人并分析结果，实现从"人类指挥"到"AI自主研究"的范式转变。</p>
+        <div class="tags"><span class="tag">具身智能</span><span class="tag">机器人</span><span class="tag">NVIDIA</span></div>
+      </div>
+      <div class="card">
+        <h3>3. 苹果WWDC 2026：全新Siri深度整合AI</h3>
+        <p>苹果推出深度结合谷歌技术的全新Siri与Apple Intelligence，支持多模态交互、端侧智能和生态整合。iOS 27 App启动速度提升30%，库克将于9月1日卸任CEO。</p>
+        <div class="tags"><span class="tag">苹果</span><span class="tag">Siri</span><span class="tag">WWDC</span></div>
+      </div>
+      <div class="card">
+        <h3>4. Anthropic秘密递交IPO，估值9650亿美元登顶全球AI之王</h3>
+        <p>Anthropic已向SEC秘密递交S-1注册声明，5月完成650亿美元H轮融资后估值达9650亿美元，超越OpenAI。ARR从90亿美元暴增至450亿美元，4个月增长5倍。</p>
+        <div class="tags"><span class="tag">IPO</span><span class="tag">Anthropic</span><span class="tag">估值</span></div>
+      </div>
+      <div class="card">
+        <h3>5. 微软Build 2026发布7款自研MAI模型</h3>
+        <p>微软推出7款自研AI模型，覆盖推理、代码生成、图像创作、语音转录等领域。旗舰模型MAI-Thinking-1追平Claude Opus 4.6，旨在将底层模型调用成本降低3-10倍。</p>
+        <div class="tags"><span class="tag">微软</span><span class="tag">自研模型</span><span class="tag">MAI</span></div>
+      </div>
+      <div class="card">
+        <h3>6. 英伟达RTX Spark发布：端侧可跑200B大模型</h3>
+        <p>英伟达GTC Taipei发布RTX Spark芯片，与联发科联合研发、台积电3nm制程，终端可离线运行200B参数大模型。黄仁勋宣告"智能体AI时代到来"。</p>
+        <div class="tags"><span class="tag">芯片</span><span class="tag">端侧AI</span><span class="tag">英伟达</span></div>
+      </div>
+      <div class="card">
+        <h3>7. 智谱GLM-5.2开源登顶，多模态能力大幅提升</h3>
+        <p>智谱开源高性能长上下文模型GLM-5.2，Code Arena全球可用模型排名第一。标志着多模态AI从"拼接式"走向"原生统一多模态"的核心范式转变。</p>
+        <div class="tags"><span class="tag">智谱</span><span class="tag">开源</span><span class="tag">多模态</span></div>
+      </div>
+      <div class="card">
+        <h3>8. SpaceX确定上市：估值1.77万亿美元，史上最大IPO</h3>
+        <p>SpaceX登陆纳斯达克，股票代码"SPCX"，发行价每股135美元，拟募资750亿美元。三巨头（SpaceX+Anthropic+OpenAI）合计估值超4万亿美元。</p>
+        <div class="tags"><span class="tag">SpaceX</span><span class="tag">IPO</span><span class="tag">马斯克</span></div>
+      </div>
+      <div class="card">
+        <h3>9. 中国AI政策密集出台，战略加速落地</h3>
+        <p>国务院、工信部、国家数据局相继发布"人工智能+"行动意见、信息通信实施意见、高质量数据集建设方案。2030年目标实现通感算智一体化。</p>
+        <div class="tags"><span class="tag">政策</span><span class="tag">中国</span><span class="tag">算力</span></div>
+      </div>
+      <div class="card">
+        <h3>10. 世界经济论坛发布《2026年十大新兴技术》</h3>
+        <p>报告遴选出未来五年最具影响力的技术，具身智能、AI驱动科学发现、下一代人机交互等AI相关技术占据重要位置，强调AI应回归物理系统服务现实需求。</p>
+        <div class="tags"><span class="tag">WEF</span><span class="tag">新兴技术</span><span class="tag">趋势</span></div>
+      </div>
+    </div>
+
+    <h2><span class="icon">⭐</span> GitHub Trending TOP 10</h2>
+    <div class="github-list">
+      <div class="card github-card">
+        <h3><a href="https://github.com/microsoft/markitdown" target="_blank">microsoft / markitdown</a></h3>
+        <p>Python工具，用于将文件和Office文档转换为Markdown格式。简洁高效，支持多种文档类型。</p>
+        <div class="gh-meta"><span>⭐ 157,601</span><span>📈 +33,203本月</span><span>🔤 Python</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/Egonex-AI/Understand-Anything" target="_blank">Egonex-AI / Understand-Anything</a></h3>
+        <p>将任何代码转换为可交互的知识图谱，支持Claude Code、Codex、Cursor、Copilot等多种AI编程助手。</p>
+        <div class="gh-meta"><span>⭐ 65,957</span><span>📈 +49,339本月</span><span>🔤 TypeScript</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/colbymchenry/codegraph" target="_blank">colbymchenry / codegraph</a></h3>
+        <p>预索引代码知识图谱，代码变更自动同步，支持20+种AI编程助手，更少token、更少工具调用、100%本地运行。</p>
+        <div class="gh-meta"><span>⭐ 53,071</span><span>📈 +40,915本月</span><span>🔤 TypeScript</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank">harry0703 / MoneyPrinterTurbo</a></h3>
+        <p>利用AI大模型一键生成高清短视频，自动化脚本、配音、画面生成，内容创作效率工具。</p>
+        <div class="gh-meta"><span>⭐ 91,152</span><span>📈 +33,719本月</span><span>🔤 Python</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/Leonxlnx/taste-skill" target="_blank">Leonxlnx / taste-skill</a></h3>
+        <p>Taste-Skill让你的AI拥有好品味，阻止AI生成无聊、通用的内容，提升输出质量。</p>
+        <div class="gh-meta"><span>⭐ 48,895</span><span>📈 +29,925本月</span><span>🔤 JavaScript</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank">rohitg00 / ai-engineering-from-scratch</a></h3>
+        <p>AI工程从零开始：学习、构建、交付。系统化的AI工程实践教程和代码库。</p>
+        <div class="gh-meta"><span>⭐ 35,590</span><span>📈 +25,113本月</span><span>🔤 Python</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/mvanhorn/last30days-skill" target="_blank">mvanhorn / last30days-skill</a></h3>
+        <p>AI Agent技能，跨Reddit、X、YouTube、HN、Polymarket和网页研究任何主题，生成有据可查的摘要报告。</p>
+        <div class="gh-meta"><span>⭐ 45,662</span><span>📈 +19,261本月</span><span>🔤 Python</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank">esengine / DeepSeek-Reasonix</a></h3>
+        <p>DeepSeek原生AI编码代理，专为终端设计。围绕前缀缓存稳定性构建，可长时间持续运行。</p>
+        <div class="gh-meta"><span>⭐ 23,793</span><span>📈 +18,527本月</span><span>🔤 Go</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/Panniantong/Agent-Reach" target="_blank">Panniantong / Agent-Reach</a></h3>
+        <p>给你的AI Agent装上眼睛看遍全网，支持Twitter、Reddit、YouTube、GitHub、B站、小红书，零API费用。</p>
+        <div class="gh-meta"><span>⭐ 37,604</span><span>📈 +16,585本月</span><span>🔤 Python</span></div>
+      </div>
+      <div class="card github-card">
+        <h3><a href="https://github.com/apple/container" target="_blank">apple / container</a></h3>
+        <p>苹果开源的Mac轻量级Linux容器工具，使用轻量级虚拟机，Swift编写，针对Apple Silicon优化。</p>
+        <div class="gh-meta"><span>⭐ 39,452</span><span>📈 +12,797本月</span><span>🔤 Swift</span></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>AI日报 · 每日自动更新 · 数据来源：公开网络 & GitHub API</p>
+      <p style="margin-top:6px;">© 2026 xjz-sino/ai-daily-report</p>
+    </footer>
+  </div>
+</body>
+</html>
