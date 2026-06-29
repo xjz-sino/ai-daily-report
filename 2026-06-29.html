@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 2026-06-29 - AI日报</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --border: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 { font-size: 2rem; margin-bottom: 8px; }
+        header .meta { opacity: 0.9; font-size: 0.95rem; }
+        nav {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        nav a.disabled { opacity: 0.4; pointer-events: none; }
+        main { padding: 30px 0; }
+        section { margin-bottom: 40px; }
+        section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+        .card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--accent); }
+        .card p { color: var(--muted); font-size: 0.92rem; margin-bottom: 10px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+        .tag {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent);
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .card a {
+            color: var(--accent2);
+            text-decoration: none;
+            font-size: 0.88rem;
+            word-break: break-all;
+        }
+        .card a:hover { text-decoration: underline; }
+        .gh-meta {
+            display: flex;
+            gap: 14px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+        .gh-meta span { display: flex; align-items: center; gap: 4px; }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.4rem; }
+            .card { padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 AI 日报</h1>
+            <div class="meta">2026-06-29 · 周一 · 第 180 期</div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="2026-06-28.html" class="">← 上一期（更早）</a>
+            <a href="index.html">📋 归档首页</a>
+            <a href="2026-06-30.html" class="">下一期（更新） →</a>
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <h2>📰 AI 新闻（10条）</h2>
+            <div class="card">
+    <h3>OpenAI 正式发布 GPT-5.6 系列模型</h3>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">GPT-5.6</span><span class="tag">大模型</span></div>
+    <p>6月26日，OpenAI发布GPT-5.6系列，包含旗舰版Sol、均衡版Terra和轻量版Luna三档模型，支持分级推理，在编程和科学推理方面性能大幅提升，但目前仅向少数合作伙伴开放。</p>
+    <a href="https://openai.com/zh-Hans-CN/news/product-releases/" target="_blank">https://openai.com/zh-Hans-CN/news/product-releases/</a>
+</div>
+<div class="card">
+    <h3>DeepSeek 联合北大开源 DSpark 推测解码框架</h3>
+    <div class="tags"><span class="tag">DeepSeek</span><span class="tag">开源</span><span class="tag">推理加速</span></div>
+    <p>6月27日，DeepSeek与北京大学联合发布DSpark框架，通过算法重构在不增加硬件的前提下实现推理速度提升60%-85%，代码与权重全部MIT开源且商用免费。</p>
+    <a href="https://github.com/deepseek-ai/DeepSpec" target="_blank">https://github.com/deepseek-ai/DeepSpec</a>
+</div>
+<div class="card">
+    <h3>英伟达 ENPIRE 框架：AI Agent 自主操控机器人</h3>
+    <div class="tags"><span class="tag">NVIDIA</span><span class="tag">具身智能</span><span class="tag">AI Agent</span></div>
+    <p>英伟达GEAR实验室联合CMU与UC Berkeley推出ENPIRE框架，让AI Coding Agent能够自主设计实验、编写代码、部署到物理机器人并分析结果，实现具身智能范式转变。</p>
+    <a href="https://blogs.nvidia.cn/blog/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai/" target="_blank">https://blogs.nvidia.cn/blog/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai/</a>
+</div>
+<div class="card">
+    <h3>特朗普政府拟放宽 Anthropic 最强 AI 模型使用限制</h3>
+    <div class="tags"><span class="tag">政策</span><span class="tag">Anthropic</span><span class="tag">AI监管</span></div>
+    <p>据报道，特朗普政府正考虑放宽对Anthropic最强AI模型的出口和使用限制，此举可能改变当前AI模型监管格局，引发业界对AI安全与开放发展的激烈讨论。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>马斯克拟收购光模块公司 Mesh</h3>
+    <div class="tags"><span class="tag">马斯克</span><span class="tag">光模块</span><span class="tag">算力</span></div>
+    <p>马斯克正筹划收购光模块公司Mesh，旨在为其AI算力集群和xAI基础设施构建自主可控的光通信供应链，进一步降低对第三方供应商的依赖。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>谷歌因算力紧张限制 Gemini 使用</h3>
+    <div class="tags"><span class="tag">谷歌</span><span class="tag">Gemini</span><span class="tag">算力</span></div>
+    <p>由于AI算力需求激增，谷歌近期对Gemini部分功能实施使用限制，优先保障企业客户和付费用户，反映出当前AI基础设施供需矛盾的严峻性。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>DeepSeek 完成 500 亿元融资</h3>
+    <div class="tags"><span class="tag">DeepSeek</span><span class="tag">融资</span><span class="tag">大模型</span></div>
+    <p>2026年6月，DeepSeek完成史上最大单笔融资，估值突破新高的同时持续加大开源投入，展现中国大模型企业在工程优化和商业化方面的强劲实力。</p>
+    <a href="https://blog.csdn.net/gedonshen/article/details/162231463" target="_blank">https://blog.csdn.net/gedonshen/article/details/162231463</a>
+</div>
+<div class="card">
+    <h3>兰州大学启动 AI 论文学术不端调查</h3>
+    <div class="tags"><span class="tag">学术诚信</span><span class="tag">AI写作</span><span class="tag">教育</span></div>
+    <p>兰州大学教师杨某某学术论文被指出现AI水印，学校已成立专项调查组。该事件引发学术界对AI辅助写作边界和学术诚信规范的广泛关注。</p>
+    <a href="https://content-static.cctvnews.cctv.com/snow-book/index.html?channelId=1119&item_id=14600039280942704071" target="_blank">https://content-static.cctvnews.cctv.com/snow-book/index.html?channelId=1119&item_id=14600039280942704071</a>
+</div>
+<div class="card">
+    <h3>NVIDIA 发布 Isaac GR00T 人形机器人参考平台</h3>
+    <div class="tags"><span class="tag">NVIDIA</span><span class="tag">机器人</span><span class="tag">开源</span></div>
+    <p>NVIDIA推出面向学术研究的开放人形机器人参考设计，集成宇树H2 Plus机器人、Sharpa五指灵巧手和Jetson Thor计算平台，加速具身智能研究。</p>
+    <a href="https://blogs.nvidia.cn/blog/nvidia-open-humanoid-robot-reference-design/" target="_blank">https://blogs.nvidia.cn/blog/nvidia-open-humanoid-robot-reference-design/</a>
+</div>
+<div class="card">
+    <h3>NVIDIA 开源物理 AI 智能体工具和技能集合</h3>
+    <div class="tags"><span class="tag">NVIDIA</span><span class="tag">物理AI</span><span class="tag">开源</span></div>
+    <p>NVIDIA发布涵盖Omniverse、Cosmos、Alpamayo和Metropolis的物理AI智能体技能开源集合，面向机器人、智能汽车、视觉AI和工业数字孪生领域。</p>
+    <a href="https://blogs.nvidia.cn/blog/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai/" target="_blank">https://blogs.nvidia.cn/blog/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai/</a>
+</div>
+        </section>
+        <section>
+            <h2>⭐ GitHub Trending（10个）</h2>
+            <div class="card">
+    <h3>OpenMontage</h3>
+    <p>全球首个开源智能体视频制作系统，包含12条流水线，支持AI自动剪辑、配音和字幕生成。</p>
+    <div class="gh-meta">
+        <span>⭐ 19,207</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/calesthio/OpenMontage" target="_blank">https://github.com/calesthio/OpenMontage</a>
+</div>
+<div class="card">
+    <h3>bumblebee</h3>
+    <p>Perplexity AI开源的供应链安全扫描工具，支持npm、PyPI、Go、MCP服务器和浏览器扩展的安全审计。</p>
+    <div class="gh-meta">
+        <span>⭐ 2,600+</span>
+        <span>🔧 Go</span>
+    </div>
+    <a href="https://github.com/perplexityai/bumblebee" target="_blank">https://github.com/perplexityai/bumblebee</a>
+</div>
+<div class="card">
+    <h3>firecrawl</h3>
+    <p>面向AI Agent的Web上下文API，集成搜索、抓取、解析、爬取功能，支持130K+ Stars的顶级开源项目。</p>
+    <div class="gh-meta">
+        <span>⭐ 130,000+</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/firecrawl/firecrawl" target="_blank">https://github.com/firecrawl/firecrawl</a>
+</div>
+<div class="card">
+    <h3>system-design-101</h3>
+    <p>ByteByteGo出品的分布式系统视觉参考，覆盖API设计、数据库、DevOps及AI/ML系统架构。</p>
+    <div class="gh-meta">
+        <span>⭐ 82,800</span>
+        <span>🔧 Markdown</span>
+    </div>
+    <a href="https://github.com/ByteByteGoHq/system-design-101" target="_blank">https://github.com/ByteByteGoHq/system-design-101</a>
+</div>
+<div class="card">
+    <h3>developer-roadmap</h3>
+    <p>社区驱动的工程学习路径集合，包含Frontend、Backend、AI Engineer、Vibe Coding等60+学习路线。</p>
+    <div class="gh-meta">
+        <span>⭐ 355,000</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/nilbuild/developer-roadmap" target="_blank">https://github.com/nilbuild/developer-roadmap</a>
+</div>
+<div class="card">
+    <h3>awesome-claude-skills</h3>
+    <p>ComposioHQ维护的1000+生产级Claude Code技能和插件，覆盖文档处理、SaaS自动化和安全审计。</p>
+    <div class="gh-meta">
+        <span>⭐ 61,800</span>
+        <span>🔧 Markdown</span>
+    </div>
+    <a href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank">https://github.com/ComposioHQ/awesome-claude-skills</a>
+</div>
+<div class="card">
+    <h3>nanochat</h3>
+    <p>Andrej Karpathy出品的极简LLM训练栈，将完整的大模型训练流程浓缩在一个可读性极强的代码库中。</p>
+    <div class="gh-meta">
+        <span>⭐ 18,500</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/karpathy/nanochat" target="_blank">https://github.com/karpathy/nanochat</a>
+</div>
+<div class="card">
+    <h3>everything-claude-code</h3>
+    <p>Claude Code工作流和资源大全，本周从第14名飙升至第4名，涵盖Agent编排和AI辅助开发环境最佳实践。</p>
+    <div class="gh-meta">
+        <span>⭐ 8,200</span>
+        <span>🔧 Markdown</span>
+    </div>
+    <a href="https://github.com/everything-claude-code/everything-claude-code" target="_blank">https://github.com/everything-claude-code/everything-claude-code</a>
+</div>
+<div class="card">
+    <h3>transitions.dev</h3>
+    <p>12个即插即用的CSS过渡动画片段和Agent技能，专注于为前端开发者和AI Agent提供流畅的交互体验。</p>
+    <div class="gh-meta">
+        <span>⭐ 4,100</span>
+        <span>🔧 CSS</span>
+    </div>
+    <a href="https://github.com/transitions-dev/transitions.dev" target="_blank">https://github.com/transitions-dev/transitions.dev</a>
+</div>
+<div class="card">
+    <h3>andrej-karpathy-skills</h3>
+    <p>将Karpathy四大编码原则整合为单个CLAUDE.md文件，可直接放入Claude Code项目作为编码规范参考。</p>
+    <div class="gh-meta">
+        <span>⭐ 3,800</span>
+        <span>🔧 Markdown</span>
+    </div>
+    <a href="https://github.com/andrej-karpathy-skills/andrej-karpathy-skills" target="_blank">https://github.com/andrej-karpathy-skills/andrej-karpathy-skills</a>
+</div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            AI日报 · 每日自动更新 · <a href="https://github.com/xjz-sino/ai-daily-report" style="color:var(--muted)">开源仓库</a>
+        </div>
+    </footer>
+</body>
+</html>
