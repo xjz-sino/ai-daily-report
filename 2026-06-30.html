@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 2026-06-30 - AI日报</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --border: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 { font-size: 2rem; margin-bottom: 8px; }
+        header .meta { opacity: 0.9; font-size: 0.95rem; }
+        nav {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        nav a.disabled { opacity: 0.4; pointer-events: none; }
+        main { padding: 30px 0; }
+        section { margin-bottom: 40px; }
+        section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+        .card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--accent); }
+        .card p { color: var(--muted); font-size: 0.92rem; margin-bottom: 10px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+        .tag {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent);
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .card a {
+            color: var(--accent2);
+            text-decoration: none;
+            font-size: 0.88rem;
+            word-break: break-all;
+        }
+        .card a:hover { text-decoration: underline; }
+        .gh-meta {
+            display: flex;
+            gap: 14px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+        .gh-meta span { display: flex; align-items: center; gap: 4px; }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.4rem; }
+            .card { padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 AI 日报</h1>
+            <div class="meta">2026-06-30 · 周二 · 第 181 期</div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="2026-06-29.html" class="">← 上一期（更早）</a>
+            <a href="index.html">📋 归档首页</a>
+            <a href="2026-07-01.html" class="">下一期（更新） →</a>
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <h2>📰 AI 新闻（10条）</h2>
+            <div class="card">
+    <h3>OpenAI 发布 GPT-5.6 系列模型（Sol/Terra/Luna）</h3>
+    <div class="tags"><span class="tag">LLM</span><span class="tag">Agent</span></div>
+    <p>OpenAI发布GPT-5.6系列旗舰模型，编码与安全能力大幅升级，仅向可信合作伙伴开放预览，定价约Anthropic同级别模型一半。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>微软取消内部 Claude Code 许可，转向自研 MAI 模型阵营</h3>
+    <div class="tags"><span class="tag">AI Coding</span><span class="tag">Agent</span></div>
+    <p>微软6月30日起取消大部分内部Claude Code许可，将数千工程师迁移至GitHub Copilot CLI，反映大厂AI编码工具阵营分化。</p>
+    <a href="http://m.toutiao.com/group/7656982651546468879/" target="_blank">http://m.toutiao.com/group/7656982651546468879/</a>
+</div>
+<div class="card">
+    <h3>国务院常务会议听取 AI 发展汇报，加快智算集群建设</h3>
+    <div class="tags"><span class="tag">AI Policy</span><span class="tag">算力</span></div>
+    <p>国务院总理李强6月29日主持召开常务会议，要求加快AI关键技术攻关和超大规模智算集群建设，推进AI全学段教育。</p>
+    <a href="https://www.cls.cn/detail/2412310" target="_blank">https://www.cls.cn/detail/2412310</a>
+</div>
+<div class="card">
+    <h3>特朗普政府拟放宽 Anthropic 最强 AI 模型使用限制</h3>
+    <div class="tags"><span class="tag">AI监管</span><span class="tag">LLM</span></div>
+    <p>特朗普政府最快一周内解除Anthropic Fable 5使用限制，前沿AI模型监管从全面限制转向"可信合作伙伴"模式。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>谷歌因算力紧张限制 Gemini 使用，Meta 受影响</h3>
+    <div class="tags"><span class="tag">算力</span><span class="tag">LLM</span></div>
+    <p>谷歌因Gemini API需求激增收紧算力分配并限制部分客户使用额度，Meta因需求过高未能获得所需配额，部分AI项目受影响。</p>
+    <a href="https://www.cls.cn/detail/2412310" target="_blank">https://www.cls.cn/detail/2412310</a>
+</div>
+<div class="card">
+    <h3>英伟达登顶全球数据中心交换机市场，营收同比增 192.7%</h3>
+    <div class="tags"><span class="tag">算力</span><span class="tag">芯片</span></div>
+    <p>英伟达2026财年Q1首次成为全球数据中心以太网交换机市场营收冠军，季度营收21亿美元，Spectrum-X平台获大规模采用。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+<div class="card">
+    <h3>Windsurf 并购案震动 AI 编码赛道：Google 24亿美元抢人</h3>
+    <div class="tags"><span class="tag">AI Coding</span><span class="tag">M&A</span></div>
+    <p>AI编码公司Windsurf 72小时内完成混乱并购拆分，Google以24亿美元签下人才许可协议纳入DeepMind，Cognition接盘剩余业务。</p>
+    <a href="http://m.toutiao.com/group/7656982651546468879/" target="_blank">http://m.toutiao.com/group/7656982651546468879/</a>
+</div>
+<div class="card">
+    <h3>DeepSeek V4 Pro/Flash 高峰时段 API 价格翻倍</h3>
+    <div class="tags"><span class="tag">LLM</span><span class="tag">API</span></div>
+    <p>多位开发者收到DeepSeek邮件，V4 Pro和Flash模型高峰时段API价格调整为平时2倍，平时价格保持不变。</p>
+    <a href="https://www.cls.cn/detail/2412310" target="_blank">https://www.cls.cn/detail/2412310</a>
+</div>
+<div class="card">
+    <h3>Anthropic 与亚马逊重新谈判协议，改为按 Token 收费</h3>
+    <div class="tags"><span class="tag">LLM</span><span class="tag">云计算</span></div>
+    <p>Anthropic与亚马逊达成新协议，计费方式从按计算小时收费改为按Token收费，亚马逊可能为Anthropic技术支付更高费用。</p>
+    <a href="https://www.cls.cn/detail/2412310" target="_blank">https://www.cls.cn/detail/2412310</a>
+</div>
+<div class="card">
+    <h3>马斯克拟收购光模块公司 Mesh，FTC 加快反垄断审查</h3>
+    <div class="tags"><span class="tag">光模块</span><span class="tag">AI基础设施</span></div>
+    <p>马斯克正考虑收购光模块初创公司Mesh，FTC已加快反垄断审查。收购若完成，将完善SpaceX在AI数据中心基础设施领域的布局。</p>
+    <a href="https://news.ifeng.com/c/8uLNYDQuVP2" target="_blank">https://news.ifeng.com/c/8uLNYDQuVP2</a>
+</div>
+        </section>
+        <section>
+            <h2>⭐ GitHub Trending（10个）</h2>
+            <div class="card">
+    <h3>daily_stock_analysis</h3>
+    <p>LLM驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板与自动推送，可零成本定时运行。</p>
+    <div class="gh-meta">
+        <span>⭐ 51,834</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank">https://github.com/ZhuLinsen/daily_stock_analysis</a>
+</div>
+<div class="card">
+    <h3>Agent-Reach</h3>
+    <p>为AI智能体赋予互联网访问能力，可读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书等平台，零API费用。</p>
+    <div class="gh-meta">
+        <span>⭐ 45,793</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/Panniantong/Agent-Reach" target="_blank">https://github.com/Panniantong/Agent-Reach</a>
+</div>
+<div class="card">
+    <h3>voicebox</h3>
+    <p>开源AI语音工作室，支持语音克隆、语音转文字和语音创作，提供完整的AI语音处理工具链。</p>
+    <div class="gh-meta">
+        <span>⭐ 35,921</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/jamiepine/voicebox" target="_blank">https://github.com/jamiepine/voicebox</a>
+</div>
+<div class="card">
+    <h3>OpenMontage</h3>
+    <p>首个开源AI智能视频制作系统，含12条流水线、52个工具和500+智能体技能，将AI编程助手变为完整视频工作室。</p>
+    <div class="gh-meta">
+        <span>⭐ 28,595</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/calesthio/OpenMontage" target="_blank">https://github.com/calesthio/OpenMontage</a>
+</div>
+<div class="card">
+    <h3>cognee</h3>
+    <p>开源AI记忆平台，为智能体提供跨会话的持久化长期记忆，基于自托管知识图谱引擎构建。</p>
+    <div class="gh-meta">
+        <span>⭐ 25,672</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/topoteretes/cognee" target="_blank">https://github.com/topoteretes/cognee</a>
+</div>
+<div class="card">
+    <h3>ai-website-cloner-template</h3>
+    <p>使用AI编程智能体一键克隆任意网站，通过自然语言描述即可复刻网页设计与功能。</p>
+    <div class="gh-meta">
+        <span>⭐ 23,498</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank">https://github.com/JCodesMore/ai-website-cloner-template</a>
+</div>
+<div class="card">
+    <h3>design.md</h3>
+    <p>面向AI编程智能体的视觉设计规范格式，让智能体获得对设计系统的持久化结构化理解。</p>
+    <div class="gh-meta">
+        <span>⭐ 23,199</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/google-labs-code/design.md" target="_blank">https://github.com/google-labs-code/design.md</a>
+</div>
+<div class="card">
+    <h3>Anthropic-Cybersecurity-Skills</h3>
+    <p>为AI智能体提供817个结构化网络安全技能，映射至MITRE ATT&CK等6大框架，兼容Claude Code、Copilot等20+平台。</p>
+    <div class="gh-meta">
+        <span>⭐ 23,094</span>
+        <span>🔧 Python</span>
+    </div>
+    <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank">https://github.com/mukul975/Anthropic-Cybersecurity-Skills</a>
+</div>
+<div class="card">
+    <h3>codebase-memory-mcp</h3>
+    <p>高性能代码智能MCP服务器，将代码库索引为持久化知识图谱，支持158种语言，亚毫秒查询，大幅减少Token消耗。</p>
+    <div class="gh-meta">
+        <span>⭐ 21,476</span>
+        <span>🔧 C</span>
+    </div>
+    <a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank">https://github.com/DeusData/codebase-memory-mcp</a>
+</div>
+<div class="card">
+    <h3>orca</h3>
+    <p>并行AI编码智能体开发环境，支持同时运行多个编码智能体，可在桌面和移动端使用。</p>
+    <div class="gh-meta">
+        <span>⭐ 9,111</span>
+        <span>🔧 TypeScript</span>
+    </div>
+    <a href="https://github.com/stablyai/orca" target="_blank">https://github.com/stablyai/orca</a>
+</div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>AI日报 · 自动生成 · 2026-06-30</p>
+        </div>
+    </footer>
+</body>
+</html>
