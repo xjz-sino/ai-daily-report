@@ -1,5 +1,512 @@
 [
   {
+    "date": "2026-07-02",
+    "weekday": "星期四",
+    "file": "2026-07-02.html",
+    "news": [
+      {
+        "title": "Google I/O 2026发布100项新公告，涵盖新模型、代理和开发工具",
+        "summary": "Google在I/O 2026开发者大会上密集发布了超过100项AI相关公告，包括新一代模型、智能代理和开发者工具，全面加速AI生态布局。",
+        "tags": [
+          "Google",
+          "I/O大会",
+          "大模型"
+        ],
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+      },
+      {
+        "title": "Google将AI Ultra订阅费从250美元降至100美元，降价60%",
+        "summary": "Google大幅下调AI Ultra订阅价格至100美元/月，捆绑20TB云存储和YouTube Premium，直接对标ChatGPT Pro和Anthropic Claude高端套餐。",
+        "tags": [
+          "Google",
+          "定价策略",
+          "AI竞争"
+        ],
+        "url": "https://techfastforward.com/articles/google-cuts-ai-ultra-to-100-to-undercut-chatgpt-2026"
+      },
+      {
+        "title": "Anthropic接管xAI Colossus 1数据中心超22万块NVIDIA GPU",
+        "summary": "Anthropic CEO Dario Amodei在Code with Claude大会上宣布，公司已接管xAI位于孟菲斯的Colossus 1数据中心全部算力，该设施部署超过22万块NVIDIA GPU。",
+        "tags": [
+          "Anthropic",
+          "xAI",
+          "算力"
+        ],
+        "url": "https://bdcbox.com/newsletter/05-07-2026/"
+      },
+      {
+        "title": "Google向AI生态投资7.5亿美元以追赶Anthropic企业市场份额",
+        "summary": "面对Anthropic占据40%企业AI市场份额的局面，Google推出7.5亿美元合作伙伴基金，目标在两年内将自身份额从15%提升至25%以上。",
+        "tags": [
+          "Google",
+          "Anthropic",
+          "企业AI"
+        ],
+        "url": "https://goodsidekick.com/ai-tooling/the-27-problem-why-google-wrote-a-750m-check-to-catch-anthropic/"
+      },
+      {
+        "title": "国际电联将于7月7-10日举办第七届人工智能向善全球峰会",
+        "summary": "ITU宣布第七届AI for Good全球峰会将于日内瓦Palexpo会展中心举行，聚焦主权AI构建、AI战略制定及经济社会普及议题。",
+        "tags": [
+          "ITU",
+          "AI治理",
+          "全球峰会"
+        ],
+        "url": "https://www.itu.int/zh/mediacentre/Pages/PR-2026-03-25-AI-for-Good-Global-Summit.aspx"
+      },
+      {
+        "title": "北京量子院在AI求解大规模组合优化问题方面取得重要进展",
+        "summary": "北京量子信息科学研究院范桁团队联合中科院物理所，首次将凝聚态物理方法应用于AI求解大规模组合优化问题，取得突破性进展。",
+        "tags": [
+          "量子计算",
+          "组合优化",
+          "科研进展"
+        ],
+        "url": "http://kw.beijing.gov.cn/xwdt/kcyx/xwdtkjqy/202606/t20260602_4681750.html"
+      },
+      {
+        "title": "Gemini 3.1 Pro Preview在MMLU基准测试中达94.1%领先",
+        "summary": "据LM Council 2026年5月数据，Gemini 3.1 Pro Preview在MMLU基准上以94.1%超越GPT-5.2的91.4%，但基准饱和问题已引发行业关注。",
+        "tags": [
+          "Gemini",
+          "基准测试",
+          "MMLU"
+        ],
+        "url": "https://sqmagazine.co.uk/chatgpt-vs-google-gemini-statistics/"
+      },
+      {
+        "title": "欧盟AI法案要求科技巨头在2026年8月前完成合规整改",
+        "summary": "Google、OpenAI、Meta、Anthropic等公司须在2026年8月2日前完成风险评估、对抗性测试和网络安全加固，违者最高面临全球营业额7%罚款。",
+        "tags": [
+          "欧盟AI法案",
+          "合规",
+          "监管"
+        ],
+        "url": "https://blog.csdn.net/robot_learner/article/details/149501276"
+      },
+      {
+        "title": "加州通过生成式AI在法庭中使用的里程碑式规则",
+        "summary": "加州司法委员会正式通过允许生成式AI在法庭环境中使用的规则，要求各法院在9月前制定相应使用规范，开创美国司法系统AI应用先例。",
+        "tags": [
+          "法律AI",
+          "生成式AI",
+          "加州"
+        ],
+        "url": "https://blog.csdn.net/robot_learner/article/details/149501276"
+      },
+      {
+        "title": "复旦大学AI³院11项成果入选ICML 2026",
+        "summary": "复旦大学人工智能创新与产业研究院共有11项研究成果入选国际机器学习顶级会议ICML 2026，涵盖多模态学习、强化学习等方向。",
+        "tags": [
+          "复旦大学",
+          "ICML",
+          "学术研究"
+        ],
+        "url": "https://ai3.fudan.edu.cn/info/1050/3534.htm"
+      }
+    ],
+    "github": [
+      {
+        "name": "google-labs-code/design.md",
+        "desc": "描述视觉身份给编码代理的格式规范，让代理对设计系统有持久结构化理解",
+        "stars": "1,541",
+        "lang": "TypeScript",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "simplex-chat/simplex-chat",
+        "desc": "首个不使用任何用户标识符的消息网络，100%隐私设计，支持iOS/Android/桌面端",
+        "stars": "1,469",
+        "lang": "Haskell",
+        "url": "https://github.com/simplex-chat/simplex-chat"
+      },
+      {
+        "name": "topoteretes/cognee",
+        "desc": "开源AI代理记忆平台，通过自托管知识图谱引擎为AI代理提供跨会话的持久长期记忆",
+        "stars": "780",
+        "lang": "Python",
+        "url": "https://github.com/topoteretes/cognee"
+      },
+      {
+        "name": "JCodesMore/ai-website-cloner-template",
+        "desc": "使用AI编码代理一键克隆任意网站，提供完整模板和自动化工作流",
+        "stars": "750",
+        "lang": "TypeScript",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "desc": "AI时代的伯克希尔：基于Claude Code的价值投资研究框架，融合四大师方法论+多Agent并行研究",
+        "stars": "685",
+        "lang": "Python",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      {
+        "name": "garrytan/gstack",
+        "desc": "Garry Tan的Claude Code完整配置：23个 opinionated 工具担任CEO/设计师/工程经理等角色",
+        "stars": "674",
+        "lang": "TypeScript",
+        "url": "https://github.com/garrytan/gstack"
+      },
+      {
+        "name": "hugohe3/ppt-master",
+        "desc": "AI从任意文档生成真实可编辑的PowerPoint，原生形状动画+语音演讲备注+自定义模板",
+        "stars": "589",
+        "lang": "Python",
+        "url": "https://github.com/hugohe3/ppt-master"
+      },
+      {
+        "name": "IceWhaleTech/CasaOS",
+        "desc": "简单、易用、优雅的开源个人云系统，让家庭数据中心搭建变得零门槛",
+        "stars": "502",
+        "lang": "Go",
+        "url": "https://github.com/IceWhaleTech/CasaOS"
+      },
+      {
+        "name": "ripienaar/free-for-dev",
+        "desc": "精选DevOps和基础设施领域具有免费层的SaaS/PaaS/IaaS服务清单，开发者省钱利器",
+        "stars": "459",
+        "lang": "HTML",
+        "url": "https://github.com/ripienaar/free-for-dev"
+      },
+      {
+        "name": "commaai/openpilot",
+        "desc": "机器人操作系统，目前已为300余款支持车型升级驾驶辅助系统，开源自动驾驶先锋",
+        "stars": "322",
+        "lang": "Python",
+        "url": "https://github.com/commaai/openpilot"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "weekday": "星期三",
+    "file": "2026-07-01.html",
+    "news": [
+      {
+        "title": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist",
+        "summary": "Hacker News 热门讨论 · 46 分 · 32 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.404media.co/scammers-sell-seeds-for-exotic-ai-generated-flowers-that-dont-exist/"
+      },
+      {
+        "title": "AI Zillionaires Are Starting to Get Scared as the Public Turns Against Them",
+        "summary": "Hacker News 热门讨论 · 32 分 · 15 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://futurism.com/artificial-intelligence/ai-tech-billionaires-mark-cuban-scared-public"
+      },
+      {
+        "title": "Why Won't Europe Build AI Data Centers in Iceland?",
+        "summary": "Hacker News 热门讨论 · 33 分 · 34 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://mrkt30.com/why-wont-europe-build-ai-data-centers-in-iceland/"
+      },
+      {
+        "title": "Amazon Is Awash with AI-Written Guideslop for Games That Aren't Even Out",
+        "summary": "Hacker News 热门讨论 · 55 分 · 3 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://kotaku.com/amazon-ai-game-guidebooks-alien-isolation-gears-of-war-2000711365"
+      },
+      {
+        "title": "Working With AI: A concrete example",
+        "summary": "Hacker News 热门讨论 · 186 分 · 65 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://htmx.org/essays/working-with-ai/"
+      },
+      {
+        "title": "Tidal AI Policy",
+        "summary": "Hacker News 热门讨论 · 304 分 · 342 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://tidal.com/ai-policy"
+      },
+      {
+        "title": "Anthropic CEO: Open-Source AI is getting dangerous (2023)",
+        "summary": "Hacker News 热门讨论 · 56 分 · 25 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://xcancel.com/coinbureau/status/2071330294452666695"
+      },
+      {
+        "title": "AI boom risks global financial crash, warn central bankers",
+        "summary": "Hacker News 热门讨论 · 157 分 · 213 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/"
+      },
+      {
+        "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
+        "summary": "Hacker News 热门讨论 · 31 分 · 35 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.phantafield.com/whitepaper"
+      },
+      {
+        "title": "Better Images of AI",
+        "summary": "Hacker News 热门讨论 · 55 分 · 30 条评论",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://betterimagesofai.org/"
+      }
+    ],
+    "github": [
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "desc": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+        "stars": "1,343 stars today",
+        "lang": "HTML",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "usestrix/strix",
+        "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+        "stars": "515 stars today",
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "msitarzewski/agency-agents",
+        "desc": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+        "stars": "1,791 stars today",
+        "lang": "Shell",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "altic-dev/FluidVoice",
+        "desc": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
+        "stars": "588 stars today",
+        "lang": "Swift",
+        "url": "https://github.com/altic-dev/FluidVoice"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "desc": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+        "stars": "387 stars today",
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "browser-use/video-use",
+        "desc": "Edit videos with coding agents",
+        "stars": "721 stars today",
+        "lang": "Python",
+        "url": "https://github.com/browser-use/video-use"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "desc": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
+        "stars": "969 stars today",
+        "lang": "Python",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      {
+        "name": "Mebus/cupp",
+        "desc": "Common User Passwords Profiler (CUPP)",
+        "stars": "32 stars today",
+        "lang": "Python",
+        "url": "https://github.com/Mebus/cupp"
+      },
+      {
+        "name": "ripienaar/free-for-dev",
+        "desc": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "stars": "742 stars today",
+        "lang": "HTML",
+        "url": "https://github.com/ripienaar/free-for-dev"
+      },
+      {
+        "name": "google/agents-cli",
+        "desc": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+        "stars": "445 stars today",
+        "lang": "Python",
+        "url": "https://github.com/google/agents-cli"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "weekday": "周二",
+    "file": "2026-06-30.html",
+    "news": [
+      {
+        "title": "OpenAI 发布 GPT-5.6 系列模型（Sol/Terra/Luna）",
+        "summary": "OpenAI发布GPT-5.6系列旗舰模型，编码与安全能力大幅升级，仅向可信合作伙伴开放预览，定价约Anthropic同级别模型一半。",
+        "tags": [
+          "LLM",
+          "Agent"
+        ],
+        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
+      },
+      {
+        "title": "微软取消内部 Claude Code 许可，转向自研 MAI 模型阵营",
+        "summary": "微软6月30日起取消大部分内部Claude Code许可，将数千工程师迁移至GitHub Copilot CLI，反映大厂AI编码工具阵营分化。",
+        "tags": [
+          "AI Coding",
+          "Agent"
+        ],
+        "url": "http://m.toutiao.com/group/7656982651546468879/"
+      },
+      {
+        "title": "国务院常务会议听取 AI 发展汇报，加快智算集群建设",
+        "summary": "国务院总理李强6月29日主持召开常务会议，要求加快AI关键技术攻关和超大规模智算集群建设，推进AI全学段教育。",
+        "tags": [
+          "AI Policy",
+          "算力"
+        ],
+        "url": "https://www.cls.cn/detail/2412310"
+      },
+      {
+        "title": "特朗普政府拟放宽 Anthropic 最强 AI 模型使用限制",
+        "summary": "特朗普政府最快一周内解除Anthropic Fable 5使用限制，前沿AI模型监管从全面限制转向可信合作伙伴模式。",
+        "tags": [
+          "AI监管",
+          "LLM"
+        ],
+        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
+      },
+      {
+        "title": "谷歌因算力紧张限制 Gemini 使用，Meta 受影响",
+        "summary": "谷歌因Gemini API需求激增收紧算力分配并限制部分客户使用额度，Meta因需求过高未能获得所需配额，部分AI项目受影响。",
+        "tags": [
+          "算力",
+          "LLM"
+        ],
+        "url": "https://www.cls.cn/detail/2412310"
+      },
+      {
+        "title": "英伟达登顶全球数据中心交换机市场，营收同比增 192.7%",
+        "summary": "英伟达2026财年Q1首次成为全球数据中心以太网交换机市场营收冠军，季度营收21亿美元，Spectrum-X平台获大规模采用。",
+        "tags": [
+          "算力",
+          "芯片"
+        ],
+        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
+      },
+      {
+        "title": "Windsurf 并购案震动 AI 编码赛道：Google 24亿美元抢人",
+        "summary": "AI编码公司Windsurf 72小时内完成混乱并购拆分，Google以24亿美元签下人才许可协议纳入DeepMind，Cognition接盘剩余业务。",
+        "tags": [
+          "AI Coding",
+          "M&A"
+        ],
+        "url": "http://m.toutiao.com/group/7656982651546468879/"
+      },
+      {
+        "title": "DeepSeek V4 Pro/Flash 高峰时段 API 价格翻倍",
+        "summary": "多位开发者收到DeepSeek邮件，V4 Pro和Flash模型高峰时段API价格调整为平时2倍，平时价格保持不变。",
+        "tags": [
+          "LLM",
+          "API"
+        ],
+        "url": "https://www.cls.cn/detail/2412310"
+      },
+      {
+        "title": "Anthropic 与亚马逊重新谈判协议，改为按 Token 收费",
+        "summary": "Anthropic与亚马逊达成新协议，计费方式从按计算小时收费改为按Token收费，亚马逊可能为Anthropic技术支付更高费用。",
+        "tags": [
+          "LLM",
+          "云计算"
+        ],
+        "url": "https://www.cls.cn/detail/2412310"
+      },
+      {
+        "title": "马斯克拟收购光模块公司 Mesh，FTC 加快反垄断审查",
+        "summary": "马斯克正考虑收购光模块初创公司Mesh，FTC已加快反垄断审查。收购若完成将完善SpaceX在AI数据中心基础设施领域的布局。",
+        "tags": [
+          "光模块",
+          "AI基础设施"
+        ],
+        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
+      }
+    ],
+    "github": [
+      {
+        "name": "daily_stock_analysis",
+        "desc": "LLM驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板与自动推送，可零成本定时运行。",
+        "stars": "51,834",
+        "lang": "Python",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      },
+      {
+        "name": "Agent-Reach",
+        "desc": "为AI智能体赋予互联网访问能力，可读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书等平台，零API费用。",
+        "stars": "45,793",
+        "lang": "Python",
+        "url": "https://github.com/Panniantong/Agent-Reach"
+      },
+      {
+        "name": "voicebox",
+        "desc": "开源AI语音工作室，支持语音克隆、语音转文字和语音创作，提供完整的AI语音处理工具链。",
+        "stars": "35,921",
+        "lang": "TypeScript",
+        "url": "https://github.com/jamiepine/voicebox"
+      },
+      {
+        "name": "OpenMontage",
+        "desc": "首个开源AI智能视频制作系统，含12条流水线、52个工具和500+智能体技能，将AI编程助手变为完整视频工作室。",
+        "stars": "28,595",
+        "lang": "Python",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "cognee",
+        "desc": "开源AI记忆平台，为智能体提供跨会话的持久化长期记忆，基于自托管知识图谱引擎构建。",
+        "stars": "25,672",
+        "lang": "Python",
+        "url": "https://github.com/topoteretes/cognee"
+      },
+      {
+        "name": "ai-website-cloner-template",
+        "desc": "使用AI编程智能体一键克隆任意网站，通过自然语言描述即可复刻网页设计与功能。",
+        "stars": "23,498",
+        "lang": "TypeScript",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      },
+      {
+        "name": "design.md",
+        "desc": "面向AI编程智能体的视觉设计规范格式，让智能体获得对设计系统的持久化结构化理解。",
+        "stars": "23,199",
+        "lang": "TypeScript",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "desc": "为AI智能体提供817个结构化网络安全技能，映射至MITRE ATT&CK等6大框架，兼容Claude Code、Copilot等20+平台。",
+        "stars": "23,094",
+        "lang": "Python",
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+      },
+      {
+        "name": "codebase-memory-mcp",
+        "desc": "高性能代码智能MCP服务器，将代码库索引为持久化知识图谱，支持158种语言，亚毫秒查询，大幅减少Token消耗。",
+        "stars": "21,476",
+        "lang": "C",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "orca",
+        "desc": "并行AI编码智能体开发环境，支持同时运行多个编码智能体，可在桌面和移动端使用。",
+        "stars": "9,111",
+        "lang": "TypeScript",
+        "url": "https://github.com/stablyai/orca"
+      }
+    ]
+  },
+  {
     "date": "2026-06-29",
     "weekday": "周一",
     "file": "2026-06-29.html",
@@ -175,334 +682,6 @@
         "stars": "3,800",
         "lang": "Markdown",
         "url": "https://github.com/andrej-karpathy-skills/andrej-karpathy-skills"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "weekday": "周二",
-    "file": "2026-06-30.html",
-    "news": [
-      {
-        "title": "OpenAI 发布 GPT-5.6 系列模型（Sol/Terra/Luna）",
-        "summary": "OpenAI发布GPT-5.6系列旗舰模型，编码与安全能力大幅升级，仅向可信合作伙伴开放预览，定价约Anthropic同级别模型一半。",
-        "tags": [
-          "LLM",
-          "Agent"
-        ],
-        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
-      },
-      {
-        "title": "微软取消内部 Claude Code 许可，转向自研 MAI 模型阵营",
-        "summary": "微软6月30日起取消大部分内部Claude Code许可，将数千工程师迁移至GitHub Copilot CLI，反映大厂AI编码工具阵营分化。",
-        "tags": [
-          "AI Coding",
-          "Agent"
-        ],
-        "url": "http://m.toutiao.com/group/7656982651546468879/"
-      },
-      {
-        "title": "国务院常务会议听取 AI 发展汇报，加快智算集群建设",
-        "summary": "国务院总理李强6月29日主持召开常务会议，要求加快AI关键技术攻关和超大规模智算集群建设，推进AI全学段教育。",
-        "tags": [
-          "AI Policy",
-          "算力"
-        ],
-        "url": "https://www.cls.cn/detail/2412310"
-      },
-      {
-        "title": "特朗普政府拟放宽 Anthropic 最强 AI 模型使用限制",
-        "summary": "特朗普政府最快一周内解除Anthropic Fable 5使用限制，前沿AI模型监管从全面限制转向可信合作伙伴模式。",
-        "tags": [
-          "AI监管",
-          "LLM"
-        ],
-        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
-      },
-      {
-        "title": "谷歌因算力紧张限制 Gemini 使用，Meta 受影响",
-        "summary": "谷歌因Gemini API需求激增收紧算力分配并限制部分客户使用额度，Meta因需求过高未能获得所需配额，部分AI项目受影响。",
-        "tags": [
-          "算力",
-          "LLM"
-        ],
-        "url": "https://www.cls.cn/detail/2412310"
-      },
-      {
-        "title": "英伟达登顶全球数据中心交换机市场，营收同比增 192.7%",
-        "summary": "英伟达2026财年Q1首次成为全球数据中心以太网交换机市场营收冠军，季度营收21亿美元，Spectrum-X平台获大规模采用。",
-        "tags": [
-          "算力",
-          "芯片"
-        ],
-        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
-      },
-      {
-        "title": "Windsurf 并购案震动 AI 编码赛道：Google 24亿美元抢人",
-        "summary": "AI编码公司Windsurf 72小时内完成混乱并购拆分，Google以24亿美元签下人才许可协议纳入DeepMind，Cognition接盘剩余业务。",
-        "tags": [
-          "AI Coding",
-          "M&A"
-        ],
-        "url": "http://m.toutiao.com/group/7656982651546468879/"
-      },
-      {
-        "title": "DeepSeek V4 Pro/Flash 高峰时段 API 价格翻倍",
-        "summary": "多位开发者收到DeepSeek邮件，V4 Pro和Flash模型高峰时段API价格调整为平时2倍，平时价格保持不变。",
-        "tags": [
-          "LLM",
-          "API"
-        ],
-        "url": "https://www.cls.cn/detail/2412310"
-      },
-      {
-        "title": "Anthropic 与亚马逊重新谈判协议，改为按 Token 收费",
-        "summary": "Anthropic与亚马逊达成新协议，计费方式从按计算小时收费改为按Token收费，亚马逊可能为Anthropic技术支付更高费用。",
-        "tags": [
-          "LLM",
-          "云计算"
-        ],
-        "url": "https://www.cls.cn/detail/2412310"
-      },
-      {
-        "title": "马斯克拟收购光模块公司 Mesh，FTC 加快反垄断审查",
-        "summary": "马斯克正考虑收购光模块初创公司Mesh，FTC已加快反垄断审查。收购若完成将完善SpaceX在AI数据中心基础设施领域的布局。",
-        "tags": [
-          "光模块",
-          "AI基础设施"
-        ],
-        "url": "https://news.ifeng.com/c/8uLNYDQuVP2"
-      }
-    ],
-    "github": [
-      {
-        "name": "daily_stock_analysis",
-        "desc": "LLM驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板与自动推送，可零成本定时运行。",
-        "stars": "51,834",
-        "lang": "Python",
-        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-      },
-      {
-        "name": "Agent-Reach",
-        "desc": "为AI智能体赋予互联网访问能力，可读取和搜索Twitter、Reddit、YouTube、GitHub、B站、小红书等平台，零API费用。",
-        "stars": "45,793",
-        "lang": "Python",
-        "url": "https://github.com/Panniantong/Agent-Reach"
-      },
-      {
-        "name": "voicebox",
-        "desc": "开源AI语音工作室，支持语音克隆、语音转文字和语音创作，提供完整的AI语音处理工具链。",
-        "stars": "35,921",
-        "lang": "TypeScript",
-        "url": "https://github.com/jamiepine/voicebox"
-      },
-      {
-        "name": "OpenMontage",
-        "desc": "首个开源AI智能视频制作系统，含12条流水线、52个工具和500+智能体技能，将AI编程助手变为完整视频工作室。",
-        "stars": "28,595",
-        "lang": "Python",
-        "url": "https://github.com/calesthio/OpenMontage"
-      },
-      {
-        "name": "cognee",
-        "desc": "开源AI记忆平台，为智能体提供跨会话的持久化长期记忆，基于自托管知识图谱引擎构建。",
-        "stars": "25,672",
-        "lang": "Python",
-        "url": "https://github.com/topoteretes/cognee"
-      },
-      {
-        "name": "ai-website-cloner-template",
-        "desc": "使用AI编程智能体一键克隆任意网站，通过自然语言描述即可复刻网页设计与功能。",
-        "stars": "23,498",
-        "lang": "TypeScript",
-        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
-      },
-      {
-        "name": "design.md",
-        "desc": "面向AI编程智能体的视觉设计规范格式，让智能体获得对设计系统的持久化结构化理解。",
-        "stars": "23,199",
-        "lang": "TypeScript",
-        "url": "https://github.com/google-labs-code/design.md"
-      },
-      {
-        "name": "Anthropic-Cybersecurity-Skills",
-        "desc": "为AI智能体提供817个结构化网络安全技能，映射至MITRE ATT&CK等6大框架，兼容Claude Code、Copilot等20+平台。",
-        "stars": "23,094",
-        "lang": "Python",
-        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-      },
-      {
-        "name": "codebase-memory-mcp",
-        "desc": "高性能代码智能MCP服务器，将代码库索引为持久化知识图谱，支持158种语言，亚毫秒查询，大幅减少Token消耗。",
-        "stars": "21,476",
-        "lang": "C",
-        "url": "https://github.com/DeusData/codebase-memory-mcp"
-      },
-      {
-        "name": "orca",
-        "desc": "并行AI编码智能体开发环境，支持同时运行多个编码智能体，可在桌面和移动端使用。",
-        "stars": "9,111",
-        "lang": "TypeScript",
-        "url": "https://github.com/stablyai/orca"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "weekday": "星期三",
-    "file": "2026-07-01.html",
-    "news": [
-      {
-        "title": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist",
-        "summary": "Hacker News 热门讨论 · 46 分 · 32 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.404media.co/scammers-sell-seeds-for-exotic-ai-generated-flowers-that-dont-exist/"
-      },
-      {
-        "title": "AI Zillionaires Are Starting to Get Scared as the Public Turns Against Them",
-        "summary": "Hacker News 热门讨论 · 32 分 · 15 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://futurism.com/artificial-intelligence/ai-tech-billionaires-mark-cuban-scared-public"
-      },
-      {
-        "title": "Why Won't Europe Build AI Data Centers in Iceland?",
-        "summary": "Hacker News 热门讨论 · 33 分 · 34 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://mrkt30.com/why-wont-europe-build-ai-data-centers-in-iceland/"
-      },
-      {
-        "title": "Amazon Is Awash with AI-Written Guideslop for Games That Aren't Even Out",
-        "summary": "Hacker News 热门讨论 · 55 分 · 3 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://kotaku.com/amazon-ai-game-guidebooks-alien-isolation-gears-of-war-2000711365"
-      },
-      {
-        "title": "Working With AI: A concrete example",
-        "summary": "Hacker News 热门讨论 · 186 分 · 65 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://htmx.org/essays/working-with-ai/"
-      },
-      {
-        "title": "Tidal AI Policy",
-        "summary": "Hacker News 热门讨论 · 304 分 · 342 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://tidal.com/ai-policy"
-      },
-      {
-        "title": "Anthropic CEO: Open-Source AI is getting dangerous (2023)",
-        "summary": "Hacker News 热门讨论 · 56 分 · 25 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://xcancel.com/coinbureau/status/2071330294452666695"
-      },
-      {
-        "title": "AI boom risks global financial crash, warn central bankers",
-        "summary": "Hacker News 热门讨论 · 157 分 · 213 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/"
-      },
-      {
-        "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
-        "summary": "Hacker News 热门讨论 · 31 分 · 35 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.phantafield.com/whitepaper"
-      },
-      {
-        "title": "Better Images of AI",
-        "summary": "Hacker News 热门讨论 · 55 分 · 30 条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://betterimagesofai.org/"
-      }
-    ],
-    "github": [
-      {
-        "name": "hasaneyldrm/exercises-dataset",
-        "desc": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
-        "stars": "1,343 stars today",
-        "lang": "HTML",
-        "url": "https://github.com/hasaneyldrm/exercises-dataset"
-      },
-      {
-        "name": "usestrix/strix",
-        "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-        "stars": "515 stars today",
-        "lang": "Python",
-        "url": "https://github.com/usestrix/strix"
-      },
-      {
-        "name": "msitarzewski/agency-agents",
-        "desc": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-        "stars": "1,791 stars today",
-        "lang": "Shell",
-        "url": "https://github.com/msitarzewski/agency-agents"
-      },
-      {
-        "name": "altic-dev/FluidVoice",
-        "desc": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
-        "stars": "588 stars today",
-        "lang": "Swift",
-        "url": "https://github.com/altic-dev/FluidVoice"
-      },
-      {
-        "name": "diegosouzapw/OmniRoute",
-        "desc": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-        "stars": "387 stars today",
-        "lang": "TypeScript",
-        "url": "https://github.com/diegosouzapw/OmniRoute"
-      },
-      {
-        "name": "browser-use/video-use",
-        "desc": "Edit videos with coding agents",
-        "stars": "721 stars today",
-        "lang": "Python",
-        "url": "https://github.com/browser-use/video-use"
-      },
-      {
-        "name": "xbtlin/ai-berkshire",
-        "desc": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-        "stars": "969 stars today",
-        "lang": "Python",
-        "url": "https://github.com/xbtlin/ai-berkshire"
-      },
-      {
-        "name": "Mebus/cupp",
-        "desc": "Common User Passwords Profiler (CUPP)",
-        "stars": "32 stars today",
-        "lang": "Python",
-        "url": "https://github.com/Mebus/cupp"
-      },
-      {
-        "name": "ripienaar/free-for-dev",
-        "desc": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
-        "stars": "742 stars today",
-        "lang": "HTML",
-        "url": "https://github.com/ripienaar/free-for-dev"
-      },
-      {
-        "name": "google/agents-cli",
-        "desc": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
-        "stars": "445 stars today",
-        "lang": "Python",
-        "url": "https://github.com/google/agents-cli"
       }
     ]
   }
