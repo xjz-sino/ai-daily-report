@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-03 - AI日报</title>
+    <style>
+        :root {
+            --bg: #f6f8fa;
+            --card-bg: #ffffff;
+            --text: #24292f;
+            --text-secondary: #57606a;
+            --border: #d0d7de;
+            --accent: #0969da;
+            --accent-light: #ddf4ff;
+            --tag-bg: #eaeef2;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+        }
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+        }
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-top: 6px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+        nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: .15s;
+        }
+        nav a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        nav a.disabled {
+            opacity: .45;
+            pointer-events: none;
+        }
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 18px;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item, .gh-item {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child, .gh-item:last-child {
+            border-bottom: none;
+        }
+        .news-item h3, .gh-item h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .news-item h3 a, .gh-item h3 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        .news-item h3 a:hover, .gh-item h3 a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        .news-item .summary, .gh-item .desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            font-size: 12px;
+            background: var(--tag-bg);
+            color: var(--text-secondary);
+            padding: 3px 10px;
+            border-radius: 100px;
+        }
+        .gh-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+        .gh-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 32px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 22px; }
+            .section { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI日报</h1>
+            <div class="meta">2026-07-03 · 周五</div>
+        </header>
+
+        <nav>
+            <a href="2026-07-02.html" class="">
+                <span>←</span> 上一期
+            </a>
+            <a href="" class="disabled">
+                下一期 <span>→</span>
+            </a>
+        </nav>
+
+        <div class="section">
+            <h2>🔥 AI新闻（10条）</h2>
+            <div class="news-item">
+    <h3><a href="https://news.hamidun.com/en/news/7911/openai-is-devoting-its-core-resources-to-building-a-fully-au" target="_blank" rel="noopener">OpenAI全力投入开发完全自主AI研究员</a></h3>
+    <div class="summary">OpenAI首席研究官Jacob Pachocki表示，公司正将核心资源投入自主AI研究员项目，目标2026年9月展示可独立工作数天的'自主AI实习生'，2028年实现全自动多智能体研究系统。</div>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">AI Agent</span><span class="tag">自主研究</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://liveinthefuture.org/stories/alphaevolve-self-improving-ai-substrate" target="_blank" rel="noopener">Google DeepMind AlphaEvolve已在生产环境运行超一年</a></h3>
+    <div class="summary">DeepMind的AI代码代理AlphaEvolve持续为Google全球数据中心节省约0.7%的计算资源，该算法由AI自动发现并在生产环境部署超过一年，展现了AI自我改进的潜力。</div>
+    <div class="tags"><span class="tag">Google DeepMind</span><span class="tag">AlphaEvolve</span><span class="tag">AI编程</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://clearainews.com/industry-analysis/latest-ai-news-and-developments-2026-2/" target="_blank" rel="noopener">全球AI市场预计2026年底达2.8万亿美元</a></h3>
+    <div class="summary">市场分析师预测，2026年全球AI市场规模将达2.8万亿美元，其中企业AI软件占8900亿美元，AI硬件基础设施占1.1万亿美元，AI主题ETF已吸引1560亿美元资产管理规模。</div>
+    <div class="tags"><span class="tag">AI市场</span><span class="tag">投资</span><span class="tag">行业分析</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://aiforgood.itu.int/inside-the-ai-for-good-global-summit-2026-where-innovation-meets-action/" target="_blank" rel="noopener">2026 AI for Good全球峰会即将在日内瓦开幕</a></h3>
+    <div class="summary">7月7日至10日，国际电信联盟将在日内瓦Palexpo举办AI for Good全球峰会，汇聚政府、产业、学术界领袖，探讨AI加速可持续发展目标的实际应用。</div>
+    <div class="tags"><span class="tag">AI峰会</span><span class="tag">联合国</span><span class="tag">可持续发展</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://www.dagalaxy.com/latest-agi-updates-2026-xai-openai-anthropic-google-deepmind-and-more" target="_blank" rel="noopener">OpenAI o3演进为GPT-5.1，多模态能力全面升级</a></h3>
+    <div class="summary">OpenAI于2026年3月发布的o3模型（ARC-AGI得分3%）已演进为GPT-5.1，集成视觉、音频和文本处理能力，可执行实时气候卫星分析和自适应音乐创作等复杂任务。</div>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">GPT-5.1</span><span class="tag">多模态</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://eng.pressbee.net/show4622019.html" target="_blank" rel="noopener">Google DeepMind发布最新开源权重Gemma模型</a></h3>
+    <div class="summary">Google DeepMind持续迭代开源Gemma系列大模型，为开发者和研究者提供更轻量、可本地部署的高性能基础模型选择。</div>
+    <div class="tags"><span class="tag">Google DeepMind</span><span class="tag">Gemma</span><span class="tag">开源模型</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://eng.pressbee.net/show4622019.html" target="_blank" rel="noopener">Anthropic从Google获更多算力，称AI模型有情感</a></h3>
+    <div class="summary">Anthropic因当前算力紧张从Google获得更多计算资源支持，同时其研究团队发布论文称大型AI模型可能具有某种形式的情感反应能力，引发业界广泛讨论。</div>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">算力</span><span class="tag">AI情感</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://www.abhs.in/blog/ai-models-april-june-2026-gpt6-claude5-llama4-what-developers-should-prepare" target="_blank" rel="noopener">GPT-6、Claude 5、Llama 4旗舰模型预计Q2密集发布</a></h3>
+    <div class="summary">2026年第二季度被视为自GPT-4以来最重要的模型发布窗口，OpenAI GPT-6、Anthropic Claude 5（代号Fennec）和Meta Llama 4均有望面世，代表不同架构路线和战略意图。</div>
+    <div class="tags"><span class="tag">GPT-6</span><span class="tag">Claude 5</span><span class="tag">Llama 4</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://www.dexternights.com/2026/05/19/google-deepminds-enterprise-ai-leap-reshaping-the-battleground-with-microsoft-and-openai/" target="_blank" rel="noopener">Google DeepMind加强企业AI，挑战微软OpenAI</a></h3>
+    <div class="summary">Google DeepMind正加大企业AI解决方案投入，与微软和OpenAI争夺企业市场，推出更先进的云端AI能力，企业AI竞争进入白热化阶段。</div>
+    <div class="tags"><span class="tag">Google DeepMind</span><span class="tag">企业AI</span><span class="tag">竞争</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://www.ibm.com/think/news/meta-releases-llama-3-1-models-405b-parameter-variant" target="_blank" rel="noopener">Meta Llama 3.1系列多语言大模型发布</a></h3>
+    <div class="summary">Meta发布Llama 3.1系列多语言大语言模型，包含8B、70B和首次推出的405B参数版本，提供预训练和指令微调两种变体，进一步壮大开源大模型生态。</div>
+    <div class="tags"><span class="tag">Meta</span><span class="tag">Llama 3.1</span><span class="tag">开源</span></div>
+</div>
+
+        </div>
+
+        <div class="section">
+            <h2>⭐ GitHub Trending（10个）</h2>
+            <div class="gh-item">
+    <h3><a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener">JuliusBrussee/caveman</a></h3>
+    <div class="desc">Claude Code技能，用'穴居人'式极简表达减少65%的token消耗，在开发者社区引发热议。</div>
+    <div class="gh-meta">
+        <span>⭐ 80,912</span>
+        <span>● JavaScript</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener">msitarzewski/agency-agents</a></h3>
+    <div class="desc">一站式AI代理机构，从前端专家到Reddit社区运营，每个代理都是具备个性、流程和交付成果的专业专家。</div>
+    <div class="gh-meta">
+        <span>⭐ 125,478</span>
+        <span>● Shell</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></h3>
+    <div class="desc">行之有效的代理技能框架与软件开发方法论，为AI编程助手提供结构化技能体系和最佳实践指南。</div>
+    <div class="gh-meta">
+        <span>⭐ 244,418</span>
+        <span>● Shell</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a></h3>
+    <div class="desc">代理性能优化系统，为Claude Code、Codex、Opencode、Cursor等提供技能、本能、记忆、安全与研究优先的开发框架。</div>
+    <div class="gh-meta">
+        <span>⭐ 225,181</span>
+        <span>● JavaScript</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/usestrix/strix" target="_blank" rel="noopener">usestrix/strix</a></h3>
+    <div class="desc">开源AI渗透测试工具，自动发现并修复应用漏洞，将AI能力引入安全测试流程。</div>
+    <div class="gh-meta">
+        <span>⭐ 32,202</span>
+        <span>● Python</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/santifer/career-ops" target="_blank" rel="noopener">santifer/career-ops</a></h3>
+    <div class="desc">基于Claude Code的AI驱动求职系统，内置14种技能模式、Go仪表盘、PDF生成和批量处理功能。</div>
+    <div class="gh-meta">
+        <span>⭐ 57,818</span>
+        <span>● JavaScript</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">ChromeDevTools/chrome-devtools-mcp</a></h3>
+    <div class="desc">Chrome DevTools MCP服务器，让编码代理能够直接调用浏览器开发者工具进行调试和性能分析。</div>
+    <div class="gh-meta">
+        <span>⭐ 45,079</span>
+        <span>● TypeScript</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/browser-use/video-use" target="_blank" rel="noopener">browser-use/video-use</a></h3>
+    <div class="desc">用编码代理编辑视频，将AI编程能力扩展到多媒体创作领域，支持自动化剪辑和后期处理。</div>
+    <div class="gh-meta">
+        <span>⭐ 13,779</span>
+        <span>● Python</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/HKUDS/Vibe-Trading" target="_blank" rel="noopener">HKUDS/Vibe-Trading</a></h3>
+    <div class="desc">个人交易代理，基于AI智能体技术实现自动化交易策略分析、执行和风险管理。</div>
+    <div class="gh-meta">
+        <span>⭐ 17,339</span>
+        <span>● Python</span>
+    </div>
+</div>
+<div class="gh-item">
+    <h3><a href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank" rel="noopener">hasaneyldrm/exercises-dataset</a></h3>
+    <div class="desc">包含433种健身动作的综合数据集，每条记录包含名称、类别、目标肌群、器械、说明、缩略图和动画视频。</div>
+    <div class="gh-meta">
+        <span>⭐ 9,257</span>
+        <span>● HTML</span>
+    </div>
+</div>
+
+        </div>
+
+        <footer>
+            每日更新 · 自动生成 · <a href="search-index.json">索引</a>
+        </footer>
+    </div>
+</body>
+</html>
