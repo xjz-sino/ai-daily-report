@@ -24,8 +24,8 @@
         "title": "Open source AI is the path forward",
         "summary": "来自Hacker News的热门AI讨论，2360赞同",
         "tags": [
-          "开源",
-          "AI"
+          "AI",
+          "开源"
         ],
         "url": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
       },
@@ -134,7 +134,7 @@
       {
         "name": "xuchonglang/investing-for-beginners",
         "desc": "小隐寺投资百科官方公开索引：美股、期权与加密货币知识框架",
-        "stars": 474,
+        "stars": 475,
         "lang": "未知",
         "url": "https://github.com/xuchonglang/investing-for-beginners"
       },
