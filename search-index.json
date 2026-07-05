@@ -1,5 +1,185 @@
 [
   {
+    "date": "2026-07-05",
+    "weekday": "周日",
+    "file": "daily_2026-07-05.html",
+    "news": [
+      {
+        "title": "微软Copilot OS泄露视频曝光轻量级Windows概念",
+        "summary": "泄露视频展示了名为Aion的精简版Windows概念系统，专为Agentic AI打造，基于Edge浏览器和Web应用构建，类似于Chrome OS。",
+        "tags": [
+          "微软",
+          "Copilot",
+          "操作系统",
+          "AI Agent"
+        ],
+        "url": "https://www.theverge.com/tech/961195/microsoft-copilot-os-aion-leak"
+      },
+      {
+        "title": "Anthropic发布Claude Sonnet 5中端模型",
+        "summary": "Claude Sonnet 5作为Sonnet 4.6的继任者，可制定计划、使用浏览器和终端等工具自主运行，性能接近Opus 4.8，且网络安全风险更低。",
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "大模型"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959686/anthropics-claude-sonnet-5-is-here"
+      },
+      {
+        "title": "Anthropic推出Claude Science科学AI工作台",
+        "summary": "Claude Science将碎片化工具和数据集整合到统一环境，可生成3D蛋白质结构等科学可视化图表，目前从生物学Beta测试起步。",
+        "tags": [
+          "Anthropic",
+          "科学AI",
+          "生物学"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959371/claudes-getting-a-lab-coat"
+      },
+      {
+        "title": "OpenAI发布Codex硬件Codex Micro键盘",
+        "summary": "OpenAI与Work Louder合作推出Codex Micro硬件，专为提升Codex使用体验设计，在AI Engineer World Fair上亮相。",
+        "tags": [
+          "OpenAI",
+          "Codex",
+          "硬件"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959269/heres-a-photo-of-openais-codex-hardware"
+      },
+      {
+        "title": "Cursor推出AI编码Agent的iPhone应用",
+        "summary": "被SpaceX计划收购的Cursor发布iPhone应用，支持启动和追踪AI Agent，并通过Live Activities展示Agent进度更新。",
+        "tags": [
+          "Cursor",
+          "AI编码",
+          "移动端"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959145/cursor-launches-an-iphone-app-for-its-ai-coding-agent"
+      },
+      {
+        "title": "加州与Anthropic合作全州推广Claude",
+        "summary": "加州政府与Anthropic达成首创合作，为所有州机构和地方政府提供Claude服务，享受50%折扣及免费 workforce 培训。",
+        "tags": [
+          "政府AI",
+          "Anthropic",
+          "政策"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959031/california-partnered-with-anthropic-to-make-claude-available-to-all-state-agencies-and-local-governments"
+      },
+      {
+        "title": "Cloudflare将限制多用途爬虫访问",
+        "summary": "自9月15日起，Cloudflare将阻止同时用于搜索索引和AI训练的爬虫，要求AI公司分离不同用途的爬虫，让出版商拥有更多控制权。",
+        "tags": [
+          "Cloudflare",
+          "爬虫",
+          "数据保护"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/960795/cloudflare-is-cracking-down-on-multi-purpose-crawlers"
+      },
+      {
+        "title": "Google限制Meta等客户的Gemini使用量",
+        "summary": "由于计算能力需求激增，Google开始限制包括Meta在内的大客户访问Gemini模型，揭示了AI行业基础设施瓶颈的严峻现状。",
+        "tags": [
+          "Google",
+          "Gemini",
+          "基础设施"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/958787/google-is-putting-a-cap-on-metas-gemini-usage"
+      },
+      {
+        "title": "Gemini向更多用户开放个性化AI图像生成",
+        "summary": "Google将Personal Intelligence功能扩展至所有符合条件的美国用户，无需订阅即可基于Google Photos个人上下文生成AI图像。",
+        "tags": [
+          "Google",
+          "Gemini",
+          "图像生成"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959246/gemini-now-lets-more-people-generate-personalized-ai-images"
+      },
+      {
+        "title": "OpenClaw开源AI助手推出iOS和Android应用",
+        "summary": "开源AI助手OpenClaw发布独立移动应用，支持实时语音对话、审批Agent动作及控制设备摄像头和位置访问。",
+        "tags": [
+          "OpenClaw",
+          "开源AI",
+          "移动端"
+        ],
+        "url": "https://www.theverge.com/ai-artificial-intelligence/959285/openclaw-gets-its-own-app-on-ios-and-android"
+      }
+    ],
+    "github": [
+      {
+        "name": "msitarzewski/agency-agents",
+        "desc": "完整的AI代理机构——从前端向导到Reddit社区忍者，每个Agent都是具备个性、流程和成熟交付物的专业专家。",
+        "stars": 122629,
+        "lang": "Shell",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "usestrix/strix",
+        "desc": "开源AI渗透测试工具，自动发现并修复应用漏洞。",
+        "stars": 29423,
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "desc": "你的个人交易Agent，智能自动化交易助手。",
+        "stars": 16425,
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "facebook/astryx",
+        "desc": "完全可定制且支持Agent的开源设计系统。",
+        "stars": 2260,
+        "lang": "TypeScript",
+        "url": "https://github.com/facebook/astryx"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "desc": "免费AI网关：一个端点接入231+提供商（50+免费），支持Claude Code、Codex、Cursor等工具连接免费大模型。",
+        "stars": 9300,
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "allenai/olmocr",
+        "desc": "用于LLM数据集/训练的PDF线性化工具包。",
+        "stars": 18206,
+        "lang": "Python",
+        "url": "https://github.com/allenai/olmocr"
+      },
+      {
+        "name": "logto-io/logto",
+        "desc": "面向SaaS和AI应用的身份认证与授权基础设施，基于OIDC和OAuth 2.1构建，支持多租户、SSO和RBAC。",
+        "stars": 13136,
+        "lang": "TypeScript",
+        "url": "https://github.com/logto-io/logto"
+      },
+      {
+        "name": "browser-use/video-use",
+        "desc": "用编码Agent编辑视频，AI驱动的视频创作工具。",
+        "stars": 13152,
+        "lang": "Python",
+        "url": "https://github.com/browser-use/video-use"
+      },
+      {
+        "name": "google/agents-cli",
+        "desc": "将任何编码助手转变为创建、评估和部署Google Cloud AI Agent的专家的CLI工具。",
+        "stars": 4559,
+        "lang": "Python",
+        "url": "https://github.com/google/agents-cli"
+      },
+      {
+        "name": "open-webui/open-webui",
+        "desc": "用户友好的AI界面，支持Ollama、OpenAI API等多种后端。",
+        "stars": 143712,
+        "lang": "Python",
+        "url": "https://github.com/open-webui/open-webui"
+      }
+    ]
+  },
+  {
     "date": "2026-07-04",
     "weekday": "星期六",
     "file": "daily-2026-07-04.html",
