@@ -1214,20 +1214,101 @@
     "date": "2026-07-06",
     "weekday": "星期一",
     "file": "2026-07-06.html",
-    "issue": 8,
-    "news": [],
+    "issue": 9,
+    "news": [
+      {
+        "title": "John Carmack: I’m going to work on artificial general intelligence",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.facebook.com/100006735798590/posts/2547632585471243/"
+      },
+      {
+        "title": "Artificial intelligence is not conscious – Ted Chiang",
+        "summary": "https:&#x2F;&#x2F;archive.is&#x2F;bcpZl",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/"
+      },
+      {
+        "title": "U.S. government limits exports of artificial intelligence software",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.reuters.com/article/us-usa-artificial-intelligence/u-s-government-limits-exports-of-artificial-intelligence-software-idUSKBN1Z21PT"
+      },
+      {
+        "title": "Artificial intelligence is losing hype",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.economist.com/finance-and-economics/2024/08/19/artificial-intelligence-is-losing-hype"
+      },
+      {
+        "title": "M.I.T. Plans College for Artificial Intelligence, Backed by $1B",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.nytimes.com/2018/10/15/technology/mit-college-artificial-intelligence.html"
+      },
+      {
+        "title": "Artificial Intelligence Lecture Videos",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/lecture-videos/"
+      },
+      {
+        "title": "Carnegie Mellon Launches Undergraduate Degree in Artificial Intelligence",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.cs.cmu.edu/news/carnegie-mellon-launches-undergraduate-degree-artificial-intelligence"
+      },
+      {
+        "title": "Use of artificial intelligence for image analysis in breast cancer screening",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://www.bmj.com/content/374/bmj.n1872"
+      },
+      {
+        "title": "Show HN: I'm a 14 year-old dev who has programmed an artificial intelligence bot",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "http://acuman.us/"
+      },
+      {
+        "title": "Where will artificial general intelligence come from?",
+        "summary": "",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://docs.google.com/presentation/d/119VW6ueBGLQXsw-jGMboGP2-WuOnyMAOYLgd44SL6xM/edit#slide=id.p"
+      }
+    ],
     "github": [
       {
         "name": "codecrafters-io/build-your-own-x",
         "desc": "Master programming by recreating your favorite technologies from scratch.",
-        "stars": 522765,
+        "stars": 522768,
         "lang": "Markdown",
         "url": "https://github.com/codecrafters-io/build-your-own-x"
       },
       {
         "name": "sindresorhus/awesome",
         "desc": "😎 Awesome lists about all kinds of interesting topics",
-        "stars": 481846,
+        "stars": 481845,
         "lang": "Unknown",
         "url": "https://github.com/sindresorhus/awesome"
       },
@@ -1241,28 +1322,28 @@
       {
         "name": "public-apis/public-apis",
         "desc": "A collective list of free APIs",
-        "stars": 446906,
+        "stars": 446907,
         "lang": "Python",
         "url": "https://github.com/public-apis/public-apis"
       },
       {
         "name": "EbookFoundation/free-programming-books",
         "desc": ":books: Freely available programming books",
-        "stars": 391337,
+        "stars": 391339,
         "lang": "Python",
         "url": "https://github.com/EbookFoundation/free-programming-books"
       },
       {
         "name": "openclaw/openclaw",
         "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
-        "stars": 381839,
+        "stars": 381838,
         "lang": "TypeScript",
         "url": "https://github.com/openclaw/openclaw"
       },
       {
         "name": "nilbuild/developer-roadmap",
         "desc": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-        "stars": 359414,
+        "stars": 359416,
         "lang": "TypeScript",
         "url": "https://github.com/nilbuild/developer-roadmap"
       },
@@ -1276,14 +1357,14 @@
       {
         "name": "awesome-selfhosted/awesome-selfhosted",
         "desc": "A list of Free Software network services and web applications which can be hosted on your own servers",
-        "stars": 303082,
+        "stars": 303083,
         "lang": "Unknown",
         "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
       },
       {
         "name": "practical-tutorials/project-based-learning",
         "desc": "Curated list of project-based tutorials",
-        "stars": 272207,
+        "stars": 272208,
         "lang": "Python",
         "url": "https://github.com/practical-tutorials/project-based-learning"
       }
