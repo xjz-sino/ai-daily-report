@@ -1214,87 +1214,87 @@
     "date": "2026-07-06",
     "weekday": "星期一",
     "file": "2026-07-06.html",
-    "issue": 9,
+    "issue": 10,
     "news": [
       {
-        "title": "John Carmack: I’m going to work on artificial general intelligence",
+        "title": "Taxing Artificial Intelligence",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://www.facebook.com/100006735798590/posts/2547632585471243/"
+        "url": "https://arxiv.org/abs/2607.02144"
       },
       {
-        "title": "Artificial intelligence is not conscious – Ted Chiang",
-        "summary": "https:&#x2F;&#x2F;archive.is&#x2F;bcpZl",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/"
-      },
-      {
-        "title": "U.S. government limits exports of artificial intelligence software",
+        "title": "Infuriating Google commercial imagines the founding fathers embracing AI",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://www.reuters.com/article/us-usa-artificial-intelligence/u-s-government-limits-exports-of-artificial-intelligence-software-idUSKBN1Z21PT"
+        "url": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence"
       },
       {
-        "title": "Artificial intelligence is losing hype",
+        "title": "Ask HN: When will the stock market crash?",
+        "summary": "Infinite money glitches, \"artificial intelligence\", massive stock buybacks, space companies, magnificent sevens, ++See: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=wKXgeNwNRJ4",
+        "tags": [
+          "AI"
+        ],
+        "url": "https://news.ycombinator.com/item?id=48789829"
+      },
+      {
+        "title": "Anthropic wants to develop its own drugs",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://www.economist.com/finance-and-economics/2024/08/19/artificial-intelligence-is-losing-hype"
+        "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
       },
       {
-        "title": "M.I.T. Plans College for Artificial Intelligence, Backed by $1B",
+        "title": "AI researchers ran a secret experiment on Reddit users (2025)",
+        "summary": "",
+        "tags": [
+          "科研"
+        ],
+        "url": "https://www.livescience.com/technology/artificial-intelligence/ai-researchers-ran-a-secret-experiment-on-reddit-users-to-see-if-they-could-change-their-minds-and-the-results-are-creepy"
+      },
+      {
+        "title": "Alexa+, the Next Generation of Alexa",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://www.nytimes.com/2018/10/15/technology/mit-college-artificial-intelligence.html"
+        "url": "https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence"
       },
       {
-        "title": "Artificial Intelligence Lecture Videos",
+        "title": "How Natural Is Artifical Intelligent?",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/lecture-videos/"
+        "url": "https://jotaalvim.github.io/blogs/ai.html"
       },
       {
-        "title": "Carnegie Mellon Launches Undergraduate Degree in Artificial Intelligence",
+        "title": "Claude Fable relaunch disappoints users with nerfed performance",
+        "summary": "",
+        "tags": [
+          "大模型"
+        ],
+        "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/"
+      },
+      {
+        "title": "LLMs adopt the social biases of human if assigned different professional roles",
+        "summary": "",
+        "tags": [
+          "大模型"
+        ],
+        "url": "https://www.psypost.org/artificial-intelligence-chatbots-adopt-human-power-dynamics-and-social-biases-in-conversations/"
+      },
+      {
+        "title": "AI is 'not smart' so what's next in artificial intelligence?",
         "summary": "",
         "tags": [
           "AI"
         ],
-        "url": "https://www.cs.cmu.edu/news/carnegie-mellon-launches-undergraduate-degree-artificial-intelligence"
-      },
-      {
-        "title": "Use of artificial intelligence for image analysis in breast cancer screening",
-        "summary": "",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.bmj.com/content/374/bmj.n1872"
-      },
-      {
-        "title": "Show HN: I'm a 14 year-old dev who has programmed an artificial intelligence bot",
-        "summary": "",
-        "tags": [
-          "AI"
-        ],
-        "url": "http://acuman.us/"
-      },
-      {
-        "title": "Where will artificial general intelligence come from?",
-        "summary": "",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://docs.google.com/presentation/d/119VW6ueBGLQXsw-jGMboGP2-WuOnyMAOYLgd44SL6xM/edit#slide=id.p"
+        "url": "https://www.bbc.com/news/articles/cj6gr0xkyr3o"
       }
     ],
     "github": [
@@ -1336,7 +1336,7 @@
       {
         "name": "openclaw/openclaw",
         "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
-        "stars": 381838,
+        "stars": 381839,
         "lang": "TypeScript",
         "url": "https://github.com/openclaw/openclaw"
       },
