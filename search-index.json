@@ -1369,5 +1369,184 @@
         "url": "https://github.com/practical-tutorials/project-based-learning"
       }
     ]
+  },
+  {
+    "date": "2026-07-07",
+    "weekday": "星期二",
+    "file": "2026-07-07.html",
+    "news": [
+      {
+        "title": "清朗AI专项行动首阶段处置1.4万余款AI产品、2.6万余个账号",
+        "summary": "中央网信办发布清朗·整治AI应用乱象专项行动第一阶段治理成果，累计处置违规网站、应用程序、智能体等AI产品1.4万余款，清理违法违规信息600余万条，处置账号2.6万余个，下架违规AI商品1300余个、违规开源数据集9个。",
+        "tags": [
+          "政策",
+          "AI监管",
+          "清朗行动"
+        ],
+        "url": "http://m.toutiao.com/group/7659570008149754408/"
+      },
+      {
+        "title": "GPT-5.6三大子模型7月7日发布，搭载速度拨盘功能",
+        "summary": "OpenAI正式发布GPT-5.6系列，包含Sol、Terra、Luna三个子模型，搭载速度拨盘功能，支持开发者在推理速度与生成质量间自主权衡。Terminal-Bench达91.9%，为史上首个超90%的模型。",
+        "tags": [
+          "OpenAI",
+          "GPT-5.6",
+          "大模型"
+        ],
+        "url": "https://blog.51cto.com/u_17408641/14741458"
+      },
+      {
+        "title": "Anthropic发布Claude Sonnet 5，性能近Opus价格更低",
+        "summary": "Anthropic向全球用户推送Claude Sonnet 5，在代码生成、工具调用及长链路自主规划能力上大幅增强，综合基准接近旗舰版Opus 4.8但定价显著更低，被定位为最强Agent中端模型。",
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "大模型"
+        ],
+        "url": "http://m.toutiao.com/group/7657702298554008100/"
+      },
+      {
+        "title": "谷歌Gemini 3.5 Pro将于7月17日发布",
+        "summary": "谷歌DeepMind放弃原有2.5 Pro基座，对Gemini 3.5 Pro进行全新预训练，前端与视觉代码生成能力据称跨越式跃升，发布时间从原定6月推迟至7月17日，以应对GPT-5.6和Fable 5的双重压力。",
+        "tags": [
+          "谷歌",
+          "Gemini",
+          "大模型"
+        ],
+        "url": "http://m.toutiao.com/group/7659380371167691304/"
+      },
+      {
+        "title": "天行AI气象大模型台风路径预报误差缩小至58公里",
+        "summary": "中国科学院大气物理研究所研发的天行AI气象大模型在7月7日测试中，对台风路径的24小时预报误差缩小至58公里，较传统数值预报模型提升40%，且计算效率提高10倍。",
+        "tags": [
+          "AI气象",
+          "中科院",
+          "大模型应用"
+        ],
+        "url": "http://m.toutiao.com/group/7659557493344879138/"
+      },
+      {
+        "title": "大晓机器人开悟世界模型Kairos登顶全球具身智能基准测试",
+        "summary": "成立仅一年的大晓机器人在4个月内完成累计数亿美元两轮融资，其开悟世界模型Kairos在新近4项全球具身智能基准测试中全面登顶，先于英伟达押中技术路线。",
+        "tags": [
+          "具身智能",
+          "机器人",
+          "融资"
+        ],
+        "url": "http://m.toutiao.com/group/7659563137485619747/"
+      },
+      {
+        "title": "ITU AI for Good全球峰会7月7-10日在日内瓦召开",
+        "summary": "国际电信联盟召开第七届AI for Good全球峰会，与首届联合国AI治理全球对话背靠背举行，汇聚政府官员、行业领袖、学者和民间社会代表，讨论AI部署如何惠及发展中国家。",
+        "tags": [
+          "国际会议",
+          "AI治理",
+          "联合国"
+        ],
+        "url": "https://completeaitraining.com/news/itu-brings-ai-for-good-global-summit-and-inaugural-un-ai/"
+      },
+      {
+        "title": "德勤：AI资本开支超级周期远未结束",
+        "summary": "德勤亚太管理委员会主席戴耀华表示，本轮AI驱动的超级周期被视为长期结构性增长机遇。贝莱德、摩根士丹利、富达国际、KKR等外资机构在2026年中期展望中达成共识，认为AI资本开支超级周期远未结束。",
+        "tags": [
+          "德勤",
+          "投资",
+          "AI产业"
+        ],
+        "url": "http://m.toutiao.com/group/7659446245554995747/"
+      },
+      {
+        "title": "AI助力三夏农机调度跑出科技加速度",
+        "summary": "人工智能综合分析农机分布、作业进度、天气变化等信息，动态预测作业需求和农机缺口，提前生成科学调度方案。安徽阜阳临泉县从本地及外域调配5000余台联合收割机投入夏收。",
+        "tags": [
+          "AI农业",
+          "智慧农机",
+          "应用落地"
+        ],
+        "url": "http://m.toutiao.com/group/7659530274099479075/"
+      },
+      {
+        "title": "OpenAI GPT-5.6 Terminal-Bench达91.9%，为史上首个超90%模型",
+        "summary": "OpenAI GPT-5.6在Terminal-Bench基准测试中达到91.9%，成为历史上第一个超过90%的模型。该基准测试侧重编码能力，标志着AI在终端命令理解和执行方面取得重大突破。",
+        "tags": [
+          "OpenAI",
+          "基准测试",
+          "编程AI"
+        ],
+        "url": "http://m.toutiao.com/group/7659264043319853618/"
+      }
+    ],
+    "github": [
+      {
+        "name": "asgeirtj/system_prompts_leaks",
+        "desc": "提取Anthropic、OpenAI、Google、xAI等各大AI系统提示词，包括Claude Fable 5、Opus 4.8、ChatGPT 5.5、Gemini 3.5等，定期更新。",
+        "stars": "51,529",
+        "lang": "JavaScript",
+        "url": "https://github.com/asgeirtj/system_prompts_leaks"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "desc": "面向AI编码Agent的生产级工程技能集合，涵盖需求澄清、计划审批、TDD实现、子Agent并行、审查收尾等7阶段结构化工作流。",
+        "stars": "70,815",
+        "lang": "Shell",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "Zackriya-Solutions/meetily",
+        "desc": "隐私优先的AI会议助手，基于Rust构建，支持4倍速Parakeet/Whisper实时转录、说话人分离和Ollama摘要，100%本地处理无需云端。",
+        "stars": "19,384",
+        "lang": "Rust",
+        "url": "https://github.com/Zackriya-Solutions/meetily"
+      },
+      {
+        "name": "ruvnet/RuView",
+        "desc": "将普通WiFi信号转换为实时空间智能、生命体征监测和存在检测，无需任何视频像素即可实现空间感知。",
+        "stars": "77,519",
+        "lang": "Rust",
+        "url": "https://github.com/ruvnet/RuView"
+      },
+      {
+        "name": "Leonxlnx/taste-skill",
+        "desc": "Taste-Skill - 给你的AI赋予好品味，阻止AI生成无聊、通用的低质量内容。",
+        "stars": "58,933",
+        "lang": "JavaScript",
+        "url": "https://github.com/Leonxlnx/taste-skill"
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "desc": "345个Claude Code技能与Agent技能插件，涵盖工程、营销、产品、合规、研究、商业运营等，支持Claude Code、Codex、Gemini CLI等10余种编码Agent。",
+        "stars": "21,151",
+        "lang": "Python",
+        "url": "https://github.com/alirezarezvani/claude-skills"
+      },
+      {
+        "name": "openai/codex-plugin-cc",
+        "desc": "在Claude Code中使用Codex进行代码审查或任务委托的插件，打通OpenAI与Anthropic两大编码Agent生态。",
+        "stars": "26,279",
+        "lang": "JavaScript",
+        "url": "https://github.com/openai/codex-plugin-cc"
+      },
+      {
+        "name": "mvanhorn/last30days-skill",
+        "desc": "AI Agent技能，可跨Reddit、X、YouTube、HN、Polymarket和全网研究任何话题，然后生成基于事实的综合摘要。",
+        "stars": "49,752",
+        "lang": "Python",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      {
+        "name": "ogulcancelik/herdr",
+        "desc": "生活在终端中的Agent多路复用器，让你在命令行中同时管理和调度多个AI Agent。",
+        "stars": "12,868",
+        "lang": "Rust",
+        "url": "https://github.com/ogulcancelik/herdr"
+      },
+      {
+        "name": "bradautomates/claude-video",
+        "desc": "赋予Claude观看视频的能力，/watch命令可下载视频、提取帧、转录并交给Claude分析。",
+        "stars": "4,235",
+        "lang": "Python",
+        "url": "https://github.com/bradautomates/claude-video"
+      }
+    ]
   }
 ]
