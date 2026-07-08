@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-07-08</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        header h1 { font-size: 2.5rem; background: linear-gradient(90deg, #00d4ff, #7b2cbf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        header .date { font-size: 1.1rem; color: #aaa; margin-top: 8px; }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.08);
+            padding: 12px 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        nav a:hover { background: rgba(0,212,255,0.15); }
+        nav a.disabled { color: #666; pointer-events: none; }
+        nav span { color: #888; font-size: 0.9rem; }
+        .section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .news-item, .github-item {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            border-left: 3px solid #00d4ff;
+            transition: transform 0.2s;
+        }
+        .news-item:hover, .github-item:hover { transform: translateX(4px); background: rgba(255,255,255,0.06); }
+        .news-item h3 { font-size: 1.05rem; margin-bottom: 6px; color: #fff; }
+        .news-item p { font-size: 0.9rem; color: #bbb; }
+        .news-item .tags { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+        .tag {
+            background: rgba(0,212,255,0.15);
+            color: #00d4ff;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+        .github-item { border-left-color: #7b2cbf; display: flex; justify-content: space-between; align-items: center; }
+        .github-item .info { flex: 1; }
+        .github-item h3 { font-size: 1.05rem; margin-bottom: 4px; }
+        .github-item h3 a { color: #fff; text-decoration: none; }
+        .github-item h3 a:hover { text-decoration: underline; }
+        .github-item p { font-size: 0.85rem; color: #bbb; }
+        .github-item .meta { display: flex; gap: 12px; margin-top: 6px; font-size: 0.8rem; color: #888; }
+        .github-item .stars { color: #ffd700; }
+        .github-item .lang { color: #7b2cbf; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.85rem; }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .github-item { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI日报</h1>
+            <div class="date">2026-07-08 星期三</div>
+        </header>
+
+        <nav>
+            <a href="2026-07-07.html" class="">← 上一期</a>
+            <span>日报导航</span>
+            <a href="#" class="disabled">下一期 →</a>
+        </nav>
+
+        <div class="section">
+            <h2>📰 AI新闻</h2>
+            <div class="news-item">
+    <h3><a href="http://www.xinhuanet.com/tech/20260708/fbbd5fbe39b5452098b5dde915b0c959/c.html" target="_blank" style="color:#fff;text-decoration:none;">超300款AI新品将在2026世界人工智能大会首发</a></h3>
+    <p>2026世界人工智能大会暨人工智能全球治理高级别会议将于7月17日至20日在上海召开，展览总面积首次突破10万平方米，超300款产品将实现全球首发，已推动57个核心场景落地，累计达成162亿元意向合作。</p>
+    <div class="tags"><span class="tag">WAIC</span><span class="tag">AI大会</span><span class="tag">上海</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162634327" target="_blank" style="color:#fff;text-decoration:none;">特斯拉Optimus人形机器人2026年底启动规模化量产</a></h3>
+    <p>特斯拉副总裁陶琳在2026全球数字经济大会现场确认：特斯拉Optimus人形机器人将于2026年底正式启动规模化量产，弗里蒙特工厂远期设计年产能目标100万台。</p>
+    <div class="tags"><span class="tag">特斯拉</span><span class="tag">人形机器人</span><span class="tag">Optimus</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162634327" target="_blank" style="color:#fff;text-decoration:none;">前5个月国产机器人出口1037.7万台</a></h3>
+    <p>海关总署发布数据，今年前5个月国产机器人加速走向全球，各类单独列名的机器人合计出口1037.7万台，出口总值达199亿元。</p>
+    <div class="tags"><span class="tag">机器人</span><span class="tag">出口</span><span class="tag">贸易</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162551909" target="_blank" style="color:#fff;text-decoration:none;">韩国政府投入三星、SK海力士AI税收红利建设主权AI</a></h3>
+    <p>韩国政府准备将三星、SK海力士带来的AI税收红利投入本国主权AI建设，加速国家层面AI基础设施布局。</p>
+    <div class="tags"><span class="tag">韩国</span><span class="tag">主权AI</span><span class="tag">芯片</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162551909" target="_blank" style="color:#fff;text-decoration:none;">OpenAI CEO Sam Altman向白宫提议捐赠约5%股权</a></h3>
+    <p>OpenAI首席执行官Sam Altman被披露已向白宫提议向美国主权财富基金捐赠约5%股权，获白宫国家经济委员会主任公开支持。</p>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">Sam Altman</span><span class="tag">政策</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162551909" target="_blank" style="color:#fff;text-decoration:none;">DeepSeek网页与API在7月2日出现性能下降</a></h3>
+    <p>DeepSeek网页与API在7月2日下午出现明显性能下降，并波及DeepSeek V4正式版相关服务，引发用户广泛关注。</p>
+    <div class="tags"><span class="tag">DeepSeek</span><span class="tag">API</span><span class="tag">故障</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://blog.csdn.net/haohaizi_liu/article/details/162520613" target="_blank" style="color:#fff;text-decoration:none;">Anthropic推出Claude Science切入科学研究</a></h3>
+    <p>Anthropic推出Claude Science，将AI能力切入科学研究领域，助力科研人员加速发现与创新。</p>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">Claude</span><span class="tag">科研</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://techwey.com/category/news/" target="_blank" style="color:#fff;text-decoration:none;">阿里巴巴7月10日起禁止员工使用Claude Code</a></h3>
+    <p>阿里巴巴将禁止员工使用Anthropic的AI编码工具Claude Code，并将其列为高风险软件，要求员工改用自研编码助手Qoder。</p>
+    <div class="tags"><span class="tag">阿里巴巴</span><span class="tag">Claude Code</span><span class="tag">编码工具</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://techwey.com/category/news/" target="_blank" style="color:#fff;text-decoration:none;">特朗普政府解除对Anthropic AI模型的出口限制</a></h3>
+    <p>特朗普政府已解除对Anthropic的Mythos和Fable AI模型的出口限制，结束了为期三周的禁令。</p>
+    <div class="tags"><span class="tag">Anthropic</span><span class="tag">出口管制</span><span class="tag">政策</span></div>
+</div>
+<div class="news-item">
+    <h3><a href="https://widgets.economictimes.com/topic/openai-deepseek-ai-competition/news" target="_blank" style="color:#fff;text-decoration:none;">OpenAI 7月7日服务中断影响Codex和Custom GPTs</a></h3>
+    <p>OpenAI的ChatGPT在7月7日遭遇重大服务中断，影响Codex、Custom GPTs和工作区分析等功能，核心功能后续恢复。</p>
+    <div class="tags"><span class="tag">OpenAI</span><span class="tag">ChatGPT</span><span class="tag">服务中断</span></div>
+</div>
+
+        </div>
+
+        <div class="section">
+            <h2>⭐ GitHub Trending</h2>
+            <div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/msitarzewski/agency-agents" target="_blank">msitarzewski/agency-agents</a></h3>
+        <p>一个完整的AI代理机构，包含前端向导、Reddit社区专家等各类专业代理</p>
+        <div class="meta">
+            <span class="stars">⭐ 122,629</span>
+            <span class="lang">🟣 Shell</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/usestrix/strix" target="_blank">usestrix/strix</a></h3>
+        <p>开源AI渗透测试工具，自动发现并修复应用漏洞</p>
+        <div class="meta">
+            <span class="stars">⭐ 29,156</span>
+            <span class="lang">🟣 Python</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/HKUDS/Vibe-Trading" target="_blank">HKUDS/Vibe-Trading</a></h3>
+        <p>个人交易代理，基于AI的智能交易系统</p>
+        <div class="meta">
+            <span class="stars">⭐ 16,338</span>
+            <span class="lang">🟣 Python</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank">hasaneyldrm/exercises-dataset</a></h3>
+        <p>包含433种健身动作的综合数据集，含动画视频和缩略图</p>
+        <div class="meta">
+            <span class="stars">⭐ 8,140</span>
+            <span class="lang">🟣 HTML</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/facebook/astryx" target="_blank">facebook/astryx</a></h3>
+        <p>开源设计系统，完全可定制且支持AI代理</p>
+        <div class="meta">
+            <span class="stars">⭐ 2,260</span>
+            <span class="lang">🟣 TypeScript</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/diegosouzapw/OmniRoute" target="_blank">diegosouzapw/OmniRoute</a></h3>
+        <p>免费AI网关，一个端点支持231+提供商，连接Claude Code、Cursor等</p>
+        <div class="meta">
+            <span class="stars">⭐ 9,300</span>
+            <span class="lang">🟣 TypeScript</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/allenai/olmocr" target="_blank">allenai/olmocr</a></h3>
+        <p>PDF线性化工具包，用于LLM数据集和训练</p>
+        <div class="meta">
+            <span class="stars">⭐ 18,149</span>
+            <span class="lang">🟣 Python</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/logto-io/logto" target="_blank">logto-io/logto</a></h3>
+        <p>面向SaaS和AI应用的身份认证与授权基础设施</p>
+        <div class="meta">
+            <span class="stars">⭐ 13,136</span>
+            <span class="lang">🟣 TypeScript</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/togatoga/karukan" target="_blank">togatoga/karukan</a></h3>
+        <p>Linux/macOS日文输入法系统，基于神经网络的假名-汉字转换引擎</p>
+        <div class="meta">
+            <span class="stars">⭐ 555</span>
+            <span class="lang">🟣 Rust</span>
+        </div>
+    </div>
+</div>
+<div class="github-item">
+    <div class="info">
+        <h3><a href="https://github.com/Mebus/cupp" target="_blank">Mebus/cupp</a></h3>
+        <p>常见用户密码分析器(CUPP)</p>
+        <div class="meta">
+            <span class="stars">⭐ 6,218</span>
+            <span class="lang">🟣 Python</span>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <footer>
+            <p>AI日报 · 每日自动更新 · 2026-07-08</p>
+        </footer>
+    </div>
+</body>
+</html>
