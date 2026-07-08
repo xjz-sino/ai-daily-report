@@ -1548,5 +1548,184 @@
         "url": "https://github.com/bradautomates/claude-video"
       }
     ]
+  },
+  {
+    "date": "2026-07-08",
+    "weekday": "星期三",
+    "file": "2026-07-08.html",
+    "news": [
+      {
+        "title": "超300款AI新品将在2026世界人工智能大会首发",
+        "summary": "2026世界人工智能大会暨人工智能全球治理高级别会议将于7月17日至20日在上海召开，展览总面积首次突破10万平方米，超300款产品将实现全球首发，已推动57个核心场景落地，累计达成162亿元意向合作。",
+        "tags": [
+          "WAIC",
+          "AI大会",
+          "上海"
+        ],
+        "url": "http://www.xinhuanet.com/tech/20260708/fbbd5fbe39b5452098b5dde915b0c959/c.html"
+      },
+      {
+        "title": "特斯拉Optimus人形机器人2026年底启动规模化量产",
+        "summary": "特斯拉副总裁陶琳在2026全球数字经济大会现场确认：特斯拉Optimus人形机器人将于2026年底正式启动规模化量产，弗里蒙特工厂远期设计年产能目标100万台。",
+        "tags": [
+          "特斯拉",
+          "人形机器人",
+          "Optimus"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162634327"
+      },
+      {
+        "title": "前5个月国产机器人出口1037.7万台",
+        "summary": "海关总署发布数据，今年前5个月国产机器人加速走向全球，各类单独列名的机器人合计出口1037.7万台，出口总值达199亿元。",
+        "tags": [
+          "机器人",
+          "出口",
+          "贸易"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162634327"
+      },
+      {
+        "title": "韩国政府投入三星、SK海力士AI税收红利建设主权AI",
+        "summary": "韩国政府准备将三星、SK海力士带来的AI税收红利投入本国主权AI建设，加速国家层面AI基础设施布局。",
+        "tags": [
+          "韩国",
+          "主权AI",
+          "芯片"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162551909"
+      },
+      {
+        "title": "OpenAI CEO Sam Altman向白宫提议捐赠约5%股权",
+        "summary": "OpenAI首席执行官Sam Altman被披露已向白宫提议向美国主权财富基金捐赠约5%股权，获白宫国家经济委员会主任公开支持。",
+        "tags": [
+          "OpenAI",
+          "Sam Altman",
+          "政策"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162551909"
+      },
+      {
+        "title": "DeepSeek网页与API在7月2日出现性能下降",
+        "summary": "DeepSeek网页与API在7月2日下午出现明显性能下降，并波及DeepSeek V4正式版相关服务，引发用户广泛关注。",
+        "tags": [
+          "DeepSeek",
+          "API",
+          "故障"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162551909"
+      },
+      {
+        "title": "Anthropic推出Claude Science切入科学研究",
+        "summary": "Anthropic推出Claude Science，将AI能力切入科学研究领域，助力科研人员加速发现与创新。",
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "科研"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162520613"
+      },
+      {
+        "title": "阿里巴巴7月10日起禁止员工使用Claude Code",
+        "summary": "阿里巴巴将禁止员工使用Anthropic的AI编码工具Claude Code，并将其列为高风险软件，要求员工改用自研编码助手Qoder。",
+        "tags": [
+          "阿里巴巴",
+          "Claude Code",
+          "编码工具"
+        ],
+        "url": "https://techwey.com/category/news/"
+      },
+      {
+        "title": "特朗普政府解除对Anthropic AI模型的出口限制",
+        "summary": "特朗普政府已解除对Anthropic的Mythos和Fable AI模型的出口限制，结束了为期三周的禁令。",
+        "tags": [
+          "Anthropic",
+          "出口管制",
+          "政策"
+        ],
+        "url": "https://techwey.com/category/news/"
+      },
+      {
+        "title": "OpenAI 7月7日服务中断影响Codex和Custom GPTs",
+        "summary": "OpenAI的ChatGPT在7月7日遭遇重大服务中断，影响Codex、Custom GPTs和工作区分析等功能，核心功能后续恢复。",
+        "tags": [
+          "OpenAI",
+          "ChatGPT",
+          "服务中断"
+        ],
+        "url": "https://widgets.economictimes.com/topic/openai-deepseek-ai-competition/news"
+      }
+    ],
+    "github": [
+      {
+        "name": "msitarzewski/agency-agents",
+        "desc": "一个完整的AI代理机构，包含前端向导、Reddit社区专家等各类专业代理",
+        "stars": 122629,
+        "lang": "Shell",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "usestrix/strix",
+        "desc": "开源AI渗透测试工具，自动发现并修复应用漏洞",
+        "stars": 29156,
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "desc": "个人交易代理，基于AI的智能交易系统",
+        "stars": 16338,
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "desc": "包含433种健身动作的综合数据集，含动画视频和缩略图",
+        "stars": 8140,
+        "lang": "HTML",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "facebook/astryx",
+        "desc": "开源设计系统，完全可定制且支持AI代理",
+        "stars": 2260,
+        "lang": "TypeScript",
+        "url": "https://github.com/facebook/astryx"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "desc": "免费AI网关，一个端点支持231+提供商，连接Claude Code、Cursor等",
+        "stars": 9300,
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "allenai/olmocr",
+        "desc": "PDF线性化工具包，用于LLM数据集和训练",
+        "stars": 18149,
+        "lang": "Python",
+        "url": "https://github.com/allenai/olmocr"
+      },
+      {
+        "name": "logto-io/logto",
+        "desc": "面向SaaS和AI应用的身份认证与授权基础设施",
+        "stars": 13136,
+        "lang": "TypeScript",
+        "url": "https://github.com/logto-io/logto"
+      },
+      {
+        "name": "togatoga/karukan",
+        "desc": "Linux/macOS日文输入法系统，基于神经网络的假名-汉字转换引擎",
+        "stars": 555,
+        "lang": "Rust",
+        "url": "https://github.com/togatoga/karukan"
+      },
+      {
+        "name": "Mebus/cupp",
+        "desc": "常见用户密码分析器(CUPP)",
+        "stars": 6218,
+        "lang": "Python",
+        "url": "https://github.com/Mebus/cupp"
+      }
+    ]
   }
 ]
