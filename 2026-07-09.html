@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-07-09</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .navbar {
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #58a6ff;
+        }
+        .navbar-nav {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .navbar-nav a {
+            color: #8b949e;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .navbar-nav a:hover { color: #58a6ff; }
+        .navbar-nav a.current { color: #f0f6fc; font-weight: 600; pointer-events: none; }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+        .date-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .date-header h1 {
+            font-size: 28px;
+            color: #f0f6fc;
+            margin-bottom: 8px;
+        }
+        .date-header p {
+            color: #8b949e;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 22px;
+            color: #f0f6fc;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title .icon {
+            font-size: 24px;
+        }
+        .news-item {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .news-item:hover {
+            border-color: #58a6ff;
+        }
+        .news-item h3 {
+            font-size: 16px;
+            color: #f0f6fc;
+            margin-bottom: 8px;
+        }
+        .news-item h3 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .news-item h3 a:hover { text-decoration: underline; }
+        .news-item p {
+            color: #8b949e;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #1f2937;
+            color: #58a6ff;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            border: 1px solid #30363d;
+        }
+        .gh-item {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .gh-item:hover {
+            border-color: #58a6ff;
+        }
+        .gh-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .gh-name {
+            font-size: 16px;
+            color: #58a6ff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .gh-name:hover { text-decoration: underline; }
+        .gh-lang {
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            background: #1f2937;
+            color: #f0f6fc;
+            border: 1px solid #30363d;
+        }
+        .gh-desc {
+            color: #8b949e;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .gh-stars {
+            color: #e3b341;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            padding: 24px 0;
+            color: #484f58;
+            font-size: 13px;
+            border-top: 1px solid #21262d;
+            margin-top: 40px;
+        }
+        @media (max-width: 640px) {
+            .navbar { padding: 10px 16px; }
+            .container { padding: 16px 12px; }
+            .date-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-title">🤖 AI 日报</span>
+        <div class="navbar-nav">
+            <a href="2026-07-08.html">⬅ 上一期</a>
+            <a href="#" class="current">下一期 ➡</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="date-header">
+            <h1>AI 日报 · 2026-07-09</h1>
+            <p>星期四 | 每日自动生成</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="icon">📰</span>AI 新闻</h2>
+
+            <div class="news-item">
+                <h3><a href="https://www.ai.cm/article/us-commerce-department-approves-broad-launch-of-openai-gpt-56/" target="_blank">OpenAI获美国政府批准，GPT-5.6将于7月9日全面公开发布</a></h3>
+                <p>美国商务部正式批准OpenAI全面部署GPT-5.6系列模型（Sol、Terra、Luna），此前该模型因国家安全审查被限制仅少数合作伙伴使用。GPT-5.6 Sol为旗舰模型，支持150万Token上下文窗口，引入Max深度推理和Ultra多Agent协同两种高阶模式。</p>
+                <div class="tags">
+                    <span class="tag">LLM</span>
+                    <span class="tag">大模型发布</span>
+                    <span class="tag">监管政策</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://runtimewire.com/article/spacexai-grok-45-cursor-michael-truell" target="_blank">SpaceX AI发布Grok 4.5，联合Cursor进军代码与Agent市场</a></h3>
+                <p>马斯克旗下SpaceX AI于7月9日向公众开放Grok 4.5，该模型基于1.5万亿参数V9基础模型，与AI编程公司Cursor联合开发，主打代码编写、智能代理及法律金融服务场景，定价为输入$2/百万Token、输出$6/百万Token。</p>
+                <div class="tags">
+                    <span class="tag">LLM</span>
+                    <span class="tag">AI编程</span>
+                    <span class="tag">智能体</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://www.infobae.com/tecno/2026/07/08/usuarios-reclaman-a-meta-por-el-uso-de-sus-fotos-en-el-nuevo-generador-de-imagenes-con-ia/" target="_blank">Meta发布首款自研AI图像生成模型Muse，引发隐私争议</a></h3>
+                <p>Meta推出Muse Image图像生成模型，集成于Meta AI、Instagram和WhatsApp，并预览Muse Video视频生成模型。但因公开Instagram用户照片默认可被他人用于AI生成内容，引发广泛隐私批评，用户需手动关闭相关设置。</p>
+                <div class="tags">
+                    <span class="tag">图像生成</span>
+                    <span class="tag">多模态</span>
+                    <span class="tag">隐私安全</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://aihola.com/article/microsoft-frontier-company-ai" target="_blank">微软斥资25亿美元成立Microsoft Frontier Company，押注企业AI落地</a></h3>
+                <p>微软宣布成立新业务部门Microsoft Frontier Company，投入25亿美元并配备6000名工程师，以驻场方式深度嵌入客户组织，帮助企业构建和运行AI系统。此举被视为微软对企业AI实施痛点的直接回应。</p>
+                <div class="tags">
+                    <span class="tag">企业AI</span>
+                    <span class="tag">云服务</span>
+                    <span class="tag">战略投资</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://m.thepaper.cn/newsDetail_forward_33539702" target="_blank">OpenAI首席未来学家Joshua Achiam宣布离职</a></h3>
+                <p>OpenAI首席未来学家约书亚·阿奇亚姆（Joshua Achiam）于7月8日宣布将于7月24日离职，结束近9年的职业生涯。他主要负责研判AI风险与收益，离职原因未披露特别缘由。</p>
+                <div class="tags">
+                    <span class="tag">OpenAI</span>
+                    <span class="tag">人事变动</span>
+                    <span class="tag">AI安全</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://www.cnii.com.cn/gxxww/dzxx/202607/t20260706_747304.html" target="_blank">豆包、通义千问同步宣布7月15日下线智能体功能</a></h3>
+                <p>字节跳动旗下豆包和阿里旗下通义千问同步宣布，因产品功能调整及合规要求，智能体功能将于7月15日正式下线，涉及超3.45亿豆包月活用户，用户需在10月15日前完成数据备份。</p>
+                <div class="tags">
+                    <span class="tag">智能体</span>
+                    <span class="tag">合规监管</span>
+                    <span class="tag">国内AI</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="https://finance.sina.com.cn/tech/roll/2026-07-08/doc-inihattw8261295.shtml" target="_blank">SpaceX向FCC申请部署10万颗Gen3卫星，打造AI时代空基通信底座</a></h3>
+                <p>SpaceX于7月8日正式向美国联邦通信委员会申请部署由10万颗卫星组成的第三代星链星座，部署在323-327公里和473公里两组轨道壳层，旨在建立面向AI时代的全球空基通信基础设施。</p>
+                <div class="tags">
+                    <span class="tag">卫星通信</span>
+                    <span class="tag">AI基础设施</span>
+                    <span class="tag">SpaceX</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="http://m.toutiao.com/group/7660152337683579446/" target="_blank">中国四部门联合印发《关于加快推进"人工智能+人社"应用发展的实施意见》</a></h3>
+                <p>人社部、国家发改委、工信部、国家数据局联合发布政策，提出到2030年形成人社领域AI普遍应用格局。2026年将建设AI应用基础设施，打造20个行业大模型应用场景及高质量数据集，并探索人形机器人与具身智能落地。</p>
+                <div class="tags">
+                    <span class="tag">AI政策</span>
+                    <span class="tag">具身智能</span>
+                    <span class="tag">国内AI</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="http://m.toutiao.com/group/7659967211583898164/" target="_blank">Anthropic年化收入飙升至470亿美元，披露150亿美元澳大利亚数据中心计划</a></h3>
+                <p>Anthropic年收入从2025年初的10亿美元飙升至2026年的470亿美元，增长45倍。同时披露在澳大利亚建设价值150亿美元的数据中心计划，标志着AI巨头从"卖Token"转向重资产算力押注的战略转型。</p>
+                <div class="tags">
+                    <span class="tag">AI基础设施</span>
+                    <span class="tag">商业动态</span>
+                    <span class="tag">Anthropic</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><a href="http://m.toutiao.com/group/7660146938553123354/" target="_blank">2026世界人工智能大会将于7月17日在上海开幕，主题为"智能伙伴 共创未来"</a></h3>
+                <p>第九届WAIC将于7月17-20日在上海"三地四馆"举办，展览规模、首发新品和国际参与度均创历届新高。大会核心逻辑升级为AI从工具属性向主动服务、人机协同、全域智能的"伙伴时代"转变。</p>
+                <div class="tags">
+                    <span class="tag">行业大会</span>
+                    <span class="tag">人机协同</span>
+                    <span class="tag">国内AI</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="icon">💻</span>GitHub Trending</h2>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/ruvnet/RuView" target="_blank">ruvnet/RuView</a>
+                    <span class="gh-lang">Rust</span>
+                </div>
+                <p class="gh-desc">利用普通WiFi信号实现实时空间智能、生命体征监测和presence detection，无需任何摄像头像素，通过无线信号感知环境</p>
+                <span class="gh-stars">⭐ 78,572</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/DietrichGebert/ponytail" target="_blank">DietrichGebert/ponytail</a>
+                    <span class="gh-lang">JavaScript</span>
+                </div>
+                <p class="gh-desc">AI编程Agent的元控制层，基于"懒惰资深开发者"理念，让Agent遵循YAGNI原则，避免过度工程化，不写不必要的代码</p>
+                <span class="gh-stars">⭐ 73,911</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/opendatalab/MinerU" target="_blank">opendatalab/MinerU</a>
+                    <span class="gh-lang">Python</span>
+                </div>
+                <p class="gh-desc">将PDF、Office文档、图像和网页转换为LLM可用的Markdown或JSON格式，支持LaTeX公式、HTML表格、跨页表格合并及109种语言OCR</p>
+                <span class="gh-stars">⭐ 72,897</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a>
+                    <span class="gh-lang">JavaScript</span>
+                </div>
+                <p class="gh-desc">面向AI编程Agent的生产级工程技能库，提供可复用的技能模块，帮助Coding Agent更高效地完成开发任务</p>
+                <span class="gh-stars">⭐ 72,293</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank">asgeirtj/system_prompts_leaks</a>
+                    <span class="gh-lang">JavaScript</span>
+                </div>
+                <p class="gh-desc">提取并公开了Anthropic Claude、OpenAI GPT/Codex、Google Gemini、xAI Grok、Cursor、Copilot等主流AI产品的系统提示词</p>
+                <span class="gh-stars">⭐ 53,147</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a>
+                    <span class="gh-lang">Python</span>
+                </div>
+                <p class="gh-desc">将Claude Code/Cursor等AI编程助手转变为视频制作系统，通过自然语言描述即可完成研究、脚本、素材生成、编辑和合成全流程</p>
+                <span class="gh-stars">⭐ 31,003</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/usestrix/strix" target="_blank">usestrix/strix</a>
+                    <span class="gh-lang">Python</span>
+                </div>
+                <p class="gh-desc">自主AI Agent安全测试工具，通过拦截HTTP、驱动浏览器、执行Shell命令和编写漏洞利用代码，覆盖OWASP Top 10进行全面渗透测试</p>
+                <span class="gh-stars">⭐ 29,913</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/Zackriya-Solutions/meetily" target="_blank">Zackriya-Solutions/meetily</a>
+                    <span class="gh-lang">Rust</span>
+                </div>
+                <p class="gh-desc">隐私优先的AI会议助手，基于Rust构建，支持4倍速实时语音转录、说话人分离和本地AI摘要，100%本地处理无需云端</p>
+                <span class="gh-stars">⭐ 20,888</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/MadsLorentzen/ai-job-search" target="_blank">MadsLorentzen/ai-job-search</a>
+                    <span class="gh-lang">TypeScript</span>
+                </div>
+                <p class="gh-desc">基于Claude Code的AI求职框架，Fork后填入个人资料，即可让Claude评估职位、定制简历、撰写求职信并准备面试</p>
+                <span class="gh-stars">⭐ 11,423</span>
+            </div>
+
+            <div class="gh-item">
+                <div class="gh-header">
+                    <a class="gh-name" href="https://github.com/iOfficeAI/OfficeCLI" target="_blank">iOfficeAI/OfficeCLI</a>
+                    <span class="gh-lang">C#</span>
+                </div>
+                <p class="gh-desc">专为AI Agent设计的Office文档处理套件，可读取、编辑和自动化操作Word/Excel/PowerPoint文件，免费开源单二进制，无需安装Office</p>
+                <span class="gh-stars">⭐ 10,223</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>AI 日报 · 由 AI 自动生成 · 2026-07-09</p>
+    </div>
+</body>
+</html>
