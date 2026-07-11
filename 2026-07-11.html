@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI日报 - 2026-07-11</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --text: #1a1a2e;
+      --text-secondary: #4a4a5a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border: #e2e8f0;
+      --tag-bg: #dbeafe;
+      --tag-text: #1e40af;
+      --nav-bg: #1a1a2e;
+      --nav-text: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    /* Navbar */
+    .navbar {
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+    .navbar-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .navbar-brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .navbar-nav {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 6px;
+      color: var(--nav-text);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: background 0.2s;
+      opacity: 0.9;
+    }
+    .nav-btn:hover { background: rgba(255,255,255,0.1); opacity: 1; }
+    .nav-btn.disabled { opacity: 0.35; pointer-events: none; }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 48px 24px 32px;
+    }
+    .header h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+    .header .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    .news-icon { background: #dbeafe; }
+    .github-icon { background: #dcfce7; }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.08);
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .card-title a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card-title a:hover { color: var(--accent); }
+    .card-summary {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    /* GitHub Card */
+    .gh-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .gh-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .lang-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* Footer nav */
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .footer-btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: var(--card-bg);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .footer-btn.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 1.6rem; }
+      .navbar-inner { flex-wrap: wrap; height: auto; padding: 10px 0; }
+      .card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-brand">🤖 AI日报</div>
+      <div class="navbar-nav">
+        <a href="2026-07-10.html" class="nav-btn ">← 上一期</a>
+        <a href="index.html" class="nav-btn">🏠 首页</a>
+        <a href="#" class="nav-btn disabled">下一期 →</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h1>AI日报</h1>
+    <p class="subtitle">2026-07-11 星期六</p>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title"><span class="icon news-icon">📰</span> 今日AI新闻</h2>
+      <div class="card">
+  <div class="card-title"><a href="https://www.newsbricks.com/technology/meta-introduces-muse-spark11-challenge-other-ai/394392" target="_blank" rel="noopener">Meta发布Muse Spark 1.1多模态AI编程模型，扎克伯格时隔三年首次在X发推力推</a></div>
+  <div class="card-summary">Meta正式发布新一代多模态AI模型Muse Spark 1.1，专为Agent编程任务设计。Meta称这是目前最强大的Agent任务和编程模型。CEO扎克伯格结束三年X平台沉默，专门发帖力推这一产品，标志着Meta在AI编码市场向OpenAI和Anthropic发起直接挑战。</div>
+  <div class="tags"><span class="tag">Meta</span><span class="tag">Muse Spark</span><span class="tag">AI编程</span><span class="tag">多模态</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://imfounder.com/science-tech/ai/12-ai-updates-2026-july/" target="_blank" rel="noopener">Anthropic最强模型Claude Fable 5全球访问恢复，美国政府解除出口限制</a></div>
+  <div class="card-summary">Anthropic宣布恢复其最强AI模型Claude Fable 5和Mythos 5的全球访问。此前美国商务部以安全为由对这些模型实施出口管制，导致非美国用户无法使用。6月30日限制解除后，Anthropic于7月1日恢复全球服务。</div>
+  <div class="tags"><span class="tag">Anthropic</span><span class="tag">Claude Fable 5</span><span class="tag">出口管制</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://www.route-fifty.com/artificial-intelligence/" target="_blank" rel="noopener">美国伊利诺伊州签署重大AI安全法，要求大模型开发商定期第三方审计</a></div>
+  <div class="card-summary">伊利诺伊州州长签署美国最全面的AI安全立法之一。该法律要求大型AI开发商识别、披露和降低风险，保护举报人，并在全美首次强制要求定期进行第三方审计。这标志着美国州级AI监管进入新阶段。</div>
+  <div class="tags"><span class="tag">AI监管</span><span class="tag">美国</span><span class="tag">AI安全法</span><span class="tag">第三方审计</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://techxplore.com/machine-learning-ai-news/" target="_blank" rel="noopener">报告显示超40%用户正在限制AI使用，AI热度开始降温</a></div>
+  <div class="card-summary">最新报告指出超过40%的人正在限制AI工具的使用频率，表明AI的普及热度可能开始降温。研究者认为这与AI输出质量不稳定、隐私担忧以及对AI依赖的反思有关。</div>
+  <div class="tags"><span class="tag">AI趋势</span><span class="tag">用户行为</span><span class="tag">市场降温</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://blog.csdn.net/agito_cheung/article/details/162587564" target="_blank" rel="noopener">美团发布LongCat-2.0万亿参数大模型，全程国产算力训练并开源</a></div>
+  <div class="card-summary">美团发布新一代万亿参数大模型LongCat-2.0，总参数规模达1.6万亿。这是业界首个完全依靠国产算力完成训练和推理全流程的万亿参数大模型，标志着国产AI基础设施的重大突破。</div>
+  <div class="tags"><span class="tag">美团</span><span class="tag">LongCat</span><span class="tag">国产算力</span><span class="tag">开源</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://blog.51cto.com/u_17515055/14737406" target="_blank" rel="noopener">谷歌DeepMind Gemini Omni Flash登顶AI视频评测榜首，反超字节Seedance</a></div>
+  <div class="card-summary">权威AI视频评测平台Video Arena更新盲测榜单，谷歌DeepMind旗下Gemini Omni Flash以1404 Elo高分登顶榜首，反超长期霸榜的字节跳动Seedance系列模型，分差达101 Elo。这是AI视频生成赛道竞争格局的重要更迭。</div>
+  <div class="tags"><span class="tag">Google</span><span class="tag">DeepMind</span><span class="tag">Gemini</span><span class="tag">AI视频</span><span class="tag">字节跳动</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://v3finmedia.online/2026/07/11/amazons-cto-on-how-developers-can-ride-out-the-ai-powered-coding-wave-fortune/" target="_blank" rel="noopener">Amazon CTO提出'文艺复兴开发者'概念，谈开发者如何应对AI编码浪潮</a></div>
+  <div class="card-summary">Amazon首席技术官Werner Vogels在访谈中提出软件工程正经历多年来最剧烈的变革。他认为AI编码工具如Claude Code正在催生'文艺复兴开发者'——既能用自然语言生成软件，又保留工程思维的复合型工程师。</div>
+  <div class="tags"><span class="tag">Amazon</span><span class="tag">AI编码</span><span class="tag">开发者</span><span class="tag">Claude Code</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://juejin.cn/post/7659388305413652490" target="_blank" rel="noopener">Meta Compute云基础设施业务上线，对外出售AI算力</a></div>
+  <div class="card-summary">Meta宣布推出Meta Compute云基础设施业务，正式对外出售AI算力和模型使用权。此举被视为Meta从纯粹社交平台向AI基础设施提供商转型的重要信号，消息一出引发半导体股集体波动。</div>
+  <div class="tags"><span class="tag">Meta</span><span class="tag">云计算</span><span class="tag">AI算力</span><span class="tag">基础设施</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://techxplore.com/machine-learning-ai-news/" target="_blank" rel="noopener">澳大利亚政府加强对AI风险的监管，科技部长呼吁更多雄心</a></div>
+  <div class="card-summary">澳大利亚联邦科技助理部长Andrew Charlton在悉尼大学AI安全论坛上发出严厉警告，称澳大利亚需要更有雄心的AI监管议程。这标志着澳大利亚政府已意识到AI带来的系统性风险。</div>
+  <div class="tags"><span class="tag">澳大利亚</span><span class="tag">AI监管</span><span class="tag">AI安全</span></div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://blog.csdn.net/haohaizi_liu/article/details/162623040" target="_blank" rel="noopener">可灵AI获近30亿美元融资落地，AI视频赛道持续升温</a></div>
+  <div class="card-summary">可灵AI宣布完成近30亿美元融资，估值大幅提升。作为国内领先的AI视频生成平台，可灵AI的巨额融资反映出资本市场对AI视频生成赛道的高度看好，竞争日趋激烈。</div>
+  <div class="tags"><span class="tag">可灵AI</span><span class="tag">融资</span><span class="tag">AI视频</span><span class="tag">资本市场</span></div>
+</div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon github-icon">⭐</span> GitHub Trending</h2>
+      <div class="card">
+  <div class="card-title"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">wonderwhy-er/DesktopCommanderMCP</a></div>
+  <div class="card-summary">为Claude打造的MCP服务器，赋予终端控制、文件系统搜索和差异文件编辑能力</div>
+  <div class="gh-meta">
+    <span>⭐ 7,290</span>
+    <span><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/oven-sh/bun" target="_blank" rel="noopener">oven-sh/bun</a></div>
+  <div class="card-summary">极速JavaScript运行时、打包器、测试运行器和包管理器，All-in-One</div>
+  <div class="gh-meta">
+    <span>⭐ 94,225</span>
+    <span><span class="lang-dot" style="background:#dea584"></span> Rust</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></div>
+  <div class="card-summary">面向AI编程Agent的生产级工程技能库，由Google Chrome团队工程主管创建</div>
+  <div class="gh-meta">
+    <span>⭐ 76,823</span>
+    <span><span class="lang-dot" style="background:#f1e05a"></span> JavaScript</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a></div>
+  <div class="card-summary">真实工程师的技能集合，直接从.claude目录提取的实用技能文件</div>
+  <div class="gh-meta">
+    <span>⭐ 164,622</span>
+    <span><span class="lang-dot" style="background:#89e051"></span> Shell</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></div>
+  <div class="card-summary">一个Agentic技能框架和软件开发方法论，已获25万+Star的爆款项目</div>
+  <div class="gh-meta">
+    <span>⭐ 251,779</span>
+    <span><span class="lang-dot" style="background:#89e051"></span> Shell</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">TencentCloud/TencentDB-Agent-Memory</a></div>
+  <div class="card-summary">为AI Agent提供完全本地化的长期记忆方案，通过4层渐进式管道实现，零外部API依赖</div>
+  <div class="gh-meta">
+    <span>⭐ 8,231</span>
+    <span><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener">davila7/claude-code-templates</a></div>
+  <div class="card-summary">用于配置和监控Claude Code的CLI工具，提供丰富的代码模板和配置方案</div>
+  <div class="gh-meta">
+    <span>⭐ 28,766</span>
+    <span><span class="lang-dot" style="background:#3572A5"></span> Python</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/abseil/abseil-cpp" target="_blank" rel="noopener">abseil/abseil-cpp</a></div>
+  <div class="card-summary">Google开发的C++通用库，提供增强的C++标准库替代品，被广泛用于Google内部项目</div>
+  <div class="gh-meta">
+    <span>⭐ 17,520</span>
+    <span><span class="lang-dot" style="background:#f34b7d"></span> C++</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/microsoft/TypeScript" target="_blank" rel="noopener">microsoft/TypeScript</a></div>
+  <div class="card-summary">JavaScript的超集，编译为干净的JavaScript输出，为Web开发提供类型安全</div>
+  <div class="gh-meta">
+    <span>⭐ 109,775</span>
+    <span><span class="lang-dot" style="background:#3178c6"></span> TypeScript</span>
+  </div>
+</div>
+<div class="card">
+  <div class="card-title"><a href="https://github.com/catchorg/Catch2" target="_blank" rel="noopener">catchorg/Catch2</a></div>
+  <div class="card-summary">现代C++原生测试框架，支持单元测试、TDD和BDD，使用C++14/17及以上标准</div>
+  <div class="gh-meta">
+    <span>⭐ 20,613</span>
+    <span><span class="lang-dot" style="background:#f34b7d"></span> C++</span>
+  </div>
+</div>
+    </section>
+
+    <div class="footer-nav">
+      <a href="2026-07-10.html" class="footer-btn ">← 上一期（更早）</a>
+      <a href="index.html" class="footer-btn">🏠 返回首页</a>
+      <a href="#" class="footer-btn disabled">下一期（更新）→</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>AI日报 · 每日自动更新 · 2026-07-11</p>
+  </footer>
+</body>
+</html>
