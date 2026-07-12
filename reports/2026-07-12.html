@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-07-12</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --border: #334155;
+            --hover: #27354f;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+        /* 导航栏 */
+        nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all .2s;
+            border: 1px solid transparent;
+        }
+        .nav-links a:hover {
+            color: var(--text);
+            background: var(--hover);
+            border-color: var(--border);
+        }
+        .nav-links .current {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        /* 头部 */
+        header {
+            text-align: center;
+            padding: 48px 0 32px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header .meta {
+            color: var(--muted);
+            font-size: 16px;
+        }
+        /* 分区标题 */
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title span {
+            display: inline-block;
+            width: 6px;
+            height: 22px;
+            background: linear-gradient(180deg, var(--accent), var(--accent2));
+            border-radius: 3px;
+        }
+        /* 卡片列表 */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,.3);
+            border-color: var(--hover);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+            line-height: 1.4;
+            flex: 1;
+        }
+        .card-title:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        .card-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .tag {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.12);
+            color: var(--accent);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+        .lang {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: rgba(129,140,248,.12);
+            color: var(--accent2);
+            border: 1px solid rgba(129,140,248,.25);
+        }
+        .stars {
+            font-size: 12px;
+            color: #fbbf24;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .card-desc {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+        .card-summary {
+            color: #cbd5e1;
+            font-size: 14px;
+            margin-top: 6px;
+            line-height: 1.6;
+        }
+        /* 空状态 */
+        .empty {
+            text-align: center;
+            color: var(--muted);
+            padding: 40px;
+            font-size: 14px;
+        }
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        /* 序号徽章 */
+        .rank {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        @media (max-width: 640px) {
+            header h1 { font-size: 28px; }
+            .nav-inner { flex-wrap: wrap; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand">🤖 AI日报</div>
+            <div class="nav-links">
+                <a href="reports/2026-07-11.html" title="查看上一期（更早日期）">← 上一期</a>
+                <span class="current">2026-07-12 周日</span>
+                <a href="#" title="查看下一期（更新日期）">下一期 →</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>AI日报</h1>
+            <p class="meta">2026-07-12 · 周日 · 每天为你精选AI资讯与开源热榜</p>
+        </header>
+
+        <section id="news">
+            <h2 class="section-title"><span></span>🔥 今日AI新闻（10条）</h2>
+            <div class="card">
+            <div class="card-header">
+                <span class="rank">1</span>
+                <a href="http://m.toutiao.com/group/7661428594677203490/" target="_blank" class="card-title">OpenAI GPT-5.6 Sol Ultra 据称在一小时内破解50年数学猜想</a>
+            </div>
+            <p class="card-summary">OpenAI宣布GPT-5.6 Sol Ultra在不足一小时内调用64个并行子智能体，完成图论领域悬而未决约50年的「循环双覆盖猜想」完整证明。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">OpenAI</span><span class="tag">数学</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">2</span>
+                <a href="http://m.toutiao.com/group/7661412788732019206/" target="_blank" class="card-title">苹果正式起诉OpenAI，指控系统性窃取商业机密</a>
+            </div>
+            <p class="card-summary">7月11日苹果在加州北区联邦法院起诉OpenAI，指控其系统性窃取商业机密，目前OpenAI内有超过400名前苹果员工。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">OpenAI</span><span class="tag">苹果</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">3</span>
+                <a href="https://tech.ifeng.com/c/8uh0uCjiAVu" target="_blank" class="card-title">GPT-5.6上线，马斯克与奥尔特曼开启新一轮隔空争论</a>
+            </div>
+            <p class="card-summary">在GPT-5.6模型上线之际，xAI CEO马斯克与OpenAI CEO奥尔特曼开始了新一轮公开争论。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">OpenAI</span><span class="tag">xAI</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">4</span>
+                <a href="https://www.startupresearcher.com/news/openai-launches-gpt-5-6-model-family-after-us-government-delay" target="_blank" class="card-title">OpenAI正式发布GPT-5.6系列，此前因美国政府国家安全担忧而延迟</a>
+            </div>
+            <p class="card-summary">OpenAI在延迟后正式发布GPT-5.6系列模型，美国政府曾出于国家安全担忧要求推迟公开发布。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">OpenAI</span><span class="tag">政策</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">5</span>
+                <a href="http://m.toutiao.com/group/7660361753963856394/" target="_blank" class="card-title">DeepSeek V4将于7月15日全量上线，公布峰谷定价</a>
+            </div>
+            <p class="card-summary">DeepSeek V4定档7月15日全量上线，同时公布峰谷定价策略，与GPT-5.6、Gemini 3.5 Pro形成三巨头同周交锋格局。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">DeepSeek</span><span class="tag">大模型</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">6</span>
+                <a href="http://m.toutiao.com/group/7660361753963856394/" target="_blank" class="card-title">谷歌Gemini 3.5 Pro将于7月17日发布，支持200万token上下文</a>
+            </div>
+            <p class="card-summary">谷歌Gemini 3.5 Pro锁定7月17日发布，据说支持200万token上下文和实时多模态能力。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">Google</span><span class="tag">Gemini</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">7</span>
+                <a href="http://m.toutiao.com/group/7661298747960066600/" target="_blank" class="card-title">特斯拉确认Optimus人形机器人2026年底规模化量产</a>
+            </div>
+            <p class="card-summary">特斯拉确认Optimus人形机器人将在2026年底实现规模化量产，远期规划百万台年产能，具身智能成为确定性最强赛道之一。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">机器人</span><span class="tag">特斯拉</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">8</span>
+                <a href="http://m.toutiao.com/group/7661252757109621275/" target="_blank" class="card-title">DeepSeek Deep Code开源上线，国产AI编程工具加速发展</a>
+            </div>
+            <p class="card-summary">DeepSeek官方API文档正式收录Deep Code，一款面向DeepSeek-V4系列模型适配的开源终端AI编程助手，支持深度思考、MCP集成。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">DeepSeek</span><span class="tag">编程</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">9</span>
+                <a href="http://m.toutiao.com/group/7661248917485191732/" target="_blank" class="card-title">DeepSeek推进自研AI推理芯片项目已持续12个月</a>
+            </div>
+            <p class="card-summary">多家产业媒体披露，DeepSeek已持续12个月推进自研AI推理芯片项目，造芯核心逻辑来自持续走高的推理运营账单。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">DeepSeek</span><span class="tag">芯片</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">10</span>
+                <a href="https://blog.csdn.net/ld326/article/details/162740979" target="_blank" class="card-title">SpaceX AI推出Grok 4.5，号称Opus级对标</a>
+            </div>
+            <p class="card-summary">SpaceX AI联手Cursor发布Grok 4.5，号称Opus级性能对标，加入下半年大模型密集发布潮。</p>
+            <div class="card-meta"><span class="tag">AI</span><span class="tag">xAI</span><span class="tag">Grok</span></div>
+        </div>
+        </section>
+
+        <section id="github">
+            <h2 class="section-title"><span></span>⭐ GitHub Trending（10个）</h2>
+            <div class="card">
+            <div class="card-header">
+                <span class="rank">1</span>
+                <a href="https://github.com/catchorg/Catch2" target="_blank" class="card-title">catchorg/Catch2</a>
+            </div>
+            <p class="card-desc">A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)</p>
+            <div class="card-meta"><span class="lang">C++</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">2</span>
+                <a href="https://github.com/abseil/abseil-cpp" target="_blank" class="card-title">abseil/abseil-cpp</a>
+            </div>
+            <p class="card-desc">Abseil Common Libraries (C++)</p>
+            <div class="card-meta"><span class="lang">C++</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">3</span>
+                <a href="https://github.com/davila7/claude-code-templates" target="_blank" class="card-title">davila7/claude-code-templates</a>
+            </div>
+            <p class="card-desc">CLI tool for configuring and monitoring Claude Code</p>
+            <div class="card-meta"><span class="lang">Python</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">4</span>
+                <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" class="card-title">google-labs-code/stitch-skills</a>
+            </div>
+            <p class="card-desc">A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.</p>
+            <div class="card-meta"><span class="lang">TypeScript</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">5</span>
+                <a href="https://github.com/hashicorp/terraform" target="_blank" class="card-title">hashicorp/terraform</a>
+            </div>
+            <p class="card-desc">Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.</p>
+            <div class="card-meta"><span class="lang">Go</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">6</span>
+                <a href="https://github.com/zeux/meshoptimizer" target="_blank" class="card-title">zeux/meshoptimizer</a>
+            </div>
+            <p class="card-desc">Mesh optimization library that makes meshes smaller and faster to render</p>
+            <div class="card-meta"><span class="lang">C++</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">7</span>
+                <a href="https://github.com/openai/plugins" target="_blank" class="card-title">openai/plugins</a>
+            </div>
+            <p class="card-desc">OpenAI Plugins</p>
+            <div class="card-meta"><span class="lang">JavaScript</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">8</span>
+                <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" class="card-title">wonderwhy-er/DesktopCommanderMCP</a>
+            </div>
+            <p class="card-desc">This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities</p>
+            <div class="card-meta"><span class="lang">TypeScript</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">9</span>
+                <a href="https://github.com/chriskohlhoff/asio" target="_blank" class="card-title">chriskohlhoff/asio</a>
+            </div>
+            <p class="card-desc">Asio C++ Library</p>
+            <div class="card-meta"><span class="lang">C++</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="rank">10</span>
+                <a href="https://github.com/oven-sh/bun" target="_blank" class="card-title">oven-sh/bun</a>
+            </div>
+            <p class="card-desc">Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one</p>
+            <div class="card-meta"><span class="lang">Rust</span></div>
+        </div>
+        </section>
+
+        <footer>
+            <p>AI日报 · 自动生成于 2026-07-12 01:16:01 · 数据来源: 网络搜索 / GitHub Trending</p>
+            <p style="margin-top:6px;opacity:.7;">仓库: <a href="https://github.com/xjz-sino/ai-daily-report" style="color:var(--accent);">xjz-sino/ai-daily-report</a></p>
+        </footer>
+    </div>
+</body>
+</html>
