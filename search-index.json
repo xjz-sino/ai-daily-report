@@ -1,5 +1,184 @@
 [
   {
+    "date": "2026-07-13",
+    "weekday": "星期一",
+    "file": "2026-07-13.html",
+    "news": [
+      {
+        "title": "OpenAI 全量发布 GPT-5.6 系列模型，关停 Atlas 浏览器",
+        "summary": "OpenAI 正式向全球用户开放 GPT-5.6 系列模型，包含旗舰版 Sol、均衡版 Terra 与轻量版 Luna 三档产品。同日宣布将于8月9日关停 Atlas 浏览器，将智能浏览能力整合进 ChatGPT。",
+        "tags": [
+          "大模型",
+          "OpenAI",
+          "GPT-5.6"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+      },
+      {
+        "title": "SpaceXAI 联手 Cursor 发布 Grok 4.5，号称 Opus 级对标",
+        "summary": "SpaceXAI 发布新一代大模型 Grok 4.5，与 Cursor 联合训练，运行速度达 80 TPS，Token 利用效率为竞品两倍，全面超越 Claude Opus 4.8。",
+        "tags": [
+          "大模型",
+          "SpaceXAI",
+          "AI编程"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+      },
+      {
+        "title": "OpenAI 首款自研芯片 Jalapeño 问世，联合 Broadcom 打破 NVIDIA 垄断",
+        "summary": "OpenAI 联合 Broadcom 推出首款自研推理加速芯片 Jalapeño，从设计到流片仅用9个月，分析师预计 NVIDIA 市场份额将从86%降至75%。",
+        "tags": [
+          "AI芯片",
+          "OpenAI",
+          "Broadcom"
+        ],
+        "url": "https://juejin.cn/post/7659388305413652490"
+      },
+      {
+        "title": "微软 AI 原生操作系统 Project Aion 曝光，以 Copilot 为唯一交互入口",
+        "summary": "微软内部 Project Aion 操作系统演示曝光，彻底否定40年桌面范式，没有桌面、图标和开始菜单，以 Copilot 为唯一交互入口。",
+        "tags": [
+          "AI应用",
+          "微软",
+          "操作系统"
+        ],
+        "url": "https://blog.51cto.com/u_17515055/14737406"
+      },
+      {
+        "title": "人形机器人量产提速，2026年国内整机产量有望突破10万台",
+        "summary": "工信部在 WAIC 2026 上表示预计今年人形机器人产量突破10万台，宇树科技73天闪电过审科创板 IPO，特斯拉年底启动量产。",
+        "tags": [
+          "机器人",
+          "人形机器人",
+          "宇树科技"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+      },
+      {
+        "title": "阿里达摩院 AI 智能体28个GPU小时发现4种全新超导体",
+        "summary": "达摩院发布超导材料发现 AI 智能体 ElementsClaw，从240万种晶体结构中预测出6.8万种潜在超导材料，实验验证4种全新超导体，最高临界温度6.5K。",
+        "tags": [
+          "AI for Science",
+          "达摩院",
+          "材料科学"
+        ],
+        "url": "https://blog.51cto.com/u_17515055/14737406"
+      },
+      {
+        "title": "苹果与 PrismML 接洽，270亿参数大模型有望塞进 iPhone",
+        "summary": "PrismML 将270亿参数大模型（基于 Qwen 3.6）通过1-bit压缩技术压缩至 iPhone 17 Pro 可本地运行，模型体积降至全精度1/14。",
+        "tags": [
+          "端侧AI",
+          "苹果",
+          "模型压缩"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+      },
+      {
+        "title": "Meta 推出文生图模型 Muse Image 并接入 Instagram",
+        "summary": "Meta 推出 AI 图像生成模型 Muse Image，已在 Meta AI 中提供，将逐步接入 Instagram、WhatsApp，同时预告 Muse Video 即将上线。",
+        "tags": [
+          "生成式AI",
+          "Meta",
+          "社交平台"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162692758"
+      },
+      {
+        "title": "Ollama 完成6500万美元B轮融资，月活开发者逼近900万",
+        "summary": "开源 AI 模型本地运行工具 Ollama 完成6500万美元 B 轮融资，累计融资8800万美元，月活开发者近890万，团队仅14人。",
+        "tags": [
+          "开源",
+          "AI基础设施",
+          "融资"
+        ],
+        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+      },
+      {
+        "title": "联合国首届 AI 治理全球对话在日内瓦举行",
+        "summary": "联合国举办首届 AI 治理全球对话，秘书长古特雷斯呼吁 AI 儿童安全承诺、高风险决策保留人工把关、2030年数据中心全用可再生能源。",
+        "tags": [
+          "AI治理",
+          "联合国",
+          "AI安全"
+        ],
+        "url": "https://juejin.cn/post/7659388305413652490"
+      }
+    ],
+    "github": [
+      {
+        "name": "calesthio/OpenMontage",
+        "desc": "将 Claude Code、Cursor 等 AI 编码助手变为视频制作系统，包含12个管线和52个工具",
+        "stars": "~31,000",
+        "lang": "Python",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "usestrix/strix",
+        "desc": "自主 AI Agent 安全测试团队，模拟攻击者进行渗透测试，覆盖 OWASP Top 10",
+        "stars": "~29,900",
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "google-labs-code/design.md",
+        "desc": "Google Labs 设计系统规范格式，机器可读设计令牌+人类可读文档，CLI 可导出至 Tailwind",
+        "stars": "~24,100",
+        "lang": "TypeScript",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "alibaba/page-agent",
+        "desc": "阿里巴巴页面内 GUI Agent，一行 script 标签集成，自然语言控制实时 Web 界面",
+        "stars": "~20,900",
+        "lang": "TypeScript",
+        "url": "https://github.com/alibaba/page-agent"
+      },
+      {
+        "name": "DietrichGebert/ponytail",
+        "desc": "哲学级编码优化库，让 AI Agent 遵循 YAGNI 原则，一周增星量居首",
+        "stars": "~74,800",
+        "lang": "JavaScript",
+        "url": "https://github.com/DietrichGebert/ponytail"
+      },
+      {
+        "name": "baidu/Unlimited-OCR",
+        "desc": "百度一次性长视野解析 OCR 引擎，可处理整本书级别超长文档",
+        "stars": "~13,400",
+        "lang": "Python",
+        "url": "https://github.com/baidu/Unlimited-OCR"
+      },
+      {
+        "name": "XiaomiMiMo/MiMo-Code",
+        "desc": "小米模型-Agent协同进化框架，AI模型与Agent双向动态优化",
+        "stars": "~11,500",
+        "lang": "TypeScript",
+        "url": "https://github.com/XiaomiMiMo/MiMo-Code"
+      },
+      {
+        "name": "iOfficeAI/OfficeCLI",
+        "desc": "专为 AI Agent 设计的 Office 命令行套件，支持 Word/Excel/PPT 操作",
+        "stars": "~14,400",
+        "lang": "C#",
+        "url": "https://github.com/iOfficeAI/OfficeCLI"
+      },
+      {
+        "name": "huggingface/speech-to-speech",
+        "desc": "Hugging Face 本地语音代理框架，端到端语音交互，完全本地部署",
+        "stars": "~6,000",
+        "lang": "Python",
+        "url": "https://github.com/huggingface/speech-to-speech"
+      },
+      {
+        "name": "Light-Heart-Labs/DreamServer",
+        "desc": "一键安装自托管 AI 服务器，集成推理/聊天/语音/RAG/图像生成，支持GPU自动检测",
+        "stars": "~2,200",
+        "lang": "Python/Shell",
+        "url": "https://github.com/Light-Heart-Labs/DreamServer"
+      }
+    ]
+  },
+  {
     "date": "2026-07-09",
     "weekday": "星期四",
     "file": "2026-07-09.html",
