@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI日报 - 2026-07-14</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent2: #818cf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+    header {
+      text-align: center;
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    header h1 {
+      font-size: 2rem;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    header .meta { color: var(--muted); font-size: 0.95rem; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 12px 16px;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    nav a:hover { background: rgba(56,189,248,0.1); }
+    nav .nav-center { color: var(--muted); font-size: 0.9rem; }
+    .section { margin-bottom: 32px; }
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .card h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .card h3 a:hover { color: var(--accent); }
+    .card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.12);
+      color: var(--accent);
+    }
+    .gh-meta {
+      display: flex;
+      gap: 14px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .gh-meta span { display: flex; align-items: center; gap: 4px; }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    @media (min-width: 768px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI日报</h1>
+      <div class="meta">2026-07-14 · 周二 · 第6期</div>
+    </header>
+
+    <nav>
+      <a href="2026-07-13.html">← 上一期</a>
+      <span class="nav-center">2026-07-14</span>
+      <a href="#">下一期 →</a>
+    </nav>
+
+    <section class="section">
+      <h2 class="section-title">AI新闻</h2>
+      <div class="grid" id="news-grid">
+        <div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://news.ycombinator.com" target="_blank">全球AI生态持续演进</a></h3>
+  <p>人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。</p>
+  <div class="tags"><span class="tag">AI</span><span class="tag">大模型</span></div>
+</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">GitHub Trending</h2>
+      <div class="grid" id="github-grid">
+        <div class="card">
+  <h3><a href="https://github.com/OpenCut-app/OpenCut" target="_blank">OpenCut-app/OpenCut</a></h3>
+  <p>The open-source CapCut alternative</p>
+  <div class="gh-meta">
+    <span>⭐ 66373</span>
+    <span>🌐 TypeScript</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/HKUDS/Vibe-Trading" target="_blank">HKUDS/Vibe-Trading</a></h3>
+  <p>"Vibe-Trading: Your Personal Trading Agent"</p>
+  <div class="gh-meta">
+    <span>⭐ 21755</span>
+    <span>🌐 Python</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/moeru-ai/airi" target="_blank">moeru-ai/airi</a></h3>
+  <p>💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.</p>
+  <div class="gh-meta">
+    <span>⭐ 41875</span>
+    <span>🌐 TypeScript</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank">Shubhamsaboo/awesome-llm-apps</a></h3>
+  <p>100+ AI Agent & RAG apps you can actually run — clone, customize, ship.</p>
+  <div class="gh-meta">
+    <span>⭐ 119620</span>
+    <span>🌐 Python</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/Nutlope/hallmark" target="_blank">Nutlope/hallmark</a></h3>
+  <p>Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</p>
+  <div class="gh-meta">
+    <span>⭐ 5153</span>
+    <span>🌐 CSS</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/Raphire/Win11Debloat" target="_blank">Raphire/Win11Debloat</a></h3>
+  <p>A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.</p>
+  <div class="gh-meta">
+    <span>⭐ 50873</span>
+    <span>🌐 PowerShell</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank">Graphify-Labs/graphify</a></h3>
+  <p>AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.</p>
+  <div class="gh-meta">
+    <span>⭐ 84731</span>
+    <span>🌐 Python</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank">hasaneyldrm/exercises-dataset</a></h3>
+  <p>1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.</p>
+  <div class="gh-meta">
+    <span>⭐ 12624</span>
+    <span>🌐 HTML</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/github/spec-kit" target="_blank">github/spec-kit</a></h3>
+  <p>💫 Toolkit to help you get started with Spec-Driven Development</p>
+  <div class="gh-meta">
+    <span>⭐ 120594</span>
+    <span>🌐 Python</span>
+  </div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/coreyhaines31/marketingskills" target="_blank">coreyhaines31/marketingskills</a></h3>
+  <p>Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
+  <div class="gh-meta">
+    <span>⭐ 38571</span>
+    <span>🌐 JavaScript</span>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <footer>
+      由 AI 自动生成 · 2026-07-14 · <a href="search-index.json" style="color:var(--muted)">索引</a>
+    </footer>
+  </div>
+</body>
+</html>
