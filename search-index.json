@@ -910,164 +910,160 @@
     "file": "2026-07-14.html",
     "news": [
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
+        "summary": "HackerNews热度 440分 · 178条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Telegram's t.me domain has been suspended",
+        "summary": "HackerNews热度 244分 · 182条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://www.whois.com/whois/t.me"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Samsung Health app threatens data deletion if users opt out AI training",
+        "summary": "HackerNews热度 260分 · 69条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://neow.in/cWsyMTV3"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Show HN: I implemented a neural network in SQL",
+        "summary": "HackerNews热度 55分 · 12条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder",
+        "summary": "HackerNews热度 6分 · 0条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+        "summary": "HackerNews热度 57分 · 26条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://github.com/morganwilliscloud/billai-bass"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "Show HN: ContextVault – Shared memory layer for your AI and your team",
+        "summary": "HackerNews热度 6分 · 0条评论",
         "tags": [
-          "AI",
-          "大模型"
+          "AI"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://www.contextvault.dev/"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "GitHub热点: buildkite/agent",
+        "summary": "The Buildkite Agent is an open-source toolkit written in Go for securely running build jobs on any device or network",
         "tags": [
           "AI",
-          "大模型"
+          "开源",
+          "Go"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://github.com/buildkite/agent"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "GitHub热点: belialberu4-oss/exo-harness-ai-pipeline",
+        "summary": "Claude Code AI Pipeline 2026 – PEV Framework Harness Plugin for Developers",
         "tags": [
           "AI",
-          "大模型"
+          "开源",
+          "HTML"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://github.com/belialberu4-oss/exo-harness-ai-pipeline"
       },
       {
-        "title": "全球AI生态持续演进",
-        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "title": "GitHub热点: awslabs/aidlc-workflows",
+        "summary": "AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents",
         "tags": [
           "AI",
-          "大模型"
+          "开源",
+          "Python"
         ],
-        "url": "https://news.ycombinator.com"
+        "url": "https://github.com/awslabs/aidlc-workflows"
       }
     ],
     "github": [
       {
         "name": "OpenCut-app/OpenCut",
         "desc": "The open-source CapCut alternative",
-        "stars": "66373",
+        "stars": "66404",
         "lang": "TypeScript",
         "url": "https://github.com/OpenCut-app/OpenCut"
       },
       {
         "name": "HKUDS/Vibe-Trading",
         "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
-        "stars": "21755",
+        "stars": "21763",
         "lang": "Python",
         "url": "https://github.com/HKUDS/Vibe-Trading"
       },
       {
         "name": "moeru-ai/airi",
         "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-        "stars": "41875",
+        "stars": "41886",
         "lang": "TypeScript",
         "url": "https://github.com/moeru-ai/airi"
       },
       {
         "name": "Shubhamsaboo/awesome-llm-apps",
         "desc": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-        "stars": "119620",
+        "stars": "119630",
         "lang": "Python",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
       },
       {
         "name": "Nutlope/hallmark",
         "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-        "stars": "5153",
+        "stars": "5159",
         "lang": "CSS",
         "url": "https://github.com/Nutlope/hallmark"
       },
       {
         "name": "Raphire/Win11Debloat",
         "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-        "stars": "50873",
+        "stars": "50876",
         "lang": "PowerShell",
         "url": "https://github.com/Raphire/Win11Debloat"
       },
       {
         "name": "Graphify-Labs/graphify",
         "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-        "stars": "84731",
+        "stars": "84739",
         "lang": "Python",
         "url": "https://github.com/Graphify-Labs/graphify"
       },
       {
         "name": "hasaneyldrm/exercises-dataset",
         "desc": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
-        "stars": "12624",
+        "stars": "12627",
         "lang": "HTML",
         "url": "https://github.com/hasaneyldrm/exercises-dataset"
       },
       {
         "name": "github/spec-kit",
         "desc": "💫 Toolkit to help you get started with Spec-Driven Development",
-        "stars": "120594",
+        "stars": "120600",
         "lang": "Python",
         "url": "https://github.com/github/spec-kit"
       },
       {
         "name": "coreyhaines31/marketingskills",
         "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": "38571",
+        "stars": "38579",
         "lang": "JavaScript",
         "url": "https://github.com/coreyhaines31/marketingskills"
       }
