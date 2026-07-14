@@ -903,5 +903,174 @@
         "url": "https://github.com/oven-sh/bun"
       }
     ]
+  },
+  {
+    "date": "2026-07-14",
+    "weekday": "周二",
+    "file": "2026-07-14.html",
+    "news": [
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "title": "全球AI生态持续演进",
+        "summary": "人工智能技术在各行业加速落地，大模型能力与Agent生态同步发展。",
+        "tags": [
+          "AI",
+          "大模型"
+        ],
+        "url": "https://news.ycombinator.com"
+      }
+    ],
+    "github": [
+      {
+        "name": "OpenCut-app/OpenCut",
+        "desc": "The open-source CapCut alternative",
+        "stars": "66373",
+        "lang": "TypeScript",
+        "url": "https://github.com/OpenCut-app/OpenCut"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
+        "stars": "21755",
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "moeru-ai/airi",
+        "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+        "stars": "41875",
+        "lang": "TypeScript",
+        "url": "https://github.com/moeru-ai/airi"
+      },
+      {
+        "name": "Shubhamsaboo/awesome-llm-apps",
+        "desc": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+        "stars": "119620",
+        "lang": "Python",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+        "stars": "5153",
+        "lang": "CSS",
+        "url": "https://github.com/Nutlope/hallmark"
+      },
+      {
+        "name": "Raphire/Win11Debloat",
+        "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+        "stars": "50873",
+        "lang": "PowerShell",
+        "url": "https://github.com/Raphire/Win11Debloat"
+      },
+      {
+        "name": "Graphify-Labs/graphify",
+        "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+        "stars": "84731",
+        "lang": "Python",
+        "url": "https://github.com/Graphify-Labs/graphify"
+      },
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "desc": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+        "stars": "12624",
+        "lang": "HTML",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "github/spec-kit",
+        "desc": "💫 Toolkit to help you get started with Spec-Driven Development",
+        "stars": "120594",
+        "lang": "Python",
+        "url": "https://github.com/github/spec-kit"
+      },
+      {
+        "name": "coreyhaines31/marketingskills",
+        "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+        "stars": "38571",
+        "lang": "JavaScript",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      }
+    ]
   }
 ]
