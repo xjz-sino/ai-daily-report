@@ -1,1072 +1,1252 @@
-[
-  {
-    "date": "2026-07-13",
-    "weekday": "星期一",
-    "file": "2026-07-13.html",
-    "news": [
-      {
-        "title": "OpenAI 全量发布 GPT-5.6 系列模型，关停 Atlas 浏览器",
-        "summary": "OpenAI 正式向全球用户开放 GPT-5.6 系列模型，包含旗舰版 Sol、均衡版 Terra 与轻量版 Luna 三档产品。同日宣布将于8月9日关停 Atlas 浏览器，将智能浏览能力整合进 ChatGPT。",
-        "tags": [
-          "大模型",
-          "OpenAI",
-          "GPT-5.6"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
-      },
-      {
-        "title": "SpaceXAI 联手 Cursor 发布 Grok 4.5，号称 Opus 级对标",
-        "summary": "SpaceXAI 发布新一代大模型 Grok 4.5，与 Cursor 联合训练，运行速度达 80 TPS，Token 利用效率为竞品两倍，全面超越 Claude Opus 4.8。",
-        "tags": [
-          "大模型",
-          "SpaceXAI",
-          "AI编程"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
-      },
-      {
-        "title": "OpenAI 首款自研芯片 Jalapeño 问世，联合 Broadcom 打破 NVIDIA 垄断",
-        "summary": "OpenAI 联合 Broadcom 推出首款自研推理加速芯片 Jalapeño，从设计到流片仅用9个月，分析师预计 NVIDIA 市场份额将从86%降至75%。",
-        "tags": [
-          "AI芯片",
-          "OpenAI",
-          "Broadcom"
-        ],
-        "url": "https://juejin.cn/post/7659388305413652490"
-      },
-      {
-        "title": "微软 AI 原生操作系统 Project Aion 曝光，以 Copilot 为唯一交互入口",
-        "summary": "微软内部 Project Aion 操作系统演示曝光，彻底否定40年桌面范式，没有桌面、图标和开始菜单，以 Copilot 为唯一交互入口。",
-        "tags": [
-          "AI应用",
-          "微软",
-          "操作系统"
-        ],
-        "url": "https://blog.51cto.com/u_17515055/14737406"
-      },
-      {
-        "title": "人形机器人量产提速，2026年国内整机产量有望突破10万台",
-        "summary": "工信部在 WAIC 2026 上表示预计今年人形机器人产量突破10万台，宇树科技73天闪电过审科创板 IPO，特斯拉年底启动量产。",
-        "tags": [
-          "机器人",
-          "人形机器人",
-          "宇树科技"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
-      },
-      {
-        "title": "阿里达摩院 AI 智能体28个GPU小时发现4种全新超导体",
-        "summary": "达摩院发布超导材料发现 AI 智能体 ElementsClaw，从240万种晶体结构中预测出6.8万种潜在超导材料，实验验证4种全新超导体，最高临界温度6.5K。",
-        "tags": [
-          "AI for Science",
-          "达摩院",
-          "材料科学"
-        ],
-        "url": "https://blog.51cto.com/u_17515055/14737406"
-      },
-      {
-        "title": "苹果与 PrismML 接洽，270亿参数大模型有望塞进 iPhone",
-        "summary": "PrismML 将270亿参数大模型（基于 Qwen 3.6）通过1-bit压缩技术压缩至 iPhone 17 Pro 可本地运行，模型体积降至全精度1/14。",
-        "tags": [
-          "端侧AI",
-          "苹果",
-          "模型压缩"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
-      },
-      {
-        "title": "Meta 推出文生图模型 Muse Image 并接入 Instagram",
-        "summary": "Meta 推出 AI 图像生成模型 Muse Image，已在 Meta AI 中提供，将逐步接入 Instagram、WhatsApp，同时预告 Muse Video 即将上线。",
-        "tags": [
-          "生成式AI",
-          "Meta",
-          "社交平台"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162692758"
-      },
-      {
-        "title": "Ollama 完成6500万美元B轮融资，月活开发者逼近900万",
-        "summary": "开源 AI 模型本地运行工具 Ollama 完成6500万美元 B 轮融资，累计融资8800万美元，月活开发者近890万，团队仅14人。",
-        "tags": [
-          "开源",
-          "AI基础设施",
-          "融资"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
-      },
-      {
-        "title": "联合国首届 AI 治理全球对话在日内瓦举行",
-        "summary": "联合国举办首届 AI 治理全球对话，秘书长古特雷斯呼吁 AI 儿童安全承诺、高风险决策保留人工把关、2030年数据中心全用可再生能源。",
-        "tags": [
-          "AI治理",
-          "联合国",
-          "AI安全"
-        ],
-        "url": "https://juejin.cn/post/7659388305413652490"
-      }
-    ],
-    "github": [
-      {
-        "name": "calesthio/OpenMontage",
-        "desc": "将 Claude Code、Cursor 等 AI 编码助手变为视频制作系统，包含12个管线和52个工具",
-        "stars": "~31,000",
-        "lang": "Python",
-        "url": "https://github.com/calesthio/OpenMontage"
-      },
-      {
-        "name": "usestrix/strix",
-        "desc": "自主 AI Agent 安全测试团队，模拟攻击者进行渗透测试，覆盖 OWASP Top 10",
-        "stars": "~29,900",
-        "lang": "Python",
-        "url": "https://github.com/usestrix/strix"
-      },
-      {
-        "name": "google-labs-code/design.md",
-        "desc": "Google Labs 设计系统规范格式，机器可读设计令牌+人类可读文档，CLI 可导出至 Tailwind",
-        "stars": "~24,100",
-        "lang": "TypeScript",
-        "url": "https://github.com/google-labs-code/design.md"
-      },
-      {
-        "name": "alibaba/page-agent",
-        "desc": "阿里巴巴页面内 GUI Agent，一行 script 标签集成，自然语言控制实时 Web 界面",
-        "stars": "~20,900",
-        "lang": "TypeScript",
-        "url": "https://github.com/alibaba/page-agent"
-      },
-      {
-        "name": "DietrichGebert/ponytail",
-        "desc": "哲学级编码优化库，让 AI Agent 遵循 YAGNI 原则，一周增星量居首",
-        "stars": "~74,800",
-        "lang": "JavaScript",
-        "url": "https://github.com/DietrichGebert/ponytail"
-      },
-      {
-        "name": "baidu/Unlimited-OCR",
-        "desc": "百度一次性长视野解析 OCR 引擎，可处理整本书级别超长文档",
-        "stars": "~13,400",
-        "lang": "Python",
-        "url": "https://github.com/baidu/Unlimited-OCR"
-      },
-      {
-        "name": "XiaomiMiMo/MiMo-Code",
-        "desc": "小米模型-Agent协同进化框架，AI模型与Agent双向动态优化",
-        "stars": "~11,500",
-        "lang": "TypeScript",
-        "url": "https://github.com/XiaomiMiMo/MiMo-Code"
-      },
-      {
-        "name": "iOfficeAI/OfficeCLI",
-        "desc": "专为 AI Agent 设计的 Office 命令行套件，支持 Word/Excel/PPT 操作",
-        "stars": "~14,400",
-        "lang": "C#",
-        "url": "https://github.com/iOfficeAI/OfficeCLI"
-      },
-      {
-        "name": "huggingface/speech-to-speech",
-        "desc": "Hugging Face 本地语音代理框架，端到端语音交互，完全本地部署",
-        "stars": "~6,000",
-        "lang": "Python",
-        "url": "https://github.com/huggingface/speech-to-speech"
-      },
-      {
-        "name": "Light-Heart-Labs/DreamServer",
-        "desc": "一键安装自托管 AI 服务器，集成推理/聊天/语音/RAG/图像生成，支持GPU自动检测",
-        "stars": "~2,200",
-        "lang": "Python/Shell",
-        "url": "https://github.com/Light-Heart-Labs/DreamServer"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "weekday": "星期四",
-    "file": "2026-07-09.html",
-    "news": [
-      {
-        "title": "OpenAI获美国政府批准，GPT-5.6将于7月9日全面公开发布",
-        "summary": "美国商务部正式批准OpenAI全面部署GPT-5.6系列模型，支持150万Token上下文窗口，引入Max深度推理和Ultra多Agent协同模式。",
-        "tags": [
-          "LLM",
-          "大模型发布",
-          "监管政策"
-        ],
-        "url": "https://www.ai.cm/article/us-commerce-department-approves-broad-launch-of-openai-gpt-56/"
-      },
-      {
-        "title": "SpaceX AI发布Grok 4.5，联合Cursor进军代码与Agent市场",
-        "summary": "SpaceX AI向公众开放Grok 4.5，基于1.5万亿参数V9基础模型，与Cursor联合开发，主打代码编写和智能代理场景。",
-        "tags": [
-          "LLM",
-          "AI编程",
-          "智能体"
-        ],
-        "url": "https://runtimewire.com/article/spacexai-grok-45-cursor-michael-truell"
-      },
-      {
-        "title": "Meta发布首款自研AI图像生成模型Muse，引发隐私争议",
-        "summary": "Meta推出Muse Image图像生成模型，集成于Meta AI、Instagram和WhatsApp，但因默认开放用户照片用于AI生成引发隐私批评。",
-        "tags": [
-          "图像生成",
-          "多模态",
-          "隐私安全"
-        ],
-        "url": "https://www.infobae.com/tecno/2026/07/08/usuarios-reclaman-a-meta-por-el-uso-de-sus-fotos-en-el-nuevo-generador-de-imagenes-con-ia/"
-      },
-      {
-        "title": "微软斥资25亿美元成立Microsoft Frontier Company，押注企业AI落地",
-        "summary": "微软宣布成立Microsoft Frontier Company，投入25亿美元配备6000名工程师，以驻场方式帮助企业构建和运行AI系统。",
-        "tags": [
-          "企业AI",
-          "云服务",
-          "战略投资"
-        ],
-        "url": "https://aihola.com/article/microsoft-frontier-company-ai"
-      },
-      {
-        "title": "OpenAI首席未来学家Joshua Achiam宣布离职",
-        "summary": "OpenAI首席未来学家Joshua Achiam宣布将于7月24日离职，结束近9年的职业生涯，主要负责研判AI风险与收益。",
-        "tags": [
-          "OpenAI",
-          "人事变动",
-          "AI安全"
-        ],
-        "url": "https://m.thepaper.cn/newsDetail_forward_33539702"
-      },
-      {
-        "title": "豆包、通义千问同步宣布7月15日下线智能体功能",
-        "summary": "字节跳动豆包和阿里通义千问同步宣布因合规要求，智能体功能将于7月15日正式下线，涉及超3.45亿豆包月活用户。",
-        "tags": [
-          "智能体",
-          "合规监管",
-          "国内AI"
-        ],
-        "url": "https://www.cnii.com.cn/gxxww/dzxx/202607/t20260706_747304.html"
-      },
-      {
-        "title": "SpaceX向FCC申请部署10万颗Gen3卫星，打造AI时代空基通信底座",
-        "summary": "SpaceX向FCC申请部署10万颗第三代星链卫星，部署在323-327公里和473公里两组轨道壳层，建立全球空基通信基础设施。",
-        "tags": [
-          "卫星通信",
-          "AI基础设施",
-          "SpaceX"
-        ],
-        "url": "https://finance.sina.com.cn/tech/roll/2026-07-08/doc-inihattw8261295.shtml"
-      },
-      {
-        "title": "中国四部门联合印发《关于加快推进'人工智能+人社'应用发展的实施意见》",
-        "summary": "人社部等四部门联合发布政策，提出到2030年形成人社领域AI普遍应用格局，打造20个行业大模型应用场景及高质量数据集。",
-        "tags": [
-          "AI政策",
-          "具身智能",
-          "国内AI"
-        ],
-        "url": "http://m.toutiao.com/group/7660152337683579446/"
-      },
-      {
-        "title": "Anthropic年化收入飙升至470亿美元，披露150亿美元澳大利亚数据中心计划",
-        "summary": "Anthropic年收入从10亿美元飙升至470亿美元，增长45倍，同时披露150亿美元澳大利亚数据中心计划，标志从卖Token转向重资产算力押注。",
-        "tags": [
-          "AI基础设施",
-          "商业动态",
-          "Anthropic"
-        ],
-        "url": "http://m.toutiao.com/group/7659967211583898164/"
-      },
-      {
-        "title": "2026世界人工智能大会将于7月17日在上海开幕，主题为'智能伙伴 共创未来'",
-        "summary": "第九届WAIC将于7月17-20日在上海举办，展览规模、首发新品和国际参与度均创历届新高，核心逻辑升级为AI伙伴时代。",
-        "tags": [
-          "行业大会",
-          "人机协同",
-          "国内AI"
-        ],
-        "url": "http://m.toutiao.com/group/7660146938553123354/"
-      }
-    ],
-    "github": [
-      {
-        "name": "ruvnet/RuView",
-        "desc": "利用普通WiFi信号实现实时空间智能、生命体征监测和presence detection，无需摄像头像素",
-        "stars": 78572,
-        "lang": "Rust",
-        "url": "https://github.com/ruvnet/RuView"
-      },
-      {
-        "name": "DietrichGebert/ponytail",
-        "desc": "AI编程Agent的元控制层，让Agent遵循YAGNI原则，避免过度工程化",
-        "stars": 73911,
-        "lang": "JavaScript",
-        "url": "https://github.com/DietrichGebert/ponytail"
-      },
-      {
-        "name": "opendatalab/MinerU",
-        "desc": "将PDF、Office文档、图像和网页转换为LLM可用的Markdown或JSON格式",
-        "stars": 72897,
-        "lang": "Python",
-        "url": "https://github.com/opendatalab/MinerU"
-      },
-      {
-        "name": "addyosmani/agent-skills",
-        "desc": "面向AI编程Agent的生产级工程技能库，提供可复用的技能模块",
-        "stars": 72293,
-        "lang": "JavaScript",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "asgeirtj/system_prompts_leaks",
-        "desc": "提取并公开主流AI产品（Claude、GPT、Gemini、Grok等）的系统提示词",
-        "stars": 53147,
-        "lang": "JavaScript",
-        "url": "https://github.com/asgeirtj/system_prompts_leaks"
-      },
-      {
-        "name": "calesthio/OpenMontage",
-        "desc": "将Claude Code/Cursor等AI编程助手转变为视频制作系统",
-        "stars": 31003,
-        "lang": "Python",
-        "url": "https://github.com/calesthio/OpenMontage"
-      },
-      {
-        "name": "usestrix/strix",
-        "desc": "自主AI Agent安全测试工具，覆盖OWASP Top 10进行全面渗透测试",
-        "stars": 29913,
-        "lang": "Python",
-        "url": "https://github.com/usestrix/strix"
-      },
-      {
-        "name": "Zackriya-Solutions/meetily",
-        "desc": "隐私优先的AI会议助手，Rust构建，支持4倍速实时语音转录和本地AI摘要",
-        "stars": 20888,
-        "lang": "Rust",
-        "url": "https://github.com/Zackriya-Solutions/meetily"
-      },
-      {
-        "name": "MadsLorentzen/ai-job-search",
-        "desc": "基于Claude Code的AI求职框架，可让Claude评估职位、定制简历并准备面试",
-        "stars": 11423,
-        "lang": "TypeScript",
-        "url": "https://github.com/MadsLorentzen/ai-job-search"
-      },
-      {
-        "name": "iOfficeAI/OfficeCLI",
-        "desc": "专为AI Agent设计的Office文档处理套件，免费开源单二进制",
-        "stars": 10223,
-        "lang": "C#",
-        "url": "https://github.com/iOfficeAI/OfficeCLI"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "weekday": "星期五",
-    "file": "2026-07-10.html",
-    "news": [
-      {
-        "title": "OpenAI发布GPT-5.6系列三款模型，美国政府正式解除访问限制",
-        "summary": "OpenAI于7月8日发布GPT-5.6 Sol、Terra和Luna三款模型。Sol为旗舰型号，支持Max和Ultra两种高阶模式，上下文窗口扩展至150万Tokens。",
-        "tags": [
-          "OpenAI",
-          "GPT-5.6",
-          "大模型"
-        ],
-        "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
-      },
-      {
-        "title": "SpaceX AI发布旗舰模型Grok 4.5，马斯克宣布向公众开放",
-        "summary": "马斯克宣布Grok 4.5为Opus级别模型，速度更快、Token效率更高、成本更低，专为编程、智能体任务和知识工作打造。",
-        "tags": [
-          "SpaceX",
-          "Grok",
-          "马斯克"
-        ],
-        "url": "https://news.ifeng.com/c/8udagQrYVlr"
-      },
-      {
-        "title": "人社部等四部门印发《人工智能+人社应用发展实施意见》",
-        "summary": "提出5年建设目标，2026年建设应用基础设施，打造20个行业大模型应用场景；2030年形成人社领域AI普遍应用的创新局面。",
-        "tags": [
-          "政策",
-          "人社",
-          "AI+"
-        ],
-        "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
-      },
-      {
-        "title": "《人工智能拟人化互动服务管理暂行办法》7月15日正式施行",
-        "summary": "办法聚焦模拟自然人人格特征的持续性情感互动服务，对字节豆包、阿里通义千问等已上线的拟人化AI产品实行包容审慎和分类分级监管。",
-        "tags": [
-          "政策",
-          "监管",
-          "情感AI"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162730911"
-      },
-      {
-        "title": "GPT-6发布时间或大幅提前，最快将于本月内发布",
-        "summary": "爆料称GPT-6发布时间提前，若属实则GPT-5.x系列将以史上最快迭代周期完成过渡，开发者已摩拳擦掌等待。",
-        "tags": [
-          "OpenAI",
-          "GPT-6",
-          "爆料"
-        ],
-        "url": "https://m.thepaper.cn/newsDetail_forward_33548698"
-      },
-      {
-        "title": "Meta计划9月开始生产自研AI芯片",
-        "summary": "Meta加速AI硬件自主化布局，计划9月启动自研AI芯片生产，减少对英伟达GPU的依赖。",
-        "tags": [
-          "Meta",
-          "AI芯片",
-          "硬件"
-        ],
-        "url": "https://news.ifeng.com/c/8udagQrYVlr"
-      },
-      {
-        "title": "OpenAI发布新一代语音模型GPT-Live-1与GPT-Live-1 mini",
-        "summary": "新模型对ChatGPT语音体验进行全双工重构，实现更自然的实时对话体验，降低语音交互延迟。",
-        "tags": [
-          "OpenAI",
-          "语音模型",
-          "GPT-Live"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162730911"
-      },
-      {
-        "title": "2026 WAIC世界人工智能大会将于7月17-20日在上海举办",
-        "summary": "大会主题智能伙伴共创未来，华为Atlas 950 SuperPoD实机、阶跃星辰Agent操作系统、全球首款AI Agent智能手机将全球首发。",
-        "tags": [
-          "WAIC",
-          "上海",
-          "展会"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162692758"
-      },
-      {
-        "title": "AI概念股集体走高，智谱AI一度涨超18%",
-        "summary": "受多重利好消息刺激，A股及港股AI概念股大涨，智谱AI、多模态AI、AI智能体等方向领涨，阿里巴巴美股盘前涨超10%。",
-        "tags": [
-          "股市",
-          "智谱AI",
-          "投资"
-        ],
-        "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
-      },
-      {
-        "title": "人工智能向善全球峰会7月7-10日在日内瓦举办",
-        "summary": "国际电联举办第七届AI for Good全球峰会，来自政府、产业界、学术界的领袖探讨AI在经济和社会中的普及与治理。",
-        "tags": [
-          "联合国",
-          "AI治理",
-          "峰会"
-        ],
-        "url": "https://www.itu.int/zh/mediacentre/Pages/PR-2026-03-25-AI-for-Good-Global-Summit.aspx"
-      }
-    ],
-    "github": [
-      {
-        "name": "OpenClaw",
-        "desc": "自托管个人AI Agent平台，4个月登顶GitHub历史Star榜第一，超越Linux和React",
-        "stars": "~362,000",
-        "lang": "TypeScript",
-        "url": "https://github.com/openclaw/openclaw"
-      },
-      {
-        "name": "agency-agents",
-        "desc": "本周新晋GitHub Trending榜首，多智能体协作框架， displaces ponytail at #1",
-        "stars": "72,000+",
-        "lang": "Python",
-        "url": "https://github.com/agency-agents/agency-agents"
-      },
-      {
-        "name": "ponytail",
-        "desc": "帮助开发者减少重复工作的现代化工具集，上周增长迅速",
-        "stars": "69,221",
-        "lang": "JavaScript",
-        "url": "https://github.com/DietrichGebert/ponytail"
-      },
-      {
-        "name": "autoremesher",
-        "desc": "自动四边形重网格化工具，3D建模与计算机图形学领域的实用工具",
-        "stars": "3,800",
-        "lang": "C++",
-        "url": "https://github.com/huxingyi/autoremesher"
-      },
-      {
-        "name": "argo-workflows",
-        "desc": "Kubernetes原生工作流引擎，用于在K8s上编排并行作业",
-        "stars": "15,200",
-        "lang": "Go",
-        "url": "https://github.com/argoproj/argo-workflows"
-      },
-      {
-        "name": "caveman",
-        "desc": "新晋GitHub Trending项目，轻量级容器运行时与构建工具",
-        "stars": "5,400",
-        "lang": "Rust",
-        "url": "https://github.com/caveman-org/caveman"
-      },
-      {
-        "name": "graphify",
-        "desc": "将任意数据源自动转换为知识图谱的框架，支持LLM增强的实体关系抽取",
-        "stars": "4,100",
-        "lang": "Python",
-        "url": "https://github.com/graphify-ai/graphify"
-      },
-      {
-        "name": "orca",
-        "desc": "本地优先的AI文档分析引擎，支持数百页PDF的一次性语义检索与问答",
-        "stars": "3,200",
-        "lang": "TypeScript",
-        "url": "https://github.com/orca-ai/orca"
-      },
-      {
-        "name": "web-check",
-        "desc": "全面的网站检查工具，可显示DNS记录、服务器位置、SSL证书、SEO评分等详细信息",
-        "stars": "15,500",
-        "lang": "TypeScript",
-        "url": "https://github.com/Lissy93/web-check"
-      },
-      {
-        "name": "zvec",
-        "desc": "轻量级、极速进程内向量数据库，专为RAG应用和语义搜索优化",
-        "stars": "2,800",
-        "lang": "C++",
-        "url": "https://github.com/zvec/zvec"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "weekday": "星期六",
-    "file": "2026-07-11.html",
-    "news": [
-      {
-        "title": "Meta发布Muse Spark 1.1多模态AI编程模型，扎克伯格时隔三年首次在X发推力推",
-        "summary": "Meta正式发布新一代多模态AI模型Muse Spark 1.1，专为Agent编程任务设计。Meta称这是目前最强大的Agent任务和编程模型。CEO扎克伯格结束三年X平台沉默，专门发帖力推这一产品，标志着Meta在AI编码市场向OpenAI和Anthropic发起直接挑战。",
-        "tags": [
-          "Meta",
-          "Muse Spark",
-          "AI编程",
-          "多模态"
-        ],
-        "url": "https://www.newsbricks.com/technology/meta-introduces-muse-spark11-challenge-other-ai/394392"
-      },
-      {
-        "title": "Anthropic最强模型Claude Fable 5全球访问恢复，美国政府解除出口限制",
-        "summary": "Anthropic宣布恢复其最强AI模型Claude Fable 5和Mythos 5的全球访问。此前美国商务部以安全为由对这些模型实施出口管制，导致非美国用户无法使用。6月30日限制解除后，Anthropic于7月1日恢复全球服务。",
-        "tags": [
-          "Anthropic",
-          "Claude Fable 5",
-          "出口管制",
-          "大模型"
-        ],
-        "url": "https://imfounder.com/science-tech/ai/12-ai-updates-2026-july/"
-      },
-      {
-        "title": "美国伊利诺伊州签署重大AI安全法，要求大模型开发商定期第三方审计",
-        "summary": "伊利诺伊州州长签署美国最全面的AI安全立法之一。该法律要求大型AI开发商识别、披露和降低风险，保护举报人，并在全美首次强制要求定期进行第三方审计。这标志着美国州级AI监管进入新阶段。",
-        "tags": [
-          "AI监管",
-          "美国",
-          "AI安全法",
-          "第三方审计"
-        ],
-        "url": "https://www.route-fifty.com/artificial-intelligence/"
-      },
-      {
-        "title": "报告显示超40%用户正在限制AI使用，AI热度开始降温",
-        "summary": "最新报告指出超过40%的人正在限制AI工具的使用频率，表明AI的普及热度可能开始降温。研究者认为这与AI输出质量不稳定、隐私担忧以及对AI依赖的反思有关。",
-        "tags": [
-          "AI趋势",
-          "用户行为",
-          "市场降温"
-        ],
-        "url": "https://techxplore.com/machine-learning-ai-news/"
-      },
-      {
-        "title": "美团发布LongCat-2.0万亿参数大模型，全程国产算力训练并开源",
-        "summary": "美团发布新一代万亿参数大模型LongCat-2.0，总参数规模达1.6万亿。这是业界首个完全依靠国产算力完成训练和推理全流程的万亿参数大模型，标志着国产AI基础设施的重大突破。",
-        "tags": [
-          "美团",
-          "LongCat",
-          "国产算力",
-          "开源",
-          "大模型"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "谷歌DeepMind Gemini Omni Flash登顶AI视频评测榜首，反超字节Seedance",
-        "summary": "权威AI视频评测平台Video Arena更新盲测榜单，谷歌DeepMind旗下Gemini Omni Flash以1404 Elo高分登顶榜首，反超长期霸榜的字节跳动Seedance系列模型，分差达101 Elo。这是AI视频生成赛道竞争格局的重要更迭。",
-        "tags": [
-          "Google",
-          "DeepMind",
-          "Gemini",
-          "AI视频",
-          "字节跳动"
-        ],
-        "url": "https://blog.51cto.com/u_17515055/14737406"
-      },
-      {
-        "title": "Amazon CTO提出'文艺复兴开发者'概念，谈开发者如何应对AI编码浪潮",
-        "summary": "Amazon首席技术官Werner Vogels在访谈中提出软件工程正经历多年来最剧烈的变革。他认为AI编码工具如Claude Code正在催生'文艺复兴开发者'——既能用自然语言生成软件，又保留工程思维的复合型工程师。",
-        "tags": [
-          "Amazon",
-          "AI编码",
-          "开发者",
-          "Claude Code"
-        ],
-        "url": "https://v3finmedia.online/2026/07/11/amazons-cto-on-how-developers-can-ride-out-the-ai-powered-coding-wave-fortune/"
-      },
-      {
-        "title": "Meta Compute云基础设施业务上线，对外出售AI算力",
-        "summary": "Meta宣布推出Meta Compute云基础设施业务，正式对外出售AI算力和模型使用权。此举被视为Meta从纯粹社交平台向AI基础设施提供商转型的重要信号，消息一出引发半导体股集体波动。",
-        "tags": [
-          "Meta",
-          "云计算",
-          "AI算力",
-          "基础设施"
-        ],
-        "url": "https://juejin.cn/post/7659388305413652490"
-      },
-      {
-        "title": "澳大利亚政府加强对AI风险的监管，科技部长呼吁更多雄心",
-        "summary": "澳大利亚联邦科技助理部长Andrew Charlton在悉尼大学AI安全论坛上发出严厉警告，称澳大利亚需要更有雄心的AI监管议程。这标志着澳大利亚政府已意识到AI带来的系统性风险。",
-        "tags": [
-          "澳大利亚",
-          "AI监管",
-          "AI安全"
-        ],
-        "url": "https://techxplore.com/machine-learning-ai-news/"
-      },
-      {
-        "title": "可灵AI获近30亿美元融资落地，AI视频赛道持续升温",
-        "summary": "可灵AI宣布完成近30亿美元融资，估值大幅提升。作为国内领先的AI视频生成平台，可灵AI的巨额融资反映出资本市场对AI视频生成赛道的高度看好，竞争日趋激烈。",
-        "tags": [
-          "可灵AI",
-          "融资",
-          "AI视频",
-          "资本市场"
-        ],
-        "url": "https://blog.csdn.net/haohaizi_liu/article/details/162623040"
-      }
-    ],
-    "github": [
-      {
-        "name": "wonderwhy-er/DesktopCommanderMCP",
-        "desc": "为Claude打造的MCP服务器，赋予终端控制、文件系统搜索和差异文件编辑能力",
-        "stars": 7290,
-        "lang": "TypeScript",
-        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
-      },
-      {
-        "name": "oven-sh/bun",
-        "desc": "极速JavaScript运行时、打包器、测试运行器和包管理器，All-in-One",
-        "stars": 94225,
-        "lang": "Rust",
-        "url": "https://github.com/oven-sh/bun"
-      },
-      {
-        "name": "addyosmani/agent-skills",
-        "desc": "面向AI编程Agent的生产级工程技能库，由Google Chrome团队工程主管创建",
-        "stars": 76823,
-        "lang": "JavaScript",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "mattpocock/skills",
-        "desc": "真实工程师的技能集合，直接从.claude目录提取的实用技能文件",
-        "stars": 164622,
-        "lang": "Shell",
-        "url": "https://github.com/mattpocock/skills"
-      },
-      {
-        "name": "obra/superpowers",
-        "desc": "一个Agentic技能框架和软件开发方法论，已获25万+Star的爆款项目",
-        "stars": 251779,
-        "lang": "Shell",
-        "url": "https://github.com/obra/superpowers"
-      },
-      {
-        "name": "TencentCloud/TencentDB-Agent-Memory",
-        "desc": "为AI Agent提供完全本地化的长期记忆方案，通过4层渐进式管道实现，零外部API依赖",
-        "stars": 8231,
-        "lang": "TypeScript",
-        "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
-      },
-      {
-        "name": "davila7/claude-code-templates",
-        "desc": "用于配置和监控Claude Code的CLI工具，提供丰富的代码模板和配置方案",
-        "stars": 28766,
-        "lang": "Python",
-        "url": "https://github.com/davila7/claude-code-templates"
-      },
-      {
-        "name": "abseil/abseil-cpp",
-        "desc": "Google开发的C++通用库，提供增强的C++标准库替代品，被广泛用于Google内部项目",
-        "stars": 17520,
-        "lang": "C++",
-        "url": "https://github.com/abseil/abseil-cpp"
-      },
-      {
-        "name": "microsoft/TypeScript",
-        "desc": "JavaScript的超集，编译为干净的JavaScript输出，为Web开发提供类型安全",
-        "stars": 109775,
-        "lang": "TypeScript",
-        "url": "https://github.com/microsoft/TypeScript"
-      },
-      {
-        "name": "catchorg/Catch2",
-        "desc": "现代C++原生测试框架，支持单元测试、TDD和BDD，使用C++14/17及以上标准",
-        "stars": 20613,
-        "lang": "C++",
-        "url": "https://github.com/catchorg/Catch2"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "weekday": "周日",
-    "file": "reports/2026-07-12.html",
-    "news": [
-      {
-        "title": "OpenAI GPT-5.6 Sol Ultra 据称在一小时内破解50年数学猜想",
-        "summary": "OpenAI宣布GPT-5.6 Sol Ultra在不足一小时内调用64个并行子智能体，完成图论领域悬而未决约50年的「循环双覆盖猜想」完整证明。",
-        "tags": [
-          "AI",
-          "OpenAI",
-          "数学"
-        ],
-        "url": "http://m.toutiao.com/group/7661428594677203490/"
-      },
-      {
-        "title": "苹果正式起诉OpenAI，指控系统性窃取商业机密",
-        "summary": "7月11日苹果在加州北区联邦法院起诉OpenAI，指控其系统性窃取商业机密，目前OpenAI内有超过400名前苹果员工。",
-        "tags": [
-          "AI",
-          "OpenAI",
-          "苹果"
-        ],
-        "url": "http://m.toutiao.com/group/7661412788732019206/"
-      },
-      {
-        "title": "GPT-5.6上线，马斯克与奥尔特曼开启新一轮隔空争论",
-        "summary": "在GPT-5.6模型上线之际，xAI CEO马斯克与OpenAI CEO奥尔特曼开始了新一轮公开争论。",
-        "tags": [
-          "AI",
-          "OpenAI",
-          "xAI"
-        ],
-        "url": "https://tech.ifeng.com/c/8uh0uCjiAVu"
-      },
-      {
-        "title": "OpenAI正式发布GPT-5.6系列，此前因美国政府国家安全担忧而延迟",
-        "summary": "OpenAI在延迟后正式发布GPT-5.6系列模型，美国政府曾出于国家安全担忧要求推迟公开发布。",
-        "tags": [
-          "AI",
-          "OpenAI",
-          "政策"
-        ],
-        "url": "https://www.startupresearcher.com/news/openai-launches-gpt-5-6-model-family-after-us-government-delay"
-      },
-      {
-        "title": "DeepSeek V4将于7月15日全量上线，公布峰谷定价",
-        "summary": "DeepSeek V4定档7月15日全量上线，同时公布峰谷定价策略，与GPT-5.6、Gemini 3.5 Pro形成三巨头同周交锋格局。",
-        "tags": [
-          "AI",
-          "DeepSeek",
-          "大模型"
-        ],
-        "url": "http://m.toutiao.com/group/7660361753963856394/"
-      },
-      {
-        "title": "谷歌Gemini 3.5 Pro将于7月17日发布，支持200万token上下文",
-        "summary": "谷歌Gemini 3.5 Pro锁定7月17日发布，据说支持200万token上下文和实时多模态能力。",
-        "tags": [
-          "AI",
-          "Google",
-          "Gemini"
-        ],
-        "url": "http://m.toutiao.com/group/7660361753963856394/"
-      },
-      {
-        "title": "特斯拉确认Optimus人形机器人2026年底规模化量产",
-        "summary": "特斯拉确认Optimus人形机器人将在2026年底实现规模化量产，远期规划百万台年产能，具身智能成为确定性最强赛道之一。",
-        "tags": [
-          "AI",
-          "机器人",
-          "特斯拉"
-        ],
-        "url": "http://m.toutiao.com/group/7661298747960066600/"
-      },
-      {
-        "title": "DeepSeek Deep Code开源上线，国产AI编程工具加速发展",
-        "summary": "DeepSeek官方API文档正式收录Deep Code，一款面向DeepSeek-V4系列模型适配的开源终端AI编程助手，支持深度思考、MCP集成。",
-        "tags": [
-          "AI",
-          "DeepSeek",
-          "编程"
-        ],
-        "url": "http://m.toutiao.com/group/7661252757109621275/"
-      },
-      {
-        "title": "DeepSeek推进自研AI推理芯片项目已持续12个月",
-        "summary": "多家产业媒体披露，DeepSeek已持续12个月推进自研AI推理芯片项目，造芯核心逻辑来自持续走高的推理运营账单。",
-        "tags": [
-          "AI",
-          "DeepSeek",
-          "芯片"
-        ],
-        "url": "http://m.toutiao.com/group/7661248917485191732/"
-      },
-      {
-        "title": "SpaceX AI推出Grok 4.5，号称Opus级对标",
-        "summary": "SpaceX AI联手Cursor发布Grok 4.5，号称Opus级性能对标，加入下半年大模型密集发布潮。",
-        "tags": [
-          "AI",
-          "xAI",
-          "Grok"
-        ],
-        "url": "https://blog.csdn.net/ld326/article/details/162740979"
-      }
-    ],
-    "github": [
-      {
-        "name": "catchorg/Catch2",
-        "desc": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
-        "stars": "",
-        "lang": "C++",
-        "url": "https://github.com/catchorg/Catch2"
-      },
-      {
-        "name": "abseil/abseil-cpp",
-        "desc": "Abseil Common Libraries (C++)",
-        "stars": "",
-        "lang": "C++",
-        "url": "https://github.com/abseil/abseil-cpp"
-      },
-      {
-        "name": "davila7/claude-code-templates",
-        "desc": "CLI tool for configuring and monitoring Claude Code",
-        "stars": "",
-        "lang": "Python",
-        "url": "https://github.com/davila7/claude-code-templates"
-      },
-      {
-        "name": "google-labs-code/stitch-skills",
-        "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-        "stars": "",
-        "lang": "TypeScript",
-        "url": "https://github.com/google-labs-code/stitch-skills"
-      },
-      {
-        "name": "hashicorp/terraform",
-        "desc": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
-        "stars": "",
-        "lang": "Go",
-        "url": "https://github.com/hashicorp/terraform"
-      },
-      {
-        "name": "zeux/meshoptimizer",
-        "desc": "Mesh optimization library that makes meshes smaller and faster to render",
-        "stars": "",
-        "lang": "C++",
-        "url": "https://github.com/zeux/meshoptimizer"
-      },
-      {
-        "name": "openai/plugins",
-        "desc": "OpenAI Plugins",
-        "stars": "",
-        "lang": "JavaScript",
-        "url": "https://github.com/openai/plugins"
-      },
-      {
-        "name": "wonderwhy-er/DesktopCommanderMCP",
-        "desc": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-        "stars": "",
-        "lang": "TypeScript",
-        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
-      },
-      {
-        "name": "chriskohlhoff/asio",
-        "desc": "Asio C++ Library",
-        "stars": "",
-        "lang": "C++",
-        "url": "https://github.com/chriskohlhoff/asio"
-      },
-      {
-        "name": "oven-sh/bun",
-        "desc": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
-        "stars": "",
-        "lang": "Rust",
-        "url": "https://github.com/oven-sh/bun"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "weekday": "周二",
-    "file": "2026-07-14.html",
-    "news": [
-      {
-        "title": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
-        "summary": "HackerNews热度 440分 · 178条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html"
-      },
-      {
-        "title": "Telegram's t.me domain has been suspended",
-        "summary": "HackerNews热度 244分 · 182条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.whois.com/whois/t.me"
-      },
-      {
-        "title": "Samsung Health app threatens data deletion if users opt out AI training",
-        "summary": "HackerNews热度 260分 · 69条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://neow.in/cWsyMTV3"
-      },
-      {
-        "title": "Show HN: I implemented a neural network in SQL",
-        "summary": "HackerNews热度 55分 · 12条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
-      },
-      {
-        "title": "Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder",
-        "summary": "HackerNews热度 6分 · 0条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html"
-      },
-      {
-        "title": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
-        "summary": "HackerNews热度 57分 · 26条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://github.com/morganwilliscloud/billai-bass"
-      },
-      {
-        "title": "Show HN: ContextVault – Shared memory layer for your AI and your team",
-        "summary": "HackerNews热度 6分 · 0条评论",
-        "tags": [
-          "AI"
-        ],
-        "url": "https://www.contextvault.dev/"
-      },
-      {
-        "title": "GitHub热点: buildkite/agent",
-        "summary": "The Buildkite Agent is an open-source toolkit written in Go for securely running build jobs on any device or network",
-        "tags": [
-          "AI",
-          "开源",
-          "Go"
-        ],
-        "url": "https://github.com/buildkite/agent"
-      },
-      {
-        "title": "GitHub热点: belialberu4-oss/exo-harness-ai-pipeline",
-        "summary": "Claude Code AI Pipeline 2026 – PEV Framework Harness Plugin for Developers",
-        "tags": [
-          "AI",
-          "开源",
-          "HTML"
-        ],
-        "url": "https://github.com/belialberu4-oss/exo-harness-ai-pipeline"
-      },
-      {
-        "title": "GitHub热点: awslabs/aidlc-workflows",
-        "summary": "AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents",
-        "tags": [
-          "AI",
-          "开源",
-          "Python"
-        ],
-        "url": "https://github.com/awslabs/aidlc-workflows"
-      }
-    ],
-    "github": [
-      {
-        "name": "OpenCut-app/OpenCut",
-        "desc": "The open-source CapCut alternative",
-        "stars": "66404",
-        "lang": "TypeScript",
-        "url": "https://github.com/OpenCut-app/OpenCut"
-      },
-      {
-        "name": "HKUDS/Vibe-Trading",
-        "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
-        "stars": "21763",
-        "lang": "Python",
-        "url": "https://github.com/HKUDS/Vibe-Trading"
-      },
-      {
-        "name": "moeru-ai/airi",
-        "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-        "stars": "41886",
-        "lang": "TypeScript",
-        "url": "https://github.com/moeru-ai/airi"
-      },
-      {
-        "name": "Shubhamsaboo/awesome-llm-apps",
-        "desc": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-        "stars": "119630",
-        "lang": "Python",
-        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
-      },
-      {
-        "name": "Nutlope/hallmark",
-        "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-        "stars": "5159",
-        "lang": "CSS",
-        "url": "https://github.com/Nutlope/hallmark"
-      },
-      {
-        "name": "Raphire/Win11Debloat",
-        "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-        "stars": "50876",
-        "lang": "PowerShell",
-        "url": "https://github.com/Raphire/Win11Debloat"
-      },
-      {
-        "name": "Graphify-Labs/graphify",
-        "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-        "stars": "84739",
-        "lang": "Python",
-        "url": "https://github.com/Graphify-Labs/graphify"
-      },
-      {
-        "name": "hasaneyldrm/exercises-dataset",
-        "desc": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
-        "stars": "12627",
-        "lang": "HTML",
-        "url": "https://github.com/hasaneyldrm/exercises-dataset"
-      },
-      {
-        "name": "github/spec-kit",
-        "desc": "💫 Toolkit to help you get started with Spec-Driven Development",
-        "stars": "120600",
-        "lang": "Python",
-        "url": "https://github.com/github/spec-kit"
-      },
-      {
-        "name": "coreyhaines31/marketingskills",
-        "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": "38579",
-        "lang": "JavaScript",
-        "url": "https://github.com/coreyhaines31/marketingskills"
-      }
-    ]
-  }
-]
+{
+  "reports": [
+    {
+      "date": "2026-07-16",
+      "weekday": "周四",
+      "file": "daily-2026-07-16.html",
+      "news": [
+        {
+          "title": "OpenAI发布GPT-5.6系列模型：Sol/Terra/Luna三档定价落地",
+          "summary": "7月9-10日，OpenAI正式向公众发布GPT-5.6全系列模型，Sol在编程任务中Token效率比前代提升54%，Tera提供均衡性能，Luna专注速度与性价比。",
+          "tags": [
+            "OpenAI",
+            "大模型",
+            "GPT-5.6"
+          ],
+          "url": "https://openai.com"
+        },
+        {
+          "title": "苹果'Apple智能'等7款端侧大模型通过中国备案",
+          "summary": "7月15日，国家网信办公告苹果、华为、OPPO、vivo、小米、三星、中兴等7款手机端侧生成式AI服务完成备案，国行苹果AI功能即将上线。",
+          "tags": [
+            "苹果",
+            "端侧AI",
+            "政策"
+          ],
+          "url": "https://www.cac.gov.cn"
+        },
+        {
+          "title": "《人工智能拟人化互动服务管理暂行办法》正式施行",
+          "summary": "7月15日起正式实施，规定不得将替代社会交往、控制用户心理、诱导沉迷依赖等作为服务目标，不得向未成年人提供虚拟亲密关系服务。",
+          "tags": [
+            "政策法规",
+            "AI治理"
+          ],
+          "url": "https://www.cac.gov.cn"
+        },
+        {
+          "title": "白宫宣布'Gold Eagle'AI漏洞信息共享中心",
+          "summary": "基于6月2日行政命令，美国政府建立AI漏洞信息共享机制，要求先进AI开发商向政府提供早期访问权限以应对潜在网络安全漏洞。",
+          "tags": [
+            "美国",
+            "AI安全",
+            "网络安全"
+          ],
+          "url": "https://www.whitehouse.gov"
+        },
+        {
+          "title": "Google DeepMind CEO呼吁建立独立AI标准机构",
+          "summary": "Demis Hassabis发表文章提出前沿AI监管框架，OpenAI CEO Sam Altman和微软CEO Satya Nadella均表示支持，推动全球AI治理合作。",
+          "tags": [
+            "Google",
+            "AI治理",
+            "DeepMind"
+          ],
+          "url": "https://deepmind.google"
+        },
+        {
+          "title": "2026世界人工智能大会聚焦全球AI治理框架",
+          "summary": "大会将汇聚数十个国家和国际组织代表，就AI技术监管、安全和公平获取等问题展开讨论，中国强调多边合作与包容性发展。",
+          "tags": [
+            "WAIC",
+            "AI治理",
+            "国际会议"
+          ],
+          "url": "https://www.worldaic.com.cn"
+        },
+        {
+          "title": "ChatGPT重返欧洲经济区WhatsApp平台",
+          "summary": "用户无需ChatGPT账户即可通过+1-800-242-8478联系ChatGPT，支持消息、图片上传、语音和图像生成等功能。",
+          "tags": [
+            "OpenAI",
+            "ChatGPT",
+            "产品更新"
+          ],
+          "url": "https://openai.com"
+        },
+        {
+          "title": "OpenAI Codex成为GitHub Trending热门项目",
+          "summary": "OpenAI发布的AI编程助手Codex在GitHub上获得大量关注，一天内Star数破万，成为开发者社区最热门的AI编程工具之一。",
+          "tags": [
+            "OpenAI",
+            "编程助手",
+            "GitHub"
+          ],
+          "url": "https://github.com/openai/codex"
+        },
+        {
+          "title": "中国加强生成式AI服务备案管理",
+          "summary": "中央网信办持续推进生成式人工智能服务备案工作，已有大量大模型和服务通过备案，规范AI产业健康发展。",
+          "tags": [
+            "中国",
+            "政策",
+            "生成式AI"
+          ],
+          "url": "https://www.cac.gov.cn"
+        },
+        {
+          "title": "AI编程工具持续升温，Vibe Coding概念流行",
+          "summary": "基于AI的编程辅助工具持续火爆，'Vibe Coding'（氛围编程）成为新趋势，开发者使用自然语言描述需求即可生成代码。",
+          "tags": [
+            "AI编程",
+            "开发工具",
+            "趋势"
+          ],
+          "url": "https://github.com/trending"
+        }
+      ],
+      "github": [
+        {
+          "name": "codecrafters-io/build-your-own-x",
+          "desc": "Master programming by recreating your favorite technologies from scratch.",
+          "stars": 525614,
+          "lang": "Markdown",
+          "url": "https://github.com/codecrafters-io/build-your-own-x"
+        },
+        {
+          "name": "sindresorhus/awesome",
+          "desc": "😎 Awesome lists about all kinds of interesting topics",
+          "stars": 485383,
+          "lang": "未知",
+          "url": "https://github.com/sindresorhus/awesome"
+        },
+        {
+          "name": "freeCodeCamp/freeCodeCamp",
+          "desc": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "stars": 451995,
+          "lang": "TypeScript",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp"
+        },
+        {
+          "name": "public-apis/public-apis",
+          "desc": "A collective list of free APIs",
+          "stars": 450478,
+          "lang": "Python",
+          "url": "https://github.com/public-apis/public-apis"
+        },
+        {
+          "name": "EbookFoundation/free-programming-books",
+          "desc": ":books: Freely available programming books",
+          "stars": 392206,
+          "lang": "Python",
+          "url": "https://github.com/EbookFoundation/free-programming-books"
+        },
+        {
+          "name": "openclaw/openclaw",
+          "desc": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+          "stars": 383046,
+          "lang": "TypeScript",
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "name": "nilbuild/developer-roadmap",
+          "desc": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+          "stars": 361123,
+          "lang": "TypeScript",
+          "url": "https://github.com/nilbuild/developer-roadmap"
+        },
+        {
+          "name": "donnemartin/system-design-primer",
+          "desc": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "stars": 357743,
+          "lang": "Python",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        },
+        {
+          "name": "jwasham/coding-interview-university",
+          "desc": "A complete computer science study plan to become a software engineer.",
+          "stars": 356306,
+          "lang": "未知",
+          "url": "https://github.com/jwasham/coding-interview-university"
+        },
+        {
+          "name": "vinta/awesome-python",
+          "desc": "An opinionated list of Python frameworks, libraries, tools, and resources",
+          "stars": 308369,
+          "lang": "Python",
+          "url": "https://github.com/vinta/awesome-python"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "weekday": "周二",
+      "file": "2026-07-14.html",
+      "news": [
+        {
+          "title": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
+          "summary": "HackerNews热度 440分 · 178条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html"
+        },
+        {
+          "title": "Telegram's t.me domain has been suspended",
+          "summary": "HackerNews热度 244分 · 182条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://www.whois.com/whois/t.me"
+        },
+        {
+          "title": "Samsung Health app threatens data deletion if users opt out AI training",
+          "summary": "HackerNews热度 260分 · 69条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://neow.in/cWsyMTV3"
+        },
+        {
+          "title": "Show HN: I implemented a neural network in SQL",
+          "summary": "HackerNews热度 55分 · 12条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
+        },
+        {
+          "title": "Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder",
+          "summary": "HackerNews热度 6分 · 0条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html"
+        },
+        {
+          "title": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+          "summary": "HackerNews热度 57分 · 26条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://github.com/morganwilliscloud/billai-bass"
+        },
+        {
+          "title": "Show HN: ContextVault – Shared memory layer for your AI and your team",
+          "summary": "HackerNews热度 6分 · 0条评论",
+          "tags": [
+            "AI"
+          ],
+          "url": "https://www.contextvault.dev/"
+        },
+        {
+          "title": "GitHub热点: buildkite/agent",
+          "summary": "The Buildkite Agent is an open-source toolkit written in Go for securely running build jobs on any device or network",
+          "tags": [
+            "AI",
+            "开源",
+            "Go"
+          ],
+          "url": "https://github.com/buildkite/agent"
+        },
+        {
+          "title": "GitHub热点: belialberu4-oss/exo-harness-ai-pipeline",
+          "summary": "Claude Code AI Pipeline 2026 – PEV Framework Harness Plugin for Developers",
+          "tags": [
+            "AI",
+            "开源",
+            "HTML"
+          ],
+          "url": "https://github.com/belialberu4-oss/exo-harness-ai-pipeline"
+        },
+        {
+          "title": "GitHub热点: awslabs/aidlc-workflows",
+          "summary": "AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents",
+          "tags": [
+            "AI",
+            "开源",
+            "Python"
+          ],
+          "url": "https://github.com/awslabs/aidlc-workflows"
+        }
+      ],
+      "github": [
+        {
+          "name": "OpenCut-app/OpenCut",
+          "desc": "The open-source CapCut alternative",
+          "stars": "66404",
+          "lang": "TypeScript",
+          "url": "https://github.com/OpenCut-app/OpenCut"
+        },
+        {
+          "name": "HKUDS/Vibe-Trading",
+          "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
+          "stars": "21763",
+          "lang": "Python",
+          "url": "https://github.com/HKUDS/Vibe-Trading"
+        },
+        {
+          "name": "moeru-ai/airi",
+          "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+          "stars": "41886",
+          "lang": "TypeScript",
+          "url": "https://github.com/moeru-ai/airi"
+        },
+        {
+          "name": "Shubhamsaboo/awesome-llm-apps",
+          "desc": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+          "stars": "119630",
+          "lang": "Python",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+        },
+        {
+          "name": "Nutlope/hallmark",
+          "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "stars": "5159",
+          "lang": "CSS",
+          "url": "https://github.com/Nutlope/hallmark"
+        },
+        {
+          "name": "Raphire/Win11Debloat",
+          "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+          "stars": "50876",
+          "lang": "PowerShell",
+          "url": "https://github.com/Raphire/Win11Debloat"
+        },
+        {
+          "name": "Graphify-Labs/graphify",
+          "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+          "stars": "84739",
+          "lang": "Python",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        },
+        {
+          "name": "hasaneyldrm/exercises-dataset",
+          "desc": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+          "stars": "12627",
+          "lang": "HTML",
+          "url": "https://github.com/hasaneyldrm/exercises-dataset"
+        },
+        {
+          "name": "github/spec-kit",
+          "desc": "💫 Toolkit to help you get started with Spec-Driven Development",
+          "stars": "120600",
+          "lang": "Python",
+          "url": "https://github.com/github/spec-kit"
+        },
+        {
+          "name": "coreyhaines31/marketingskills",
+          "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+          "stars": "38579",
+          "lang": "JavaScript",
+          "url": "https://github.com/coreyhaines31/marketingskills"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "weekday": "星期一",
+      "file": "2026-07-13.html",
+      "news": [
+        {
+          "title": "OpenAI 全量发布 GPT-5.6 系列模型，关停 Atlas 浏览器",
+          "summary": "OpenAI 正式向全球用户开放 GPT-5.6 系列模型，包含旗舰版 Sol、均衡版 Terra 与轻量版 Luna 三档产品。同日宣布将于8月9日关停 Atlas 浏览器，将智能浏览能力整合进 ChatGPT。",
+          "tags": [
+            "大模型",
+            "OpenAI",
+            "GPT-5.6"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+        },
+        {
+          "title": "SpaceXAI 联手 Cursor 发布 Grok 4.5，号称 Opus 级对标",
+          "summary": "SpaceXAI 发布新一代大模型 Grok 4.5，与 Cursor 联合训练，运行速度达 80 TPS，Token 利用效率为竞品两倍，全面超越 Claude Opus 4.8。",
+          "tags": [
+            "大模型",
+            "SpaceXAI",
+            "AI编程"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+        },
+        {
+          "title": "OpenAI 首款自研芯片 Jalapeño 问世，联合 Broadcom 打破 NVIDIA 垄断",
+          "summary": "OpenAI 联合 Broadcom 推出首款自研推理加速芯片 Jalapeño，从设计到流片仅用9个月，分析师预计 NVIDIA 市场份额将从86%降至75%。",
+          "tags": [
+            "AI芯片",
+            "OpenAI",
+            "Broadcom"
+          ],
+          "url": "https://juejin.cn/post/7659388305413652490"
+        },
+        {
+          "title": "微软 AI 原生操作系统 Project Aion 曝光，以 Copilot 为唯一交互入口",
+          "summary": "微软内部 Project Aion 操作系统演示曝光，彻底否定40年桌面范式，没有桌面、图标和开始菜单，以 Copilot 为唯一交互入口。",
+          "tags": [
+            "AI应用",
+            "微软",
+            "操作系统"
+          ],
+          "url": "https://blog.51cto.com/u_17515055/14737406"
+        },
+        {
+          "title": "人形机器人量产提速，2026年国内整机产量有望突破10万台",
+          "summary": "工信部在 WAIC 2026 上表示预计今年人形机器人产量突破10万台，宇树科技73天闪电过审科创板 IPO，特斯拉年底启动量产。",
+          "tags": [
+            "机器人",
+            "人形机器人",
+            "宇树科技"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+        },
+        {
+          "title": "阿里达摩院 AI 智能体28个GPU小时发现4种全新超导体",
+          "summary": "达摩院发布超导材料发现 AI 智能体 ElementsClaw，从240万种晶体结构中预测出6.8万种潜在超导材料，实验验证4种全新超导体，最高临界温度6.5K。",
+          "tags": [
+            "AI for Science",
+            "达摩院",
+            "材料科学"
+          ],
+          "url": "https://blog.51cto.com/u_17515055/14737406"
+        },
+        {
+          "title": "苹果与 PrismML 接洽，270亿参数大模型有望塞进 iPhone",
+          "summary": "PrismML 将270亿参数大模型（基于 Qwen 3.6）通过1-bit压缩技术压缩至 iPhone 17 Pro 可本地运行，模型体积降至全精度1/14。",
+          "tags": [
+            "端侧AI",
+            "苹果",
+            "模型压缩"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+        },
+        {
+          "title": "Meta 推出文生图模型 Muse Image 并接入 Instagram",
+          "summary": "Meta 推出 AI 图像生成模型 Muse Image，已在 Meta AI 中提供，将逐步接入 Instagram、WhatsApp，同时预告 Muse Video 即将上线。",
+          "tags": [
+            "生成式AI",
+            "Meta",
+            "社交平台"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162692758"
+        },
+        {
+          "title": "Ollama 完成6500万美元B轮融资，月活开发者逼近900万",
+          "summary": "开源 AI 模型本地运行工具 Ollama 完成6500万美元 B 轮融资，累计融资8800万美元，月活开发者近890万，团队仅14人。",
+          "tags": [
+            "开源",
+            "AI基础设施",
+            "融资"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162759916"
+        },
+        {
+          "title": "联合国首届 AI 治理全球对话在日内瓦举行",
+          "summary": "联合国举办首届 AI 治理全球对话，秘书长古特雷斯呼吁 AI 儿童安全承诺、高风险决策保留人工把关、2030年数据中心全用可再生能源。",
+          "tags": [
+            "AI治理",
+            "联合国",
+            "AI安全"
+          ],
+          "url": "https://juejin.cn/post/7659388305413652490"
+        }
+      ],
+      "github": [
+        {
+          "name": "calesthio/OpenMontage",
+          "desc": "将 Claude Code、Cursor 等 AI 编码助手变为视频制作系统，包含12个管线和52个工具",
+          "stars": "~31,000",
+          "lang": "Python",
+          "url": "https://github.com/calesthio/OpenMontage"
+        },
+        {
+          "name": "usestrix/strix",
+          "desc": "自主 AI Agent 安全测试团队，模拟攻击者进行渗透测试，覆盖 OWASP Top 10",
+          "stars": "~29,900",
+          "lang": "Python",
+          "url": "https://github.com/usestrix/strix"
+        },
+        {
+          "name": "google-labs-code/design.md",
+          "desc": "Google Labs 设计系统规范格式，机器可读设计令牌+人类可读文档，CLI 可导出至 Tailwind",
+          "stars": "~24,100",
+          "lang": "TypeScript",
+          "url": "https://github.com/google-labs-code/design.md"
+        },
+        {
+          "name": "alibaba/page-agent",
+          "desc": "阿里巴巴页面内 GUI Agent，一行 script 标签集成，自然语言控制实时 Web 界面",
+          "stars": "~20,900",
+          "lang": "TypeScript",
+          "url": "https://github.com/alibaba/page-agent"
+        },
+        {
+          "name": "DietrichGebert/ponytail",
+          "desc": "哲学级编码优化库，让 AI Agent 遵循 YAGNI 原则，一周增星量居首",
+          "stars": "~74,800",
+          "lang": "JavaScript",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "desc": "百度一次性长视野解析 OCR 引擎，可处理整本书级别超长文档",
+          "stars": "~13,400",
+          "lang": "Python",
+          "url": "https://github.com/baidu/Unlimited-OCR"
+        },
+        {
+          "name": "XiaomiMiMo/MiMo-Code",
+          "desc": "小米模型-Agent协同进化框架，AI模型与Agent双向动态优化",
+          "stars": "~11,500",
+          "lang": "TypeScript",
+          "url": "https://github.com/XiaomiMiMo/MiMo-Code"
+        },
+        {
+          "name": "iOfficeAI/OfficeCLI",
+          "desc": "专为 AI Agent 设计的 Office 命令行套件，支持 Word/Excel/PPT 操作",
+          "stars": "~14,400",
+          "lang": "C#",
+          "url": "https://github.com/iOfficeAI/OfficeCLI"
+        },
+        {
+          "name": "huggingface/speech-to-speech",
+          "desc": "Hugging Face 本地语音代理框架，端到端语音交互，完全本地部署",
+          "stars": "~6,000",
+          "lang": "Python",
+          "url": "https://github.com/huggingface/speech-to-speech"
+        },
+        {
+          "name": "Light-Heart-Labs/DreamServer",
+          "desc": "一键安装自托管 AI 服务器，集成推理/聊天/语音/RAG/图像生成，支持GPU自动检测",
+          "stars": "~2,200",
+          "lang": "Python/Shell",
+          "url": "https://github.com/Light-Heart-Labs/DreamServer"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "weekday": "周日",
+      "file": "reports/2026-07-12.html",
+      "news": [
+        {
+          "title": "OpenAI GPT-5.6 Sol Ultra 据称在一小时内破解50年数学猜想",
+          "summary": "OpenAI宣布GPT-5.6 Sol Ultra在不足一小时内调用64个并行子智能体，完成图论领域悬而未决约50年的「循环双覆盖猜想」完整证明。",
+          "tags": [
+            "AI",
+            "OpenAI",
+            "数学"
+          ],
+          "url": "http://m.toutiao.com/group/7661428594677203490/"
+        },
+        {
+          "title": "苹果正式起诉OpenAI，指控系统性窃取商业机密",
+          "summary": "7月11日苹果在加州北区联邦法院起诉OpenAI，指控其系统性窃取商业机密，目前OpenAI内有超过400名前苹果员工。",
+          "tags": [
+            "AI",
+            "OpenAI",
+            "苹果"
+          ],
+          "url": "http://m.toutiao.com/group/7661412788732019206/"
+        },
+        {
+          "title": "GPT-5.6上线，马斯克与奥尔特曼开启新一轮隔空争论",
+          "summary": "在GPT-5.6模型上线之际，xAI CEO马斯克与OpenAI CEO奥尔特曼开始了新一轮公开争论。",
+          "tags": [
+            "AI",
+            "OpenAI",
+            "xAI"
+          ],
+          "url": "https://tech.ifeng.com/c/8uh0uCjiAVu"
+        },
+        {
+          "title": "OpenAI正式发布GPT-5.6系列，此前因美国政府国家安全担忧而延迟",
+          "summary": "OpenAI在延迟后正式发布GPT-5.6系列模型，美国政府曾出于国家安全担忧要求推迟公开发布。",
+          "tags": [
+            "AI",
+            "OpenAI",
+            "政策"
+          ],
+          "url": "https://www.startupresearcher.com/news/openai-launches-gpt-5-6-model-family-after-us-government-delay"
+        },
+        {
+          "title": "DeepSeek V4将于7月15日全量上线，公布峰谷定价",
+          "summary": "DeepSeek V4定档7月15日全量上线，同时公布峰谷定价策略，与GPT-5.6、Gemini 3.5 Pro形成三巨头同周交锋格局。",
+          "tags": [
+            "AI",
+            "DeepSeek",
+            "大模型"
+          ],
+          "url": "http://m.toutiao.com/group/7660361753963856394/"
+        },
+        {
+          "title": "谷歌Gemini 3.5 Pro将于7月17日发布，支持200万token上下文",
+          "summary": "谷歌Gemini 3.5 Pro锁定7月17日发布，据说支持200万token上下文和实时多模态能力。",
+          "tags": [
+            "AI",
+            "Google",
+            "Gemini"
+          ],
+          "url": "http://m.toutiao.com/group/7660361753963856394/"
+        },
+        {
+          "title": "特斯拉确认Optimus人形机器人2026年底规模化量产",
+          "summary": "特斯拉确认Optimus人形机器人将在2026年底实现规模化量产，远期规划百万台年产能，具身智能成为确定性最强赛道之一。",
+          "tags": [
+            "AI",
+            "机器人",
+            "特斯拉"
+          ],
+          "url": "http://m.toutiao.com/group/7661298747960066600/"
+        },
+        {
+          "title": "DeepSeek Deep Code开源上线，国产AI编程工具加速发展",
+          "summary": "DeepSeek官方API文档正式收录Deep Code，一款面向DeepSeek-V4系列模型适配的开源终端AI编程助手，支持深度思考、MCP集成。",
+          "tags": [
+            "AI",
+            "DeepSeek",
+            "编程"
+          ],
+          "url": "http://m.toutiao.com/group/7661252757109621275/"
+        },
+        {
+          "title": "DeepSeek推进自研AI推理芯片项目已持续12个月",
+          "summary": "多家产业媒体披露，DeepSeek已持续12个月推进自研AI推理芯片项目，造芯核心逻辑来自持续走高的推理运营账单。",
+          "tags": [
+            "AI",
+            "DeepSeek",
+            "芯片"
+          ],
+          "url": "http://m.toutiao.com/group/7661248917485191732/"
+        },
+        {
+          "title": "SpaceX AI推出Grok 4.5，号称Opus级对标",
+          "summary": "SpaceX AI联手Cursor发布Grok 4.5，号称Opus级性能对标，加入下半年大模型密集发布潮。",
+          "tags": [
+            "AI",
+            "xAI",
+            "Grok"
+          ],
+          "url": "https://blog.csdn.net/ld326/article/details/162740979"
+        }
+      ],
+      "github": [
+        {
+          "name": "catchorg/Catch2",
+          "desc": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
+          "stars": "",
+          "lang": "C++",
+          "url": "https://github.com/catchorg/Catch2"
+        },
+        {
+          "name": "abseil/abseil-cpp",
+          "desc": "Abseil Common Libraries (C++)",
+          "stars": "",
+          "lang": "C++",
+          "url": "https://github.com/abseil/abseil-cpp"
+        },
+        {
+          "name": "davila7/claude-code-templates",
+          "desc": "CLI tool for configuring and monitoring Claude Code",
+          "stars": "",
+          "lang": "Python",
+          "url": "https://github.com/davila7/claude-code-templates"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "stars": "",
+          "lang": "TypeScript",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        },
+        {
+          "name": "hashicorp/terraform",
+          "desc": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+          "stars": "",
+          "lang": "Go",
+          "url": "https://github.com/hashicorp/terraform"
+        },
+        {
+          "name": "zeux/meshoptimizer",
+          "desc": "Mesh optimization library that makes meshes smaller and faster to render",
+          "stars": "",
+          "lang": "C++",
+          "url": "https://github.com/zeux/meshoptimizer"
+        },
+        {
+          "name": "openai/plugins",
+          "desc": "OpenAI Plugins",
+          "stars": "",
+          "lang": "JavaScript",
+          "url": "https://github.com/openai/plugins"
+        },
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "desc": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+          "stars": "",
+          "lang": "TypeScript",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+        },
+        {
+          "name": "chriskohlhoff/asio",
+          "desc": "Asio C++ Library",
+          "stars": "",
+          "lang": "C++",
+          "url": "https://github.com/chriskohlhoff/asio"
+        },
+        {
+          "name": "oven-sh/bun",
+          "desc": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+          "stars": "",
+          "lang": "Rust",
+          "url": "https://github.com/oven-sh/bun"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "weekday": "星期六",
+      "file": "2026-07-11.html",
+      "news": [
+        {
+          "title": "Meta发布Muse Spark 1.1多模态AI编程模型，扎克伯格时隔三年首次在X发推力推",
+          "summary": "Meta正式发布新一代多模态AI模型Muse Spark 1.1，专为Agent编程任务设计。Meta称这是目前最强大的Agent任务和编程模型。CEO扎克伯格结束三年X平台沉默，专门发帖力推这一产品，标志着Meta在AI编码市场向OpenAI和Anthropic发起直接挑战。",
+          "tags": [
+            "Meta",
+            "Muse Spark",
+            "AI编程",
+            "多模态"
+          ],
+          "url": "https://www.newsbricks.com/technology/meta-introduces-muse-spark11-challenge-other-ai/394392"
+        },
+        {
+          "title": "Anthropic最强模型Claude Fable 5全球访问恢复，美国政府解除出口限制",
+          "summary": "Anthropic宣布恢复其最强AI模型Claude Fable 5和Mythos 5的全球访问。此前美国商务部以安全为由对这些模型实施出口管制，导致非美国用户无法使用。6月30日限制解除后，Anthropic于7月1日恢复全球服务。",
+          "tags": [
+            "Anthropic",
+            "Claude Fable 5",
+            "出口管制",
+            "大模型"
+          ],
+          "url": "https://imfounder.com/science-tech/ai/12-ai-updates-2026-july/"
+        },
+        {
+          "title": "美国伊利诺伊州签署重大AI安全法，要求大模型开发商定期第三方审计",
+          "summary": "伊利诺伊州州长签署美国最全面的AI安全立法之一。该法律要求大型AI开发商识别、披露和降低风险，保护举报人，并在全美首次强制要求定期进行第三方审计。这标志着美国州级AI监管进入新阶段。",
+          "tags": [
+            "AI监管",
+            "美国",
+            "AI安全法",
+            "第三方审计"
+          ],
+          "url": "https://www.route-fifty.com/artificial-intelligence/"
+        },
+        {
+          "title": "报告显示超40%用户正在限制AI使用，AI热度开始降温",
+          "summary": "最新报告指出超过40%的人正在限制AI工具的使用频率，表明AI的普及热度可能开始降温。研究者认为这与AI输出质量不稳定、隐私担忧以及对AI依赖的反思有关。",
+          "tags": [
+            "AI趋势",
+            "用户行为",
+            "市场降温"
+          ],
+          "url": "https://techxplore.com/machine-learning-ai-news/"
+        },
+        {
+          "title": "美团发布LongCat-2.0万亿参数大模型，全程国产算力训练并开源",
+          "summary": "美团发布新一代万亿参数大模型LongCat-2.0，总参数规模达1.6万亿。这是业界首个完全依靠国产算力完成训练和推理全流程的万亿参数大模型，标志着国产AI基础设施的重大突破。",
+          "tags": [
+            "美团",
+            "LongCat",
+            "国产算力",
+            "开源",
+            "大模型"
+          ],
+          "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+        },
+        {
+          "title": "谷歌DeepMind Gemini Omni Flash登顶AI视频评测榜首，反超字节Seedance",
+          "summary": "权威AI视频评测平台Video Arena更新盲测榜单，谷歌DeepMind旗下Gemini Omni Flash以1404 Elo高分登顶榜首，反超长期霸榜的字节跳动Seedance系列模型，分差达101 Elo。这是AI视频生成赛道竞争格局的重要更迭。",
+          "tags": [
+            "Google",
+            "DeepMind",
+            "Gemini",
+            "AI视频",
+            "字节跳动"
+          ],
+          "url": "https://blog.51cto.com/u_17515055/14737406"
+        },
+        {
+          "title": "Amazon CTO提出'文艺复兴开发者'概念，谈开发者如何应对AI编码浪潮",
+          "summary": "Amazon首席技术官Werner Vogels在访谈中提出软件工程正经历多年来最剧烈的变革。他认为AI编码工具如Claude Code正在催生'文艺复兴开发者'——既能用自然语言生成软件，又保留工程思维的复合型工程师。",
+          "tags": [
+            "Amazon",
+            "AI编码",
+            "开发者",
+            "Claude Code"
+          ],
+          "url": "https://v3finmedia.online/2026/07/11/amazons-cto-on-how-developers-can-ride-out-the-ai-powered-coding-wave-fortune/"
+        },
+        {
+          "title": "Meta Compute云基础设施业务上线，对外出售AI算力",
+          "summary": "Meta宣布推出Meta Compute云基础设施业务，正式对外出售AI算力和模型使用权。此举被视为Meta从纯粹社交平台向AI基础设施提供商转型的重要信号，消息一出引发半导体股集体波动。",
+          "tags": [
+            "Meta",
+            "云计算",
+            "AI算力",
+            "基础设施"
+          ],
+          "url": "https://juejin.cn/post/7659388305413652490"
+        },
+        {
+          "title": "澳大利亚政府加强对AI风险的监管，科技部长呼吁更多雄心",
+          "summary": "澳大利亚联邦科技助理部长Andrew Charlton在悉尼大学AI安全论坛上发出严厉警告，称澳大利亚需要更有雄心的AI监管议程。这标志着澳大利亚政府已意识到AI带来的系统性风险。",
+          "tags": [
+            "澳大利亚",
+            "AI监管",
+            "AI安全"
+          ],
+          "url": "https://techxplore.com/machine-learning-ai-news/"
+        },
+        {
+          "title": "可灵AI获近30亿美元融资落地，AI视频赛道持续升温",
+          "summary": "可灵AI宣布完成近30亿美元融资，估值大幅提升。作为国内领先的AI视频生成平台，可灵AI的巨额融资反映出资本市场对AI视频生成赛道的高度看好，竞争日趋激烈。",
+          "tags": [
+            "可灵AI",
+            "融资",
+            "AI视频",
+            "资本市场"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162623040"
+        }
+      ],
+      "github": [
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "desc": "为Claude打造的MCP服务器，赋予终端控制、文件系统搜索和差异文件编辑能力",
+          "stars": 7290,
+          "lang": "TypeScript",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+        },
+        {
+          "name": "oven-sh/bun",
+          "desc": "极速JavaScript运行时、打包器、测试运行器和包管理器，All-in-One",
+          "stars": 94225,
+          "lang": "Rust",
+          "url": "https://github.com/oven-sh/bun"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "desc": "面向AI编程Agent的生产级工程技能库，由Google Chrome团队工程主管创建",
+          "stars": 76823,
+          "lang": "JavaScript",
+          "url": "https://github.com/addyosmani/agent-skills"
+        },
+        {
+          "name": "mattpocock/skills",
+          "desc": "真实工程师的技能集合，直接从.claude目录提取的实用技能文件",
+          "stars": 164622,
+          "lang": "Shell",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "name": "obra/superpowers",
+          "desc": "一个Agentic技能框架和软件开发方法论，已获25万+Star的爆款项目",
+          "stars": 251779,
+          "lang": "Shell",
+          "url": "https://github.com/obra/superpowers"
+        },
+        {
+          "name": "TencentCloud/TencentDB-Agent-Memory",
+          "desc": "为AI Agent提供完全本地化的长期记忆方案，通过4层渐进式管道实现，零外部API依赖",
+          "stars": 8231,
+          "lang": "TypeScript",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+        },
+        {
+          "name": "davila7/claude-code-templates",
+          "desc": "用于配置和监控Claude Code的CLI工具，提供丰富的代码模板和配置方案",
+          "stars": 28766,
+          "lang": "Python",
+          "url": "https://github.com/davila7/claude-code-templates"
+        },
+        {
+          "name": "abseil/abseil-cpp",
+          "desc": "Google开发的C++通用库，提供增强的C++标准库替代品，被广泛用于Google内部项目",
+          "stars": 17520,
+          "lang": "C++",
+          "url": "https://github.com/abseil/abseil-cpp"
+        },
+        {
+          "name": "microsoft/TypeScript",
+          "desc": "JavaScript的超集，编译为干净的JavaScript输出，为Web开发提供类型安全",
+          "stars": 109775,
+          "lang": "TypeScript",
+          "url": "https://github.com/microsoft/TypeScript"
+        },
+        {
+          "name": "catchorg/Catch2",
+          "desc": "现代C++原生测试框架，支持单元测试、TDD和BDD，使用C++14/17及以上标准",
+          "stars": 20613,
+          "lang": "C++",
+          "url": "https://github.com/catchorg/Catch2"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "weekday": "星期五",
+      "file": "2026-07-10.html",
+      "news": [
+        {
+          "title": "OpenAI发布GPT-5.6系列三款模型，美国政府正式解除访问限制",
+          "summary": "OpenAI于7月8日发布GPT-5.6 Sol、Terra和Luna三款模型。Sol为旗舰型号，支持Max和Ultra两种高阶模式，上下文窗口扩展至150万Tokens。",
+          "tags": [
+            "OpenAI",
+            "GPT-5.6",
+            "大模型"
+          ],
+          "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
+        },
+        {
+          "title": "SpaceX AI发布旗舰模型Grok 4.5，马斯克宣布向公众开放",
+          "summary": "马斯克宣布Grok 4.5为Opus级别模型，速度更快、Token效率更高、成本更低，专为编程、智能体任务和知识工作打造。",
+          "tags": [
+            "SpaceX",
+            "Grok",
+            "马斯克"
+          ],
+          "url": "https://news.ifeng.com/c/8udagQrYVlr"
+        },
+        {
+          "title": "人社部等四部门印发《人工智能+人社应用发展实施意见》",
+          "summary": "提出5年建设目标，2026年建设应用基础设施，打造20个行业大模型应用场景；2030年形成人社领域AI普遍应用的创新局面。",
+          "tags": [
+            "政策",
+            "人社",
+            "AI+"
+          ],
+          "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
+        },
+        {
+          "title": "《人工智能拟人化互动服务管理暂行办法》7月15日正式施行",
+          "summary": "办法聚焦模拟自然人人格特征的持续性情感互动服务，对字节豆包、阿里通义千问等已上线的拟人化AI产品实行包容审慎和分类分级监管。",
+          "tags": [
+            "政策",
+            "监管",
+            "情感AI"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162730911"
+        },
+        {
+          "title": "GPT-6发布时间或大幅提前，最快将于本月内发布",
+          "summary": "爆料称GPT-6发布时间提前，若属实则GPT-5.x系列将以史上最快迭代周期完成过渡，开发者已摩拳擦掌等待。",
+          "tags": [
+            "OpenAI",
+            "GPT-6",
+            "爆料"
+          ],
+          "url": "https://m.thepaper.cn/newsDetail_forward_33548698"
+        },
+        {
+          "title": "Meta计划9月开始生产自研AI芯片",
+          "summary": "Meta加速AI硬件自主化布局，计划9月启动自研AI芯片生产，减少对英伟达GPU的依赖。",
+          "tags": [
+            "Meta",
+            "AI芯片",
+            "硬件"
+          ],
+          "url": "https://news.ifeng.com/c/8udagQrYVlr"
+        },
+        {
+          "title": "OpenAI发布新一代语音模型GPT-Live-1与GPT-Live-1 mini",
+          "summary": "新模型对ChatGPT语音体验进行全双工重构，实现更自然的实时对话体验，降低语音交互延迟。",
+          "tags": [
+            "OpenAI",
+            "语音模型",
+            "GPT-Live"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162730911"
+        },
+        {
+          "title": "2026 WAIC世界人工智能大会将于7月17-20日在上海举办",
+          "summary": "大会主题智能伙伴共创未来，华为Atlas 950 SuperPoD实机、阶跃星辰Agent操作系统、全球首款AI Agent智能手机将全球首发。",
+          "tags": [
+            "WAIC",
+            "上海",
+            "展会"
+          ],
+          "url": "https://blog.csdn.net/haohaizi_liu/article/details/162692758"
+        },
+        {
+          "title": "AI概念股集体走高，智谱AI一度涨超18%",
+          "summary": "受多重利好消息刺激，A股及港股AI概念股大涨，智谱AI、多模态AI、AI智能体等方向领涨，阿里巴巴美股盘前涨超10%。",
+          "tags": [
+            "股市",
+            "智谱AI",
+            "投资"
+          ],
+          "url": "https://finance.ifeng.com/c/8ubGf5UjUwC"
+        },
+        {
+          "title": "人工智能向善全球峰会7月7-10日在日内瓦举办",
+          "summary": "国际电联举办第七届AI for Good全球峰会，来自政府、产业界、学术界的领袖探讨AI在经济和社会中的普及与治理。",
+          "tags": [
+            "联合国",
+            "AI治理",
+            "峰会"
+          ],
+          "url": "https://www.itu.int/zh/mediacentre/Pages/PR-2026-03-25-AI-for-Good-Global-Summit.aspx"
+        }
+      ],
+      "github": [
+        {
+          "name": "OpenClaw",
+          "desc": "自托管个人AI Agent平台，4个月登顶GitHub历史Star榜第一，超越Linux和React",
+          "stars": "~362,000",
+          "lang": "TypeScript",
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "name": "agency-agents",
+          "desc": "本周新晋GitHub Trending榜首，多智能体协作框架， displaces ponytail at #1",
+          "stars": "72,000+",
+          "lang": "Python",
+          "url": "https://github.com/agency-agents/agency-agents"
+        },
+        {
+          "name": "ponytail",
+          "desc": "帮助开发者减少重复工作的现代化工具集，上周增长迅速",
+          "stars": "69,221",
+          "lang": "JavaScript",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "name": "autoremesher",
+          "desc": "自动四边形重网格化工具，3D建模与计算机图形学领域的实用工具",
+          "stars": "3,800",
+          "lang": "C++",
+          "url": "https://github.com/huxingyi/autoremesher"
+        },
+        {
+          "name": "argo-workflows",
+          "desc": "Kubernetes原生工作流引擎，用于在K8s上编排并行作业",
+          "stars": "15,200",
+          "lang": "Go",
+          "url": "https://github.com/argoproj/argo-workflows"
+        },
+        {
+          "name": "caveman",
+          "desc": "新晋GitHub Trending项目，轻量级容器运行时与构建工具",
+          "stars": "5,400",
+          "lang": "Rust",
+          "url": "https://github.com/caveman-org/caveman"
+        },
+        {
+          "name": "graphify",
+          "desc": "将任意数据源自动转换为知识图谱的框架，支持LLM增强的实体关系抽取",
+          "stars": "4,100",
+          "lang": "Python",
+          "url": "https://github.com/graphify-ai/graphify"
+        },
+        {
+          "name": "orca",
+          "desc": "本地优先的AI文档分析引擎，支持数百页PDF的一次性语义检索与问答",
+          "stars": "3,200",
+          "lang": "TypeScript",
+          "url": "https://github.com/orca-ai/orca"
+        },
+        {
+          "name": "web-check",
+          "desc": "全面的网站检查工具，可显示DNS记录、服务器位置、SSL证书、SEO评分等详细信息",
+          "stars": "15,500",
+          "lang": "TypeScript",
+          "url": "https://github.com/Lissy93/web-check"
+        },
+        {
+          "name": "zvec",
+          "desc": "轻量级、极速进程内向量数据库，专为RAG应用和语义搜索优化",
+          "stars": "2,800",
+          "lang": "C++",
+          "url": "https://github.com/zvec/zvec"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "weekday": "星期四",
+      "file": "2026-07-09.html",
+      "news": [
+        {
+          "title": "OpenAI获美国政府批准，GPT-5.6将于7月9日全面公开发布",
+          "summary": "美国商务部正式批准OpenAI全面部署GPT-5.6系列模型，支持150万Token上下文窗口，引入Max深度推理和Ultra多Agent协同模式。",
+          "tags": [
+            "LLM",
+            "大模型发布",
+            "监管政策"
+          ],
+          "url": "https://www.ai.cm/article/us-commerce-department-approves-broad-launch-of-openai-gpt-56/"
+        },
+        {
+          "title": "SpaceX AI发布Grok 4.5，联合Cursor进军代码与Agent市场",
+          "summary": "SpaceX AI向公众开放Grok 4.5，基于1.5万亿参数V9基础模型，与Cursor联合开发，主打代码编写和智能代理场景。",
+          "tags": [
+            "LLM",
+            "AI编程",
+            "智能体"
+          ],
+          "url": "https://runtimewire.com/article/spacexai-grok-45-cursor-michael-truell"
+        },
+        {
+          "title": "Meta发布首款自研AI图像生成模型Muse，引发隐私争议",
+          "summary": "Meta推出Muse Image图像生成模型，集成于Meta AI、Instagram和WhatsApp，但因默认开放用户照片用于AI生成引发隐私批评。",
+          "tags": [
+            "图像生成",
+            "多模态",
+            "隐私安全"
+          ],
+          "url": "https://www.infobae.com/tecno/2026/07/08/usuarios-reclaman-a-meta-por-el-uso-de-sus-fotos-en-el-nuevo-generador-de-imagenes-con-ia/"
+        },
+        {
+          "title": "微软斥资25亿美元成立Microsoft Frontier Company，押注企业AI落地",
+          "summary": "微软宣布成立Microsoft Frontier Company，投入25亿美元配备6000名工程师，以驻场方式帮助企业构建和运行AI系统。",
+          "tags": [
+            "企业AI",
+            "云服务",
+            "战略投资"
+          ],
+          "url": "https://aihola.com/article/microsoft-frontier-company-ai"
+        },
+        {
+          "title": "OpenAI首席未来学家Joshua Achiam宣布离职",
+          "summary": "OpenAI首席未来学家Joshua Achiam宣布将于7月24日离职，结束近9年的职业生涯，主要负责研判AI风险与收益。",
+          "tags": [
+            "OpenAI",
+            "人事变动",
+            "AI安全"
+          ],
+          "url": "https://m.thepaper.cn/newsDetail_forward_33539702"
+        },
+        {
+          "title": "豆包、通义千问同步宣布7月15日下线智能体功能",
+          "summary": "字节跳动豆包和阿里通义千问同步宣布因合规要求，智能体功能将于7月15日正式下线，涉及超3.45亿豆包月活用户。",
+          "tags": [
+            "智能体",
+            "合规监管",
+            "国内AI"
+          ],
+          "url": "https://www.cnii.com.cn/gxxww/dzxx/202607/t20260706_747304.html"
+        },
+        {
+          "title": "SpaceX向FCC申请部署10万颗Gen3卫星，打造AI时代空基通信底座",
+          "summary": "SpaceX向FCC申请部署10万颗第三代星链卫星，部署在323-327公里和473公里两组轨道壳层，建立全球空基通信基础设施。",
+          "tags": [
+            "卫星通信",
+            "AI基础设施",
+            "SpaceX"
+          ],
+          "url": "https://finance.sina.com.cn/tech/roll/2026-07-08/doc-inihattw8261295.shtml"
+        },
+        {
+          "title": "中国四部门联合印发《关于加快推进'人工智能+人社'应用发展的实施意见》",
+          "summary": "人社部等四部门联合发布政策，提出到2030年形成人社领域AI普遍应用格局，打造20个行业大模型应用场景及高质量数据集。",
+          "tags": [
+            "AI政策",
+            "具身智能",
+            "国内AI"
+          ],
+          "url": "http://m.toutiao.com/group/7660152337683579446/"
+        },
+        {
+          "title": "Anthropic年化收入飙升至470亿美元，披露150亿美元澳大利亚数据中心计划",
+          "summary": "Anthropic年收入从10亿美元飙升至470亿美元，增长45倍，同时披露150亿美元澳大利亚数据中心计划，标志从卖Token转向重资产算力押注。",
+          "tags": [
+            "AI基础设施",
+            "商业动态",
+            "Anthropic"
+          ],
+          "url": "http://m.toutiao.com/group/7659967211583898164/"
+        },
+        {
+          "title": "2026世界人工智能大会将于7月17日在上海开幕，主题为'智能伙伴 共创未来'",
+          "summary": "第九届WAIC将于7月17-20日在上海举办，展览规模、首发新品和国际参与度均创历届新高，核心逻辑升级为AI伙伴时代。",
+          "tags": [
+            "行业大会",
+            "人机协同",
+            "国内AI"
+          ],
+          "url": "http://m.toutiao.com/group/7660146938553123354/"
+        }
+      ],
+      "github": [
+        {
+          "name": "ruvnet/RuView",
+          "desc": "利用普通WiFi信号实现实时空间智能、生命体征监测和presence detection，无需摄像头像素",
+          "stars": 78572,
+          "lang": "Rust",
+          "url": "https://github.com/ruvnet/RuView"
+        },
+        {
+          "name": "DietrichGebert/ponytail",
+          "desc": "AI编程Agent的元控制层，让Agent遵循YAGNI原则，避免过度工程化",
+          "stars": 73911,
+          "lang": "JavaScript",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "name": "opendatalab/MinerU",
+          "desc": "将PDF、Office文档、图像和网页转换为LLM可用的Markdown或JSON格式",
+          "stars": 72897,
+          "lang": "Python",
+          "url": "https://github.com/opendatalab/MinerU"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "desc": "面向AI编程Agent的生产级工程技能库，提供可复用的技能模块",
+          "stars": 72293,
+          "lang": "JavaScript",
+          "url": "https://github.com/addyosmani/agent-skills"
+        },
+        {
+          "name": "asgeirtj/system_prompts_leaks",
+          "desc": "提取并公开主流AI产品（Claude、GPT、Gemini、Grok等）的系统提示词",
+          "stars": 53147,
+          "lang": "JavaScript",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks"
+        },
+        {
+          "name": "calesthio/OpenMontage",
+          "desc": "将Claude Code/Cursor等AI编程助手转变为视频制作系统",
+          "stars": 31003,
+          "lang": "Python",
+          "url": "https://github.com/calesthio/OpenMontage"
+        },
+        {
+          "name": "usestrix/strix",
+          "desc": "自主AI Agent安全测试工具，覆盖OWASP Top 10进行全面渗透测试",
+          "stars": 29913,
+          "lang": "Python",
+          "url": "https://github.com/usestrix/strix"
+        },
+        {
+          "name": "Zackriya-Solutions/meetily",
+          "desc": "隐私优先的AI会议助手，Rust构建，支持4倍速实时语音转录和本地AI摘要",
+          "stars": 20888,
+          "lang": "Rust",
+          "url": "https://github.com/Zackriya-Solutions/meetily"
+        },
+        {
+          "name": "MadsLorentzen/ai-job-search",
+          "desc": "基于Claude Code的AI求职框架，可让Claude评估职位、定制简历并准备面试",
+          "stars": 11423,
+          "lang": "TypeScript",
+          "url": "https://github.com/MadsLorentzen/ai-job-search"
+        },
+        {
+          "name": "iOfficeAI/OfficeCLI",
+          "desc": "专为AI Agent设计的Office文档处理套件，免费开源单二进制",
+          "stars": 10223,
+          "lang": "C#",
+          "url": "https://github.com/iOfficeAI/OfficeCLI"
+        }
+      ]
+    }
+  ]
+}
