@@ -1,6 +1,192 @@
 {
   "reports": [
     {
+      "date": "2026-07-17",
+      "weekday": "周五",
+      "file": "2026-07-17.html",
+      "news": [
+        {
+          "title": "2026世界人工智能大会今日上海开幕，超300款产品全球首发",
+          "summary": "2026世界人工智能大会暨人工智能全球治理高级别会议于7月17日在上海三地四馆拉开帷幕。展览总面积首次突破10万平方米，1100余家企业携3000余项展品亮相，其中超300款产品全球首发。",
+          "tags": [
+            "行业大会",
+            "WAIC",
+            "上海"
+          ],
+          "url": "https://news.cctv.com/2026/07/16/ARTIGshmooXNh0UxkUgJZ0Ql260716.shtml"
+        },
+        {
+          "title": "苹果Apple Intelligence完成内地监管备案，牵手阿里千问提供AI能力",
+          "summary": "7月15日，国家网信办公示最新一批移动端生成式AI服务备案清单，苹果Apple Intelligence大模型榜上有名。国行版由阿里千问提供本土化支撑，正式扫清合规障碍。",
+          "tags": [
+            "苹果",
+            "Apple Intelligence",
+            "阿里千问",
+            "监管备案"
+          ],
+          "url": "https://www.guancha.cn/economy/2026_07_15_823819.shtml"
+        },
+        {
+          "title": "DeepSeek被曝正筹备A股IPO，估值超4800亿元人民币",
+          "summary": "据彭博社等报道，DeepSeek已启动IPO筹备工作，计划在A股上市，最快可能于今年底前提交申请，目标2027年完成挂牌交易，估值已超4800亿元人民币。",
+          "tags": [
+            "DeepSeek",
+            "IPO",
+            "融资"
+          ],
+          "url": "https://www.stcn.com/article/detail/4021841.html"
+        },
+        {
+          "title": "逐际动力完成近2亿美元Pre-IPO轮融资，估值达150亿元",
+          "summary": "深圳通用人形机器人公司逐际动力宣布完成近2亿美元Pre-IPO轮融资，投后估值达150亿元。2026年6月具身智能行业共发生63起融资事件，累计金额达350亿元，同比增长1069%。",
+          "tags": [
+            "具身智能",
+            "人形机器人",
+            "融资",
+            "逐际动力"
+          ],
+          "url": "https://www.stcn.com/article/detail/4019946.html"
+        },
+        {
+          "title": "2026上半年全球创业投资总额突破5100亿美元，AI投资占主导",
+          "summary": "据Crunchbase数据，2026年上半年全球创业投资总额突破5100亿美元创历史新高，其中AI相关投资占据主导地位。Q2全球初创企业获得超过2000亿美元融资。",
+          "tags": [
+            "创投",
+            "全球融资",
+            "AI投资"
+          ],
+          "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+        },
+        {
+          "title": "OpenAI GPT-5.6 Sol Ultra宣称证明50年数学猜想",
+          "summary": "OpenAI披露，旗舰模型GPT-5.6 Sol Ultra依靠64个协同智能体，在1小时内完成Cycle Double Cover Conjecture的完整推导证明，标志着多智能体AI复杂数理推理能力大幅跃升。",
+          "tags": [
+            "OpenAI",
+            "GPT-5.6",
+            "数学证明",
+            "多智能体"
+          ],
+          "url": "https://forum.trae.cn/t/topic/115254"
+        },
+        {
+          "title": "OpenAI首款自研芯片Jalapeño问世，联合Broadcom推出",
+          "summary": "OpenAI联合Broadcom推出首款自研推理加速芯片Jalapeño，从设计到流片仅用了9个月。该芯片专为AI推理工作负载优化，标志着OpenAI在芯片自研领域迈出关键一步。",
+          "tags": [
+            "OpenAI",
+            "自研芯片",
+            "Jalapeño",
+            "Broadcom"
+          ],
+          "url": "https://juejin.cn/post/7659388305413652490"
+        },
+        {
+          "title": "GPT-5.6、Grok 4.5、DeepSeek V4同期上线，一周内四款重磅模型扎堆发布",
+          "summary": "2026年7月第一周集中发布了OpenAI GPT-5.6、xAI Grok 4.5、DeepSeek V4正式版，Google Gemini 3.5 Pro也预计7月17日开放API，是2026年最大规模的集中发布期。",
+          "tags": [
+            "大模型",
+            "GPT-5.6",
+            "Grok 4.5",
+            "DeepSeek V4",
+            "Gemini 3.5"
+          ],
+          "url": "https://www.tokenfind.cn/blog/ai-model-release-avalanche-july-2026-developer-guide"
+        },
+        {
+          "title": "千觉机器人完成新一轮亿元融资，具身智能融资热潮持续",
+          "summary": "千觉机器人科技宣布完成新一轮亿元融资。7月初至今不足两周，具身智能赛道内大额融资密集落地，产业资本与地方政府资本双双加码，日均融资额约12亿元。",
+          "tags": [
+            "具身智能",
+            "融资",
+            "千觉机器人"
+          ],
+          "url": "https://finance.sina.com.cn/roll/2026-07-15/doc-inihwrrf8006694.shtml"
+        },
+        {
+          "title": "德国Neura Robotics计划12亿美元融资，估值达70亿美元",
+          "summary": "德国Neura Robotics在6月融资约12亿美元后，估值达到70亿美元，现正计划额外融资轮以扩大人形机器人生产规模。投资方包括NVIDIA、Amazon、Qualcomm和Bosch等。",
+          "tags": [
+            "Neura Robotics",
+            "人形机器人",
+            "德国",
+            "融资"
+          ],
+          "url": "https://www.akm.ru/eng/news/german-startup-neura-robotics-intends-to-raise-1-2-billion-in-a-funding-round/"
+        }
+      ],
+      "github": [
+        {
+          "name": "Meetily",
+          "desc": "AI会议助手，本周强势登顶GitHub Trending榜首，Agent应用持续火热。",
+          "stars": "23,583",
+          "lang": "Python",
+          "url": "https://github.com/Meetily/Meetily"
+        },
+        {
+          "name": "OpenMontage",
+          "desc": "将AI编码助手变成视频制作工作室，结合Agent智能与管道编排。",
+          "stars": "31,000",
+          "lang": "Python",
+          "url": "https://github.com/calesthio/OpenMontage"
+        },
+        {
+          "name": "xai-org/grok-build",
+          "desc": "SpaceX AI的编码代理工具，支持全屏、鼠标交互和可扩展TUI界面。",
+          "stars": "8,500",
+          "lang": "TypeScript",
+          "url": "https://github.com/xai-org/grok-build"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "desc": "微软开源的Python工具，用于将各种文件和Office文档转换为Markdown格式。",
+          "stars": "42,000",
+          "lang": "Python",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "name": "MoneyPrinterTurbo",
+          "desc": "一键使用AI LLM生成短视频，自动化视频内容生产流程。",
+          "stars": "28,000",
+          "lang": "Python",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "name": "Nutlope/hallmark",
+          "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex，提升AI编码助手的设计质量。",
+          "stars": "4,200",
+          "lang": "TypeScript",
+          "url": "https://github.com/Nutlope/hallmark"
+        },
+        {
+          "name": "run-llama/liteparse",
+          "desc": "快速、helpful的开源文档解析器，LlamaIndex生态新成员。",
+          "stars": "3,800",
+          "lang": "Python",
+          "url": "https://github.com/run-llama/liteparse"
+        },
+        {
+          "name": "par274/sharpemu",
+          "desc": "实验性PlayStation 5模拟器项目，游戏模拟器技术持续突破。",
+          "stars": "2,100",
+          "lang": "C++",
+          "url": "https://github.com/par274/sharpemu"
+        },
+        {
+          "name": "daily_stock_analysis",
+          "desc": "自动化每日股票分析系统，结合多模型和数据源生成决策仪表盘。",
+          "stars": "1,800",
+          "lang": "Python",
+          "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+        },
+        {
+          "name": "social-auto-upload",
+          "desc": "社交媒体平台自动上传视频工具，支持多平台分发。",
+          "stars": "5,600",
+          "lang": "Python",
+          "url": "https://github.com/dreammis/social-auto-upload"
+        }
+      ]
+    },
+    {
       "date": "2026-07-16",
       "weekday": "周四",
       "file": "daily-2026-07-16.html",
