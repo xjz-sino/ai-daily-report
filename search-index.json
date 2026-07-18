@@ -1,6 +1,185 @@
 {
   "reports": [
     {
+      "date": "2026-07-18",
+      "weekday": "星期六",
+      "file": "2026-07-18.html",
+      "news": [
+        {
+          "title": "2026世界人工智能大会（WAIC）在上海开幕，AI迈入物理智能交付元年",
+          "summary": "7月17日，2026世界人工智能大会在上海世博中心正式启幕，大批国产人形机器人与具身智能硬件集中亮相。本届大会打破往年重演示轻落地的印象，厂商瞄准消费娱乐、工业制造、商用服务等场景给出规模化落地方案，业界认为国产AI正全面进入物理智能规模化交付元年。",
+          "tags": [
+            "WAIC",
+            "具身智能",
+            "行业动态"
+          ],
+          "url": "https://news.ifeng.com/c/8uqGPuC1uck"
+        },
+        {
+          "title": "谷歌DeepMind发布Gemini 3.5 Pro，支持200万token上下文",
+          "summary": "7月17日，谷歌DeepMind发布迄今最强模型Gemini 3.5 Pro，带来200万token上下文窗口与Ultra订阅层（每月250美元）的Deep Think推理能力。该模型在编码和长程推理任务上显著提升，用户可在单次请求中传入整本书或代码库，发布时机恰逢上海世界人工智能大会。",
+          "tags": [
+            "Google",
+            "Gemini",
+            "模型发布"
+          ],
+          "url": "https://inews.zoombangla.com/google-gemini-3-5-pro-launch-july-2026/"
+        },
+        {
+          "title": "月之暗面发布Kimi K3，2.8万亿参数成全球最大开源模型",
+          "summary": "7月16日，月之暗面在世界人工智能大会前夕发布新一代大模型Kimi K3，参数规模达2.8万亿，成为目前全球参数最大的开源模型。该模型在前端代码竞技场以1679分超越Anthropic Claude等对手登顶，刷新了全球开源模型参数规模纪录。",
+          "tags": [
+            "月之暗面",
+            "开源模型",
+            "大模型"
+          ],
+          "url": "http://m.toutiao.com/group/7663647573756117544/"
+        },
+        {
+          "title": "微软CEO纳德拉警告：企业使用AI模型正在流失专有知识",
+          "summary": "7月16日，微软CEO萨提亚·纳德拉发文警告，使用OpenAI、Anthropic等模型的企业正在双重付费：既为token算力付费，又交出让模型变有用的专有知识。他指出模型会从用户提示词、工具调用及纠错中学习，企业每次纠错都在蒸馏自身知识，呼吁企业重视数据与知识资产保护。",
+          "tags": [
+            "微软",
+            "企业AI",
+            "行业动态"
+          ],
+          "url": "https://dc.fortune.com/2026/07/16/microsoft-ceo-satya-nadella-warns-enterprises-that-ai-labs-are-stealing-their-know-how/"
+        },
+        {
+          "title": "Sakana AI与英伟达合作推出编排式开源权重模型，挑战封闭系统",
+          "summary": "7月16日，Sakana AI与英伟达合作推出编排式开源权重（Open-Weight）模型，旨在挑战封闭式AI系统。此举被视为开源阵营对闭源前沿模型主导地位的重要回应，通过多模型编排提升开放系统的整体能力。",
+          "tags": [
+            "Sakana AI",
+            "英伟达",
+            "开源模型"
+          ],
+          "url": "https://the-decoder.de/kuenstliche-intelligenz-news/ki-praxis/"
+        },
+        {
+          "title": "白宫宣布Gold Eagle AI漏洞交换中心，强化网络安全治理",
+          "summary": "7月14日，白宫宣布建立Gold Eagle AI漏洞交换中心用于网络安全漏洞处置。该举措源于6月2日的行政命令，要求先进AI开发商向政府提前开放其能力以应对潜在漏洞，体现美国政府在AI安全治理上的持续推进。",
+          "tags": [
+            "美国政府",
+            "AI政策",
+            "网络安全"
+          ],
+          "url": "https://www.nextgov.com/topic/artificial-intelligence/"
+        },
+        {
+          "title": "OpenAI正式发布GPT-5.6系列大模型Sol、Terra、Luna",
+          "summary": "7月9日，OpenAI正式发布备受期待的GPT-5.6系列，包含旗舰款Sol、日常款Terra与高速款Luna三款。Sol主打编码、生物与网络安全等智能体能力，Terra以一半成本提供GPT-5.5级性能，Luna专注速度与低成本，此前曾有过短暂限访期。",
+          "tags": [
+            "OpenAI",
+            "GPT-5.6",
+            "模型发布"
+          ],
+          "url": "https://www.buildez.ai/blog/ai-new-model-july-2026-developments"
+        },
+        {
+          "title": "SpaceXAI发布Grok 4.5，与Cursor联合训练主打编码与智能体",
+          "summary": "7月8日，SpaceXAI（原xAI）发布迄今最聪明的模型Grok 4.5，专为编码、智能体任务与知识工作打造，并与Cursor联合训练。该模型在数万块英伟达GB300 GPU上完成训练，运行速度达每秒80 token，在SWE-Bench Pro上token用量仅为Claude Opus 4.8的约四分之一。",
+          "tags": [
+            "SpaceXAI",
+            "Grok",
+            "模型发布"
+          ],
+          "url": "https://x.ai/news/grok-4-5"
+        },
+        {
+          "title": "OpenAI推出GPT-Live全双工语音模型，取代高级语音模式",
+          "summary": "7月8日，OpenAI推出新一代语音模型GPT-Live，采用全双工架构取代此前的Advanced Voice Mode，可同时听与说并在用户讲话时给出反馈。复杂任务会委托给前沿模型（首发GPT-5.5）后台处理而对话不中断，目前每周已有超1.5亿人使用ChatGPT语音与听写功能。",
+          "tags": [
+            "OpenAI",
+            "语音模型",
+            "产品更新"
+          ],
+          "url": "https://openai.com/index/introducing-gpt-live/"
+        },
+        {
+          "title": "Anthropic发布Claude Sonnet 5，称其为Agent能力最强的Sonnet",
+          "summary": "7月1日，Anthropic正式发布Claude Sonnet 5，成为Free与Pro用户默认模型，并同步上线微软Azure Foundry、Amazon Bedrock与Google Cloud Vertex AI。该模型可自主规划任务、调用浏览器与终端工具，在推理、工具使用、编程等方面较Sonnet 4.6显著提升，官方称其为迄今Agent能力最强的Sonnet模型。",
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "模型发布"
+          ],
+          "url": "https://davidandgoliath.ai/daily-ai-briefing/anthropic-claude-sonnet-5-enterprise-launch"
+        }
+      ],
+      "github": [
+        {
+          "name": "oven-sh/bun",
+          "desc": "极速的JavaScript运行时，集打包器、测试运行器和包管理器于一体，显著提升前端开发效率。",
+          "stars": "94,502",
+          "lang": "Rust",
+          "url": "https://github.com/oven-sh/bun"
+        },
+        {
+          "name": "hashicorp/terraform",
+          "desc": "基础设施即代码工具，能够安全可预测地创建、变更和改进云基础设施，将API声明式配置文件化。",
+          "stars": "49,287",
+          "lang": "Go",
+          "url": "https://github.com/hashicorp/terraform"
+        },
+        {
+          "name": "davila7/claude-code-templates",
+          "desc": "用于配置和监控Claude Code的CLI工具，提供丰富的模板管理和代码生成能力。",
+          "stars": "28,907",
+          "lang": "Python",
+          "url": "https://github.com/davila7/claude-code-templates"
+        },
+        {
+          "name": "catchorg/Catch2",
+          "desc": "现代的C++原生测试框架，用于单元测试、TDD和BDD，支持C++14及以上版本。",
+          "stars": "20,808",
+          "lang": "C++",
+          "url": "https://github.com/catchorg/Catch2"
+        },
+        {
+          "name": "abseil/abseil-cpp",
+          "desc": "Google开源的Abseil通用C++基础库，提供一系列高质量的C++工具代码与基础组件。",
+          "stars": "17,658",
+          "lang": "C++",
+          "url": "https://github.com/abseil/abseil-cpp"
+        },
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "desc": "为Claude提供终端控制、文件系统搜索和差异文件编辑能力的MCP服务器，增强AI编程代理能力。",
+          "stars": "7,697",
+          "lang": "TypeScript",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+        },
+        {
+          "name": "zeux/meshoptimizer",
+          "desc": "网格优化库，能够让3D网格更小、渲染更快，广泛应用于游戏和图形渲染领域。",
+          "stars": "8,092",
+          "lang": "C++",
+          "url": "https://github.com/zeux/meshoptimizer"
+        },
+        {
+          "name": "actions/checkout",
+          "desc": "GitHub Actions官方提供的仓库检出Action，用于在CI流程中拉取代码仓库。",
+          "stars": "8,434",
+          "lang": "TypeScript",
+          "url": "https://github.com/actions/checkout"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "desc": "为Stitch MCP服务器设计的Agent Skills库，遵循开放标准兼容Gemini CLI、Claude Code等多种AI编程代理。",
+          "stars": "6,945",
+          "lang": "TypeScript",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        },
+        {
+          "name": "chriskohlhoff/asio",
+          "desc": "著名的Asio C++网络和异步I/O库，为构建高性能网络应用提供基础。",
+          "stars": "6,113",
+          "lang": "C++",
+          "url": "https://github.com/chriskohlhoff/asio"
+        }
+      ]
+    },
+    {
       "date": "2026-07-17",
       "weekday": "周五",
       "file": "2026-07-17.html",
