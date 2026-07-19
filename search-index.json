@@ -1,6 +1,185 @@
 {
   "reports": [
     {
+      "date": "2026-07-19",
+      "weekday": "星期日",
+      "file": "2026-07-19.html",
+      "news": [
+        {
+          "title": "商汤发布SenseNova U1 Pro，多模态进入「交付级」时代",
+          "summary": "7月19日，商汤在WAIC 2026发布日日新家族旗舰SenseNova U1 Pro，定位「交付级原生多模态智能体基座」，将理解、生成与行动统一在同一架构下。该模型支持原生8K分辨率出图，可围绕复杂目标进行数十轮生成循环并稳定交付成品，试图终结AI绘图反复\"抽卡\"的痛点。商汤披露U1开源两个多月GitHub星标已破8000。",
+          "tags": [
+            "商汤科技",
+            "多模态",
+            "WAIC"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "腾讯具身智能全栈亮相，混元Hy3调用量暴涨68倍登顶OpenRouter",
+          "summary": "7月19日，腾讯在WAIC首次系统展示具身智能全栈布局，发布Hy-Embodied-VLA-0.5、VLM-1.0、RxBrain-1.0三款具身基座模型及TairosAgent框架与Apexio智能体。混元Hy3重构后上线一周总调用量较上一代增长逾68倍，登顶OpenRouter全球大模型调用量总榜。WorkBuddy独立App登陆iOS、安卓与鸿蒙三端。",
+          "tags": [
+            "腾讯",
+            "具身智能",
+            "大模型"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "具识智能首发insightOSSemantic，给机器人装「懂语义的操作系统」",
+          "summary": "7月19日，具识智能在WAIC首发具身语义智能体系统insightOSSemantic，直击机器人规模化落地三道难关。用户一句话下指令，系统自动拆解成工作流、分派多台机器人协同作业，全程不写一行控制代码，部署效率较传统方案提升约20倍。",
+          "tags": [
+            "具识智能",
+            "机器人",
+            "操作系统"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "壁仞科技推出1024卡光互连超节点，国产算力从「堆卡」走向「拼系统」",
+          "summary": "7月19日，壁仞科技在WAIC推出基于自研BLink2.0互连协议的1024卡光互连超节点方案，最多支持1024张GPU共享同一块内存空间，采用NPO光互连做分布式解耦架构。这标志着中国AI算力正从单卡算力比拼迈向超节点系统级竞争。",
+          "tags": [
+            "壁仞科技",
+            "算力",
+            "光互连"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "深度原理发布Mira平台，AI for Science长出材料发现引擎",
+          "summary": "7月19日，深度原理在WAIC正式发布AI Scientist平台Mira，将生成式AI、第一性原理计算与自动化实验闭环打通，专攻材料发现。新材料从假设到量产平均需10到20年，Mira试图将这条长链路大幅压缩，让AI从科研\"辅助工具\"变为研发\"引擎\"。",
+          "tags": [
+            "深度原理",
+            "AI4Science",
+            "材料发现"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "华润微×陆兮科技发布全球首款类脑端侧AI推理芯片",
+          "summary": "7月19日，华润微联手深圳陆兮科技在WAIC发布全球首款为大模型推理原生设计的3D堆叠类脑端侧AI推理芯片技术路线。该芯片采用国产成熟制程加3D堆叠存算一体架构，不依赖EUV光刻机，计划2028年量产。",
+          "tags": [
+            "华润微",
+            "类脑芯片",
+            "端侧AI"
+          ],
+          "url": "http://m.toutiao.com/group/7664010881843446326/"
+        },
+        {
+          "title": "WAIC 2026超300款首发新品亮相，AI全球治理从理念走向行动落地",
+          "summary": "7月18日，2026世界人工智能大会继续在上海举行，1100余家企业带来3000余项展品，超300款产品集中首发。国家发展改革委会同中央广播电视总台等部门发布《人工智能合作发展行动计划》，将AI全球治理从理念探讨推向行动落地新阶段。",
+          "tags": [
+            "WAIC",
+            "AI治理",
+            "行业动态"
+          ],
+          "url": "http://m.toutiao.com/group/7664007698228216372/"
+        },
+        {
+          "title": "\"星枢计划\"首发星座发布，国内首个商业化天基智能算力网络启动",
+          "summary": "7月18日，在WAIC 2026太空算力专题论坛上，上海星枢天算联合复旦大学共同牵头研制的\"星枢计划\"首发星座正式发布。此举标志着国内首个面向商业化运营的天基智能算力网络，正式从顶层设计迈入在轨验证与场景落地的工程化实施阶段。",
+          "tags": [
+            "星枢计划",
+            "天基算力",
+            "WAIC"
+          ],
+          "url": "http://m.toutiao.com/group/7664012349434495514/"
+        },
+        {
+          "title": "摩尔线程等国产GPU厂商喊话\"国产芯片能训练\"，算力卡紧缺引关注",
+          "summary": "7月18日，在WAIC 2026\"词元时代 万物智能\"分论坛上，国产GPU厂商摩尔线程创始人张建中强调国产模型可以放心到国产芯片上做训练。算力卡紧缺与存储芯片行情看淡成为行业焦点，国产算力替代进程加速。",
+          "tags": [
+            "摩尔线程",
+            "国产芯片",
+            "算力"
+          ],
+          "url": "http://m.toutiao.com/group/7664037837632782848/"
+        },
+        {
+          "title": "Meta开源Brain2Qwerty v2非侵入式脑机接口，解码准确率达61%",
+          "summary": "Meta近期开源了Brain2Qwerty v2非侵入式脑机接口（BCI），可通过脑电图（EEG）或脑磁图（MEG）信号从思维中解码句子。在评估中，该系统平均词准确率达到61%，而其他非侵入式方法仅为8%，实现了非侵入式脑机接口解码能力的显著突破。",
+          "tags": [
+            "Meta",
+            "脑机接口",
+            "开源"
+          ],
+          "url": "https://www.infoq.com/ai-ml-data-eng/news/"
+        }
+      ],
+      "github": [
+        {
+          "name": "oven-sh/bun",
+          "desc": "极速的JavaScript运行时，集打包器、测试运行器和包管理器于一体，显著提升前端开发效率。",
+          "stars": 94502,
+          "lang": "Rust",
+          "url": "https://github.com/oven-sh/bun"
+        },
+        {
+          "name": "hashicorp/terraform",
+          "desc": "基础设施即代码工具，能够安全可预测地创建、变更和改进云基础设施，将API声明式配置文件化。",
+          "stars": 49287,
+          "lang": "Go",
+          "url": "https://github.com/hashicorp/terraform"
+        },
+        {
+          "name": "davila7/claude-code-templates",
+          "desc": "用于配置和监控Claude Code的CLI工具，提供丰富的模板管理和代码生成能力。",
+          "stars": 28907,
+          "lang": "Python",
+          "url": "https://github.com/davila7/claude-code-templates"
+        },
+        {
+          "name": "catchorg/Catch2",
+          "desc": "现代的C++原生测试框架，用于单元测试、TDD和BDD，支持C++14及以上版本。",
+          "stars": 20808,
+          "lang": "C++",
+          "url": "https://github.com/catchorg/Catch2"
+        },
+        {
+          "name": "abseil/abseil-cpp",
+          "desc": "Google开源的Abseil通用C++基础库，提供一系列高质量的C++工具代码与基础组件。",
+          "stars": 17658,
+          "lang": "C++",
+          "url": "https://github.com/abseil/abseil-cpp"
+        },
+        {
+          "name": "zeux/meshoptimizer",
+          "desc": "网格优化库，能够让3D网格更小、渲染更快，广泛应用于游戏和图形渲染领域。",
+          "stars": 8092,
+          "lang": "C++",
+          "url": "https://github.com/zeux/meshoptimizer"
+        },
+        {
+          "name": "actions/checkout",
+          "desc": "GitHub Actions官方提供的仓库检出Action，用于在CI流程中拉取代码仓库。",
+          "stars": 8434,
+          "lang": "TypeScript",
+          "url": "https://github.com/actions/checkout"
+        },
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "desc": "为Claude提供终端控制、文件系统搜索和差异文件编辑能力的MCP服务器，增强AI编程代理能力。",
+          "stars": 7697,
+          "lang": "TypeScript",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "desc": "为Stitch MCP服务器设计的Agent Skills库，遵循开放标准兼容Gemini CLI、Claude Code等多种AI编程代理。",
+          "stars": 6945,
+          "lang": "TypeScript",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        },
+        {
+          "name": "openai/plugins",
+          "desc": "OpenAI官方插件仓库，提供ChatGPT插件开发规范与示例，扩展AI助手的能力边界。",
+          "stars": 4333,
+          "lang": "JavaScript",
+          "url": "https://github.com/openai/plugins"
+        }
+      ]
+    },
+    {
       "date": "2026-07-18",
       "weekday": "星期六",
       "file": "2026-07-18.html",
