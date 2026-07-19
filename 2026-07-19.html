@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI日报 - 2026年7月19日</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 40px 20px; text-align: center; border-radius: 12px; margin-bottom: 24px; }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header .meta { opacity: 0.85; font-size: 0.95rem; }
+    .nav-bar { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 16px 24px; border-radius: 10px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .nav-bar a { color: #2563eb; text-decoration: none; font-weight: 500; padding: 8px 16px; border-radius: 6px; transition: background 0.2s; }
+    .nav-bar a:hover { background: #eff6ff; }
+    .nav-bar .prev::before { content: "← "; }
+    .nav-bar .next::after { content: " →"; }
+    .nav-bar .disabled { color: #9ca3af; pointer-events: none; }
+    .nav-bar .current { color: #475569; font-weight: 500; }
+    .section { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 1.4rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #e5e7eb; color: #1e293b; }
+    .news-list { list-style: none; }
+    .news-item { padding: 18px 0; border-bottom: 1px solid #f1f5f9; }
+    .news-item:last-child { border-bottom: none; }
+    .news-item .title { font-size: 1.1rem; font-weight: 600; color: #1e293b; margin-bottom: 6px; }
+    .news-item .summary { color: #475569; font-size: 0.95rem; margin-bottom: 8px; }
+    .news-item .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+    .news-item .tag { background: #f1f5f9; color: #475569; font-size: 0.8rem; padding: 3px 10px; border-radius: 20px; }
+    .news-item a { color: #2563eb; font-size: 0.9rem; text-decoration: none; }
+    .news-item a:hover { text-decoration: underline; }
+    .github-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .github-card { background: #f8fafc; border-radius: 10px; padding: 18px; border: 1px solid #e2e8f0; transition: transform 0.2s, box-shadow 0.2s; }
+    .github-card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+    .github-card .name { font-weight: 600; color: #1e293b; margin-bottom: 6px; }
+    .github-card .name a { color: #2563eb; text-decoration: none; }
+    .github-card .desc { color: #475569; font-size: 0.9rem; margin-bottom: 10px; }
+    .github-card .meta { display: flex; justify-content: space-between; font-size: 0.85rem; color: #64748b; }
+    .github-card .stars::before { content: "★ "; color: #f59e0b; }
+    .footer { text-align: center; color: #94a3b8; font-size: 0.85rem; margin-top: 40px; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI 日报</h1>
+      <div class="meta">2026年7月19日 · 星期日 · 第204期</div>
+    </header>
+
+    <div class="nav-bar">
+      <a href="2026-07-18.html" class="prev">上一期</a>
+      <span class="current">今日AI速递</span>
+      <a class="next disabled">下一期</a>
+    </div>
+
+    <div class="section">
+      <h2>🔥 AI 热点新闻（10条）</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <div class="title">1. 商汤发布SenseNova U1 Pro，多模态进入「交付级」时代</div>
+          <div class="summary">7月19日，商汤在WAIC 2026发布日日新家族旗舰SenseNova U1 Pro，定位「交付级原生多模态智能体基座」，将理解、生成与行动统一在同一架构下。该模型支持原生8K分辨率出图，可围绕复杂目标进行数十轮生成循环并稳定交付成品，试图终结AI绘图反复"抽卡"的痛点。商汤披露U1开源两个多月GitHub星标已破8000，说明模型已真实嵌入工作流。</div>
+          <div class="tags"><span class="tag">商汤科技</span><span class="tag">多模态</span><span class="tag">WAIC</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">2. 腾讯具身智能全栈亮相，混元Hy3调用量暴涨68倍登顶OpenRouter</div>
+          <div class="summary">7月19日，腾讯在WAIC首次系统展示具身智能全栈布局，一口气发布Hy-Embodied-VLA-0.5、VLM-1.0、RxBrain-1.0三款具身基座模型，以及TairosAgent框架与Apexio智能体。混元Hy3重构后上线一周总调用量较上一代增长逾68倍，登顶OpenRouter全球大模型调用量总榜。面向个人用户，WorkBuddy独立App登陆iOS、安卓与鸿蒙三端，成为首个上鸿蒙的通用智能体应用。</div>
+          <div class="tags"><span class="tag">腾讯</span><span class="tag">具身智能</span><span class="tag">大模型</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">3. 具识智能首发insightOSSemantic，给机器人装「懂语义的操作系统」</div>
+          <div class="summary">7月19日，具识智能在WAIC首发具身语义智能体系统insightOSSemantic，直击机器人规模化落地三道难关：不能理解、不懂变通、不会进化。用户一句话下指令，系统自动拆解成工作流、分派多台机器人协同作业，全程不写一行控制代码，部署效率较传统方案提升约20倍。该系统还将开发者社区、技能库与3D仿真资源做成类AppStore生态，定位机器人领域的操作系统底座。</div>
+          <div class="tags"><span class="tag">具识智能</span><span class="tag">机器人</span><span class="tag">操作系统</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">4. 壁仞科技推出1024卡光互连超节点，国产算力从「堆卡」走向「拼系统」</div>
+          <div class="summary">7月19日，壁仞科技在WAIC推出基于自研BLink2.0互连协议的1024卡光互连超节点方案，最多支持1024张GPU共享同一块内存空间，采用NPO光互连做分布式解耦架构，构建三级超节点产品矩阵。这标志着中国AI算力正从单卡算力比拼迈向超节点系统级竞争，从"堆卡"走向"拼系统内功"。</div>
+          <div class="tags"><span class="tag">壁仞科技</span><span class="tag">算力</span><span class="tag">光互连</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">5. 深度原理发布Mira平台，AI for Science长出材料发现引擎</div>
+          <div class="summary">7月19日，深度原理在WAIC正式发布AI Scientist平台Mira，将生成式AI、第一性原理计算与自动化实验闭环打通，专攻材料发现。新材料从假设到量产平均需10到20年，Mira试图将这条长链路大幅压缩，让AI从科研"辅助工具"变为研发"引擎"。当AI开始介入科学发现的内在逻辑，AI4S正从概念走向生产力。</div>
+          <div class="tags"><span class="tag">深度原理</span><span class="tag">AI4Science</span><span class="tag">材料发现</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">6. 华润微×陆兮科技发布全球首款类脑端侧AI推理芯片</div>
+          <div class="summary">7月19日，华润微联手深圳陆兮科技在WAIC发布全球首款为大模型推理原生设计的3D堆叠类脑端侧AI推理芯片技术路线。该芯片采用国产成熟制程加3D堆叠存算一体架构，不依赖EUV光刻机，计划2028年量产。端侧加类脑意味着AI推理进一步下沉到眼镜、座舱、工业巡检等场景，自主可控又迈进一步。</div>
+          <div class="tags"><span class="tag">华润微</span><span class="tag">类脑芯片</span><span class="tag">端侧AI</span></div>
+          <a href="http://m.toutiao.com/group/7664010881843446326/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">7. WAIC 2026超300款首发新品亮相，AI全球治理从理念走向行动落地</div>
+          <div class="summary">7月18日，2026世界人工智能大会继续在上海举行，以"智能伙伴，共创未来"为主题，1100余家企业带来3000余项展品，超300款产品集中首发。国家发展改革委会同中央广播电视总台等部门发布《人工智能合作发展行动计划》，提出优质数据供给、智能算力普惠等举措，将AI全球治理从理念探讨推向行动落地新阶段。</div>
+          <div class="tags"><span class="tag">WAIC</span><span class="tag">AI治理</span><span class="tag">行业动态</span></div>
+          <a href="http://m.toutiao.com/group/7664007698228216372/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">8. "星枢计划"首发星座发布，国内首个商业化天基智能算力网络启动</div>
+          <div class="summary">7月18日，在WAIC 2026太空算力专题论坛上，上海星枢天算联合复旦大学共同牵头研制的"星枢计划"首发星座正式发布。此举标志着国内首个面向商业化运营的天基智能算力网络，正式从顶层设计迈入在轨验证与场景落地的工程化实施阶段，为太空AI算力开辟新路径。</div>
+          <div class="tags"><span class="tag">星枢计划</span><span class="tag">天基算力</span><span class="tag">WAIC</span></div>
+          <a href="http://m.toutiao.com/group/7664012349434495514/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">9. 摩尔线程等国产GPU厂商喊话"国产芯片能训练"，算力卡紧缺引关注</div>
+          <div class="summary">7月18日，在WAIC 2026"词元时代 万物智能"分论坛上，国产GPU厂商摩尔线程创始人张建中强调国产模型可以放心到国产芯片上做训练，打消国内模型公司对用国产平台追赶世界先进水平的顾虑。与此同时算力卡紧缺与存储芯片行情看淡成为行业焦点，国产算力替代进程加速。</div>
+          <div class="tags"><span class="tag">摩尔线程</span><span class="tag">国产芯片</span><span class="tag">算力</span></div>
+          <a href="http://m.toutiao.com/group/7664037837632782848/" target="_blank">查看详情 →</a>
+        </li>
+        <li class="news-item">
+          <div class="title">10. Meta开源Brain2Qwerty v2非侵入式脑机接口，解码准确率达61%</div>
+          <div class="summary">Meta近期开源了Brain2Qwerty v2非侵入式脑机接口（BCI），可通过脑电图（EEG）或脑磁图（MEG）信号从思维中解码句子。在评估中，该系统平均词准确率达到61%，而其他非侵入式方法仅为8%，实现了非侵入式脑机接口解码能力的显著突破。</div>
+          <div class="tags"><span class="tag">Meta</span><span class="tag">脑机接口</span><span class="tag">开源</span></div>
+          <a href="https://www.infoq.com/ai-ml-data-eng/news/" target="_blank">查看详情 →</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>⭐ GitHub Trending 热门项目（10个）</h2>
+      <div class="github-grid">
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/oven-sh/bun" target="_blank">oven-sh/bun</a></div>
+          <div class="desc">极速的JavaScript运行时，集打包器、测试运行器和包管理器于一体，显著提升前端开发效率。</div>
+          <div class="meta"><span class="stars">94,502</span><span class="lang">Rust</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/hashicorp/terraform" target="_blank">hashicorp/terraform</a></div>
+          <div class="desc">基础设施即代码工具，能够安全可预测地创建、变更和改进云基础设施，将API声明式配置文件化。</div>
+          <div class="meta"><span class="stars">49,287</span><span class="lang">Go</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/davila7/claude-code-templates" target="_blank">davila7/claude-code-templates</a></div>
+          <div class="desc">用于配置和监控Claude Code的CLI工具，提供丰富的模板管理和代码生成能力。</div>
+          <div class="meta"><span class="stars">28,907</span><span class="lang">Python</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/catchorg/Catch2" target="_blank">catchorg/Catch2</a></div>
+          <div class="desc">现代的C++原生测试框架，用于单元测试、TDD和BDD，支持C++14及以上版本。</div>
+          <div class="meta"><span class="stars">20,808</span><span class="lang">C++</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/abseil/abseil-cpp" target="_blank">abseil/abseil-cpp</a></div>
+          <div class="desc">Google开源的Abseil通用C++基础库，提供一系列高质量的C++工具代码与基础组件。</div>
+          <div class="meta"><span class="stars">17,658</span><span class="lang">C++</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/zeux/meshoptimizer" target="_blank">zeux/meshoptimizer</a></div>
+          <div class="desc">网格优化库，能够让3D网格更小、渲染更快，广泛应用于游戏和图形渲染领域。</div>
+          <div class="meta"><span class="stars">8,092</span><span class="lang">C++</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/actions/checkout" target="_blank">actions/checkout</a></div>
+          <div class="desc">GitHub Actions官方提供的仓库检出Action，用于在CI流程中拉取代码仓库。</div>
+          <div class="meta"><span class="stars">8,434</span><span class="lang">TypeScript</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank">wonderwhy-er/DesktopCommanderMCP</a></div>
+          <div class="desc">为Claude提供终端控制、文件系统搜索和差异文件编辑能力的MCP服务器，增强AI编程代理能力。</div>
+          <div class="meta"><span class="stars">7,697</span><span class="lang">TypeScript</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank">google-labs-code/stitch-skills</a></div>
+          <div class="desc">为Stitch MCP服务器设计的Agent Skills库，遵循开放标准兼容Gemini CLI、Claude Code等多种AI编程代理。</div>
+          <div class="meta"><span class="stars">6,945</span><span class="lang">TypeScript</span></div>
+        </div>
+        <div class="github-card">
+          <div class="name"><a href="https://github.com/openai/plugins" target="_blank">openai/plugins</a></div>
+          <div class="desc">OpenAI官方插件仓库，提供ChatGPT插件开发规范与示例，扩展AI助手的能力边界。</div>
+          <div class="meta"><span class="stars">4,333</span><span class="lang">JavaScript</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>AI日报 · 每日自动更新 · 数据来源：WAIC官方、澎湃新闻、InfoQ、GitHub Trending等</p>
+      <p>生成时间：2026-07-19 09:00 CST</p>
+    </div>
+  </div>
+</body>
+</html>
