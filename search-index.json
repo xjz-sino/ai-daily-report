@@ -1,5 +1,184 @@
 [
   {
+    "date": "2026-07-22",
+    "weekday": "星期三",
+    "file": "2026-07-22.html",
+    "news": [
+      {
+        "title": "WAIC 2026收官：具身智能告别'秀场'，走向'批量落地'",
+        "summary": "7月17日至20日，2026世界人工智能大会在上海举办，四天吸引1100余家企业参展，超300款产品全球首发。具身智能正式升格为核心赛道，人形机器人从'炫技'转向'务实'。",
+        "tags": [
+          "WAIC",
+          "具身智能",
+          "机器人"
+        ],
+        "url": "https://www.chinanews.com.cn/cj/2026/07-20/10663199.shtml"
+      },
+      {
+        "title": "马斯克点赞Kimi K3大模型，国产开源力量震动硅谷",
+        "summary": "月之暗面正式发布新一代大模型Kimi K3，以2.8万亿参数刷新全球参数规模纪录。马斯克公开转发并点赞，中国AI开源大模型全球累计下载量突破100亿次。",
+        "tags": [
+          "Kimi K3",
+          "开源",
+          "大模型"
+        ],
+        "url": "https://www.chinanews.com.cn/cj/2026/07-20/10663137.shtml"
+      },
+      {
+        "title": "谷歌秘密研发新一代服务器芯片Frozen v2，效率提升6-10倍",
+        "summary": "谷歌正在开发代号Frozen v2的新型服务器芯片，将Gemini模型元素直接集成至硬件层面，预计较现有最强定制AI芯片效率提升6至10倍，有望2028年正式部署。",
+        "tags": [
+          "谷歌",
+          "芯片",
+          "Gemini"
+        ],
+        "url": "https://www.bloomberg.com/news/articles/2026-07-20/google-plans-new-chip-to-boost-ai-efficiency-information-says"
+      },
+      {
+        "title": "OpenAI与Anthropic正面交火：大模型价格战与科学AI工具同台开打",
+        "summary": "7月17日，OpenAI推出GPT-5.6 Sol，Anthropic推出Claude 4.6/Fable 5。奥特曼晒出GPT-5.6 Sol定价为Claude Fable 5一半的性能对比图，Anthropic同时宣布Claude Science平台。",
+        "tags": [
+          "OpenAI",
+          "Anthropic",
+          "价格战"
+        ],
+        "url": "https://www.36kr.com/p/3671545639183236"
+      },
+      {
+        "title": "启明创投：AI推理算力需求超预期，具身智能融资935亿",
+        "summary": "启明创投主管合伙人周志峰表示，2026年AI推理算力需求已反超训练算力，具身智能融资持续火爆。2026年以来具身智能赛道已披露融资总额达935亿元。",
+        "tags": [
+          "启明创投",
+          "融资",
+          "具身智能"
+        ],
+        "url": "https://www.caixin.com/2026-07-21/102466421.html"
+      },
+      {
+        "title": "欧盟AI法案8月全面生效，2026成全球AI监管元年",
+        "summary": "欧盟AI法案将于2026年8月进入完整执法阶段，成为全球首部全面综合性AI监管法律。中国、美国等主要经济体同步推出AI监管框架。",
+        "tags": [
+          "欧盟",
+          "AI法案",
+          "监管"
+        ],
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      },
+      {
+        "title": "英伟达推出Jetson Thor边缘AI产品，联合日本企业推进物理AI",
+        "summary": "英伟达发布新一代Jetson Thor系列边缘AI计算设备，面向机器人与低功耗边缘场景，可端侧运行基础大模型，联合日本企业加速智能机器人落地。",
+        "tags": [
+          "英伟达",
+          "边缘AI",
+          "机器人"
+        ],
+        "url": "https://blog.csdn.net/yuntongliangda/article/details/163021795"
+      },
+      {
+        "title": "GPT-5.6 Sol Ultra借助64个并行子智能体完成50年数学猜想证明",
+        "summary": "OpenAI宣布GPT-5.6 Sol Ultra借助64个并行子智能体协同工作，在不到1小时内生成图论领域悬而未决50多年的'循环双覆盖猜想'完整证明。",
+        "tags": [
+          "OpenAI",
+          "数学证明",
+          "多智能体"
+        ],
+        "url": "https://juejin.cn/post/7661530411243159598"
+      },
+      {
+        "title": "美团LongCat-2.0：国产五万卡集群炼出万亿参数模型",
+        "summary": "美团正式发布并开源新一代万亿参数大模型LongCat-2.0，总参数1.6T，平均激活约48B，在国产五万卡集群上训练完成。",
+        "tags": [
+          "美团",
+          "LongCat",
+          "开源"
+        ],
+        "url": "https://piratewang.blog.csdn.net/article/details/162523714"
+      },
+      {
+        "title": "中国AI开源大模型全球累计下载量突破100亿次",
+        "summary": "2026世界人工智能大会期间，中国AI开源大模型全球累计下载量已突破100亿次，多款国产大模型已在全球AI开源生态中占据重要位置。",
+        "tags": [
+          "开源",
+          "下载量",
+          "国产模型"
+        ],
+        "url": "https://www.chinanews.com.cn/cj/2026/07-20/10663137.shtml"
+      }
+    ],
+    "github": [
+      {
+        "name": "usestrix/strix",
+        "desc": "开源AI渗透测试框架，将安全审计转化为可重复的智能体运行，支持Web应用、API、代码库动态测试。",
+        "stars": 42000,
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "xai-org/grok-build",
+        "desc": "xAI开源的编码代理CLI和终端UI，提供完整的上下文处理、工具执行、插件、技能和MCP集成。",
+        "stars": 9300,
+        "lang": "TypeScript",
+        "url": "https://github.com/xai-org/grok-build"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "desc": "将自然语言提示转化为回测、alpha基准和可选实时交易，包含452个预构建alpha因子。",
+        "stars": 24000,
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "desc": "MCP服务器，帮助AI编码代理理解大型代码库，使用tree-sitter构建持久知识图谱，支持158种语言。",
+        "stars": 32000,
+        "lang": "C",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "langchain-ai/openwiki",
+        "desc": "LangChain团队推出的CLI工具，自动生成并维护AI友好的代码库文档。",
+        "stars": 11800,
+        "lang": "Python",
+        "url": "https://github.com/langchain-ai/openwiki"
+      },
+      {
+        "name": "MadsLorentzen/ai-job-search",
+        "desc": "基于Claude Code的框架，自动化求职流程：评估职位、定制简历、生成求职信并准备面试。",
+        "stars": 23000,
+        "lang": "TypeScript",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
+        "name": "iOfficeAI/OfficeCLI",
+        "desc": "专为AI代理设计的开源Office套件，可读取、编辑和自动化Word、Excel和PowerPoint文件。",
+        "stars": 18000,
+        "lang": "Rust",
+        "url": "https://github.com/iOfficeAI/OfficeCLI"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "desc": "自托管AI网关，将231+提供商模型置于单一端点后，内置token压缩和智能自动回退。",
+        "stars": 17900,
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "JustVugg/colibri",
+        "desc": "纯C微型推理引擎，零依赖，可在消费级机器运行7440亿参数GLM-5.2 MoE模型。",
+        "stars": 14700,
+        "lang": "C",
+        "url": "https://github.com/JustVugg/colibri"
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "desc": "Claude Code、Cursor和Codex的设计技能，运行57项质量门使AI生成界面更具设计感。",
+        "stars": 10000,
+        "lang": "TypeScript",
+        "url": "https://github.com/Nutlope/hallmark"
+      }
+    ]
+  },
+  {
     "date": "2026-07-21",
     "weekday": "星期二",
     "file": "2026-07-21.html",
