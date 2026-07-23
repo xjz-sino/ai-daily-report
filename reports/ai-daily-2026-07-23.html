@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI日报 - 2026-07-23</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-secondary: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79b8ff;
+      --tag-bg: #238636;
+      --tag-text: #fff;
+      --star: #f0883e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+    header {
+      text-align: center;
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    header h1 { font-size: 2rem; color: var(--accent); margin-bottom: 8px; }
+    header .date { color: var(--text-secondary); font-size: 1rem; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+      padding: 12px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    nav a:hover { background: var(--border); color: var(--accent-hover); }
+    nav a.disabled { color: var(--text-secondary); pointer-events: none; opacity: 0.5; }
+    section { margin-bottom: 40px; }
+    section h2 {
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: transform 0.15s;
+    }
+    .item:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .item-title a { color: var(--accent); text-decoration: none; }
+    .item-title a:hover { text-decoration: underline; }
+    .item-meta { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px; }
+    .item-desc { color: var(--text); font-size: 0.95rem; }
+    .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: rgba(35, 134, 54, 0.2);
+      color: #3fb950;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(35, 134, 54, 0.4);
+    }
+    .star { color: var(--star); font-weight: 600; }
+    .lang { color: var(--accent); }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 16px; }
+      nav a { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🤖 AI日报</h1>
+      <div class="date">2026-07-23 星期四</div>
+    </header>
+
+    <nav>
+      <a href="ai-daily-2026-07-22.html" class="">← 上一期（更早）</a>
+      <a href="index.html">📋 目录</a>
+      <a href="#" class="disabled">下一期（更新）→</a>
+    </nav>
+
+    <section id="news">
+      <h2>📰 AI新闻（10条）</h2>
+      <div class="item">
+  <div class="item-title"><a href="https://www.techspot.com/news/113104-amd-zen-6-epyc-chip-packs-256-cores.html" target="_blank">AMD Zen 6 EPYC Venice 发布：2nm 时代开启</a></div>
+  <div class="item-desc">AMD 在 Advancing AI 2026 大会正式发布基于 Zen 6 架构的 EPYC Venice 服务器处理器，采用台积电 2nm GAA 工艺，核心数达 256 核，AI 负载性能最高提升 1.7 倍，并与微软 Azure 达成全面合作。</div>
+  <div class="tags"><span class="tag">芯片</span><span class="tag">AMD</span><span class="tag">服务器</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://www.therobotreport.com/agibot-unveils-four-embodied-ai-products-real-world-operations-waic/" target="_blank">具身智能全面爆发：WAIC 2026 人形机器人集中亮相</a></div>
+  <div class="item-desc">WAIC 2026 在上海举办，AGIBOT 一次性发布四款人形机器人新品并透露其全球市场份额达 39%；DEEP Robotics、BrainCo 等企业也展示了最新进展，脑控机器人平台全球首发。</div>
+  <div class="tags"><span class="tag">机器人</span><span class="tag">具身智能</span><span class="tag">WAIC</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://www.ithome.com/0/979/816.htm" target="_blank">AI Agent 互联标准全球加速推进，中国首批 18 家单位签约试点</a></div>
+  <div class="item-desc">中国发布 Agent 互信互联全球倡议并启动国标试点，美团、滴滴、联想等 18 家单位首批签约；IETF 维也纳会议审议多套竞争性 Agent 协议标准，Visa、Mastercard、Stripe 联合推动 AI Agent 自主支付开放标准。</div>
+  <div class="tags"><span class="tag">AI Agent</span><span class="tag">标准</span><span class="tag">政策</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://siliconangle.com/2026/07/20/google-reportedly-developing-frozen-v2-ai-chip-optimized-gemini-models/" target="_blank">Google 定制 Gemini 芯片 'Frozen v2' 研发中</a></div>
+  <div class="item-desc">Google 正在开发代号 Frozen v2 的定制 AI 芯片，将 Gemini 模型架构直接集成至硬件层面，目标在 2028 年实现推理效率提升 6-10 倍，标志着 AI 推理经济学进入下一阶段。</div>
+  <div class="tags"><span class="tag">芯片</span><span class="tag">Google</span><span class="tag">Gemini</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://www.malaysiasun.com/news/279202006/weka-debuts-neuralmesh-6-to-power-enterprise-and-agentic-ai-workloads-at-production-scale" target="_blank">Weka 发布 NeuralMesh 6，重新定义推理经济学</a></div>
+  <div class="item-desc">企业数据平台公司 Weka 发布 NeuralMesh 6，专为 Agentic AI 和大规模加速计算 workloads 设计，提供原生多租户能力，帮助企业在生产环境中高效调度 GPU/TPU 资源。</div>
+  <div class="tags"><span class="tag">基础设施</span><span class="tag">推理</span><span class="tag">企业</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom/" target="_blank">OpenAI 与 Broadcom 合作推出自研推理芯片 'Jalapeño'</a></div>
+  <div class="item-desc">OpenAI 首款自研推理芯片 Jalapeño 正式亮相，采用 OpenAI 自有模型辅助芯片设计以加速研发流程；Broadcom 同时为 Google、OpenAI、Meta 三家设计定制芯片。</div>
+  <div class="tags"><span class="tag">芯片</span><span class="tag">OpenAI</span><span class="tag">Broadcom</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://www.msn.com/en-us/news/technology/meta-s-iris-ai-chip-passes-testing-broadcom-now-designs-chips-for-three-rivals/ar-AA28845h" target="_blank">Meta Iris AI 芯片完成测试，定于 2026 年 9 月进入量产</a></div>
+  <div class="item-desc">Meta 的 Iris AI 芯片已完成为期六周的测试，定于 2026 年 9 月进入量产阶段。Broadcom 作为设计合作伙伴，已同时服务三大科技巨头的定制芯片需求。</div>
+  <div class="tags"><span class="tag">芯片</span><span class="tag">Meta</span><span class="tag">硬件</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://blogs.nvidia.com/blog/jetson-thor/" target="_blank">英伟达推出 Jetson Thor 边缘 AI 产品，推进物理 AI 产业落地</a></div>
+  <div class="item-desc">英伟达发布新一代 Jetson Thor 系列边缘 AI 计算设备，面向机器人与低功耗边缘场景，可端侧运行基础大模型；同时联合日本制造业与机器人龙头企业加速智能机器落地。</div>
+  <div class="tags"><span class="tag">边缘计算</span><span class="tag">英伟达</span><span class="tag">机器人</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://openai.com/index/sol-ultra/" target="_blank">OpenAI GPT-5.6 Sol Ultra 不到 1 小时证明 50 年数学猜想</a></div>
+  <div class="item-desc">GPT-5.6 Sol Ultra 在不到 1 小时内独立证明了困扰数学界 50 年的'循环双覆盖猜想'，64 个子智能体协同工作引发学界震动，展现了大模型在数学推理上的突破性进展。</div>
+  <div class="tags"><span class="tag">OpenAI</span><span class="tag">数学</span><span class="tag">大模型</span></div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://ai.google.dev/gemma" target="_blank">谷歌发布 Gemma 4 全系开源，端侧 16GB MacBook 可跑</a></div>
+  <div class="item-desc">Google 发布 Gemma 4 系列开源模型，采用无编码器原生多模态架构，可在 16GB 内存的 MacBook 上本地运行，为端侧 AI 应用提供了强大的开源选择。</div>
+  <div class="tags"><span class="tag">开源</span><span class="tag">Google</span><span class="tag">多模态</span></div>
+</div>
+
+    </section>
+
+    <section id="github">
+      <h2>⭐ GitHub Trending（10个）</h2>
+      <div class="item">
+  <div class="item-title"><a href="https://github.com/usestrix/strix" target="_blank">usestrix/strix</a></div>
+  <div class="item-meta"><span class="star">⭐ 42K</span> · <span class="lang">Python</span></div>
+  <div class="item-desc">开源 AI 渗透测试框架，将安全审计转化为可重复的 Agent 工作流，支持 PoC 漏洞验证、HTTP 代理、浏览器自动化和 CI/CD 集成。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank">DeusData/codebase-memory-mcp</a></div>
+  <div class="item-meta"><span class="star">⭐ 32K</span> · <span class="lang">C</span></div>
+  <div class="item-desc">MCP 服务器，通过构建持久化知识图谱帮助 AI 编码 Agent 理解大型代码库，支持 158 种语言，可将结构查询的 token 消耗降低 99%。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/alibaba/page-agent" target="_blank">alibaba/page-agent</a></div>
+  <div class="item-meta"><span class="star">⭐ 23.9K</span> · <span class="lang">TypeScript</span></div>
+  <div class="item-desc">页面内 GUI 自动化工具，用户可通过自然语言从页面内部控制网页界面，无需浏览器扩展或 headless 浏览器。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank">MadsLorentzen/ai-job-search</a></div>
+  <div class="item-meta"><span class="star">⭐ 23K</span> · <span class="lang">Python</span></div>
+  <div class="item-desc">基于 Claude Code 的求职自动化框架，可评估职位、定制简历、生成求职信并准备面试，是 Agentic AI 在日常工作流中的典型应用。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/HKUDS/Vibe-Trading" target="_blank">HKUDS/Vibe-Trading</a></div>
+  <div class="item-meta"><span class="star">⭐ 24K</span> · <span class="lang">Python</span></div>
+  <div class="item-desc">香港大学数据科学实验室开发，将自然语言提示转化为回测、alpha 基准和实盘交易，包含 452 个预置 alpha 因子。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/iOfficeAI/OfficeCLI" target="_blank">iOfficeAI/OfficeCLI</a></div>
+  <div class="item-meta"><span class="star">⭐ 18K</span> · <span class="lang">Rust</span></div>
+  <div class="item-desc">专为 AI Agent 设计的开源 Office 套件，可读取、编辑和自动化 Word、Excel、PowerPoint 文件，无需安装 Office，单个二进制文件分发。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/diegosouzapw/OmniRoute" target="_blank">diegosouzapw/OmniRoute</a></div>
+  <div class="item-meta"><span class="star">⭐ 17.9K</span> · <span class="lang">TypeScript</span></div>
+  <div class="item-desc">自托管 AI 网关，将 230+ 模型提供商统一到一个 OpenAI 兼容端点，内置 token 压缩、智能回退和多模态 API 支持。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/JustVugg/colibri" target="_blank">JustVugg/colibri</a></div>
+  <div class="item-meta"><span class="star">⭐ 14.7K</span> · <span class="lang">C</span></div>
+  <div class="item-desc">纯 C 推理引擎，零依赖，可在消费级机器上以约 25GB 内存运行 7440 亿参数的 GLM-5.2 MoE 模型，按需从磁盘流式加载专家。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/langchain-ai/openwiki" target="_blank">langchain-ai/openwiki</a></div>
+  <div class="item-meta"><span class="star">⭐ 11.8K</span> · <span class="lang">Python</span></div>
+  <div class="item-desc">LangChain 团队出品的 CLI 工具，自动生成并维护 AI 友好的代码库文档，让 Agent 能够可靠地理解和操作项目。</div>
+</div>
+<div class="item">
+  <div class="item-title"><a href="https://github.com/xai-org/grok-build" target="_blank">xai-org/grok-build</a></div>
+  <div class="item-meta"><span class="star">⭐ 9.3K</span> · <span class="lang">Python</span></div>
+  <div class="item-desc">xAI 开源的编码代理 CLI 和终端 UI，Apache 2.0 许可证，完整展示了上下文处理、工具执行、插件和 MCP 集成的生产级实现。</div>
+</div>
+
+    </section>
+
+    <footer>
+      <p>AI日报 · 每日自动更新 · 数据来源：公开科技媒体与GitHub Trending</p>
+      <p>生成时间：2026-07-23 01:09:22</p>
+    </footer>
+  </div>
+</body>
+</html>
