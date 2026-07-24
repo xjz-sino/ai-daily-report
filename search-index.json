@@ -1,22 +1,22 @@
 [
   {
-    "date": "2026-07-23",
-    "weekday": "星期四",
-    "file": "ai-daily-2026-07-23.html",
+    "date": "2026-07-24",
+    "weekday": "星期五",
+    "file": "2026-07-24.html",
     "news": [
       {
-        "title": "AMD Zen 6 EPYC Venice 发布：2nm 时代开启",
-        "summary": "AMD 在 Advancing AI 2026 大会正式发布基于 Zen 6 架构的 EPYC Venice 服务器处理器，采用台积电 2nm GAA 工艺，核心数达 256 核，AI 负载性能最高提升 1.7 倍，并与微软 Azure 达成全面合作。",
+        "title": "AMD Zen 6 EPYC Venice 发布：2nm时代开启",
+        "summary": "AMD正式发布基于Zen 6架构的EPYC Venice服务器处理器，采用台积电2nm工艺，最多256核心，AI负载性能最高提升1.7倍，内存带宽达1.6TB/s。",
         "tags": [
           "芯片",
           "AMD",
           "服务器"
         ],
-        "url": "https://www.techspot.com/news/113104-amd-zen-6-epyc-chip-packs-256-cores.html"
+        "url": "https://www.techtimes.com/articles/320994/20260720/epyc-venice-arrives-wednesday-amds-zen-6-tsmc-2nm-resets-server-race.htm"
       },
       {
-        "title": "具身智能全面爆发：WAIC 2026 人形机器人集中亮相",
-        "summary": "WAIC 2026 在上海举办，AGIBOT 一次性发布四款人形机器人新品并透露其全球市场份额达 39%；DEEP Robotics、BrainCo 等企业也展示了最新进展，脑控机器人平台全球首发。",
+        "title": "WAIC 2026 人形机器人集中亮相",
+        "summary": "上海WAIC 2026期间，AGIBOT发布四款人形机器人新品，包括A3 Ultra旗舰、X2 Edu教育版等，并宣布占据全球39%市场份额。",
         "tags": [
           "机器人",
           "具身智能",
@@ -25,156 +25,156 @@
         "url": "https://www.therobotreport.com/agibot-unveils-four-embodied-ai-products-real-world-operations-waic/"
       },
       {
-        "title": "AI Agent 互联标准全球加速推进，中国首批 18 家单位签约试点",
-        "summary": "中国发布 Agent 互信互联全球倡议并启动国标试点，美团、滴滴、联想等 18 家单位首批签约；IETF 维也纳会议审议多套竞争性 Agent 协议标准，Visa、Mastercard、Stripe 联合推动 AI Agent 自主支付开放标准。",
+        "title": "AI Agent 互联标准全球加速推进",
+        "summary": "中国发布Agent互信互联全球倡议，GB/Z 185系列国标首批试点在京启动，美团、滴滴、联想等18家单位签约。IETF维也纳会议同步审议多套Agent协议标准。",
         "tags": [
           "AI Agent",
           "标准",
           "政策"
         ],
-        "url": "https://www.ithome.com/0/979/816.htm"
+        "url": "https://www.geopolitechs.org/p/chinas-cac-releases-global-cooperation"
       },
       {
-        "title": "Google 定制 Gemini 芯片 'Frozen v2' 研发中",
-        "summary": "Google 正在开发代号 Frozen v2 的定制 AI 芯片，将 Gemini 模型架构直接集成至硬件层面，目标在 2028 年实现推理效率提升 6-10 倍，标志着 AI 推理经济学进入下一阶段。",
+        "title": "Google 定制 Gemini 芯片 Frozen v2 曝光",
+        "summary": "Google正在开发代号Frozen v2的定制AI芯片，将Gemini模型架构直接硬连线到硅片中，目标2028年实现推理效率提升6-10倍。",
         "tags": [
-          "芯片",
           "Google",
+          "芯片",
           "Gemini"
         ],
         "url": "https://siliconangle.com/2026/07/20/google-reportedly-developing-frozen-v2-ai-chip-optimized-gemini-models/"
       },
       {
-        "title": "Weka 发布 NeuralMesh 6，重新定义推理经济学",
-        "summary": "企业数据平台公司 Weka 发布 NeuralMesh 6，专为 Agentic AI 和大规模加速计算 workloads 设计，提供原生多租户能力，帮助企业在生产环境中高效调度 GPU/TPU 资源。",
+        "title": "OpenAI 首款自研推理芯片 Jalapeño 亮相",
+        "summary": "OpenAI与Broadcom合作推出的首款自研推理芯片Jalapeño正式亮相，采用OpenAI自有模型辅助芯片设计以加速研发。",
         "tags": [
-          "基础设施",
-          "推理",
-          "企业"
-        ],
-        "url": "https://www.malaysiasun.com/news/279202006/weka-debuts-neuralmesh-6-to-power-enterprise-and-agentic-ai-workloads-at-production-scale"
-      },
-      {
-        "title": "OpenAI 与 Broadcom 合作推出自研推理芯片 'Jalapeño'",
-        "summary": "OpenAI 首款自研推理芯片 Jalapeño 正式亮相，采用 OpenAI 自有模型辅助芯片设计以加速研发流程；Broadcom 同时为 Google、OpenAI、Meta 三家设计定制芯片。",
-        "tags": [
-          "芯片",
           "OpenAI",
+          "芯片",
           "Broadcom"
         ],
         "url": "https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom/"
       },
       {
-        "title": "Meta Iris AI 芯片完成测试，定于 2026 年 9 月进入量产",
-        "summary": "Meta 的 Iris AI 芯片已完成为期六周的测试，定于 2026 年 9 月进入量产阶段。Broadcom 作为设计合作伙伴，已同时服务三大科技巨头的定制芯片需求。",
+        "title": "Meta Iris AI 芯片通过测试，9月量产",
+        "summary": "Meta的Iris AI芯片已完成六周测试，定于2026年9月进入量产。Broadcom同时为Google、OpenAI、Meta三家设计定制芯片。",
         "tags": [
-          "芯片",
           "Meta",
-          "硬件"
+          "芯片",
+          "AI硬件"
         ],
         "url": "https://www.msn.com/en-us/news/technology/meta-s-iris-ai-chip-passes-testing-broadcom-now-designs-chips-for-three-rivals/ar-AA28845h"
       },
       {
-        "title": "英伟达推出 Jetson Thor 边缘 AI 产品，推进物理 AI 产业落地",
-        "summary": "英伟达发布新一代 Jetson Thor 系列边缘 AI 计算设备，面向机器人与低功耗边缘场景，可端侧运行基础大模型；同时联合日本制造业与机器人龙头企业加速智能机器落地。",
-        "tags": [
-          "边缘计算",
-          "英伟达",
-          "机器人"
-        ],
-        "url": "https://blogs.nvidia.com/blog/jetson-thor/"
-      },
-      {
-        "title": "OpenAI GPT-5.6 Sol Ultra 不到 1 小时证明 50 年数学猜想",
-        "summary": "GPT-5.6 Sol Ultra 在不到 1 小时内独立证明了困扰数学界 50 年的'循环双覆盖猜想'，64 个子智能体协同工作引发学界震动，展现了大模型在数学推理上的突破性进展。",
+        "title": "OpenAI 推出 ChatGPT Health 健康功能",
+        "summary": "OpenAI向全美用户推出ChatGPT Health功能，可安全连接Apple Health及医疗机构数据，帮助用户对比化验结果、总结就诊变化。",
         "tags": [
           "OpenAI",
-          "数学",
-          "大模型"
+          "健康",
+          "ChatGPT"
         ],
-        "url": "https://openai.com/index/sol-ultra/"
+        "url": "https://openai.com/index/health-in-chatgpt/"
       },
       {
-        "title": "谷歌发布 Gemma 4 全系开源，端侧 16GB MacBook 可跑",
-        "summary": "Google 发布 Gemma 4 系列开源模型，采用无编码器原生多模态架构，可在 16GB 内存的 MacBook 上本地运行，为端侧 AI 应用提供了强大的开源选择。",
+        "title": "Google 发布 Gemini 3.6 Flash 系列新模型",
+        "summary": "Google推出Gemini 3.6 Flash、3.5 Flash-Lite（低延迟）和3.5 Flash Cyber（安全专用）三款新模型，Gemini 4已进入预训练阶段。",
         "tags": [
-          "开源",
           "Google",
-          "多模态"
+          "Gemini",
+          "大模型"
         ],
-        "url": "https://ai.google.dev/gemma"
+        "url": "https://blog.google/technology/ai/google-gemini-model-updates-july-2026/"
+      },
+      {
+        "title": "Anthropic 将 Opus 和 Sonnet 接入 Claude 语音模式",
+        "summary": "Anthropic确认Claude语音模式现已支持Opus和Sonnet模型，用户可在语音会话中切换不同模型，使语音交互适用于正式工作场景。",
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "语音AI"
+        ],
+        "url": "https://www.unite.ai/anthropic-brings-opus-and-sonnet-to-claude-voice-mode/"
+      },
+      {
+        "title": "Weka 发布 NeuralMesh 6 企业推理平台",
+        "summary": "企业数据平台Weka发布NeuralMesh 6，被称为公司史上最重要版本，专为Agentic AI和大规模加速计算设计，提供原生多租户能力。",
+        "tags": [
+          "基础设施",
+          "推理",
+          "企业AI"
+        ],
+        "url": "https://www.malaysiasun.com/news/279202006/weka-debuts-neuralmesh-6-to-power-enterprise-and-agentic-ai-workloads-at-production-scale"
       }
     ],
     "github": [
       {
         "name": "usestrix/strix",
-        "desc": "开源 AI 渗透测试框架，将安全审计转化为可重复的 Agent 工作流，支持 PoC 漏洞验证、HTTP 代理、浏览器自动化和 CI/CD 集成。",
+        "desc": "开源AI渗透测试工具，像真正的安全研究员一样动态测试应用，支持HTTP代理、浏览器利用、Python沙箱和CI/CD集成。",
         "stars": "42K",
         "lang": "Python",
         "url": "https://github.com/usestrix/strix"
       },
       {
-        "name": "DeusData/codebase-memory-mcp",
-        "desc": "MCP 服务器，通过构建持久化知识图谱帮助 AI 编码 Agent 理解大型代码库，支持 158 种语言，可将结构查询的 token 消耗降低 99%。",
-        "stars": "32K",
-        "lang": "C",
-        "url": "https://github.com/DeusData/codebase-memory-mcp"
-      },
-      {
-        "name": "alibaba/page-agent",
-        "desc": "页面内 GUI 自动化工具，用户可通过自然语言从页面内部控制网页界面，无需浏览器扩展或 headless 浏览器。",
-        "stars": "23.9K",
-        "lang": "TypeScript",
-        "url": "https://github.com/alibaba/page-agent"
-      },
-      {
-        "name": "MadsLorentzen/ai-job-search",
-        "desc": "基于 Claude Code 的求职自动化框架，可评估职位、定制简历、生成求职信并准备面试，是 Agentic AI 在日常工作流中的典型应用。",
-        "stars": "23K",
+        "name": "xai-org/grok-build",
+        "desc": "xAI开源的编码代理CLI和终端UI，完整开源上下文处理、工具执行、插件、技能及MCP集成，Apache 2.0协议。",
+        "stars": "9.3K",
         "lang": "Python",
-        "url": "https://github.com/MadsLorentzen/ai-job-search"
+        "url": "https://github.com/xai-org/grok-build"
       },
       {
         "name": "HKUDS/Vibe-Trading",
-        "desc": "香港大学数据科学实验室开发，将自然语言提示转化为回测、alpha 基准和实盘交易，包含 452 个预置 alpha 因子。",
+        "desc": "香港大学数据科学实验室开发，将自然语言提示转换为回测、alpha基准和实盘交易，包含452个预置alpha因子。",
         "stars": "24K",
         "lang": "Python",
         "url": "https://github.com/HKUDS/Vibe-Trading"
       },
       {
+        "name": "DeusData/codebase-memory-mcp",
+        "desc": "MCP服务器，为AI编码代理构建持久化代码知识图谱，支持158种语言，将结构查询token消耗降低99%。",
+        "stars": "32K",
+        "lang": "C",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "langchain-ai/openwiki",
+        "desc": "LangChain团队推出的CLI工具，自动生成并维护AI友好的代码库文档，使代码库对AI代理更可读、可维护。",
+        "stars": "11.8K",
+        "lang": "Python",
+        "url": "https://github.com/langchain-ai/openwiki"
+      },
+      {
+        "name": "MadsLorentzen/ai-job-search",
+        "desc": "基于Claude Code构建的求职自动化框架，自动评估职位、定制简历、生成求职信并准备面试。",
+        "stars": "23K",
+        "lang": "TypeScript",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
         "name": "iOfficeAI/OfficeCLI",
-        "desc": "专为 AI Agent 设计的开源 Office 套件，可读取、编辑和自动化 Word、Excel、PowerPoint 文件，无需安装 Office，单个二进制文件分发。",
+        "desc": "专为AI代理设计的开源Office套件，无需安装Office即可读写编辑Word、Excel、PowerPoint文件，单二进制分发。",
         "stars": "18K",
         "lang": "Rust",
         "url": "https://github.com/iOfficeAI/OfficeCLI"
       },
       {
         "name": "diegosouzapw/OmniRoute",
-        "desc": "自托管 AI 网关，将 230+ 模型提供商统一到一个 OpenAI 兼容端点，内置 token 压缩、智能回退和多模态 API 支持。",
+        "desc": "免费AI网关，单一端点路由至231+个提供商（50+免费），支持token压缩、智能自动回退和多模态API。",
         "stars": "17.9K",
         "lang": "TypeScript",
         "url": "https://github.com/diegosouzapw/OmniRoute"
       },
       {
         "name": "JustVugg/colibri",
-        "desc": "纯 C 推理引擎，零依赖，可在消费级机器上以约 25GB 内存运行 7440 亿参数的 GLM-5.2 MoE 模型，按需从磁盘流式加载专家。",
+        "desc": "纯C推理引擎，零依赖，可在消费级机器上运行744B参数的GLM-5.2 MoE模型，通过按需磁盘流式加载专家。",
         "stars": "14.7K",
         "lang": "C",
         "url": "https://github.com/JustVugg/colibri"
       },
       {
-        "name": "langchain-ai/openwiki",
-        "desc": "LangChain 团队出品的 CLI 工具，自动生成并维护 AI 友好的代码库文档，让 Agent 能够可靠地理解和操作项目。",
-        "stars": "11.8K",
-        "lang": "Python",
-        "url": "https://github.com/langchain-ai/openwiki"
-      },
-      {
-        "name": "xai-org/grok-build",
-        "desc": "xAI 开源的编码代理 CLI 和终端 UI，Apache 2.0 许可证，完整展示了上下文处理、工具执行、插件和 MCP 集成的生产级实现。",
-        "stars": "9.3K",
-        "lang": "Python",
-        "url": "https://github.com/xai-org/grok-build"
+        "name": "Nutlope/hallmark",
+        "desc": "Claude Code/Cursor/Codex的设计技能，通过57项'slop-test'质检和自批判机制，让AI生成UI更精致而非模板化。",
+        "stars": "10K",
+        "lang": "TypeScript",
+        "url": "https://github.com/Nutlope/hallmark"
       }
     ]
   }
