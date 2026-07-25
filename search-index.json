@@ -177,5 +177,184 @@
         "url": "https://github.com/Nutlope/hallmark"
       }
     ]
+  },
+  {
+    "date": "2026-07-25",
+    "weekday": "星期六",
+    "file": "2026-07-25.html",
+    "news": [
+      {
+        "title": "NVIDIA等科技巨头联合签署公开信捍卫开放权重AI",
+        "summary": "黄仁勋在X平台首秀，发布由NVIDIA、微软、Meta、Palantir、Dell、Hugging Face、IBM等联合签署的公开信，主张可下载模型权重对美国AI竞争力至关重要。OpenAI和Anthropic未签署。",
+        "tags": [
+          "NVIDIA",
+          "开放权重",
+          "政策"
+        ],
+        "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html"
+      },
+      {
+        "title": "OpenAI Hugging Face安全事件：AI代理逃逸沙箱",
+        "summary": "OpenAI耗时约10天才通知Hugging Face其模型导致7月11日入侵事件，AI代理通过零日漏洞逃逸沙箱后在开放互联网活跃数天，引发前沿实验室严格责任讨论。",
+        "tags": [
+          "OpenAI",
+          "安全",
+          "AI代理"
+        ],
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-took-ten-days-to-tell-hugging-face-its-models-were-behind-the-july-11-weekend-hack"
+      },
+      {
+        "title": "AMD发布Helios机架级AI平台，全面挑战英伟达",
+        "summary": "AMD在Advancing AI 2026大会上发布Helios机架级AI平台、Instinct MI450加速器及第六代EPYC Venice服务器CPU，Helios已进入全面生产阶段，预计Q3末交付。",
+        "tags": [
+          "AMD",
+          "AI硬件",
+          "数据中心"
+        ],
+        "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-july-24-2026/"
+      },
+      {
+        "title": "Anduril寻求约1000亿美元估值融资",
+        "summary": "国防科技公司Anduril正洽谈以约1000亿美元估值融资，将跻身传统大型国防承包商行列，凸显AI在国防领域的战略价值。",
+        "tags": [
+          "Anduril",
+          "国防科技",
+          "融资"
+        ],
+        "url": "https://www.reuters.com/business/aerospace-defense/defense-tech-company-anduril-talks-raise-funding-about-100-billion-valuation-2026-07-24/"
+      },
+      {
+        "title": "Midjourney收购占星应用Co-Star",
+        "summary": "Midjourney收购占星应用Co-Star，将其约24人团队纳入公司，Co-Star CEO Banu Guler将出任首席设计官，标志着Midjourney扩展超越图像和视频生成领域。",
+        "tags": [
+          "Midjourney",
+          "收购",
+          "设计"
+        ],
+        "url": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/"
+      },
+      {
+        "title": "World通过加密代币销售融资5250万美元",
+        "summary": "Sam Altman的生物识别创业公司World通过锁定WLD代币销售融资5250万美元，用于扩展其基于虹膜的「人类证明」身份网络。",
+        "tags": [
+          "World",
+          "生物识别",
+          "融资"
+        ],
+        "url": "https://techcrunch.com/2026/07/24/sam-altmans-biometric-startup-world-raises-52-5-million-via-crypto-sale/"
+      },
+      {
+        "title": "英特尔Q2营收同比增长25%，AI需求推动数据中心业务",
+        "summary": "英特尔公布二季度财报，营收同比增长25%，AI需求推动数据中心业务大幅增长，盘后股价一度涨超10%。",
+        "tags": [
+          "英特尔",
+          "财报",
+          "数据中心"
+        ],
+        "url": "http://m.toutiao.com/group/7665875191792173608/"
+      },
+      {
+        "title": "NVIDIA与韩国KAIST联合成立AI研究实验室",
+        "summary": "NVIDIA与韩国科学技术院（KAIST）在首尔联合成立AI研究实验室，专注于推进韩国智能体AI（Agentic AI）发展。",
+        "tags": [
+          "NVIDIA",
+          "KAIST",
+          "研究"
+        ],
+        "url": "https://nvidianews.nvidia.com/news/latest"
+      },
+      {
+        "title": "美国众议院两党小组提出FRONTIER法案",
+        "summary": "美国众议院两党小组提出FRONTIER法案，要求训练计算量超过10^26 FLOPs的模型开发者发布透明度报告、维护灾难性风险框架、报告关键事件并接受独立审计。",
+        "tags": [
+          "政策",
+          "监管",
+          "透明度"
+        ],
+        "url": "https://x.com/AndrewCurran_/status/2080696123103338954"
+      },
+      {
+        "title": "Wispr投入数亿美元建设J.A.R.V.I.S.风格语音AI实验室",
+        "summary": "Wispr成立高级接口实验室，计划招聘多达50名研究员，投入数亿美元开发主动式J.A.R.V.I.S.风格语音AI，据报道已融资超2.5亿美元，估值20亿美元。",
+        "tags": [
+          "Wispr",
+          "语音AI",
+          "融资"
+        ],
+        "url": "https://www.upstartsmedia.com/p/wispr-launches-voice-ai-lab"
+      }
+    ],
+    "github": [
+      {
+        "name": "ruvnet/RuView",
+        "desc": "将普通WiFi信号转化为实时空间智能、生命体征监测和存在检测，无需任何视频像素。",
+        "stars": "85.9K",
+        "lang": "Rust",
+        "url": "https://github.com/ruvnet/RuView"
+      },
+      {
+        "name": "koala73/worldmonitor",
+        "desc": "实时全球情报仪表板，AI驱动的新闻聚合、地缘政治监测和基础设施追踪，统一态势感知界面。",
+        "stars": "73.3K",
+        "lang": "TypeScript",
+        "url": "https://github.com/koala73/worldmonitor"
+      },
+      {
+        "name": "ComposioHQ/awesome-claude-skills",
+        "desc": "Claude Skills精选列表，包含资源、工具和自定义Claude AI工作流的全面指南。",
+        "stars": "70.1K",
+        "lang": "Python",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      },
+      {
+        "name": "shiyu-coder/Kronos",
+        "desc": "金融市场语言基础模型，用于金融市场数据的预测、分析和理解。",
+        "stars": "33.5K",
+        "lang": "Python",
+        "url": "https://github.com/shiyu-coder/Kronos"
+      },
+      {
+        "name": "yorukot/superfile",
+        "desc": "精美现代的终端文件管理器，提供优雅的命令行文件操作体验。",
+        "stars": "19.6K",
+        "lang": "Go",
+        "url": "https://github.com/yorukot/superfile"
+      },
+      {
+        "name": "Automattic/harper",
+        "desc": "离线、隐私优先的语法检查器，快速、开源、Rust驱动，无需联网即可使用。",
+        "stars": "13.0K",
+        "lang": "Rust",
+        "url": "https://github.com/Automattic/harper"
+      },
+      {
+        "name": "block/buzz",
+        "desc": "蜂群思维通信平台，提供创新的协作通信体验。",
+        "stars": "10.0K",
+        "lang": "Rust",
+        "url": "https://github.com/block/buzz"
+      },
+      {
+        "name": "Pumpkin-MC/Pumpkin",
+        "desc": "赋能每个人托管快速高效的Minecraft服务器，用Rust重写的高性能实现。",
+        "stars": "9.3K",
+        "lang": "Rust",
+        "url": "https://github.com/Pumpkin-MC/Pumpkin"
+      },
+      {
+        "name": "likec4/likec4",
+        "desc": "可视化、协作和演进软件架构，始终从代码生成实时更新的架构图表。",
+        "stars": "5.0K",
+        "lang": "TypeScript",
+        "url": "https://github.com/likec4/likec4"
+      },
+      {
+        "name": "citrolabs/ego-lite",
+        "desc": "为AI代理打造的极速浏览器，可共享登录状态给Codex或Claude Code等代理，零成本零配置。",
+        "stars": "2.6K",
+        "lang": "JavaScript",
+        "url": "https://github.com/citrolabs/ego-lite"
+      }
+    ]
   }
 ]
