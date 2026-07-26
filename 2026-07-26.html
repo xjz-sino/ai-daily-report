@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI日报 - 2026-07-26</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #a371f7;
+            --accent-orange: #f0883e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 2.2rem; margin-bottom: 8px; }
+        header .meta { color: var(--text-secondary); font-size: 0.95rem; }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 24px;
+            margin-bottom: 30px;
+        }
+        .nav-bar a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+        .nav-bar a:hover { opacity: 0.8; }
+        .nav-bar a.disabled { color: var(--text-secondary); pointer-events: none; }
+        .nav-bar .home-link { font-weight: 600; }
+        section { margin-bottom: 36px; }
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .news-grid { display: grid; gap: 16px; }
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+        .news-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+        .news-card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--accent); }
+        .news-card p { color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 10px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag {
+            background: rgba(88, 166, 255, 0.12);
+            color: var(--accent);
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(88, 166, 255, 0.25);
+        }
+        .github-grid { display: grid; gap: 16px; }
+        .github-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .github-card .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .github-card .repo-name {
+            font-size: 1.05rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .github-card .repo-name:hover { text-decoration: underline; }
+        .github-card .stars {
+            color: var(--accent-orange);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .github-card p { color: var(--text-secondary); font-size: 0.92rem; }
+        .github-card .lang {
+            color: var(--accent-purple);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, rgba(88,166,255,0.08), rgba(163,113,247,0.08));
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .summary-box h2 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        .summary-box p { color: var(--text-secondary); font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI日报</h1>
+            <div class="meta">2026-07-26 · 星期日 · 第003期</div>
+        </header>
+
+        <div class="nav-bar">
+            <a href="2026-07-25.html" class="prev-link ">
+                ← 上一期（更早）
+            </a>
+            <a href="index.html" class="home-link">📋 归档首页</a>
+            <a href="#" class="next-link disabled">
+                下一期（更新） →
+            </a>
+        </div>
+
+        <div class="summary-box">
+            <h2>📌 今日摘要</h2>
+            <p>今日AI领域焦点集中在「算力与资本博弈」：SpaceX的S-1文件披露Anthropic每月向马斯克支付12.5亿美元租用Colossus算力（30万千瓦、22万块Nvidia GPU），凸显前沿AI对算力的极致渴求；穆迪警告AI资本支出正侵蚀微软、亚马逊等六大科技巨头信用质量，2026年超大规模厂商资本支出预计达7850亿美元。政策与开源层面，欧盟2000亿欧元InvestAI计划加码、Kimi K3（2.8万亿参数）开源权重将于7月27日发布、xAI因隐私丑闻将Grok Build以Apache 2.0开源。资本面，Luma AI 9亿美元C轮融资开发多模态AGI、Fireworks AI 15亿美元D轮、Neo 1亿美元守护企业AI安全。GitHub Trending中obra/superpowers以26万星登顶，Claude生态项目持续火爆。</p>
+        </div>
+
+        <section>
+            <h2 class="section-title">📰 AI新闻（10条）</h2>
+            <div class="news-grid">
+                <div class="news-card">
+  <h3><a href="https://aitoolsrecap.com/Blog/ai-news-july-25-2026" target="_blank" style="color:inherit;text-decoration:none;">Anthropic每月向马斯克支付12.5亿美元租用Colossus算力</a></h3>
+  <p>SpaceX的S-1 SEC文件披露，Anthropic以每月12.5亿美元向SpaceXAI租用Colossus 1算力（30万千瓦、22万块Nvidia GPU），合约至2029年5月。马斯克保留在Claude"危害人类"时收回算力的权利，而其同时销售Grok与Claude直接竞争，形成罕见结构性冲突。</p>
+  <div class="tags"><span class="tag">Anthropic</span><span class="tag">SpaceX</span><span class="tag">算力</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://aitoolsrecap.com/Blog/ai-news-july-25-2026" target="_blank" style="color:inherit;text-decoration:none;">Kimi K3开源权重将于7月27日发布</a></h3>
+  <p>月之暗面Kimi K3拥有2.8万亿参数、100万token上下文窗口和原生视觉能力，完整权重将于7月27日发布。部署目标为Q4 MXFP4量化，约需18张H100 80GB（约1.4TB显存），Together AI和Fireworks AI预计48小时内上线托管推理。</p>
+  <div class="tags"><span class="tag">Kimi</span><span class="tag">开源权重</span><span class="tag">大模型</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://aitoolsrecap.com/Blog/ai-news-july-25-2026" target="_blank" style="color:inherit;text-decoration:none;">xAI开源Grok Build编码代理（Apache 2.0）</a></h3>
+  <p>因运行时会将整个目录（含SSH密钥、密码库）上传至xAI云存储的隐私丑闻，xAI删除全部已上传用户数据，并将Grok Build编码代理以Apache 2.0开源。开发者现可用任意模型（Claude Code、GPT、Kimi K3）运行该代理框架。</p>
+  <div class="tags"><span class="tag">xAI</span><span class="tag">Grok</span><span class="tag">开源</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://www.techshotsapp.com/business/luma-ai-raises-900-million-for-multimodal-agi-development" target="_blank" style="color:inherit;text-decoration:none;">Luma AI融资9亿美元开发多模态AGI</a></h3>
+  <p>Luma AI完成9亿美元C轮融资，由HUMAIN领投，用于构建能理解并模拟物理世界的多模态AGI。此次投资还赋予Luma访问HUMAIN"Project Halo"超算集群的权限，以训练下一代"世界模型"。</p>
+  <div class="tags"><span class="tag">Luma AI</span><span class="tag">AGI</span><span class="tag">融资</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://www.akm.ru/eng/news/the-european-union-is-investing-200-billion-euros-in-the-investai-project/" target="_blank" style="color:inherit;text-decoration:none;">欧盟投资2000亿欧元实施InvestAI计划</a></h3>
+  <p>欧盟宣布投资2000亿欧元（约2060亿美元）实施InvestAI项目，旨在加速人工智能开发投资，巩固欧洲在先进AI技术市场的地位，缩小与美中在AI基础设施和模型研发上的差距。</p>
+  <div class="tags"><span class="tag">欧盟</span><span class="tag">InvestAI</span><span class="tag">政策</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://sharedsapience.com/century-report/the-century-report-july-25-2026/" target="_blank" style="color:inherit;text-decoration:none;">穆迪警告：AI资本支出侵蚀六大科技巨头信用质量</a></h3>
+  <p>穆迪发布报告警告，AI资本支出正侵蚀微软、亚马逊、Alphabet、Meta、Oracle、CoreWeave的信用质量。预计超大规模厂商2026年资本支出达7850亿美元、2027年约1万亿美元，六家直接债务已近4600亿美元。</p>
+  <div class="tags"><span class="tag">穆迪</span><span class="tag">资本支出</span><span class="tag">信用风险</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://ventureburn.com/fireworks-ai-raises-1-5-billion-series-d/" target="_blank" style="color:inherit;text-decoration:none;">Fireworks AI完成15亿美元D轮融资</a></h3>
+  <p>Fireworks AI完成15亿美元D轮融资，用于扩展基础设施和多模型企业AI平台，面向需要编排多模型、控制推理成本并构建代理式应用的企业，提供比单模型栈更大的灵活性。</p>
+  <div class="tags"><span class="tag">Fireworks AI</span><span class="tag">融资</span><span class="tag">推理平台</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://www.hpcwire.com/bigdatawire/this-just-in/gartner-forecasts-worldwide-ai-platforms-and-models-market-to-grow-63-in-2026/" target="_blank" style="color:inherit;text-decoration:none;">Gartner预测2026全球AI平台与模型市场增长63%</a></h3>
+  <p>Gartner预测2026年全球AI平台与模型市场将增长63%，反映企业支出正快速转向支持模型开发、编排、部署和治理的AI软件基础设施，AI正从实验阶段迈入生产阶段。</p>
+  <div class="tags"><span class="tag">Gartner</span><span class="tag">市场预测</span><span class="tag">AI平台</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://www.hpcwire.com/bigdatawire/this-just-in/neo-launches-with-100m-to-secure-ai-software-across-the-enterprise/" target="_blank" style="color:inherit;text-decoration:none;">Neo获1亿美元融资，守护企业AI软件与智能体安全</a></h3>
+  <p>Neo以1亿美元融资正式亮相，专注监控和治理可自主选择工具、访问数据并采取行动的AI系统，填补传统身份与端点工具无法覆盖的AI智能体安全缺口。</p>
+  <div class="tags"><span class="tag">Neo</span><span class="tag">AI安全</span><span class="tag">融资</span></div>
+</div>
+<div class="news-card">
+  <h3><a href="https://www.hpcwire.com/bigdatawire/this-just-in/microsoft-and-mistral-expand-ai-partnership-with-sovereign-cloud-and-azure-integration/" target="_blank" style="color:inherit;text-decoration:none;">微软与Mistral扩大合作：主权云与Azure深度集成</a></h3>
+  <p>微软与Mistral扩大合作，支持主权云场景并深化Azure集成，帮助企业在受控环境中部署Mistral模型，同时保障企业数据驻留、治理与平台集成，满足监管严格行业的合规需求。</p>
+  <div class="tags"><span class="tag">微软</span><span class="tag">Mistral</span><span class="tag">主权云</span></div>
+</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">⭐ GitHub Trending（10个）</h2>
+            <div class="github-grid">
+                <div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/obra/superpowers" target="_blank" class="repo-name">obra/superpowers</a>
+    <span class="stars">⭐ 261.0K</span>
+  </div>
+  <p>代理技能框架与软件开发方法论，提供可实际落地的智能体技能体系与工程实践。</p>
+  <span class="lang">● Shell</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank" class="repo-name">ComposioHQ/awesome-claude-skills</a>
+    <span class="stars">⭐ 70.5K</span>
+  </div>
+  <p>Claude Skills精选列表，包含资源、工具和自定义Claude AI工作流的全面指南。</p>
+  <span class="lang">● Python</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/anthropics/claude-cookbooks" target="_blank" class="repo-name">anthropics/claude-cookbooks</a>
+    <span class="stars">⭐ 49.8K</span>
+  </div>
+  <p>Anthropic官方Claude使用食谱合集，展示高效使用Claude的笔记本与示例。</p>
+  <span class="lang">● Jupyter Notebook</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/shiyu-coder/Kronos" target="_blank" class="repo-name">shiyu-coder/Kronos</a>
+    <span class="stars">⭐ 33.7K</span>
+  </div>
+  <p>金融市场语言基础模型，用于金融市场数据的预测、分析与理解。</p>
+  <span class="lang">● Python</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/permissionlesstech/bitchat" target="_blank" class="repo-name">permissionlesstech/bitchat</a>
+    <span class="stars">⭐ 28.6K</span>
+  </div>
+  <p>蓝牙mesh聊天应用，带来IRC风格的去中心化通信体验，无需网络即可互联。</p>
+  <span class="lang">● Swift</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/Automattic/harper" target="_blank" class="repo-name">Automattic/harper</a>
+    <span class="stars">⭐ 13.4K</span>
+  </div>
+  <p>离线、隐私优先的语法检查器，快速、开源、Rust驱动，无需联网即可使用。</p>
+  <span class="lang">● Rust</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/alibaba/open-code-review" target="_blank" class="repo-name">alibaba/open-code-review</a>
+    <span class="stars">⭐ 12.8K</span>
+  </div>
+  <p>阿里开源的混合架构代码审查工具，确定性流水线+LLM代理，精准行级评论，内置NPE、线程安全、XSS、SQL注入等规则。</p>
+  <span class="lang">● Go</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/block/buzz" target="_blank" class="repo-name">block/buzz</a>
+    <span class="stars">⭐ 11.6K</span>
+  </div>
+  <p>蜂群思维通信平台，让人与AI代理在金融运营工作流中协作，支持任务路由与上下文协同。</p>
+  <span class="lang">● Rust</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/Pumpkin-MC/Pumpkin" target="_blank" class="repo-name">Pumpkin-MC/Pumpkin</a>
+    <span class="stars">⭐ 9.6K</span>
+  </div>
+  <p>赋能每个人托管快速高效的Minecraft服务器，用Rust重写的高性能实现。</p>
+  <span class="lang">● Rust</span>
+</div>
+<div class="github-card">
+  <div class="repo-header">
+    <a href="https://github.com/citrolabs/ego-lite" target="_blank" class="repo-name">citrolabs/ego-lite</a>
+    <span class="stars">⭐ 3.4K</span>
+  </div>
+  <p>为AI代理打造的极速浏览器，可共享登录状态给Codex或Claude Code等代理，零成本零配置。</p>
+  <span class="lang">● JavaScript</span>
+</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>AI日报 · 每日自动生成 · 2026-07-26</p>
+            <p style="margin-top:6px;">数据来源：网络公开资讯 / GitHub Trending</p>
+        </footer>
+    </div>
+</body>
+</html>
