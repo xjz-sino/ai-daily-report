@@ -1,175 +1,5 @@
 [
   {
-    "date": "2026-07-29",
-    "weekday": "星期二",
-    "file": "ai-daily-2026-07-29.html",
-    "news": [
-      {
-        "title": "马斯克：Grok 4.6预计8月7日发布，Grok 4.7将达2.1万亿参数",
-        "summary": "马斯克确认Grok 4.6将于8月7日推出，后续版本Grok 4.7将拥有2.1万亿参数规模，预计在数周后正式发布。",
-        "tags": [
-          "大模型",
-          "xAI"
-        ],
-        "url": "https://www.cls.cn/detail/2439433"
-      },
-      {
-        "title": "美团开源LongCat-2.0：1.6万亿参数，全程国产算力训练",
-        "summary": "美团发布并开源LongCat-2.0大模型，拥有1.6万亿参数，全程使用国产算力训练，展现国产大模型基础设施的成熟。",
-        "tags": [
-          "开源",
-          "国产大模型"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "Anthropic发布Claude Sonnet 5，Agent能力大幅提升",
-        "summary": "Anthropic正式上线Claude Sonnet 5，作为Sonnet系列最强Agent模型，其Agent能力直追Opus级别表现。",
-        "tags": [
-          "Agent",
-          "Anthropic"
-        ],
-        "url": "https://aicoding.juejin.cn/post/7658290915859087370"
-      },
-      {
-        "title": "OpenAI发布GPT-5.6系列，美国政府限制公众访问",
-        "summary": "OpenAI正式发布GPT-5.6系列，包含Sol、Terra、Luna三档，但美国政府出面限制公众访问该模型。",
-        "tags": [
-          "OpenAI",
-          "政策"
-        ],
-        "url": "https://blog.csdn.net/ld326/article/details/162774398"
-      },
-      {
-        "title": "阿里达摩院AI智能体28 GPU小时发现4种全新超导体",
-        "summary": "阿里达摩院研发的AI智能体仅用28 GPU小时即发现4种全新超导体材料，AI在基础科学研究领域取得重大突破。",
-        "tags": [
-          "科研",
-          "材料科学"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "宇树科技73天闪电过审科创板，人形机器人上市在即",
-        "summary": "宇树科技仅用73天即完成科创板过审，创人形机器人企业上市速度新纪录，资本市场对机器人赛道热情高涨。",
-        "tags": [
-          "机器人",
-          "上市"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "谷歌Gemini Omni Flash反超字节登顶视频盲测榜",
-        "summary": "谷歌Gemini Omni Flash在视频生成盲测中反超字节跳动模型，重新夺回视频生成领域领先地位。",
-        "tags": [
-          "视频生成",
-          "谷歌"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "Kimi K3与DeepSeek V4正式版本月确认发布",
-        "summary": "月之暗面与DeepSeek双双确认，Kimi K3和DeepSeek V4正式版将于本月发布，国产大模型竞争进入白热化。",
-        "tags": [
-          "国产大模型",
-          "Kimi",
-          "DeepSeek"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      },
-      {
-        "title": "优艾智合1B参数FabriVLA登顶具身智能榜单",
-        "summary": "优艾智合研发的轻量级具身智能模型FabriVLA仅1B参数，在Evo-SOTA榜单中以90%成功率登顶，超越更大规模国际模型。",
-        "tags": [
-          "具身智能",
-          "机器人"
-        ],
-        "url": "https://hub-assets-cache.baai.ac.cn/?tag_id=24"
-      },
-      {
-        "title": "中国开源大模型以低成本可微调优势反向渗透美国基础设施",
-        "summary": "中国开源大模型凭借低成本和可微调优势，正在被美国科技巨头集成进基础设施，形成反向技术渗透趋势。",
-        "tags": [
-          "开源",
-          "国际化"
-        ],
-        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
-      }
-    ],
-    "github": [
-      {
-        "name": "ai-job-search",
-        "desc": "基于Claude Code的AI求职自动化框架，可评估职位、定制简历、撰写求职信，全流程本地执行。",
-        "stars": 22804,
-        "lang": "TypeScript",
-        "url": "https://github.com/MadsLorentzen/ai-job-search"
-      },
-      {
-        "name": "graphify",
-        "desc": "将任意代码/文档转成可查询知识图谱的Agent Skill，兼容Claude Code、Codex、Cursor等主流编码Agent。",
-        "stars": 87350,
-        "lang": "Python",
-        "url": "https://github.com/Graphify-Labs/graphify"
-      },
-      {
-        "name": "OpenCut",
-        "desc": "开源CapCut替代品，提供视频剪辑功能，在AI辅助剪辑功能逐渐普及的背景下持续走红。",
-        "stars": 70374,
-        "lang": "TypeScript",
-        "url": "https://github.com/OpenCut-app/OpenCut"
-      },
-      {
-        "name": "OfficeCLI",
-        "desc": "首个专为AI Agent打造的Office套件，支持读写和自动化Word、Excel、PowerPoint文件，无需安装Office。",
-        "stars": 17432,
-        "lang": "C#",
-        "url": "https://github.com/iOfficeAI/OfficeCLI"
-      },
-      {
-        "name": "meetily",
-        "desc": "隐私优先的本地AI会议助手，100%本地处理，支持实时转录、说话人分离和本地摘要生成。",
-        "stars": 24863,
-        "lang": "Rust",
-        "url": "https://github.com/Zackriya-Solutions/meetily"
-      },
-      {
-        "name": "OmniRoute",
-        "desc": "免费AI网关，通过单一端点接入231+家模型提供商，支持智能降级、MCP/A2A协议和多模态API。",
-        "stars": 17590,
-        "lang": "TypeScript",
-        "url": "https://github.com/diegosouzapw/OmniRoute"
-      },
-      {
-        "name": "Vibe-Trading",
-        "desc": "个人交易Agent，将自然语言提示转换为回测和实时交易，内置452个预构建alpha因子。",
-        "stars": 23412,
-        "lang": "Python",
-        "url": "https://github.com/HKUDS/Vibe-Trading"
-      },
-      {
-        "name": "orca",
-        "desc": "管理并行编码Agent集群的ADE（Agent开发环境），支持桌面端和移动端，统一调度多Agent任务。",
-        "stars": 19653,
-        "lang": "TypeScript",
-        "url": "https://github.com/stablyai/orca"
-      },
-      {
-        "name": "CubeSandbox",
-        "desc": "面向AI Agent的轻量级安全沙箱，即时、并发、安全，限制Agent的破坏半径，保障代码执行安全。",
-        "stars": 10261,
-        "lang": "Rust",
-        "url": "https://github.com/TencentCloud/CubeSandbox"
-      },
-      {
-        "name": "strix",
-        "desc": "开源AI渗透测试工具，运行自主安全评估，验证漏洞并利用概念验证漏洞，可集成进CI/CD流水线。",
-        "stars": 41743,
-        "lang": "Python",
-        "url": "https://github.com/usestrix/strix"
-      }
-    ]
-  },
-  {
     "date": "2026-07-24",
     "weekday": "星期五",
     "file": "2026-07-24.html",
@@ -1051,6 +881,355 @@
         "stars": "11.6K",
         "lang": "Rust",
         "url": "https://github.com/block/buzz"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "weekday": "星期二",
+    "file": "ai-daily-2026-07-29.html",
+    "news": [
+      {
+        "title": "马斯克：Grok 4.6预计8月7日发布，Grok 4.7将达2.1万亿参数",
+        "summary": "马斯克确认Grok 4.6将于8月7日推出，后续版本Grok 4.7将拥有2.1万亿参数规模，预计在数周后正式发布。",
+        "tags": [
+          "大模型",
+          "xAI"
+        ],
+        "url": "https://www.cls.cn/detail/2439433"
+      },
+      {
+        "title": "美团开源LongCat-2.0：1.6万亿参数，全程国产算力训练",
+        "summary": "美团发布并开源LongCat-2.0大模型，拥有1.6万亿参数，全程使用国产算力训练，展现国产大模型基础设施的成熟。",
+        "tags": [
+          "开源",
+          "国产大模型"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      },
+      {
+        "title": "Anthropic发布Claude Sonnet 5，Agent能力大幅提升",
+        "summary": "Anthropic正式上线Claude Sonnet 5，作为Sonnet系列最强Agent模型，其Agent能力直追Opus级别表现。",
+        "tags": [
+          "Agent",
+          "Anthropic"
+        ],
+        "url": "https://aicoding.juejin.cn/post/7658290915859087370"
+      },
+      {
+        "title": "OpenAI发布GPT-5.6系列，美国政府限制公众访问",
+        "summary": "OpenAI正式发布GPT-5.6系列，包含Sol、Terra、Luna三档，但美国政府出面限制公众访问该模型。",
+        "tags": [
+          "OpenAI",
+          "政策"
+        ],
+        "url": "https://blog.csdn.net/ld326/article/details/162774398"
+      },
+      {
+        "title": "阿里达摩院AI智能体28 GPU小时发现4种全新超导体",
+        "summary": "阿里达摩院研发的AI智能体仅用28 GPU小时即发现4种全新超导体材料，AI在基础科学研究领域取得重大突破。",
+        "tags": [
+          "科研",
+          "材料科学"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      },
+      {
+        "title": "宇树科技73天闪电过审科创板，人形机器人上市在即",
+        "summary": "宇树科技仅用73天即完成科创板过审，创人形机器人企业上市速度新纪录，资本市场对机器人赛道热情高涨。",
+        "tags": [
+          "机器人",
+          "上市"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      },
+      {
+        "title": "谷歌Gemini Omni Flash反超字节登顶视频盲测榜",
+        "summary": "谷歌Gemini Omni Flash在视频生成盲测中反超字节跳动模型，重新夺回视频生成领域领先地位。",
+        "tags": [
+          "视频生成",
+          "谷歌"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      },
+      {
+        "title": "Kimi K3与DeepSeek V4正式版本月确认发布",
+        "summary": "月之暗面与DeepSeek双双确认，Kimi K3和DeepSeek V4正式版将于本月发布，国产大模型竞争进入白热化。",
+        "tags": [
+          "国产大模型",
+          "Kimi",
+          "DeepSeek"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      },
+      {
+        "title": "优艾智合1B参数FabriVLA登顶具身智能榜单",
+        "summary": "优艾智合研发的轻量级具身智能模型FabriVLA仅1B参数，在Evo-SOTA榜单中以90%成功率登顶，超越更大规模国际模型。",
+        "tags": [
+          "具身智能",
+          "机器人"
+        ],
+        "url": "https://hub-assets-cache.baai.ac.cn/?tag_id=24"
+      },
+      {
+        "title": "中国开源大模型以低成本可微调优势反向渗透美国基础设施",
+        "summary": "中国开源大模型凭借低成本和可微调优势，正在被美国科技巨头集成进基础设施，形成反向技术渗透趋势。",
+        "tags": [
+          "开源",
+          "国际化"
+        ],
+        "url": "https://blog.csdn.net/agito_cheung/article/details/162587564"
+      }
+    ],
+    "github": [
+      {
+        "name": "ai-job-search",
+        "desc": "基于Claude Code的AI求职自动化框架，可评估职位、定制简历、撰写求职信，全流程本地执行。",
+        "stars": 22804,
+        "lang": "TypeScript",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
+        "name": "graphify",
+        "desc": "将任意代码/文档转成可查询知识图谱的Agent Skill，兼容Claude Code、Codex、Cursor等主流编码Agent。",
+        "stars": 87350,
+        "lang": "Python",
+        "url": "https://github.com/Graphify-Labs/graphify"
+      },
+      {
+        "name": "OpenCut",
+        "desc": "开源CapCut替代品，提供视频剪辑功能，在AI辅助剪辑功能逐渐普及的背景下持续走红。",
+        "stars": 70374,
+        "lang": "TypeScript",
+        "url": "https://github.com/OpenCut-app/OpenCut"
+      },
+      {
+        "name": "OfficeCLI",
+        "desc": "首个专为AI Agent打造的Office套件，支持读写和自动化Word、Excel、PowerPoint文件，无需安装Office。",
+        "stars": 17432,
+        "lang": "C#",
+        "url": "https://github.com/iOfficeAI/OfficeCLI"
+      },
+      {
+        "name": "meetily",
+        "desc": "隐私优先的本地AI会议助手，100%本地处理，支持实时转录、说话人分离和本地摘要生成。",
+        "stars": 24863,
+        "lang": "Rust",
+        "url": "https://github.com/Zackriya-Solutions/meetily"
+      },
+      {
+        "name": "OmniRoute",
+        "desc": "免费AI网关，通过单一端点接入231+家模型提供商，支持智能降级、MCP/A2A协议和多模态API。",
+        "stars": 17590,
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "Vibe-Trading",
+        "desc": "个人交易Agent，将自然语言提示转换为回测和实时交易，内置452个预构建alpha因子。",
+        "stars": 23412,
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "orca",
+        "desc": "管理并行编码Agent集群的ADE（Agent开发环境），支持桌面端和移动端，统一调度多Agent任务。",
+        "stars": 19653,
+        "lang": "TypeScript",
+        "url": "https://github.com/stablyai/orca"
+      },
+      {
+        "name": "CubeSandbox",
+        "desc": "面向AI Agent的轻量级安全沙箱，即时、并发、安全，限制Agent的破坏半径，保障代码执行安全。",
+        "stars": 10261,
+        "lang": "Rust",
+        "url": "https://github.com/TencentCloud/CubeSandbox"
+      },
+      {
+        "name": "strix",
+        "desc": "开源AI渗透测试工具，运行自主安全评估，验证漏洞并利用概念验证漏洞，可集成进CI/CD流水线。",
+        "stars": 41743,
+        "lang": "Python",
+        "url": "https://github.com/usestrix/strix"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "weekday": "周四",
+    "file": "daily-2026-07-30.html",
+    "news": [
+      {
+        "title": "月之暗面Kimi K3全量开源：2.8万亿参数全球最大开源大模型",
+        "summary": "7月27日，月之暗面正式发布Kimi K3模型权重与技术报告，同步开源FlashKDA融合内核、MoonEP专家并行库和AgentEnv环境，成为全球首个3万亿参数级别开源模型。",
+        "tags": [
+          "大模型",
+          "开源",
+          "月之暗面"
+        ],
+        "url": "https://huggingface.co/moonshot-ai/Kimi-K3"
+      },
+      {
+        "title": "Claude Sonnet 5发布：agent编码与自动化工作流进入主流",
+        "summary": "Anthropic发布Claude Sonnet 5，强化长程编码、工具调用与调试能力，入门定价$2/百万输入token，推动agent式编码进入日常业务场景。",
+        "tags": [
+          "Anthropic",
+          "Agent",
+          "编码"
+        ],
+        "url": "https://www.anthropic.com/news/claude-sonnet-5"
+      },
+      {
+        "title": "Google推出Gemini Omni Flash和Nano Banana 2 Lite",
+        "summary": "Google发布Gemini Omni Flash（对话式视频编辑，$0.10/秒）和Nano Banana 2 Lite（约4秒图像生成），默认启用C2PA凭证与SynthID水印。",
+        "tags": [
+          "Google",
+          "多模态",
+          "视频生成"
+        ],
+        "url": "https://deepmind.google/technologies/gemini/"
+      },
+      {
+        "title": "GitHub Copilot首次引入开放权重模型Kimi K2.7 Code",
+        "summary": "月之暗面Kimi K2.7 Code成为GitHub Copilot模型选择器中首个开放权重选项，支持按量计费，企业管理员需手动开启。",
+        "tags": [
+          "GitHub",
+          "Copilot",
+          "开放权重"
+        ],
+        "url": "https://github.com/features/copilot"
+      },
+      {
+        "title": "OpenAI与Broadcom合作Jalapeño推理芯片9个月完成流片",
+        "summary": "OpenAI与Broadcom联合开发的Jalapeño推理专用芯片从设计到流片仅用9个月，专为LLM推理优化，目标提升每瓦性能。",
+        "tags": [
+          "OpenAI",
+          "芯片",
+          "推理"
+        ],
+        "url": "https://openai.com/"
+      },
+      {
+        "title": "Meta Brain2Qwerty v2脑机接口单词准确率达61%",
+        "summary": "Meta非侵入式脑机接口Brain2Qwerty v2将MEG脑信号转为文本的准确率从8%提升至61%，非侵入式BCI进展显著加速。",
+        "tags": [
+          "Meta",
+          "脑机接口",
+          "BCI"
+        ],
+        "url": "https://about.meta.com/"
+      },
+      {
+        "title": "Reflection AI锁定63亿美元计算资源至2029年",
+        "summary": "Reflection AI在SpaceX孟菲斯Colossus 2设施激活63亿美元计算租约，锁定Nvidia GB300芯片用于训练美国开放权重前沿模型。",
+        "tags": [
+          "Reflection AI",
+          "算力",
+          "基础设施"
+        ],
+        "url": "https://reflection.ai/"
+      },
+      {
+        "title": "8090 Labs完成1.35亿美元A轮融资，agent编码平台落地",
+        "summary": "由Salesforce Ventures领投，8090 Labs Software Factory平台已在EY数万名顾问中推广， reportedly提升软件开发效率70%。",
+        "tags": [
+          "融资",
+          "Agent编码",
+          "企业"
+        ],
+        "url": "https://8090.ai/"
+      },
+      {
+        "title": "韩国宣布8800亿美元10年AI投资计划",
+        "summary": "韩国公布涵盖半导体、AI基础设施和机器人的十年投资计划，三星与SK海力士单独承诺5180亿美元用于新芯片制造基地。",
+        "tags": [
+          "韩国",
+          "投资",
+          "半导体"
+        ],
+        "url": "https://english.yonhapnews.co.kr/"
+      },
+      {
+        "title": "Five Eyes警告前沿AI将在数月内改变网络攻防能力",
+        "summary": "五眼情报联盟7月发出警告，前沿AI模型将在数月内根本性改变进攻性和防御性网络能力，企业需提前规划身份验证与安全审计。",
+        "tags": [
+          "安全",
+          "政策",
+          "网络"
+        ],
+        "url": "https://www.fiveeyes.int/"
+      }
+    ],
+    "github": [
+      {
+        "name": "usestrix/strix",
+        "desc": "开源AI渗透测试工具，像真实安全研究员一样动态测试应用、验证漏洞并提供PoC，支持HTTP代理、浏览器利用、Python沙箱和CI/CD集成。",
+        "stars": "~42K",
+        "lang": "TypeScript",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "xai-org/grok-build",
+        "desc": "xAI开源的编码agent CLI和终端UI，采用Apache 2.0许可，完整开放上下文处理、工具执行、插件、技能和MCP集成。",
+        "stars": "~9.3K",
+        "lang": "Python",
+        "url": "https://github.com/xai-org/grok-build"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "desc": "香港大学数据科学实验室构建的自然语言量化交易框架，支持回测、alpha基准测试和实盘交易，内置452个预置alpha因子。",
+        "stars": "~24K",
+        "lang": "Python",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "desc": "MCP服务器，为AI编码agent构建持久代码知识图谱，支持158种语言，可将结构查询token消耗降低99%，单二进制零依赖。",
+        "stars": "~32K",
+        "lang": "C",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "langchain-ai/openwiki",
+        "desc": "LangChain团队发布的CLI工具，自动生成并维护AI友好的代码库文档，帮助AI agent可靠理解和操作代码。",
+        "stars": "~11.8K",
+        "lang": "Python",
+        "url": "https://github.com/langchain-ai/openwiki"
+      },
+      {
+        "name": "MadsLorentzen/ai-job-search",
+        "desc": "基于Claude Code的求职自动化框架，自动评估职位、定制简历、生成求职信并准备面试，展现agent在日常工作流中的实用价值。",
+        "stars": "~23K",
+        "lang": "Python",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
+        "name": "iOfficeAI/OfficeCLI",
+        "desc": "专为AI agent设计的开源Office套件，无需安装Office即可读写编辑Word、Excel、PowerPoint，单二进制零依赖。",
+        "stars": "~18K",
+        "lang": "Rust",
+        "url": "https://github.com/iOfficeAI/OfficeCLI"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "desc": "免费AI网关，单一端点路由至231+提供商（50+免费），支持token压缩、智能自动回退和多模态API。",
+        "stars": "~17.9K",
+        "lang": "TypeScript",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "name": "JustVugg/colibri",
+        "desc": "纯C零依赖推理引擎，可在约25GB内存的消费级设备上流式运行7440亿参数GLM-5.2 MoE模型。",
+        "stars": "~14.7K",
+        "lang": "C",
+        "url": "https://github.com/JustVugg/colibri"
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "desc": "Claude Code/Cursor/Codex设计技能，通过57项slop-test门控和预发射自批判，让AI生成UI更具设计感而非模板化。",
+        "stars": "~10K",
+        "lang": "TypeScript",
+        "url": "https://github.com/Nutlope/hallmark"
       }
     ]
   }
